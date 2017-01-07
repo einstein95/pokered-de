@@ -5,8 +5,8 @@ DoClearSaveDialogue:
 	call LoadTextBoxTilePatterns
 	ld hl, ClearSaveDataText
 	call PrintText
-	hlcoord 14, 7
-	lb bc, 8, 15
+	hlcoord 13, 7
+	lb bc, 8, 14
 	ld a, NO_YES_MENU
 	ld [wTwoOptionMenuID], a
 	ld a, TWO_OPTION_MENU

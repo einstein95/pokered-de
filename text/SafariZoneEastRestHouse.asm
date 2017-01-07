@@ -1,18 +1,20 @@
 _SafariZoneRestHouse3Text1::
-	text "How many did you"
-	line "catch? I'm bushed"
-	cont "from the work!"
+	text "Wie viele hast Du"
+	line "gefangen? Ich bin"
+	cont "total erschöpft!"
 	done
 
 _SafariZoneRestHouse3Text2::
-	text "I caught a"
-	line "CHANSEY!"
+	text "Ich habe ein"
+	line "CHANEIRA"
+	cont "gefangen!"
 
-	para "That makes this"
-	line "all worthwhile!"
+	para "Die Mühe hat"
+	line "sich gelohnt!"
 	done
 
 _SafariZoneRestHouse3Text3::
-	text "Whew! I'm tired"
-	line "from all the fun!"
+	text "Was für ein Spaß!"
+	line "Aber jetzt bin"
+	cont "ich hundemüde..."
 	done

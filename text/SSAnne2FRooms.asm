@@ -1,113 +1,125 @@
 _SSAnne9Text_61bf2::
-	text "In all my travels"
-	line "I've never seen"
-	cont "any #MON sleep"
-	cont "like this one!"
+	text "Auf all meinen"
+	line "Reisen habe ich"
+	cont "nie ein solch"
+	cont "verschlafenes"
+	cont "#MON gesehen!"
 
-	para "It was something"
-	line "like this!"
+	para "Es sieht ungefähr"
+	line "so aus..."
 	prompt
 
 _SSAnne9Text_61c01::
-	text "Ah yes, I have"
-	line "seen some #MON"
-	cont "ferry people"
-	cont "across the water!"
+	text "Ich habe schon"
+	line "Leute auf #MON"
+	cont "übers Wasser"
+	cont "gleiten sehen!"
 	done
 
 _SSAnne9Text_61c10::
-	text "#MON can CUT"
-	line "down small bushes."
+	text "#MON können"
+	line "Büsche mit dem"
+	cont "ZERSCHNEIDER"
+	cont "kleinhacken."
 	done
 
 _SSAnne9Text_61c1f::
-	text "Have you gone to"
-	line "the SAFARI ZONE"
-	cont "in FUCHSIA CITY?"
+	text "Hast Du die"
+	line "SAFARI-ZONE in"
+	cont "FUCHSANIA CITY"
+	cont "schon besucht?"
 
-	para "It had many rare"
-	line "kinds of #MON!!"
+	para "Es gibt dort sehr"
+	line "seltene #MON!"
 	done
 
 _SSAnne9Text_61c2e::
-	text "Me and my Daddy"
-	line "think the SAFARI"
-	cont "ZONE is awesome!"
+	text "Mein Papa war mit"
+	line "mir in der"
+	cont "SAFARI-ZONE! Es"
+	cont "war aufregend!"
 	done
 
 _SSAnne9Text_61c3d::
-	text "The CAPTAIN looked"
-	line "really sick and"
-	cont "pale!"
+	text "Der KAPITÄN war"
+	line "kreidebleich! Er"
+	cont "sah schlecht aus!"
 	done
 
 _SSAnne9Text_61c4c::
-	text "I hear many people"
-	line "get seasick!"
+	text "Viele Leute werden"
+	line "leicht seekrank!"
 	done
 
 _SSAnne9BattleText1::
-	text "Competing against"
-	line "the young keeps"
-	cont "me youthful."
+	text "Im Wettstreit mit"
+	line "der Jugend bleib"
+	cont "ich jung!"
 	done
 
 _SSAnne9EndBattleText1::
-	text "Good"
-	line "fight! Ah, I feel"
-	cont "young again!"
+	text "Ahhh!"
+	line "Da fühlt man sich"
+	cont "gleich jünger!"
 	prompt
 
 _SSAnne9AfterBattleText1::
-	text "15 years ago, I"
-	line "would have won!"
+	text "Vor 15 Jahren"
+	line "hätte ich mit"
+	cont "links gewonnen..."
 	done
 
 _SSAnne9BattleText2::
-	text "Check out what I"
-	line "fished up!"
+	text "Schau Dir an, was"
+	line "ich an Land"
+	cont "gezogen habe!"
 	done
 
 _SSAnne9EndBattleText2::
-	text "I'm"
-	line "all out!"
+	text "OK!"
+	line "Das war's für"
+	cont "mich! Tschüss!!!"
 	prompt
 
 _SSAnne9AfterBattleText2::
-	text "Party?"
+	text "Eine Party?"
 
-	para "The cruise ship's"
-	line "party should be"
-	cont "over by now."
+	para "Die dürfte längst"
+	line "vorbei sein. Du"
+	cont "bist spät dran!"
 	done
 
 _SSAnne9BattleText3::
-	text "Which do you like,"
-	line "a strong or a"
-	cont "rare #MON?"
+	text "Was magst Du"
+	line "lieber? Starke"
+	cont "oder seltene"
+	cont "#MON?"
 	done
 
 _SSAnne9EndBattleText3::
-	text "I must"
-	line "salute you!"
+	text "Ich"
+	line "ziehe meinen"
+	cont "Hut vor Dir! Wow!"
 	prompt
 
 _SSAnne9AfterBattleText3::
-	text "I prefer strong"
-	line "and rare #MON."
+	text "Ich mag #MON,"
+	line "die stark und"
+	cont "selten sind!"
 	done
 
 _SSAnne9BattleText4::
-	text "I never saw you"
-	line "at the party."
+	text "Wo warst Du, als"
+	line "die Party lief?"
 	done
 
 _SSAnne9EndBattleText4::
-	text "Take"
-	line "it easy!"
+	text "Mach mal"
+	line "langsam!!!"
 	prompt
 
 _SSAnne9AfterBattleText4::
-	text "Oh, I adore your"
-	line "strong #MON!"
+	text "Ich bewundere die"
+	line "Stärke Deiner"
+	cont "#MON!"
 	done

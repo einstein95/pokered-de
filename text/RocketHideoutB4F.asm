@@ -1,74 +1,82 @@
 _RocketHideout4Text_4557a::
-	text "So! I must say, I"
-	line "am impressed you"
-	cont "got here!"
+	text "Ich bin schwer"
+	line "beeindruckt. Du"
+	cont "bist tatsächlich"
+	cont "weit gekommen!"
 	done
 
 _RocketHideout4Text_4557f::
-	text "WHAT!"
-	line "This cannot be!"
+	text "NEIN!"
+	line "Ich habe kläglich"
+	cont "versagt!"
 	prompt
 
 _RocketHideout4Text_45584::
-	text "I see that you"
-	line "raise #MON"
-	cont "with utmost care."
+	text "Offensichtlich"
+	line "trainierst Du"
+	cont "Deine #MON"
+	cont "sehr sorgfältig!"
 
-	para "A child like you"
-	line "would never"
-	cont "understand what I"
-	cont "hope to achieve."
+	para "Trotzdem würdest"
+	line "Du meine Ziele"
+	cont "und Beweggründe"
+	cont "nie verstehen..."
 
-	para "I shall step"
-	line "aside this time!"
+	para "Dieses Mal lasse"
+	line "ich Dich noch von"
+	cont "dannen ziehen..."
 
-	para "I hope we meet"
-	line "again..."
+	para "Doch wir werden"
+	line "uns wiedersehen!"
 	done
 
 _RocketHideout4BattleText2::
-	text "I know you! You"
-	line "ruined our plans"
-	cont "at MT.MOON!"
+	text "Du warst es, der"
+	line "unsere Pläne am"
+	cont "MONDBERG zunichte"
+	cont "gemacht hat!"
 	done
 
 _RocketHideout4EndBattleText2::
-	text "Burned"
-	line "again!"
+	text "Dieser"
+	line "Junge ist einfach"
+	cont "unschlagbar!!!"
 	prompt
 
 _RocketHide4AfterBattleText2::
-	text "Do you have"
-	line "something against"
-	cont "TEAM ROCKET?"
+	text "Willst Du das"
+	line "TEAM ROCKET"
+	cont "zugrunde richten?"
 	done
 
 _RocketHideout4BattleText3::
-	text "How can you not"
-	line "see the beauty of"
-	cont "our evil?"
+	text "Spürst Du nicht"
+	line "die Schönheit"
+	cont "der dunklen Seite"
+	cont "der Macht?"
 	done
 
 _RocketHideout4EndBattleText3::
-	text "Ayaya!"
+	text "Autsch!"
 	prompt
 
 _RocketHide4AfterBattleText3::
-	text "BOSS! I'm sorry I"
-	line "failed you!"
+	text "Gnade, BOSS! Ich"
+	line "habe versagt..."
 	done
 
 _RocketHideout4BattleText4::
-	text "The elevator"
-	line "doesn't work? Who"
-	cont "has the LIFT KEY?"
+	text "Ich werde Dir"
+	line "den LIFTÖFFNER"
+	cont "niemals geben!"
 	done
 
 _RocketHideout4EndBattleText4::
-	text "No!"
+	text "Oh nein!"
 	prompt
 
 _RocketHideout4Text_455ec::
-	text "Oh no! I dropped"
-	line "the LIFT KEY!"
+	text "Mist! Ich habe"
+	line "den LIFTÖFFNER"
+	cont "verloren!"
 	done

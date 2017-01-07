@@ -1065,8 +1065,8 @@ Audio2_IsCry:
 	jr z, .no
 	jr c, .yes
 .no
-	scf
-	ccf
+	ld a, [wLowHealthAlarm]
+	rla
 	ret
 .yes
 	scf

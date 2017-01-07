@@ -141,12 +141,12 @@ LinkMenu:
 	call SaveScreenTilesToBuffer1
 	ld hl, WhereWouldYouLikeText
 	call PrintText
-	hlcoord 5, 5
+	hlcoord 4, 5
 	ld b, $6
-	ld c, $d
+	ld c, $e
 	call TextBoxBorder
 	call UpdateSprites
-	hlcoord 7, 7
+	hlcoord 6, 7
 	ld de, CableClubOptionsText
 	call PlaceString
 	xor a
@@ -155,7 +155,7 @@ LinkMenu:
 	ld hl, wTopMenuItemY
 	ld a, $7
 	ld [hli], a
-	ld a, $6
+	ld a, $5
 	ld [hli], a
 	xor a
 	ld [hli], a
@@ -240,11 +240,11 @@ LinkMenu:
 	ld c, d
 .updateCursorPosition
 	ld a, b
-	ldcoord_a 6, 7
+	ldcoord_a 5, 7
 	ld a, c
-	ldcoord_a 6, 9
+	ldcoord_a 5, 9
 	ld a, d
-	ldcoord_a 6, 11
+	ldcoord_a 5, 11
 	ld c, 40
 	call DelayFrames
 	call LoadScreenTilesFromBuffer1
@@ -332,27 +332,27 @@ SpecialEnterMap::
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE"
+	db "WEITER"
 	next ""
 	; fallthrough
 
 NewGameText:
-	db   "NEW GAME"
-	next "OPTION@"
+	db   "NEUES SPIEL"
+	next "OPTIONEN@"
 
 CableClubOptionsText:
-	db   "TRADE CENTER"
-	next "COLOSSEUM"
-	next "CANCEL@"
+	db   "HANDELSCENTER"
+	next "KOLOSSEUM"
+	next "ZURÜCK@"
 
 DisplayContinueGameInfo:
 	xor a
 	ldh [hAutoBGTransferEnabled], a
-	hlcoord 4, 7
+	hlcoord 3, 7
 	ld b, 8
-	ld c, 14
+	ld c, 15
 	call TextBoxBorder
-	hlcoord 5, 9
+	hlcoord 4, 9
 	ld de, SaveScreenInfoText
 	call PlaceString
 	hlcoord 12, 9
@@ -372,13 +372,13 @@ DisplayContinueGameInfo:
 PrintSaveScreenText:
 	xor a
 	ldh [hAutoBGTransferEnabled], a
-	hlcoord 4, 0
+	hlcoord 3, 0
 	ld b, $8
-	ld c, $e
+	ld c, $f
 	call TextBoxBorder
 	call LoadTextBoxTilePatterns
 	call UpdateSprites
-	hlcoord 5, 2
+	hlcoord 4, 2
 	ld de, SaveScreenInfoText
 	call PlaceString
 	hlcoord 12, 2
@@ -426,10 +426,10 @@ PrintPlayTime:
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "PLAYER"
-	next "BADGES    "
-	next "#DEX    "
-	next "TIME@"
+	db   "SPIELER"
+	next "ORDEN          "
+	next "#DEX        "
+	next "ZEIT@"
 
 DisplayOptionMenu:
 	hlcoord 0, 0
@@ -584,19 +584,19 @@ DisplayOptionMenu:
 	jp .eraseOldMenuCursor
 
 TextSpeedOptionText:
-	db   "TEXT SPEED"
-	next " FAST  MEDIUM SLOW@"
+	db   "TEXT-TEMPO"
+	next " 3     2      1   @"
 
 BattleAnimationOptionText:
-	db   "BATTLE ANIMATION"
-	next " ON       OFF@"
+	db   "KAMPFANIMATION"
+	next " AN       AUS@"
 
 BattleStyleOptionText:
-	db   "BATTLE STYLE"
-	next " SHIFT    SET@"
+	db   "KAMPFSTIL"
+	next " WECHSEL  FOLGEND@"
 
 OptionMenuCancelText:
-	db "CANCEL@"
+	db "ZURÜCK@"
 
 ; sets the options variable according to the current placement of the menu cursors in the options menu
 SetOptionsFromCursorPositions:

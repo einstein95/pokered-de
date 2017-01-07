@@ -1,45 +1,49 @@
 _SecretHouseText_4a350::
-	text "Ah! Finally!"
+	text "Ah! Endlich!"
 
-	para "You're the first"
-	line "person to reach"
-	cont "the SECRET HOUSE!"
+	para "Du bist der"
+	line "Erste, der das"
+	cont "VERSTECKTE HAUS"
+	cont "gefunden hat!"
 
-	para "I was getting"
-	line "worried that no"
-	cont "one would win our"
-	cont "campaign prize."
+	para "Ich dachte schon,"
+	line "niemand würde den"
+	cont "großen Preis"
+	cont "jemals gewinnen!"
 
-	para "Congratulations!"
-	line "You have won!"
+	para "Glückwunsch! Du"
+	line "hast gewonnen!"
 	prompt
 
 _ReceivedHM03Text::
-	text "<PLAYER> received"
+	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
 _HM03ExplanationText::
-	text "HM03 is SURF!"
+	text "VM03 ist SURFER!"
 
-	para "#MON will be"
-	line "able to ferry you"
-	cont "across water!"
+	para "Lernt ein #MON"
+	line "diese Technik,"
+	cont "dann kann es Dich"
+	cont "über das Wasser"
+	cont "transportieren!"
 
-	para "And, this HM isn't"
-	line "disposable! You"
-	cont "can use it over"
-	cont "and over!"
+	para "Das BESTE ist"
+	line "aber, daß Du"
+	cont "diese VM benutzen"
+	cont "kannst, so oft Du"
+	cont "möchtest!"
 
-	para "You're super lucky"
-	line "for winning this"
-	cont "fabulous prize!"
+	para "Ist das nicht"
+	line "irre? Du bist ein"
+	cont "Glückspilz!"
 	done
 
 _HM03NoRoomText::
-	text "You don't have"
-	line "room for this"
-	cont "fabulous prize!"
+	text "Oh! Du kannst"
+	line "keine weiteren"
+	cont "Items tragen!"
 	done

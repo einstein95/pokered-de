@@ -1,63 +1,71 @@
 _VictoryRoad3BattleText2::
-	text "I heard rumors of"
-	line "a child prodigy!"
+	text "Man erzählt von"
+	line "einem Wunderkind!"
 	done
 
 _VictoryRoad3EndBattleText2::
-	text "The"
-	line "rumors were true!"
+	text "Du bist"
+	line "das Wunderkind!"
 	prompt
 
 _VictoryRoad3AfterBattleText2::
-	text "You beat GIOVANNI"
-	line "of TEAM ROCKET?"
+	text "Hast Du wirklich"
+	line "GIOVANNI vom"
+	cont "TEAM ROCKET"
+	cont "besiegt?"
 	done
 
 _VictoryRoad3BattleText3::
-	text "I'll show you just"
-	line "how good you are!"
+	text "Gleich siehst Du,"
+	line "wie gut Du bist!"
 	done
 
 _VictoryRoad3EndBattleText3::
-	text "I'm"
-	line "furious!"
+	text "Das"
+	line "darf doch nicht"
+	cont "wahr sein! Grrr!"
 	prompt
 
 _VictoryRoad3AfterBattleText3::
-	text "You showed me just"
-	line "how good I was!"
+	text "Du hast mich in"
+	line "die Schranken"
+	cont "gewiesen!"
 	done
 
 _VictoryRoad3BattleText4::
-	text "Only the chosen"
-	line "can pass here!"
+	text "Nur Auserwählte"
+	line "dürfen passieren!"
 	done
 
 _VictoryRoad3EndBattleText4::
-	text "I"
-	line "don't believe it!"
+	text "Ich"
+	line "fasse es nicht!"
 	prompt
 
 _VictoryRoad3AfterBattleText4::
-	text "All trainers here"
-	line "are headed to the"
-	cont "#MON LEAGUE!"
-	cont "Be careful!"
+	text "Die Trainer hier"
+	line "sind auf dem Weg"
+	cont "zur PKMN-Liga!"
+	cont "Sei vorsichtig!"
 	done
 
 _VictoryRoad3BattleText5::
-	text "Trainers live to"
-	line "seek stronger"
-	cont "opponents!"
+	text "Trainer sind"
+	line "geborene Kämpfer,"
+	cont "immer auf der"
+	cont "Suche nach"
+	cont "starken Gegnern!"
 	done
 
 _VictoryRoad3EndBattleText5::
-	text "Oh!"
-	line "So strong!"
+	text "Cool!"
+	line "Du bist wirklich"
+	cont "stark!"
 	prompt
 
 _VictoryRoad3AfterBattleText5::
-	text "By fighting tough"
-	line "battles, you get"
-	cont "stronger!"
+	text "Je härter die"
+	line "Kämpfe sind,"
+	cont "desto stärker"
+	cont "wirst Du!"
 	done

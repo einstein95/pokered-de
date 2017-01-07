@@ -1,43 +1,51 @@
 _TM39PreReceiveText::
-	text "My #MON's"
-	line "ashes are stored"
-	cont "in #MON TOWER."
+	text "Meine #MON"
+	line "wurden im"
+	cont "#MON-TURM zur"
+	cont "letzten Ruhe"
+	cont "gebettet."
 
-	para "You can have this"
-	line "TM. I don't need"
-	cont "it any more..."
+	para "Ich gebe Dir"
+	line "diese TM. Ich"
+	cont "benötige sie"
+	cont "nicht länger..."
 	prompt
 
 _ReceivedTM39Text::
-	text "<PLAYER> received"
+	text "<PLAYER> erhält"
 	line "TM39!@"
 	text_end
 
 _TM39ExplanationText::
-	text "TM39 is a move"
-	line "called SWIFT."
+	text "TM39 ist"
+	line "STERNSCHAUER."
 
-	para "It's very accurate,"
-	line "so use it during"
-	cont "battles you can't"
-	cont "afford to lose."
+	para "STERNSCHAUER ist"
+	line "eine treffsichere"
+	cont "Technik, die in"
+	cont "wichtigen Kämpfen"
+	cont "von großem Nutzen"
+	cont "sein kann!"
 	done
 
 _TM39NoRoomText::
-	text "You don't have"
-	line "room for this."
+	text "Oh, Du kannst sie"
+	line "im Moment nicht"
+	cont "tragen."
 	done
 
 _Route12GateUpstairsText_495b8::
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernrohr."
 
-	para "A man fishing!"
+	para "Du siehst einen"
+	line "angelnden Mann!"
 	done
 
 _Route12GateUpstairsText_495c4::
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernrohr."
 
-	para "It's #MON TOWER!"
+	para "Du siehst den"
+	line "#MON-TURM!"
 	done

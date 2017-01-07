@@ -1,154 +1,176 @@
 _Route8BattleText1::
-	text "You look good at"
-	line "#MON, but"
-	cont "how's your chem?"
+	text "Du weißt viel"
+	line "über #MON!"
+	cont "Doch wie sieht es"
+	cont "mit Chemie aus?"
 	done
 
 _Route8EndBattleText1::
-	text "Ow!"
-	line "Meltdown!"
+	text "Au! Eine"
+	line "Kernschmelze!"
 	prompt
 
 _Route8AfterBattleText1::
-	text "I am better at"
-	line "school than this!"
+	text "Meine schulischen"
+	line "Leistungen sind"
+	cont "besser!"
 	done
 
 _Route8BattleText2::
-	text "All right! Let's"
-	line "roll the dice!"
+	text "OK! Die Spiele"
+	line "mögen beginnen!"
 	done
 
 _Route8EndBattleText2::
-	text "Drat!"
-	line "Came up short!"
+	text ""
+	line "Knapp vorbei ist"
+	cont "auch daneben!"
 	prompt
 
 _Route8AfterBattleText2::
-	text "Lady Luck's not"
-	line "with me today!"
+	text "Man kann nicht"
+	line "immer gewinnen!"
 	done
 
 _Route8BattleText3::
-	text "You need strategy"
-	line "to win at this!"
+	text "Um zu gewinnen,"
+	line "benötigst Du eine"
+	cont "gute Strategie!"
 	done
 
 _Route8EndBattleText3::
-	text "It's"
-	line "not logical!"
+	text "Ich habe"
+	line "verloren! Das ist"
+	cont "nicht logisch!"
 	prompt
 
 _Route8AfterBattleText3::
-	text "Go with GRIMER"
-	line "first...and..."
-	cont "...and...then..."
+	text "SLEIMA kämpft als"
+	line "erstes... und..."
+	cont "und... dann..."
 	done
 
 _Route8BattleText4::
-	text "I like NIDORAN, so"
-	line "I collect them!"
+	text "Ich mag alle"
+	line "NIDORAN sehr"
+	cont "gerne! Deshalb"
+	cont "sammle ich sie!"
 	done
 
 _Route8EndBattleText4::
-	text "Why? Why??"
+	text "Warum?"
+	line "Warum nur?"
 	prompt
 
 _Route8AfterBattleText4::
-	text "When #MON grow"
-	line "up they get ugly!"
-	cont "They shouldn't"
-	cont "evolve!"
+	text "Wenn #MON"
+	line "sich entwickeln,"
+	cont "werden sie groß"
+	cont "und häßlich! Sie"
+	cont "sollten klein und"
+	cont "goldig bleiben!"
 	done
 
 _Route8BattleText5::
-	text "School is fun, but"
-	line "so are #MON."
+	text "Die Schule macht"
+	line "Spaß! #MON zu"
+	cont "trainieren aber"
+	cont "auch!"
 	done
 
 _Route8EndBattleText5::
-	text "I'll"
-	line "stay with school."
+	text "OK, ich"
+	line "gehe lieber zur"
+	cont "Schule!"
 	prompt
 
 _Route8AfterBattleText5::
-	text "We're stuck here"
-	line "because of the"
-	cont "gates at SAFFRON."
+	text "Wir sitzen hier"
+	line "fest, weil"
+	cont "SAFFRONIA CITY"
+	cont "abgeriegelt wird."
 	done
 
 _Route8BattleText6::
-	text "MEOWTH is so cute,"
-	line "meow, meow, meow!"
+	text "MAUZI ist so süß!"
+	line "Miau, miauz!"
 	done
 
 _Route8EndBattleText6::
-	text "Meow!"
+	text "Miauz!"
 	prompt
 
 _Route8AfterBattleText6::
-	text "I think PIDGEY"
-	line "and RATTATA"
-	cont "are cute too!"
+	text "Aber TAUBSI und"
+	line "RATTFRATZ sind"
+	cont "auch niedlich!"
 	done
 
 _Route8BattleText7::
-	text "We must look"
-	line "silly standing"
-	cont "here like this!"
+	text "Es muß ziemlich"
+	line "blöd aussehen,"
+	cont "wie wir hier"
+	cont "herumstehen!"
 	done
 
 _Route8EndBattleText7::
-	text "Look what"
-	line "you did!"
+	text "Schau, was"
+	line "Du getan hast!"
 	prompt
 
 _Route8AfterBattleText7::
-	text "SAFFRON's gate"
-	line "keeper won't let"
-	cont "us through."
-	cont "He's so mean!"
+	text "Der Wachtposten"
+	line "von SAFFRONIA"
+	cont "CITY ist so"
+	cont "gemein! Er läßt"
+	cont "uns nicht in die"
+	cont "Stadt!"
 	done
 
 _Route8BattleText8::
-	text "I'm a rambling,"
-	line "gambling dude!"
+	text "Ich bin ein weit"
+	line "herumgekommener"
+	cont "Glücksspieler!"
 	done
 
 _Route8EndBattleText8::
-	text "Missed"
-	line "the big score!"
+	text ""
+	line "Den Jackpot habe"
+	cont "ich noch nicht"
+	cont "geknackt..."
 	prompt
 
 _Route8AfterBattleText8::
-	text "Gambling and"
-	line "#MON are like"
-	cont "eating peanuts!"
-	cont "Just can't stop!"
+	text "Glücksspiele und"
+	line "#MON haben"
+	cont "eines gemeinsam:"
+	cont "Man kann nicht"
+	cont "damit aufhören!"
 	done
 
 _Route8BattleText9::
-	text "What's a cute,"
-	line "round and fluffy"
-	cont "#MON?"
+	text "Welches #MON"
+	line "ist süß, pummelig"
+	cont "und kuschlig?"
 	done
 
 _Route8EndBattleText9::
-	text "Stop!"
+	text "Hör auf!"
 
-	para "Don't be so mean"
-	line "to my CLEFAIRY!"
+	para "Sei nicht so"
+	line "gemein zu PIEPI!"
 	prompt
 
 _Route8AfterBattleText9::
-	text "I heard that"
-	line "CLEFAIRY evolves"
-	cont "when it's exposed"
-	cont "to a MOON STONE."
+	text "Ich habe gehört,"
+	line "PIEPI entwickelt"
+	cont "sich, wenn man"
+	cont "ihm einen"
+	cont "MONDSTEIN gibt."
 	done
 
 _Route8Text10::
-	text "UNDERGROUND PATH"
-	line "CELADON CITY -"
-	cont "LAVENDER TOWN"
+	text "TUNNELPFAD"
+	line "PRISMANIA CITY -"
+	cont "LAVANDIA"
 	done

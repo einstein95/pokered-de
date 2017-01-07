@@ -1,24 +1,28 @@
 _Route15GateUpstairsText_4968c::
-	text "EXP.ALL gives"
-	line "EXP points to all"
-	cont "the #MON with"
-	cont "you, even if they"
-	cont "don't fight."
+	text "Mit dem EP-TEILER"
+	line "bekommen alle"
+	cont "#MON, die Du"
+	cont "mit Dir führst,"
+	cont "nach einem Kampf"
+	cont "EP."
 
-	para "It does, however,"
-	line "reduce the amount"
-	cont "of EXP for each"
-	cont "#MON."
+	para "Die EP werden"
+	line "nach dem Kampf"
+	cont "unter den #MON"
+	cont "aufgeteilt."
 
-	para "If you don't need"
-	line "it, you should "
-	cont "store it via PC."
+	para "Lege den"
+	line "EP-TEILER via PC"
+	cont "ab, wenn Du ihn"
+	cont "nicht benutzen"
+	cont "möchtest."
 	done
 
 _Route15GateUpstairsText_49698::
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernrohr."
 
-	para "It looks like a"
-	line "small island!"
+	para "Hmm, das sieht"
+	line "wie eine kleine"
+	cont "Insel aus!"
 	done

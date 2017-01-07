@@ -1,125 +1,140 @@
 _MtMoon3Text_49f24::
-	text "You want the"
-	line "DOME FOSSIL?"
+	text "Möchtest Du das"
+	line "DOMFOSSIL?"
 	done
 
 _MtMoon3Text_49f64::
-	text "You want the"
-	line "HELIX FOSSIL?"
+	text "Möchtest Du das"
+	line "HELIXFOSSIL?"
 	done
 
 _MtMoon3Text_49f6f::
-	text "<PLAYER> got the"
-	line "@"
+	text "<PLAYER> erhält"
+	line "das @"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
 _MtMoon3Text_49f7f::
-	text "Look, you've got"
-	line "no room for this.@"
+	text "Du kannst keinen"
+	line "Gegenstand mehr"
+	cont "tragen!@"
 	text_end
 
 _MtMoon3Text_49f85::
-	text "Hey, stop!"
+	text "Stop! Hände weg!"
 
-	para "I found these"
-	line "fossils! They're"
-	cont "both mine!"
+	para "Wer zuerst kommt,"
+	line "mahlt zuerst!"
+
+	para "Die Fossilien"
+	line "gehören MIR!"
 	done
 
 _MtMoon3Text_49f8a::
-	text "OK!"
-	line "I'll share!"
+	text "Na gut!"
+	line "Ich gebe Dir"
+	cont "eins ab!"
 	prompt
 
 _MtMoon3Text_49f8f::
-	text "We'll each take"
-	line "one!"
-	cont "No being greedy!"
+	text "Hey, nicht so"
+	line "gierig! Ich"
+	cont "sagte, ich gebe"
+	cont "Dir EINS ab!"
 	done
 
 _MtMoon3Text_49f94::
-	text "Far away, on"
-	line "CINNABAR ISLAND,"
-	cont "there's a #MON"
-	cont "LAB."
+	text "Auf der fernen"
+	line "ZINNOBERINSEL"
+	cont "gibt es ein"
+	cont "#MON-Labor."
 
-	para "They do research"
-	line "on regenerating"
-	cont "fossils."
+	para "Dort versucht"
+	line "man, aus fossilem"
+	cont "Gen-Material"
+	cont "#MON zu"
+	cont "schaffen."
 	done
 
 _MtMoon3Text_49f99::
-	text "All right. Then"
-	line "this is mine!@"
+	text "OK, dann gehört"
+	line "das hier mir!@"
 	text_end
 
 _MtMoon3BattleText2::
-	text "TEAM ROCKET will"
-	line "find the fossils,"
-	cont "revive and sell"
-	cont "them for cash!"
+	text "Wir vom TEAM"
+	line "ROCKET werden die"
+	cont "Fossilien finden,"
+	cont "die #MON"
+	cont "wiederbeleben und"
+	cont "teuer verkaufen!"
 	done
 
 _MtMoon3EndBattleText2::
-	text "Urgh!"
-	line "Now I'm mad!"
+	text "Grr! Das"
+	line "gibt es nicht!"
 	prompt
 
 _MtMoon3AfterBattleText2::
-	text "You made me mad!"
-	line "TEAM ROCKET will"
-	cont "blacklist you!"
+	text "Du machst mich"
+	line "irre! Das TEAM"
+	cont "ROCKET wird Dich"
+	cont "im Auge behalten!"
 	done
 
 _MtMoon3BattleText3::
-	text "We, TEAM ROCKET,"
-	line "are #MON"
-	cont "gangsters!"
+	text "Wir sind das"
+	line "TEAM ROCKET, die"
+	cont "#MON-Räuber!"
 	done
 
 _MtMoon3EndBattleText3::
-	text "I blew"
-	line "it!"
+	text "NEIN!"
+	line "Ich hab's"
+	cont "vermasselt!"
 	prompt
 
 _MtMoon3AfterBattleText3::
-	text "Darn it all! My"
-	line "associates won't"
-	cont "stand for this!"
+	text "Verdammt! Wie"
+	line "erkläre ich das"
+	cont "meinen Partnern?"
 	done
 
 _MtMoon3BattleText4::
-	text "We're pulling a"
-	line "big job here!"
-	cont "Get lost, kid!"
+	text "Wir drehen hier"
+	line "ein dickes Ding!"
+	cont "Mach Dich vom"
+	cont "Acker!"
 	done
 
 _MtMoon3EndBattleText4::
-	text "So, you"
-	line "are good."
+	text "Du bist"
+	line "'ne harte Nuß,"
+	cont "Kleiner!"
 	prompt
 
 _MtMoon3AfterBattleText4::
-	text "If you find a"
-	line "fossil, give it"
-	cont "to me and scram!"
+	text "Wenn Du ein Fossil"
+	line "hast, gib es her"
+	cont "und verschwinde!"
 	done
 
 _MtMoon3BattleText5::
-	text "Little kids"
-	line "should leave"
-	cont "grown-ups alone!"
+	text "Geh Erwachsenen"
+	line "nicht auf den"
+	cont "Wecker, Du"
+	cont "Nervensäge!"
 	done
 
 _MtMoon3EndBattleText5::
-	text "I'm"
-	line "steamed!"
+	text ""
+	line "Ich bin sauer!"
 	prompt
 
 _MtMoon3AfterBattleText5::
-	text "#MON lived"
-	line "here long before"
-	cont "people came."
+	text "Schon lange vor"
+	line "den Menschen"
+	cont "haben #MON"
+	cont "hier gelebt..."
 	done

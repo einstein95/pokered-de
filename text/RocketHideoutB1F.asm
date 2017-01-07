@@ -1,74 +1,80 @@
 _RocketHideout1EndBattleText6::
-	text "Why...?@"
+	text_start
+	line "Was ist passiert?@"
 	text_end
 
 _RocketHideout1BattleText2::
-	text "Who are you? How"
-	line "did you get here?"
+	text "Wie kommst Du"
+	line "hierher, Kleiner?"
 	done
 
 _RocketHideout1EndBattleText2::
-	text "Oww!"
-	line "Beaten!"
+	text "Autsch!"
+	line "Geschlagen!"
 	prompt
 
 _RocketHideout1AfterBattleTxt2::
-	text "Are you dissing"
-	line "TEAM ROCKET?"
+	text "Willst Du Dich"
+	line "mit dem TEAM"
+	cont "ROCKET anlegen?"
 	done
 
 _RocketHideout1BattleText3::
-	text "You broke into"
-	line "our operation?"
+	text "Du hast Mut, hier"
+	line "hereinzuplatzen!"
 	done
 
 _RocketHideout1EndBattleText3::
-	text "Burnt!"
+	text ""
+	line "Mist! Versagt!"
 	prompt
 
 _RocketHideout1AfterBattleTxt3::
-	text "You're not going"
-	line "to get away with"
-	cont "this, brat!"
+	text "Unsere Rache"
+	line "wird grauenvoll,"
+	cont "Du Lausebengel!"
 	done
 
 _RocketHideout1BattleText4::
-	text "Intruder alert!"
+	text "Alarm!"
+	line "Eindringlinge!"
 	done
 
 _RocketHideout1EndBattleText4::
-	text "I"
-	line "can't do it!"
+	text "Ich"
+	line "konnte ihn nicht"
+	cont "stoppen!!!"
 	prompt
 
 _RocketHideout1AfterBattleTxt4::
 	text "SILPH SCOPE?"
-	line "I don't know"
-	cont "where it is!"
+	line "Ich weiß nicht,"
+	cont "wovon Du redest!"
 	done
 
 _RocketHideout1BattleText5::
-	text "Why did you come"
-	line "here?"
+	text "Was willst Du"
+	line "überhaupt hier?"
 	done
 
 _RocketHideout1EndBattleText5::
-	text "This"
-	line "won't do!"
+	text ""
+	line "Das kann nicht"
+	cont "funktionieren!"
 	prompt
 
 _RocketHideout1AfterBattleTxt5::
-	text "OK, I'll talk!"
-	line "Take the elevator"
-	cont "to see my BOSS!"
+	text "OK, OK, ich packe"
+	line "aus! Benutze den"
+	cont "Aufzug zum BOSS!"
 	done
 
 _RocketHideout1BattleText6::
-	text "Are you lost, you"
-	line "little rat?"
+	text "Was hast Du"
+	line "hier verloren?"
 	done
 
 _RocketHideout1AfterBattleTxt6::
-	text "Uh-oh, that fight"
-	line "opened the door!"
+	text "Ups, die Tür ist"
+	line "aufgegangen!"
 	done

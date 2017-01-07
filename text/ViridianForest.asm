@@ -1,123 +1,140 @@
 _ViridianForestText1::
-	text "I came here with"
-	line "some friends!"
+	text "Meine Freunde und"
+	line "ich haben Dich"
+	cont "schon erwartet..."
 
-	para "They're out for"
-	line "#MON fights!"
+	para "Unsere #MON"
+	line "wollen kämpfen!!!"
 	done
 
 _ViridianForestBattleText1::
-	text "Hey! You have"
-	line "#MON! Come on!"
-	cont "Let's battle'em!"
+	text "Hey! Du hast auch"
+	line "#MON! Los!"
+	cont "Laß uns kämpfen!"
 	done
 
 _ViridianForestEndBattleText1::
-	text "No!"
-	line "CATERPIE can't"
-	cont "cut it!"
+	text "Ah!"
+	line "RAUPY hat es"
+	cont "nicht geschafft!"
 	prompt
 
 _ViridianFrstAfterBattleText1::
-	text "Ssh! You'll scare"
-	line "the bugs away!"
+	text "Psst! Sei leise!"
+	line "Du verjagst"
+	cont "alle Käfer..."
 	done
 
 _ViridianForestBattleText2::
-	text "Yo! You can't jam"
-	line "out if you're a"
-	cont "#MON trainer!"
+	text "Hey! Ein #MON-"
+	line "Trainer stiehlt"
+	cont "sich nicht so"
+	cont "einfach davon!!!"
 	done
 
 _ViridianForestEndBattleText2::
-	text "Huh?"
-	line "I ran out of"
-	cont "#MON!"
+	text "Oh!"
+	line "Ich habe kein"
+	cont "kampfbereites"
+	cont "#MON mehr!"
 	prompt
 
 _ViridianFrstAfterBattleText2::
-	text "Darn! I'm going"
-	line "to catch some"
-	cont "stronger ones!"
+	text "So ein Mist! Ich"
+	line "muß ein paar"
+	cont "Stärkere fangen!"
 	done
 
 _ViridianForestBattleText3::
-	text "Hey, wait up!"
-	line "What's the hurry?"
+	text "Hey, warte mal!"
+	line "Warum die Eile?"
 	done
 
 _ViridianForestEndBattleText3::
-	text "I"
-	line "give! You're good"
-	cont "at this!"
+	text "Uff!"
+	line "Du bist zu gut!"
+	cont "Ich gebe auf!"
 	prompt
 
 _ViridianFrstAfterBattleText3::
-	text "Sometimes, you"
-	line "can find stuff on"
-	cont "the ground!"
+	text "Mit ein bißchen"
+	line "Glück findet man"
+	cont "unterwegs Items!"
 
-	para "I'm looking for"
-	line "the stuff I"
-	cont "dropped!"
+	para "Ich muß hier"
+	line "irgendwo etwas"
+	cont "verloren haben..."
 	done
 
 _ViridianForestText8::
-	text "I ran out of #"
-	line "BALLs to catch"
-	cont "#MON with!"
+	text "Verdammt!"
+	line "Mir sind die"
+	cont "#BÄLLE"
+	cont "ausgegangen!"
 
-	para "You should carry"
-	line "extras!"
+	para "Wie fange ich nun"
+	line "bloß #MON?"
+
+	para "Du solltest immer"
+	line "genug #BÄLLE"
+	cont "bei Dir haben!"
 	done
 
 _ViridianForestText9::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "If you want to"
-	line "avoid battles,"
-	cont "stay away from"
-	cont "grassy areas!"
+	para "Wenn Du Kämpfe"
+	line "meiden möchtest,"
+	cont "bleibe hohem"
+	cont "Gras fern!"
 	done
 
 _ViridianForestText10::
-	text "For poison, use"
-	line "ANTIDOTE! Get it"
-	cont "at #MON MARTs!"
+	text "Bei Vergiftungen"
+	line "hat sich das"
+	cont "GEGENGIFT aus dem"
+	cont "PKMN-SUPERMARKT"
+	cont "bewährt."
 	done
 
 _ViridianForestText11::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "Contact PROF.OAK"
-	line "via PC to get"
-	cont "your #DEX"
-	cont "evaluated!"
+	para "Du kannst Deinen"
+	line "#DEX jederzeit"
+	cont "von PROF. EICH"
+	cont "via PC bewerten"
+	cont "lassen!"
 	done
 
 _ViridianForestText12::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "No stealing of"
-	line "#MON from"
-	cont "other trainers!"
-	cont "Catch only wild"
-	cont "#MON!"
+	para "Es ist verboten,"
+	line "anderen Trainern"
+	cont "#MON zu"
+	cont "stehlen! Fang nur"
+	cont "wilde #MON!"
 	done
 
 _ViridianForestText13::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "Weaken #MON"
-	line "before attempting"
-	cont "capture!"
+	para "Geschwächte"
+	line "#MON sind"
+	cont "leichter zu"
+	cont "fangen!"
 
-	para "When healthy,"
-	line "they may escape!"
+	para "Sind sie bei"
+	line "Kräften, könnten"
+	cont "sie fliehen!"
 	done
 
 _ViridianForestText14::
-	text "LEAVING"
-	line "VIRIDIAN FOREST"
-	cont "PEWTER CITY AHEAD"
+	text "AUF WIEDERSEHEN"
+	line "IM VERTANIA-WALD."
+
+	para "DER NÄCHSTE ORT"
+	line "IST MARMORIA"
+	cont "CITY."
 	done

@@ -1,32 +1,35 @@
 _Route16HouseText3::
-	text "Oh, you found my"
-	line "secret retreat!"
+	text "Du hast meinen"
+	line "geheimen Unter-"
+	cont "schlupf gefunden!"
 
-	para "Please don't tell"
-	line "anyone I'm here."
-	cont "I'll make it up"
-	cont "to you with this!"
+	para "Bitte erzähle"
+	line "niemandem davon."
+	cont "Du bekommst auch"
+	cont "etwas von mir!"
 	prompt
 
 _ReceivedHM02Text::
-	text "<PLAYER> received"
-	line "HM02!@"
+	text "<PLAYER> erhält"
+	line "VM02!@"
 	text_end
 
 _HM02ExplanationText::
-	text "HM02 is FLY."
-	line "It will take you"
-	cont "back to any town."
+	text "VM02 ist FLIEGEN."
+	line "Damit kannst Du"
+	cont "in jede Stadt"
+	cont "zurückfliegen."
 
-	para "Put it to good"
-	line "use!"
+	para "Sie wird Dir von"
+	line "Nutzen sein!"
 	done
 
 _HM02NoRoomText::
-	text "You don't have any"
-	line "room for this."
+	text "Du hast keinen"
+	line "Platz mehr, um"
+	cont "sie mitzunehmen!"
 	done
 
 _Route16HouseText_1e652::
-	text "FEAROW: Kyueen!"
+	text "IBITAK: Ibitak!"
 	done

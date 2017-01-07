@@ -76,8 +76,8 @@ DontAbandonLearning:
 AbandonLearning:
 	ld hl, AbandonLearningText
 	call PrintText
-	hlcoord 14, 7
-	lb bc, 8, 15
+	hlcoord 13, 7
+	lb bc, 8, 14
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu
@@ -99,8 +99,8 @@ TryingToLearn:
 	push hl
 	ld hl, TryingToLearnText
 	call PrintText
-	hlcoord 14, 7
-	lb bc, 8, 15
+	hlcoord 13, 7
+	lb bc, 8, 14
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu

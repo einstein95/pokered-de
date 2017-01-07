@@ -1,7 +1,9 @@
 _Route15GateText1::
-	text "Are you working"
-	line "on a #DEX?"
+	text "Arbeitest Du an"
+	line "einem #DEX?"
 
-	para "PROF.OAK's AIDE"
-	line "came by here."
+	para "PROF. EICHS"
+	line "Gehilfe ist"
+	cont "kürzlich hier"
+	cont "vorbeigekommen!"
 	done

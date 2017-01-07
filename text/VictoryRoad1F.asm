@@ -1,31 +1,33 @@
 _VictoryRoad1BattleText1::
-	text "I wonder if you"
-	line "are good enough"
-	cont "for me!"
+	text "Glaubst Du etwa,"
+	line "Du kannst es mit"
+	cont "mir aufnehmen?"
 	done
 
 _VictoryRoad1EndBattleText1::
-	text "I"
-	line "lost out!"
+	text "Ich"
+	line "bin raus!"
 	prompt
 
 _VictoryRoad1AfterBattleText1::
-	text "I never wanted to"
-	line "lose to anybody!"
+	text "Dabei wollte ich"
+	line "nie verlieren!"
 	done
 
 _VictoryRoad1BattleText2::
-	text "I can see you're"
-	line "good! Let me see"
-	cont "exactly how good!"
+	text "Ich glaube, Du"
+	line "bist gut! Gut"
+	cont "genug, um mich"
+	cont "zu schlagen?"
 	done
 
 _VictoryRoad1EndBattleText2::
-	text "I"
-	line "had a chance..."
+	text "Immerhin"
+	line "hatte ich eine"
+	cont "Chance!"
 	prompt
 
 _VictoryRoad1AfterBattleText2::
-	text "I concede, you're"
-	line "better than me!"
+	text "Ich muß gestehen,"
+	line "Du bist besser!"
 	done

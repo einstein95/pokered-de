@@ -1,4 +1,5 @@
 _RocketElevatorText_4578b::
-	text "It appears to"
-	line "need a key.@"
+	text "Hmm, hier"
+	line "braucht man einen"
+	cont "Schlüssel!@"
 	text_end

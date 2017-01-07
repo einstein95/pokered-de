@@ -14,12 +14,15 @@ EndOfBattle:
 	ld a, [wBattleResult]
 	cp $1
 	ld de, YouWinText
-	jr c, .placeWinOrLoseString
+	jr c, .placeWinOrLoseStringCoord
 	ld de, YouLoseText
-	jr z, .placeWinOrLoseString
+	jr z, .placeWinOrLoseStringCoord
 	ld de, DrawText
-.placeWinOrLoseString
+	hlcoord 4, 8
+	jr .placeWinOrLoseString
+.placeWinOrLoseStringCoord
 	hlcoord 6, 8
+.placeWinOrLoseString
 	call PlaceString
 	ld c, 200
 	call DelayFrames
@@ -75,13 +78,13 @@ EndOfBattle:
 	ret
 
 YouWinText:
-	db "YOU WIN@"
+	db "GEWONNEN@"
 
 YouLoseText:
-	db "YOU LOSE@"
+	db "VERLOREN@"
 
 DrawText:
-	db "  DRAW@"
+	db "UNENTSCHIEDEN@"
 
 PickUpPayDayMoneyText:
 	text_far _PickUpPayDayMoneyText

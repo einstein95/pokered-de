@@ -1,69 +1,76 @@
 _SSAnne6Text1::
-	text "You, mon petit!"
-	line "We're busy here!"
-	cont "Out of the way!"
+	text "Aus dem Weg, Du"
+	line "Leichtmatrose!"
+
+	para "Wir sind schwer"
+	line "beschäftigt!"
 	done
 
 _SSAnne6Text2::
-	text "I saw an odd ball"
-	line "in the trash."
+	text "Ich habe einen"
+	line "seltsamen Ball im"
+	cont "Müll gesehen..."
 	done
 
 _SSAnne6Text3::
-	text "I'm so busy I'm"
-	line "getting dizzy!"
+	text "Es gibt zuviel zu"
+	line "tun, nie kann ich"
+	cont "mich ausruhen!"
 	done
 
 _SSAnne6Text4::
-	text "Hum-de-hum-de-"
-	line "ho..."
+	text "Was hab ich nur"
+	line "verbrochen?"
 
-	para "I peel spuds"
-	line "every day!"
-	cont "Hum-hum..."
+	para "Ich muß immer"
+	line "nur Kartoffeln"
+	cont "schälen..."
 	done
 
 _SSAnne6Text5::
-	text "Did you hear about"
-	line "SNORLAX?"
+	text "Hast Du schon von"
+	line "RELAXO gehört?"
 
-	para "All it does is"
-	line "eat and sleep!"
+	para "Es schläft und"
+	line "frißt den ganzen"
+	cont "Tag!"
 	done
 
 _SSAnne6Text6::
-	text "Snivel...Sniff..."
+	text "Schnief... "
+	line "...Schnief..."
 
-	para "I only get to"
-	line "peel onions..."
-	cont "Snivel..."
+	para "Immer muß ich"
+	line "die Zwiebeln"
+	cont "schälen..."
 	done
 
 _SSAnne6Text_61807::
-	text "Er-hem! Indeed I"
-	line "am le CHEF!"
+	text "Ich bin der Chef"
+	line "de cuisine! "
 
-	para "Le main course is"
+	para "Der Hauptgang ist"
 	prompt
 
 _SSAnne6Text_6180c::
-	text "Salmon du Salad!"
+	text "Lachs-Filet!"
 
-	para "Les guests may"
-	line "gripe it's fish"
-	cont "again, however!"
+	para "Eine kulinarische"
+	line "Köstlichkeit"
+	cont "sondergleichen!"
 	done
 
 _SSAnne6Text_61811::
-	text "Eels au Barbecue!"
+	text "Currywurst!"
 
-	para "Les guests will"
-	line "mutiny, I fear."
+	para "Wie kommt eine"
+	line "solche Banalität"
+	cont "auf meine Karte?"
 	done
 
 _SSAnne6Text_61816::
-	text "Prime Beef Steak!"
+	text "Muschel-Ragout!"
 
-	para "But, have I enough"
-	line "fillets du beef?"
+	para "Die Gäste werden"
+	line "es lieben!"
 	done

@@ -13,8 +13,8 @@ AskName:
 	call GetMonName
 	ld hl, DoYouWantToNicknameText
 	call PrintText
-	hlcoord 14, 7
-	lb bc, 8, 15
+	hlcoord 13, 7
+	lb bc, 8, 14
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
@@ -324,12 +324,15 @@ DisplayNamingScreen:
 	jp EraseMenuCursor
 
 LoadEDTile:
-	ld de, ED_Tile
-	ld hl, vFont tile $70
-	ld bc, (ED_TileEnd - ED_Tile) / $8
+	call DisableLCD
+	ld de, vFont tile $70
+	ld hl, ED_Tile
+	ld bc, (ED_TileEnd - ED_Tile)
 	; to fix the graphical bug on poor emulators
 	;lb bc, BANK(ED_Tile), (ED_TileEnd - ED_Tile) / $8
-	jp CopyVideoDataDouble
+	ld a,$01
+	call FarCopyDataDouble
+	jp EnableLCD
 
 ED_Tile:
 	INCBIN "gfx/font/ED.1bpp"
@@ -467,9 +470,6 @@ PrintNamingText:
 	call GetMonName
 	hlcoord 4, 1
 	call PlaceString
-	ld hl, $1
-	add hl, bc
-	ld [hl], "の" ; leftover from Japanese version; blank tile $c9 in English
 	hlcoord 1, 3
 	ld de, NicknameTextString
 	jr .placeString
@@ -482,13 +482,13 @@ PrintNamingText:
 	jp PlaceString
 
 YourTextString:
-	db "YOUR @"
+	db "DEIN @"
 
 RivalsTextString:
-	db "RIVAL's @"
+	db "GEGNER-@"
 
 NameTextString:
 	db "NAME?@"
 
 NicknameTextString:
-	db "NICKNAME?@"
+	db "ALIAS?@"

@@ -1,21 +1,25 @@
 _SSAnne1Text1::
-	text "Bonjour!"
-	line "I am le waiter on"
-	cont "this ship!"
+	text "Moin, moin, Du"
+	line "Landradde! Ich"
+	cont "bin der Steward"
+	cont "auf diesem"
+	cont "Kahn!"
 
-	para "I will be happy"
-	line "to serve you any-"
-	cont "thing you please!"
+	para "Ruf mich einfach,"
+	line "wenn Du einen"
+	cont "Wunsch hast!"
 
-	para "Ah! Le strong"
-	line "silent type!"
+	para "Verdammich,"
+	line "gesprächig bist"
+	cont "Du aber nicht!"
 	done
 
 _SSAnne1Text2::
-	text "The passengers"
-	line "are restless!"
+	text "Viele Passagiere"
+	line "sind hyperaktiv!"
 
-	para "You might be"
-	line "challenged by the"
-	cont "more bored ones!"
+	para "Sie langweilen"
+	line "sich und sehnen"
+	cont "sich nach einem"
+	cont "Kampf!"
 	done

@@ -22,10 +22,10 @@ VermilionGym_Script:
 	jp LoadGymLeaderAndCityName
 
 .CityName:
-	db "VERMILION CITY@"
+	db "ORANIA CITY@"
 
 .LeaderName:
-	db "LT.SURGE@"
+	db "MAJOR BOB@"
 
 VermilionGymSetDoorTile:
 	CheckEvent EVENT_2ND_LOCK_OPENED

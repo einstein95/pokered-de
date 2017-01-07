@@ -1,11 +1,12 @@
 _SafariZoneCenterText2::
-	text "REST HOUSE"
+	text "RASTHAUS"
 	done
 
 _SafariZoneCenterText3::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "Press the START"
-	line "Button to check"
-	cont "remaining time!"
+	para "Drücke START, um"
+	line "nachzusehen,"
+	cont "wieviel Zeit Du"
+	cont "noch übrig hast!"
 	done

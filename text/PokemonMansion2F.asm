@@ -1,47 +1,56 @@
 _Mansion2BattleText1::
-	text "I can't get out!"
-	line "This old place is"
-	cont "one big puzzle!"
+	text "Ich finde keinen"
+	line "Weg nach draußen!"
+	cont "Der reinste"
+	cont "Irrgarten!"
 	done
 
 _Mansion2EndBattleText1::
-	text "Oh no!"
-	line "My bag of loot!"
+	text "Oh nein!"
+	line "Meine Beute!"
 	prompt
 
 _Mansion2AfterBattleText1::
-	text "Switches open and"
-	line "close alternating"
-	cont "sets of doors!"
+	text "Die Türen kannst"
+	line "Du mittels"
+	cont "Schalter"
+	cont "schließen oder"
+	cont "öffnen!"
 	done
 
 _Mansion2Text3::
-	text "Diary: July 5"
-	line "Guyana,"
-	cont "South America"
+	text "TAGEBUCH:"
+	line "5. JULI"
+	cont "Der Dschungel"
+	cont "im Niemandsland."
 
-	para "A new #MON was"
-	line "discovered deep"
-	cont "in the jungle."
+	para "Wir haben tief"
+	line "im Dschungel ein"
+	cont "völlig neues"
+	cont "#MON gefunden."
 	done
 
 _Mansion2Text4::
-	text "Diary: July 10"
-	line "We christened the"
-	cont "newly discovered"
-	cont "#MON, MEW."
+	text "TAGEBUCH: "
+	line "10. JULI"
+
+	para "Wir nennen das"
+	line "neuentdeckte"
+	cont "#MON MEW."
 	done
 
 _Mansion2Text_520c2::
-	text "A secret switch!"
+	text "Ein versteckter"
+	line "Schalter!"
 
-	para "Press it?"
+	para "Schalter drücken?"
 	done
 
 _Mansion2Text_520c7::
-	text "Who wouldn't?"
+	text "Wer würde es"
+	line "nicht tun?"
 	prompt
 
 _Mansion2Text_520cc::
-	text "Not quite yet!"
+	text "Lieber nicht!"
 	done

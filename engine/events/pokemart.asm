@@ -84,8 +84,8 @@ DisplayPokemartDialogue_::
 	ld hl, PokemartTellSellPriceText
 	lb bc, 14, 1 ; location that PrintText always prints to, this is useless
 	call PrintText
-	hlcoord 14, 7
-	lb bc, 8, 15
+	hlcoord 13, 7
+	lb bc, 8, 14
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu
@@ -162,8 +162,8 @@ DisplayPokemartDialogue_::
 	call CopyToStringBuffer
 	ld hl, PokemartTellBuyPriceText
 	call PrintText
-	hlcoord 14, 7
-	lb bc, 8, 15
+	hlcoord 13, 7
+	lb bc, 8, 14
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu

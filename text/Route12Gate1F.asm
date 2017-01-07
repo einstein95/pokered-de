@@ -1,4 +1,5 @@
 _Route12GateText1::
-	text "There's a lookout"
-	line "spot upstairs."
+	text "Oberhalb der"
+	line "Treppe ist ein"
+	cont "Ausguck!"
 	done

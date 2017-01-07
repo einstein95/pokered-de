@@ -1,33 +1,36 @@
 _SafariZoneNorthText3::
-	text "REST HOUSE"
+	text "RASTHAUS"
 	done
 
 _SafariZoneNorthText4::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "The SECRET HOUSE"
-	line "is still ahead!"
+	para "Bis zum GEHEIMEN"
+	line "HAUS ist es nicht"
+	cont "mehr weit weg!"
 	done
 
 _SafariZoneNorthText5::
-	text "AREA 2"
+	text "AREAL 2"
 	done
 
 _SafariZoneNorthText6::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "#MON hide in"
-	line "tall grass!"
+	para "#MON"
+	line "verstecken sich"
+	cont "in hohem Gras!"
 
-	para "Zigzag through"
-	line "grassy areas to"
-	cont "flush them out."
+	para "Laufe durch das"
+	line "hohe Gras und"
+	cont "scheuche sie auf!"
 	done
 
 _SafariZoneNorthText7::
-	text "TRAINER TIPS"
+	text "TIPS FÜR TRAINER"
 
-	para "Win a free HM for"
-	line "finding the"
-	cont "SECRET HOUSE!"
+	para "Finde das"
+	line "VERSTECKTE HAUS."
+	cont "Dann gewinnst Du"
+	cont "eine VM!"
 	done

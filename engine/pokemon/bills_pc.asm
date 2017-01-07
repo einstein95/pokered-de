@@ -12,17 +12,17 @@ DisplayPCMainMenu::
 	jr nz, .leaguePCAvailable
 	hlcoord 0, 0
 	ld b, 8
-	ld c, 14
+	ld c, 15
 	jr .next
 .noOaksPC
 	hlcoord 0, 0
 	ld b, 6
-	ld c, 14
+	ld c, 15
 	jr .next
 .leaguePCAvailable
 	hlcoord 0, 0
 	ld b, 10
-	ld c, 14
+	ld c, 15
 .next
 	call TextBoxBorder
 	call UpdateSprites
@@ -39,11 +39,11 @@ DisplayPCMainMenu::
 .next2
 	call PlaceString
 	hlcoord 2, 4
-	ld de, wPlayerName
+	ld de, PlayersPCText
 	call PlaceString
 	ld l, c
 	ld h, b
-	ld de, PlayersPCText
+	ld de, wPlayerName
 	call PlaceString
 	CheckEvent EVENT_GOT_POKEDEX
 	jr z, .noOaksPC2
@@ -85,12 +85,12 @@ DisplayPCMainMenu::
 	ldh [hAutoBGTransferEnabled], a
 	ret
 
-SomeonesPCText:   db "SOMEONE's PC@"
-BillsPCText:      db "BILL's PC@"
-PlayersPCText:    db "'s PC@"
-OaksPCText:       db "PROF.OAK's PC@"
-PKMNLeaguePCText: db "<PKMN>LEAGUE@"
-LogOffPCText:     db "LOG OFF@"
+SomeonesPCText:   db "JEMANDES PC@"
+BillsPCText:      db "BILLS PC@"
+PlayersPCText:    db "PC VON @"
+OaksPCText:       db "EICHS PC@"
+PKMNLeaguePCText: db "<PKMN>-LIGA@"
+LogOffPCText:     db "AUSLOGGEN@"
 
 BillsPC_::
 	ld hl, wd730
@@ -121,7 +121,7 @@ BillsPCMenu:
 	call LoadScreenTilesFromBuffer2DisableBGTransfer
 	hlcoord 0, 0
 	ld b, 10
-	ld c, 12
+	ld c, 14
 	call TextBoxBorder
 	hlcoord 2, 2
 	ld de, BillsPCMenuText
@@ -339,15 +339,15 @@ DisplayMonListMenu:
 	ret
 
 BillsPCMenuText:
-	db   "WITHDRAW <PKMN>"
-	next "DEPOSIT <PKMN>"
-	next "RELEASE <PKMN>"
-	next "CHANGE BOX"
-	next "SEE YA!"
+	db   "<PKMN> MITNEHMEN"
+	next "<PKMN> ABLEGEN"
+	next "<PKMN> FREILASSEN"
+	next "BOX WECHSELN"
+	next "TSCHÜSS!"
 	db "@"
 
 BoxNoPCText:
-	db "BOX No.@"
+	db "BOX Nr.@"
 
 KnowsHMMove::
 ; returns whether mon with party index [wWhichPokemon] knows an HM move
@@ -380,9 +380,9 @@ HMMoveArray:
 INCLUDE "data/moves/hm_moves.asm"
 
 DisplayDepositWithdrawMenu:
-	hlcoord 9, 10
+	hlcoord 8, 10
 	ld b, 6
-	ld c, 9
+	ld c, 10
 	call TextBoxBorder
 	ld a, [wParentMenuItem]
 	and a ; was the Deposit or Withdraw item selected in the parent menu?
@@ -390,15 +390,15 @@ DisplayDepositWithdrawMenu:
 	jr nz, .next
 	ld de, WithdrawPCText
 .next
-	hlcoord 11, 12
+	hlcoord 10, 12
 	call PlaceString
-	hlcoord 11, 14
+	hlcoord 10, 14
 	ld de, StatsCancelPCText
 	call PlaceString
 	ld hl, wTopMenuItemY
 	ld a, 12
 	ld [hli], a ; wTopMenuItemY
-	ld a, 10
+	ld a, 9
 	ld [hli], a ; wTopMenuItemX
 	xor a
 	ld [hli], a ; wCurrentMenuItem
@@ -446,11 +446,11 @@ DisplayDepositWithdrawMenu:
 	call LoadGBPal
 	jr .loop
 
-DepositPCText:  db "DEPOSIT@"
-WithdrawPCText: db "WITHDRAW@"
+DepositPCText:  db "ABLEGEN@"
+WithdrawPCText: db "MITNEHMEN@"
 StatsCancelPCText:
-	db   "STATS"
-	next "CANCEL@"
+	db   "STATUS"
+	next "ZURÜCK@"
 
 SwitchOnText:
 	text_far _SwitchOnText

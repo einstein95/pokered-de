@@ -1,133 +1,152 @@
 _Route11BattleText1::
-	text "Win, lose or draw!"
+	text "Versuche Dein"
+	line "Glück gegen mich!"
 	done
 
 _Route11EndBattleText1::
-	text "Atcha!"
-	line "Didn't go my way!"
+	text ""
+	line "Das Glück hat"
+	cont "mich verlassen!"
 	prompt
 
 _Route11AfterBattleText1::
-	text "#MON is life!"
-	line "And to live is to"
-	cont "gamble!"
+	text "Das ganze"
+	line "Leben ist ein"
+	cont "Glücksspiel!"
 	done
 
 _Route11BattleText2::
-	text "Competition! I"
-	line "can't get enough!"
+	text "Wettkämpfe! Ich"
+	line "kann ihnen nicht"
+	cont "widerstehen!"
 	done
 
 _Route11EndBattleText2::
-	text "I had"
-	line "a chance!"
+	text "Immerhin"
+	line "hatte ich eine"
+	cont "Chance!"
 	prompt
 
 _Route11AfterBattleText2::
-	text "You can't be a"
-	line "coward in the"
-	cont "world of #MON!"
+	text "Feiglinge haben"
+	line "in der Welt der"
+	cont "#MON keine"
+	cont "Chance!"
 	done
 
 _Route11BattleText3::
-	text "Let's go, but"
-	line "don't cheat!"
+	text "Hast Du Lust, mit"
+	line "mir zu kämpfen?"
 	done
 
 _Route11EndBattleText3::
-	text "Huh?"
-	line "That's not right!"
+	text "Hä?"
+	line "Das ist gemein!"
 	prompt
 
 _Route11AfterBattleText3::
-	text "I did my best! I"
-	line "have no regrets!"
+	text "Immerhin habe ich"
+	line "es versucht!"
+	cont "Ich schäme mich"
+	cont "nicht!"
 	done
 
 _Route11BattleText4::
-	text "Careful!"
-	line "I'm laying down"
-	cont "some cables!"
+	text "Vorsicht!"
+	line "Ich verlege hier"
+	cont "gerade Kabel!"
 	done
 
 _Route11EndBattleText4::
-	text "That"
-	line "was electric!"
+	text ""
+	line "Das war ein"
+	cont "Stromschlag!"
 	prompt
 
 _Route11AfterBattleText4::
-	text "Spread the word"
-	line "to save energy!"
+	text "Schone die"
+	line "Umwelt und spare"
+	cont "Energie!"
 	done
 
 _Route11BattleText5::
-	text "I just became a"
-	line "trainer! But, I"
-	cont "think I can win!"
+	text "Ich habe gerade"
+	line "erst angefangen,"
+	cont "#MON zu"
+	cont "trainieren!"
 	done
 
 _Route11EndBattleText5::
-	text "My"
-	line "#MON couldn't!"
+	text "Mist!"
+	line "Ich hasse"
+	cont "schwache #MON!"
 	prompt
 
 _Route11AfterBattleText5::
-	text "What do you want?"
-	line "Leave me alone!"
+	text "Was willst Du"
+	line "noch? Laß mich"
+	cont "endlich allein!"
 	done
 
 _Route11BattleText6::
-	text "Fwahaha! I have"
-	line "never lost!"
+	text "Haha! Bisher habe"
+	line "ich noch nie"
+	cont "verloren!"
 	done
 
 _Route11EndBattleText6::
-	text "My"
-	line "first loss!"
+	text "Es gibt"
+	line "immer ein erstes"
+	cont "Mal..."
 	prompt
 
 _Route11AfterBattleText6::
-	text "Luck of the draw!"
-	line "Just luck!"
+	text "Das war purer"
+	line "Zufall! Nichts"
+	cont "als Glück!"
 	done
 
 _Route11BattleText7::
-	text "I have never won"
-	line "before..."
+	text "Ich habe noch nie"
+	line "gewonnen..."
 	done
 
 _Route11EndBattleText7::
-	text "I saw"
-	line "this coming..."
+	text "Das habe"
+	line "ich kommen sehen!"
 	prompt
 
 _Route11AfterBattleText7::
-	text "It's just luck."
-	line "Luck of the draw."
+	text "Das war nichts"
+	line "als Glück."
+	cont "Purer Zufall!"
 	done
 
 _Route11BattleText8::
-	text "I'm the best in"
-	line "my class!"
+	text "In meiner Klasse"
+	line "bin ich der"
+	cont "Beste!"
 	done
 
 _Route11EndBattleText8::
-	text "Darn!"
-	line "I need to make my"
-	cont "#MON stronger!"
+	text "Ich muß"
+	line "meine #MON"
+	cont "mehr trainieren!"
 	prompt
 
 _Route11AfterBattleText8::
-	text "There's a fat"
-	line "#MON that"
-	cont "comes down from"
-	cont "the mountains."
+	text "Aus den Bergen"
+	line "steigt manchmal"
+	cont "ein dickes"
+	cont "#MON herab."
 
-	para "It's strong if"
-	line "you can get it."
+	para "Es ist sehr"
+	line "stark! Versuche"
+	cont "es zu fangen!"
 	done
 
 _Route11BattleText9::
-	text "Watch out for"
-	line "live wires!"
+	text "Nimm Dich vor"
+	line "Hochspannung"
+	cont "in acht!"
 	done

@@ -14,8 +14,8 @@ Func_35f4::
 InitYesNoTextBoxParameters::
 	xor a ; YES_NO_MENU
 	ld [wTwoOptionMenuID], a
-	hlcoord 14, 7
-	lb bc, 8, 15
+	hlcoord 13, 7
+	lb bc, 8, 14
 	ret
 
 YesNoChoicePokeCenter::

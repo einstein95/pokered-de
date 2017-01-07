@@ -1,26 +1,29 @@
 _Route16GateUpstairsText_49820::
-	text "I'm going for a"
-	line "ride with my girl"
-	cont "friend!"
+	text "Ich mache mit"
+	line "meiner Freundin"
+	cont "einen Ausflug!"
 	done
 
 _Route16GateUpstairsText_4982f::
-	text "We're going"
-	line "riding together!"
+	text "Wir werden mit"
+	line "dem Rad fahren!"
 	done
 
 _Route16GateUpstairsText_4983b::
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernrohr."
 
-	para "It's CELADON DEPT."
-	line "STORE!"
+	para "Du siehst das"
+	line "Einkaufszentrum"
+	cont "von PRISMANIA"
+	cont "CITY!"
 	done
 
 _Route16GateUpstairsText_49847::
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernrohr."
 
-	para "There's a long"
-	line "path over water!"
+	para "Dort führt ein"
+	line "langer Weg über"
+	cont "das Wasser!"
 	done

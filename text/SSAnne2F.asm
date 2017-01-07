@@ -1,63 +1,78 @@
 _SSAnne2Text1::
-	text "This ship, she is"
-	line "a luxury liner"
-	cont "for trainers!"
+	text "Dieses luxuriöse"
+	line "Traumschiff fährt"
+	cont "exklusiv für"
+	cont "Trainer zur See!"
 
-	para "At every port, we"
-	line "hold parties with"
-	cont "invited trainers!"
+	para "In jedem Hafen"
+	line "besuchen uns"
+	cont "ausschließlich"
+	cont "geladene Trainer!"
 	done
 
 _SSAnneRivalBeforeBattleText::
-	text "<RIVAL>: Bonjour!"
+	text "<RIVAL>: Sieh an!"
 	line "<PLAYER>!"
 
-	para "Imagine seeing"
-	line "you here!"
+	para "Ich wußte, ich"
+	line "würde Dich hier"
+	cont "treffen!"
 
-	para "<PLAYER>, were you"
-	line "really invited?"
+	para "<PLAYER>, hat man"
+	line "Dich tatsächlich"
+	cont "eingeladen?"
 
-	para "So how's your"
-	line "#DEX coming?"
+	para "Wie kommst Du"
+	line "mit Deinem"
+	cont "#DEX voran?"
 
-	para "I already caught"
-	line "40 kinds, pal!"
+	para "Ich habe bereits"
+	line "40 verschiedene"
+	cont "#MON gefangen!"
 
-	para "Different kinds"
-	line "are everywhere!"
+	para "Es gibt eine"
+	line "riesige Vielfalt"
+	cont "an #MON!"
 
-	para "Crawl around in"
-	line "grassy areas!"
+	para "Versuch Dein"
+	line "Glück in hohem"
+	cont "Gras!"
 	done
 
 _SSAnneRivalDefeatedText::
-	text "Humph!"
+	text "Mist!"
 
-	para "At least you're"
-	line "raising your"
-	cont "#MON!"
+	para "Naja, wenigstens"
+	line "trainierst Du"
+	cont "Deine #MON!"
 	prompt
 
 _SSAnneRivalWonText::
-	text "<PLAYER>! What are"
-	line "you, seasick?"
+	text "<PLAYER>! Bist Du"
+	line "etwa seekrank?"
 
-	para "You should shape"
-	line "up, pal!"
+	para "Du solltest Dich"
+	line "in Form bringen, "
+	cont "Kumpel!"
 	prompt
 
 _SSAnneRivalCaptainText::
-	text "<RIVAL>: I heard"
-	line "there was a CUT"
-	cont "master on board."
+	text "<RIVAL>: Es soll"
+	line "angeblich ein"
+	cont "großer Meister im"
+	cont "Umgang mit dem"
+	cont "ZERSCHNEIDER an"
+	cont "Bord sein."
 
-	para "But, he was just a"
-	line "seasick, old man!"
+	para "Aber da war nur"
+	line "ein seekranker"
+	cont "alter Mann!"
 
-	para "But, CUT itself is"
-	line "really useful!"
+	para "Der ZERSCHNEIDER"
+	line "ist äußerst"
+	cont "nützlich!"
 
-	para "You should go see"
-	line "him! Smell ya!"
+	para "Du solltest den"
+	line "alten Mann mal"
+	cont "besuchen! Ciao!"
 	done

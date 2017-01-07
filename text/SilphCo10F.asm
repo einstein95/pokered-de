@@ -1,42 +1,48 @@
 _SilphCo10Text_5a1d3::
-	text "Waaaaa!"
-	cont "I'm scared!"
+	text "Hilfe!"
+	line "Ich habe Angst!"
 	done
 
 _SilphCo10Text_5a1d8::
-	text "Please keep quiet"
-	line "about my crying!"
+	text "Verrate bitte"
+	line "niemandem, daß"
+	cont "ich geweint habe!"
 	done
 
 _SilphCo10BattleText1::
-	text "Welcome to the"
-	line "10F! So good of"
-	cont "you to join me!"
+	text "Willkommen im"
+	line "9. Stock! Es ist"
+	cont "nett, daß Du mal"
+	cont "vorbeischaust!"
 	done
 
 _SilphCo10EndBattleText1::
-	text "I'm"
-	line "stunned!"
+	text "Ich bin"
+	line "geschockt!"
 	prompt
 
 _SilphCo10AfterBattleText1::
-	text "Nice try, but the"
-	line "boardroom is up"
-	cont "one more floor!"
+	text "Netter Versuch!"
+	line "Der Sitzungssaal"
+	cont "befindet sich"
+	cont "aber noch ein"
+	cont "Stockwerk höher!"
 	done
 
 _SilphCo10BattleText2::
-	text "Enough of your"
-	line "silly games!"
+	text "Genug von Deinen"
+	line "dummen Spielchen!"
 	done
 
 _SilphCo10EndBattleText2::
-	text "No"
-	line "continues left!"
+	text "Meine"
+	line "Reserven sind"
+	cont "erschöpft!"
 	prompt
 
 _SilphCo10AfterBattleText2::
-	text "Are you satisfied"
-	line "with beating me?"
-	cont "Then go on home!"
+	text "Freut es Dich,"
+	line "mich besiegt zu"
+	cont "haben? Mann, hau"
+	cont "endlich ab!"
 	done

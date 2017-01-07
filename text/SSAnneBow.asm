@@ -1,52 +1,60 @@
 _SSAnne5Text1::
-	text "The party's over."
-	line "The ship will be"
-	cont "departing soon."
+	text "Sperrstunde! Die"
+	line "Party ist vorbei!"
+
+	para "Das Schiff sticht"
+	line "bald in See!"
 	done
 
 _SSAnne5Text2::
-	text "Scrubbing decks"
-	line "is hard work!"
+	text "Puh! Ich werde"
+	line "das Deck wohl nie"
+	cont "sauber bekommen!"
 	done
 
 _SSAnne5Text3::
-	text "Urf. I feel ill."
+	text "Brrr, ich fühle"
+	line "mich elend..."
 
-	para "I stepped out to"
-	line "get some air."
+	para "An der frischen"
+	line "Luft fühle ich"
+	cont "mich besser..."
 	done
 
 _SSAnne5BattleText1::
-	text "Hey matey!"
+	text "Hey!"
 
-	para "Let's do a little"
-	line "jig!"
+	para "Wie wär's mit"
+	line "einem Tänzchen?"
 	done
 
 _SSAnne5EndBattleText1::
-	text "You're"
-	line "impressive!"
+	text "Ich bin"
+	line "beeindruckt!"
 	prompt
 
 _SSAnne5AfterBattleText1::
-	text "How many kinds of"
-	line "#MON do you"
-	cont "think there are?"
+	text "Hast Du eine"
+	line "Ahnung, wie viele"
+	cont "unterschiedliche"
+	cont "#MON es gibt?"
 	done
 
 _SSAnne5BattleText2::
-	text "Ahoy there!"
-	line "Are you seasick?"
+	text "Ahoi, Seemann!"
+	line "Bist Du seekrank?"
 	done
 
 _SSAnne5EndBattleText2::
-	text "I was"
-	line "just careless!"
+	text "Du hast"
+	line "Glück gehabt!"
 	prompt
 
 _SSAnne5AfterBattleText2::
-	text "My Pa said there"
-	line "are 100 kinds of"
-	cont "#MON. I think"
-	cont "there are more."
+	text "Mein Vater sagt,"
+	line "es gäbe 100"
+	cont "verschiedene "
+	cont "#MON. Ich"
+	cont "denke, es gibt"
+	cont "mehr..."
 	done
