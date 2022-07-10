@@ -1049,14 +1049,13 @@ wPartyMenuBlkPacket:: ds $30
 NEXTU
 	ds 29
 
+; storage buffer for various strings
+wStringBuffer::  ds 19
 NEXTU
 	ds 29
 
-; storage buffer for various strings
-wStringBuffer::
 ; the total amount of exp a mon gained
-wExpAmountGained::
-wcf4b::  dw
+wExpAmountGained:: dw
 
 wGainBoostedExp:: db
 ENDU
