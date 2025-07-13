@@ -62,7 +62,7 @@ _ItemUseBallText06::
 _SurfingGotOnText::
 	text "<PLAYER> steigt"
 	line "auf @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 	prompt
 
@@ -72,7 +72,7 @@ _SurfingNoPlaceToGetOffText::
 	prompt
 
 _VitaminStatRoseText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "s"
 	line "@"
 	text_ram wStringBuffer
@@ -196,7 +196,7 @@ _MonCannotLearnMachineMoveText::
 	text_start
 	line "paßt nicht zu"
 	cont "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "."
 
 	para "Es kann"
@@ -241,7 +241,7 @@ _NoCyclingAllowedHereText::
 _NoSurfingHereText::
 	text "Hier kann nicht"
 	line "auf @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	cont "gesurft werden!"
 	prompt

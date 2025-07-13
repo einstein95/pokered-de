@@ -1,4 +1,4 @@
-_Route11GateText1::
+_Route11Gate1FGuardText::
 	text "Je mehr #MON"
 	line "man fängt, desto"
 	cont "schwieriger wird"

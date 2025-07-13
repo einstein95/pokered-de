@@ -1,4 +1,4 @@
-_SaffronHouse1Text1::
+_SaffronPidgeyHouseBrunetteGirlText::
 	text "...vielen Dank"
 	line "für Deinen Brief!"
 	cont "Bis bald..."
@@ -7,18 +7,18 @@ _SaffronHouse1Text1::
 	line "Brief nicht!"
 	done
 
-_SaffronHouse1Text2::
+_SaffronPidgeyHousePidgeyText::
 	text "TAUBSI: Taubsi!@"
 	text_end
 
-_SaffronHouse1Text3::
+_SaffronPidgeyHouseYoungsterText::
 	text "Ich mag die"
 	line "NACHAHMERIN!"
 	cont "Ich kaufe ihr"
 	cont "eine #PUPPE!"
 	done
 
-_SaffronHouse1Text4::
+_SaffronPidgeyHousePaperText::
 	text "Ich habe ein"
 	line "AP-PLUS geschenkt"
 	cont "bekommen!"

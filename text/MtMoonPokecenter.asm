@@ -1,4 +1,4 @@
-_MtMoonPokecenterText1::
+_MtMoonPokecenterYoungsterText::
 	text "An meinem Gürtel"
 	line "hängen sechs"
 	cont "#BÄLLE."
@@ -8,7 +8,7 @@ _MtMoonPokecenterText1::
 	cont "mit sich führen."
 	done
 
-_MtMoonPokecenterText3::
+_MtMoonPokecenterGentlemanText::
 	text "Das TEAM ROCKET"
 	line "terrorisiert die"
 	cont "Einwohner von"
@@ -20,7 +20,7 @@ _MtMoonPokecenterText3::
 	cont "Schandtaten!"
 	done
 
-_MagikarpSalesmanText1::
+_MtMoonPokecenterMagikarpSalesmanIGotADealText::
 	text "MANN: Hallo!"
 	line "Möchtest Du ein"
 	cont "Geschäft machen?"
@@ -32,23 +32,23 @@ _MagikarpSalesmanText1::
 	cont "Interessiert?"
 	done
 
-_MagikarpSalesmanNoText::
+_MtMoonPokecenterMagikarpSalesmanNoText::
 	text "Nein? Ich wollte"
 	line "Dir doch einen"
 	cont "Gefallen tun!"
 	done
 
-_MagikarpSalesmanNoMoneyText::
+_MtMoonPokecenterMagikarpSalesmanNoMoneyText::
 	text "Schade, Du hast"
 	line "nicht genug Geld!"
 	done
 
-_MagikarpSalesmanText2::
+_MtMoonPokecenterMagikarpSalesmanNoRefundsText::
 	text "MANN:"
 	line "Der Umtausch ist"
 	cont "ausgeschlossen!"
 	done
 
-_MtMoonPokecenterText5::
+_MtMoonPokecenterClipboardText::
 	text_start
 	done

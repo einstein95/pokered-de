@@ -1,4 +1,4 @@
-_Route11GateUpstairsText_494a3::
+_Route11Gate2FOaksAideItemfinderDescriptionText::
 	text "Auf dem Boden"
 	line "liegen oft Items,"
 	cont "die man nicht"
@@ -15,7 +15,7 @@ _Route11GateUpstairsText_494a3::
 	cont "gut umschauen!"
 	done
 
-_BinocularsSnorlaxText::
+_Route11Gate2FLeftBinocularsSnorlaxText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 
@@ -24,7 +24,7 @@ _BinocularsSnorlaxText::
 	cont "großes #MON!"
 	done
 
-_BinocularsNoSnorlaxText::
+_Route11Gate2FLeftBinocularsNoSnorlaxText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 
@@ -33,7 +33,7 @@ _BinocularsNoSnorlaxText::
 	cont "Aussicht!"
 	done
 
-_Route11GateUpstairsText_494d5::
+_Route11Gate2FRightBinocularsText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 

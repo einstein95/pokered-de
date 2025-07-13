@@ -1,4 +1,4 @@
-_VermilionPokecenterText2::
+_VermilionPokecenterFishingGuruText::
 	text "Auch wenn sie den"
 	line "gleichen Level"
 	cont "haben, können die"
@@ -12,7 +12,7 @@ _VermilionPokecenterText2::
 	cont "wildlebendes."
 	done
 
-_VermilionPokecenterText3::
+_VermilionPokecenterSailorText::
 	text "Mein #MON"
 	line "wurde vergiftet!"
 	cont "Das Gift hat es"

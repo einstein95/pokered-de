@@ -1,9 +1,9 @@
-_LavenderHouse2Text1::
+_LavenderCuboneHouseCuboneText::
 	text "TRAGOSSO:"
 	line "Kiajahuu!@"
 	text_end
 
-_LavenderHouse2Text_1d9dc::
+_LavenderCuboneHouseBrunetteGirlPoorCubonesMotherText::
 	text "Ich hasse dieses"
 	line "furchtbare TEAM"
 	cont "ROCKET!"
@@ -16,7 +16,7 @@ _LavenderHouse2Text_1d9dc::
 	cont "nicht entkommen!"
 	done
 
-_LavenderHouse2Text_1d9e1::
+_LavenderCuboneHouseBrunetteGirlGhostIsGoneText::
 	text "Der GEIST im"
 	line "#MON-TURM"
 	cont "ist verschwunden!"

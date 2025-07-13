@@ -1,6 +1,3 @@
-INCLUDE "constants.asm"
-
-
 SECTION "Sound Effect Headers 1", ROMX
 INCLUDE "audio/headers/sfxheaders1.asm"
 
@@ -44,7 +41,7 @@ INCLUDE "audio/sfx/noise_instrument18_1.asm"
 INCLUDE "audio/sfx/noise_instrument19_1.asm"
 
 Audio1_WavePointers:
-INCLUDE "audio/wave_instruments.asm"
+INCLUDE "audio/wave_samples.asm"
 
 INCLUDE "audio/sfx/start_menu_1.asm"
 INCLUDE "audio/sfx/pokeflute.asm"
@@ -144,7 +141,7 @@ INCLUDE "audio/sfx/noise_instrument18_2.asm"
 INCLUDE "audio/sfx/noise_instrument19_2.asm"
 
 Audio2_WavePointers:
-INCLUDE "audio/wave_instruments.asm"
+INCLUDE "audio/wave_samples.asm"
 
 INCLUDE "audio/sfx/press_ab_2.asm"
 INCLUDE "audio/sfx/start_menu_2.asm"
@@ -270,7 +267,7 @@ INCLUDE "audio/sfx/noise_instrument18_3.asm"
 INCLUDE "audio/sfx/noise_instrument19_3.asm"
 
 Audio3_WavePointers:
-INCLUDE "audio/wave_instruments.asm"
+INCLUDE "audio/wave_samples.asm"
 
 INCLUDE "audio/sfx/start_menu_3.asm"
 INCLUDE "audio/sfx/cut_3.asm"

@@ -73,7 +73,7 @@ BillsHousePokemonList::
 	ld [wMenuItemOffset], a ; not used
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	ld a, A_BUTTON | B_BUTTON
+	ld a, PAD_A | PAD_B
 	ld [wMenuWatchedKeys], a
 	ld a, 4
 	ld [wMaxMenuItem], a
@@ -82,8 +82,8 @@ BillsHousePokemonList::
 	ld a, 1
 	ld [wTopMenuItemX], a
 .billsPokemonLoop
-	ld hl, wd730
-	set 6, [hl]
+	ld hl, wStatusFlags5
+	set BIT_NO_TEXT_DELAY, [hl]
 	hlcoord 0, 0
 	ld b, 10
 	ld c, 9
@@ -95,7 +95,7 @@ BillsHousePokemonList::
 	call PrintText
 	call SaveScreenTilesToBuffer2
 	call HandleMenuInput
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	jr nz, .cancel
 	ld a, [wCurrentMenuItem]
 	add EEVEE
@@ -113,8 +113,8 @@ BillsHousePokemonList::
 	call LoadScreenTilesFromBuffer2
 	jr .billsPokemonLoop
 .cancel
-	ld hl, wd730
-	res 6, [hl]
+	ld hl, wStatusFlags5
+	res BIT_NO_TEXT_DELAY, [hl]
 	call LoadScreenTilesFromBuffer2
 	jp TextScriptEnd
 

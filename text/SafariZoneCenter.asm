@@ -1,8 +1,8 @@
-_SafariZoneCenterText2::
+_SafariZoneCenterRestHouseSignText::
 	text "RASTHAUS"
 	done
 
-_SafariZoneCenterText3::
+_SafariZoneCenterTrainerTipsSignText::
 	text "TIPS FÜR TRAINER"
 
 	para "Drücke START, um"

@@ -1,4 +1,4 @@
-_SSAnne1Text1::
+_SSAnne1FWaiterText::
 	text "Moin, moin, Du"
 	line "Landradde! Ich"
 	cont "bin der Steward"
@@ -14,7 +14,7 @@ _SSAnne1Text1::
 	cont "Du aber nicht!"
 	done
 
-_SSAnne1Text2::
+_SSAnne1FSailorText::
 	text "Viele Passagiere"
 	line "sind hyperaktiv!"
 

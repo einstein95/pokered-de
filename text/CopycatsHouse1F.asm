@@ -1,4 +1,4 @@
-_CopycatsHouse1FText1::
+_CopycatsHouse1FMiddleAgedWomanText::
 	text "Meine Tochter"
 	line "ist furchtbar"
 	cont "schüchtern! Sie"
@@ -6,7 +6,7 @@ _CopycatsHouse1FText1::
 	cont "Freunde!"
 	done
 
-_CopycatsHouse1FText2::
+_CopycatsHouse1FMiddleAgedManText::
 	text "Meine Tochter"
 	line "ahmt gerne Leute"
 	cont "nach."
@@ -17,7 +17,7 @@ _CopycatsHouse1FText2::
 	cont "NACHAHMERIN!"
 	done
 
-_CopycatsHouse1FText3::
+_CopycatsHouse1FChanseyText::
 	text "CHANEIRA: Cha!"
 	line "Neera!@"
 	text_end

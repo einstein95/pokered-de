@@ -1,11 +1,11 @@
-_CeladonDinerText1::
+_CeladonDinerCookText::
 	text "Hallo!"
 
 	para "Wir machen gerade"
 	line "eine Pause."
 	done
 
-_CeladonDinerText2::
+_CeladonDinerMiddleAgedWomanText::
 	text "Meine #MON"
 	line "sind ziemlich"
 	cont "schwach, deshalb"
@@ -13,14 +13,14 @@ _CeladonDinerText2::
 	cont "DROGERIE."
 	done
 
-_CeladonDinerText3::
+_CeladonDinerMiddleAgedManText::
 	text "Pst! Unter der"
 	line "SPIELHALLE"
 	cont "befindet sich ein"
 	cont "Keller!"
 	done
 
-_CeladonDinerText4::
+_CeladonDinerFisherText::
 	text "Mampf..."
 
 	para "Der Mann dort"
@@ -29,7 +29,7 @@ _CeladonDinerText4::
 	cont "verzockt."
 	done
 
-_CeladonDinerText_491a7::
+_CeladonDinerGymGuideImFlatOutBustedText::
 	text "Ja, lach mich"
 	line "ruhig aus!"
 
@@ -45,19 +45,19 @@ _CeladonDinerText_491a7::
 	cont "mehr gebrauchen!"
 	prompt
 
-_ReceivedCoinCaseText::
+_CeladonDinerGymGuideReceivedCoinCaseText::
 	text "<PLAYER> erhält"
 	line "einen @"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_CoinCaseNoRoomText::
+_CeladonDinerGymGuideCoinCaseNoRoomText::
 	text "Du solltest etwas"
 	line "Platz schaffen!"
 	done
 
-_CeladonDinerText_491b7::
+_CeladonDinerGymGuideWinItBackText::
 	text "Ich dachte immer,"
 	line "ich könnte den"
 	cont "Jackpot knacken!"

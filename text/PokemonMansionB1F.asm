@@ -1,37 +1,37 @@
-_Mansion4BattleText1::
+_PokemonMansionB1FBurglarBattleText::
 	text "Wo bin ich hier"
 	line "gelandet?"
 	done
 
-_Mansion4EndBattleText1::
+_PokemonMansionB1FBurglarEndBattleText::
 	text "Autsch!"
 	prompt
 
-_Mansion4AfterBattleText1::
+_PokemonMansionB1FBurglarAfterBattleText::
 	text "Hier liegt viel"
 	line "nützliches Zeug"
 	cont "herum!"
 	done
 
-_Mansion4BattleText2::
+_PokemonMansionB1FScientistBattleText::
 	text "Hier wäre der"
 	line "ideale Platz für"
 	cont "ein Labor!"
 	done
 
-_Mansion4EndBattleText2::
+_PokemonMansionB1FScientistEndBattleText::
 	text "Was hab"
 	line "ich nur falsch"
 	cont "gemacht?"
 	prompt
 
-_Mansion4AfterBattleText2::
+_PokemonMansionB1FScientistAfterBattleText::
 	text "Hier gefällt es"
 	line "mir! Man kann"
 	cont "prima forschen!"
 	done
 
-_Mansion4Text7::
+_PokemonMansionB1FDiaryText::
 	text "TAGEBUCH:"
 	line "1. SEPTEMBER"
 

@@ -1,4 +1,4 @@
-_SSAnne7RubText::
+_SSAnneCaptainsRoomRubCaptainsBackText::
 	text "KAPITÄN: Urps..."
 	line "Es geht mir gar"
 	cont "nicht gut! Urps!"
@@ -11,7 +11,7 @@ _SSAnne7RubText::
 	line "Schrubb...@"
 	text_end
 
-_ReceivingHM01Text::
+_SSAnneCaptainsRoomCaptainIFeelMuchBetterText::
 	text "KAPITÄN: Ahhhhh!"
 	line "Ich danke Dir!"
 
@@ -37,14 +37,14 @@ _ReceivingHM01Text::
 	cont "ganz leicht bei!"
 	prompt
 
-_ReceivedHM01Text::
+_SSAnneCaptainsRoomCaptainReceivedHM01Text::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_SSAnne7Text_61932::
+_SSAnneCaptainsRoomCaptainNotSickAnymoreText::
 	text "KAPITÄN: Super!"
 
 	para "Endlich bin ich"
@@ -52,19 +52,19 @@ _SSAnne7Text_61932::
 	cont "Es kann losgehen!"
 	done
 
-_HM01NoRoomText::
+_SSAnneCaptainsRoomCaptainHM01NoRoomText::
 	text "Oh, nein! Du hast"
 	line "keinen Platz für"
 	cont "weitere Items!"
 	done
 
-_SSAnne7Text2::
+_SSAnneCaptainsRoomTrashText::
 	text "Buäh! Manche"
 	line "Dinge macht man"
 	cont "besser nicht..."
 	done
 
-_SSAnne7Text3::
+_SSAnneCaptainsRoomSeasickBookText::
 	text "1000 natürliche"
 	line "Hausmittel gegen"
 	cont "Seekrankheit..."

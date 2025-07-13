@@ -1,4 +1,4 @@
-_RocketElevatorText_4578b::
+_RocketHideoutElevatorAppearsToNeedKeyText::
 	text "Hmm, hier"
 	line "braucht man einen"
 	cont "Schlüssel!@"

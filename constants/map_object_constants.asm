@@ -1,4 +1,4 @@
-; spritestatedata1 struct members (see macros/wram.asm)
+; spritestatedata1 struct members (see macros/ram.asm)
 	const_def
 	const SPRITESTATEDATA1_PICTUREID             ; 0
 	const SPRITESTATEDATA1_MOVEMENTSTATUS        ; 1
@@ -18,7 +18,7 @@
 	const SPRITESTATEDATA1_0F                    ; f
 DEF SPRITESTATEDATA1_LENGTH EQU const_value
 
-; spritestatedata2 struct members (see macros/wram.asm)
+; spritestatedata2 struct members (see macros/ram.asm)
 	const_def
 	const SPRITESTATEDATA2_WALKANIMATIONCOUNTER ; 0
 	const SPRITESTATEDATA2_01                   ; 1
@@ -40,9 +40,16 @@ DEF SPRITESTATEDATA2_LENGTH EQU const_value
 
 DEF NUM_SPRITESTATEDATA_STRUCTS EQU 16
 
+	const_def 6
+	const BIT_TRAINER ; 6
+	const BIT_ITEM    ; 7
+
 ; different kinds of people events
-DEF ITEM    EQU $80
-DEF TRAINER EQU $40
+DEF TRAINER EQU 1 << BIT_TRAINER
+DEF ITEM    EQU 1 << BIT_ITEM
+
+; movement status
+DEF BIT_FACE_PLAYER EQU 7
 
 DEF WALK EQU $FE
 DEF STAY EQU $FF

@@ -1,11 +1,11 @@
-_SchoolText1::
+_ViridianSchoolHouseBrunetteGirlText::
 	text "Puh! Ich"
 	line "versuche, meine"
 	cont "Notizen auswendig"
 	cont "zu lernen."
 	done
 
-_SchoolText2::
+_ViridianSchoolHouseCooltrainerFText::
 	text "OK!"
 
 	para "Lies sorgfältig"

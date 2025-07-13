@@ -1,34 +1,34 @@
-_SilphCo5EndBattleText4::
+_SilphCo5FRockerEndBattleText::
 	text "Nein!"
 	line "Das Kind hat"
 	cont "mich besiegt!"
 	prompt
 
-_SilphCo5AfterBattleText4::
+_SilphCo5FRockerAfterBattleText::
 	text "Es ist ein weiter"
 	line "Weg zum BOSS! Du"
 	cont "bist hier erst im"
 	cont "4.Stock!"
 	done
 
-_SilphCo5BattleText5::
+_SilphCo5FRocket2BattleText::
 	text "Zolle dem TEAM"
 	line "ROCKET gefälligst"
 	cont "mehr Respekt!!!"
 	done
 
-_SilphCo5EndBattleText5::
+_SilphCo5FRocket2EndBattleText::
 	text "Hust..."
 	line "Hust..."
 	prompt
 
-_SilphCo5AfterBattleText5::
+_SilphCo5FRocket2AfterBattleText::
 	text "Da fällt mir ein,"
 	line "SMOGON entwickelt"
 	cont "sich zu SMOGMOG!"
 	done
 
-_SilphCo5Text9::
+_SilphCo5FPokemonReport1Text::
 	text "Ein ARTIKEL über"
 	line "#MON!"
 
@@ -38,7 +38,7 @@ _SilphCo5Text9::
 	cont "#MON!"
 	done
 
-_SilphCo5Text10::
+_SilphCo5FPokemonReport2Text::
 	text "Eine Studie über"
 	line "#MON!"
 
@@ -47,7 +47,7 @@ _SilphCo5Text10::
 	cont "Kampftechniken!"
 	done
 
-_SilphCo5Text11::
+_SilphCo5FPokemonReport3Text::
 	text "Ein Report über "
 	line "#MON!"
 

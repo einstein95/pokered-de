@@ -1,4 +1,4 @@
-_LTSurgePostBattleAdviceText::
+_VermilionGymLTSurgePostBattleAdviceText::
 	text "Ich gebe Dir noch"
 	line "einen Tip, Junge!"
 
@@ -11,7 +11,7 @@ _LTSurgePostBattleAdviceText::
 	cont "BODEN-#MON!"
 	done
 
-_LTSurgeThunderBadgeInfoText::
+_VermilionGymLTSurgeThunderBadgeInfoText::
 	text "Der DONNERORDEN"
 	line "erhöht die"
 	cont "INITIATIVE Deiner"
@@ -27,7 +27,7 @@ _LTSurgeThunderBadgeInfoText::
 	cont "Nimm das hier!"
 	done
 
-_ReceivedTM24Text::
+_VermilionGymLTSurgeReceivedTM24Text::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
@@ -45,12 +45,12 @@ _TM24ExplanationText::
 	cont "Attacke erlernen!"
 	done
 
-_TM24NoRoomText::
+_VermilionGymLTSurgeTM24NoRoomText::
 	text "Dein Rucksack"
 	line "ist voll!"
 	done
 
-_ReceivedThunderBadgeText::
+_VermilionGymLTSurgeReceivedThunderBadgeText::
 	text "Wow!"
 
 	para "Du weißt, wie man"
@@ -61,17 +61,17 @@ _ReceivedThunderBadgeText::
 	cont "den DONNERORDEN!"
 	prompt
 
-_VermilionGymBattleText1::
+_VermilionGymGentlemanBattleText::
 	text "MAJOR BOB war"
 	line "mein Ausbilder!"
 	done
 
-_VermilionGymEndBattleText1::
+_VermilionGymGentlemanEndBattleText::
 	text "Stop!"
 	line "Du bist zu gut!"
 	prompt
 
-_VermilionGymAfterBattleText1::
+_VermilionGymGentlemanAfterBattleText::
 	text "Die Tür öffnet"
 	line "sich nicht?"
 
@@ -80,7 +80,7 @@ _VermilionGymAfterBattleText1::
 	cont "vorsichtig!"
 	done
 
-_VermilionGymBattleText2::
+_VermilionGymSuperNerdBattleText::
 	text "Ich bin ein"
 	line "Fliegengewicht,"
 	cont "aber im Umgang"
@@ -88,12 +88,12 @@ _VermilionGymBattleText2::
 	cont "bin ich Profi!"
 	done
 
-_VermilionGymEndBattleText2::
+_VermilionGymSuperNerdEndBattleText::
 	text "Ein"
 	line "Kurzschluß!"
 	prompt
 
-_VermilionGymAfterBattleText2::
+_VermilionGymSuperNerdAfterBattleText::
 	text "OK, ich rede!"
 
 	para "MAJOR BOB hat"
@@ -102,18 +102,18 @@ _VermilionGymAfterBattleText2::
 	cont "versteckt!"
 	done
 
-_VermilionGymBattleText3::
+_VermilionGymSailorBattleText::
 	text "Das hier ist"
 	line "kein Spielplatz!"
 	done
 
-_VermilionGymEndBattleText3::
+_VermilionGymSailorEndBattleText::
 	text "Wow!"
 	line "Du hast mich"
 	cont "überrascht!"
 	prompt
 
-_VermilionGymAfterBattleText3::
+_VermilionGymSailorAfterBattleText::
 	text "MAJOR BOB hat"
 	line "die Tür doppelt"
 	cont "abgesichert!"
@@ -125,7 +125,7 @@ _VermilionGymAfterBattleText3::
 	cont "ersten!"
 	done
 
-_VermilionGymGuidePreBattleText::
+_VermilionGymGymGuideChampInMakingText::
 	text "Hey! Warte, Du"
 	line "Champion in spe!"
 
@@ -154,7 +154,7 @@ _VermilionGymGuidePreBattleText::
 	cont "ihn zu treffen!"
 	done
 
-_VermilionGymGuidePostBattleText::
+_VermilionGymGymGuideBeatLTSurgeText::
 	text "Puh! Ein"
 	line "elektrisierender"
 	cont "Kampf!"

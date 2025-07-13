@@ -1,4 +1,4 @@
-_ViridianPokeCenterText2::
+_ViridianPokecenterGentlemanText::
 	text "Du kannst den PC"
 	line "in der Ecke dort"
 	cont "drüben benutzen!"
@@ -9,7 +9,7 @@ _ViridianPokeCenterText2::
 	cont "hingewiesen."
 	done
 
-_ViridianPokeCenterText3::
+_ViridianPokecenterCooltrainerMText::
 	text "Es gibt in jeder"
 	line "Stadt ein"
 	cont "PKMN-CENTER."

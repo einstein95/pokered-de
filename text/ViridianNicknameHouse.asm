@@ -1,4 +1,4 @@
-_ViridianHouseText1::
+_ViridianNicknameHouseBaldingGuyText::
 	text "Es macht Spaß,"
 	line "sich Spitznamen"
 	cont "auszudenken. Aber"
@@ -10,18 +10,18 @@ _ViridianHouseText1::
 	cont "leichter merken!"
 	done
 
-_ViridianHouseText2::
+_ViridianNicknameHouseLittleGirlText::
 	text "Mein Papa mag"
 	line "#MON auch"
 	cont "sehr gerne!"
 	done
 
-_ViridianHouseText_1d5b1::
+_ViridianNicknameHouseSpearowText::
 	text "WILLI: "
 	line "Habi! Habitak!"
 	done
 
-_ViridianHouseText4::
+_ViridianNicknameHouseSpearySignText::
 	text "HABITAK"
 	line "Spitzname: WILLI"
 	done

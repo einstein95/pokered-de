@@ -1,36 +1,36 @@
-_Mansion3BattleText1::
+_PokemonMansion3FSuperNerdBattleText::
 	text "Dieser Ort hier"
 	line "ist riesig!"
 	done
 
-_Mansion3EndBattleText1::
+_PokemonMansion3FSuperNerdEndBattleText::
 	text "Tschüß!"
 	prompt
 
-_Mansion3AfterBattleText1::
+_PokemonMansion3FSuperNerdAfterBattleText::
 	text "Ich frage mich,"
 	line "wo mein Partner"
 	cont "wohl sein mag!?"
 	done
 
-_Mansion3BattleText2::
+_PokemonMansion3FScientistBattleText::
 	text "Mein Mentor lebte"
 	line "einst hier..."
 	done
 
-_Mansion3EndBattleText2::
+_PokemonMansion3FScientistEndBattleText::
 	text "Wow!"
 	line "Unglaublich!"
 	prompt
 
-_Mansion3AfterBattleText2::
+_PokemonMansion3FScientistAfterBattleText::
 	text "Du kommst nicht"
 	line "weiter? Springe"
 	cont "einfach da drüben"
 	cont "herunter!"
 	done
 
-_Mansion3Text5::
+_PokemonMansion3FDiaryText::
 	text "TAGEBUCH:"
 	line "6. FEBRUAR"
 

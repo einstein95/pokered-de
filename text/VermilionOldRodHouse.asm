@@ -1,4 +1,4 @@
-_VermilionHouse2Text_560b1::
+_VermilionOldRodHouseFishingGuruDoYouLikeToFishText::
 	text "Ich bin der"
 	line "PROFIANGLER!"
 
@@ -9,7 +9,7 @@ _VermilionHouse2Text_560b1::
 	line "gerne?"
 	done
 
-_VermilionHouse2Text_560b6::
+_VermilionOldRodHouseFishingGuruTakeThisText::
 	text "Klasse! Du bist"
 	line "mir sympathisch!"
 
@@ -23,7 +23,7 @@ _VermilionHouse2Text_560b6::
 	text "!@"
 	text_end
 
-_VermilionHouse2Text_560bb::
+_VermilionOldRodHouseFishingGuruFishingIsAWayOfLifeText::
 	text_start
 
 	para "Angeln ist meine"
@@ -35,19 +35,19 @@ _VermilionHouse2Text_560bb::
 	cont "Fang!"
 	done
 
-_VermilionHouse2Text_560c0::
+_VermilionOldRodHouseFishingGuruThatsSoDisappointingText::
 	text "Oh... Das ist"
 	line "wirklich schade!"
 	done
 
-_VermilionHouse2Text_560c5::
+_VermilionOldRodHouseFishingGuruHowAreTheFishBitingText::
 	text "Hallo, <PLAYER>!"
 
 	para "Wie beißen die"
 	line "Fische?"
 	done
 
-_VermilionHouse2Text_560ca::
+_VermilionOldRodHouseFishingGuruNoRoomText::
 	text "Oh nein!"
 
 	para "Du hast keinen"

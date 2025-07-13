@@ -1,24 +1,24 @@
-_DayCareAllRightThenText::
+_DaycareGentlemanAllRightThenText::
 	text "Also,"
 	line "@"
 	text_end
 
-_DayCareComeAgainText::
+_DaycareGentlemanComeAgainText::
 	text "Dann bis später."
 	done
 
-_DayCareNoRoomForMonText::
+_DaycareGentlemanNoRoomForMonText::
 	text "Du kannst kein"
 	line "weiteres #MON"
 	cont "mehr tragen!"
 	done
 
-_DayCareOnlyHaveOneMonText::
+_DaycareGentlemanOnlyHaveOneMonText::
 	text "Du hast nur ein"
 	line "#MON dabei!"
 	done
 
-_DayCareCantAcceptMonWithHMText::
+_DaycareGentlemanCantAcceptMonWithHMText::
 	text "Ein #MON, das"
 	line "eine VM-Technik"
 	cont "beherrscht, kann"
@@ -26,12 +26,12 @@ _DayCareCantAcceptMonWithHMText::
 	cont "bleiben!"
 	done
 
-_DayCareHeresYourMonText::
+_DaycareGentlemanHeresYourMonText::
 	text "Vielen Dank! Hier"
 	line "ist Dein #MON!"
 	prompt
 
-_DayCareNotEnoughMoneyText::
+_DaycareGentlemanNotEnoughMoneyText::
 	text "Oh, Du hast"
 	line "nicht genug Geld!"
 	done

@@ -1,4 +1,4 @@
-_VermilionCityText1::
+_VermilionCityBeautyText::
 	text "Wir sind sehr"
 	line "umweltbewußt!"
 
@@ -9,13 +9,13 @@ _VermilionCityText1::
 	cont "entwickelt!"
 	done
 
-_VermilionCityTextDidYouSee::
+_VermilionCityGambler1DidYouSeeText::
 	text "Hast Du gesehen?"
 	line "Die M.S. ANNE"
 	cont "ankert im Hafen!"
 	done
 
-_VermilionCityTextSSAnneDeparted::
+_VermilionCityGambler1SSAnneDepartedText::
 	text "Die M.S.ANNE ist"
 	line "ausgelaufen!"
 
@@ -24,12 +24,12 @@ _VermilionCityTextSSAnneDeparted::
 	cont "anlegen."
 	done
 
-_SSAnneWelcomeText4::
+_VermilionCitySailor1WelcomeToSSAnneText::
 	text "Willkommen auf"
 	line "der M.S. ANNE!"
 	done
 
-_SSAnneWelcomeText9::
+_VermilionCitySailor1DoYouHaveATicketText::
 	text "Willkommen auf"
 	line "der M.S. ANNE!"
 
@@ -37,7 +37,7 @@ _SSAnneWelcomeText9::
 	line "Du ein Ticket?"
 	prompt
 
-_SSAnneFlashedTicketText::
+_VermilionCitySailor1FlashedTicketText::
 	text "<PLAYER> zeigt"
 	line "das BOOTSTICKET!"
 
@@ -46,7 +46,7 @@ _SSAnneFlashedTicketText::
 	cont "der M.S. ANNE!"
 	done
 
-_SSAnneNoTicketText::
+_VermilionCitySailor1YouNeedATicketText::
 	text "<PLAYER> hat "
 	line "kein BOOTSTICKET!"
 
@@ -58,12 +58,12 @@ _SSAnneNoTicketText::
 	cont "können."
 	done
 
-_SSAnneNotHereText::
+_VermilionCitySailor1ShipSetSailText::
 	text "Das Schiff ist in"
 	line "See gestochen!"
 	done
 
-_VermilionCityText4::
+_VermilionCityGambler2Text::
 	text "Ich möchte auf"
 	line "diesem Land"
 	cont "bauen."
@@ -72,18 +72,18 @@ _VermilionCityText4::
 	line "ebnet den Boden!"
 	done
 
-_VermilionCityText5::
+_VermilionCityMachopText::
 	text "MASCHOCK: Macho!"
 	line "Maschock!@"
 	text_end
 
-_VermilionCityText14::
+_VermilionCityMachopStompingTheLandFlatText::
 	text_start
 	para "Ein MASCHOCK"
 	line "ebnet das Land!"
 	done
 
-_VermilionCityText6::
+_VermilionCitySailor2Text::
 	text "Die M.S. ANNE ist"
 	line "ein luxuriöses"
 	cont "Kreuzfahrtschiff."
@@ -93,14 +93,14 @@ _VermilionCityText6::
 	cont "einmal im Jahr."
 	done
 
-_VermilionCityText7::
+_VermilionCitySignText::
 	text "ORANIA CITY"
 	line "Die Hafenstadt"
 	cont "der einmaligen"
 	cont "Sonnenuntergänge!"
 	done
 
-_VermilionCityText8::
+_VermilionCityNoticeSignText::
 	text "ACHTUNG!"
 
 	para "ROUTE 12 wird"
@@ -117,13 +117,13 @@ _VermilionCityText8::
 	line "ORANIA CITY"
 	done
 
-_VermilionCityText11::
+_VermilionCityPokemonFanClubSignText::
 	text "#MON-FANCLUB"
 	line "Alle #MON-Fans"
 	cont "sind willkommen!"
 	done
 
-_VermilionCityText12::
+_VermilionCityGymSignText::
 	text "ORANIA CITY"
 	line "PKMN-ARENA"
 	cont "ARENALEITER:"
@@ -133,7 +133,7 @@ _VermilionCityText12::
 	line "Arenaleiter!"
 	done
 
-_VermilionCityText13::
+_VermilionCityHarborSignText::
 	text "HAFEN VON"
 	line "ORANIA CITY"
 	done

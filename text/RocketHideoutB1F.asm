@@ -1,80 +1,80 @@
-_RocketHideout1EndBattleText6::
+_RocketHideoutB1FRocket5EndBattleText::
 	text_start
 	line "Was ist passiert?@"
 	text_end
 
-_RocketHideout1BattleText2::
+_RocketHideoutB1FRocket1BattleText::
 	text "Wie kommst Du"
 	line "hierher, Kleiner?"
 	done
 
-_RocketHideout1EndBattleText2::
+_RocketHideoutB1FRocket1EndBattleText::
 	text "Autsch!"
 	line "Geschlagen!"
 	prompt
 
-_RocketHideout1AfterBattleTxt2::
+_RocketHideoutB1FRocket1AfterBattleText::
 	text "Willst Du Dich"
 	line "mit dem TEAM"
 	cont "ROCKET anlegen?"
 	done
 
-_RocketHideout1BattleText3::
+_RocketHideoutB1FRocket2BattleText::
 	text "Du hast Mut, hier"
 	line "hereinzuplatzen!"
 	done
 
-_RocketHideout1EndBattleText3::
+_RocketHideoutB1FRocket2EndBattleText::
 	text ""
 	line "Mist! Versagt!"
 	prompt
 
-_RocketHideout1AfterBattleTxt3::
+_RocketHideoutB1FRocket2AfterBattleText::
 	text "Unsere Rache"
 	line "wird grauenvoll,"
 	cont "Du Lausebengel!"
 	done
 
-_RocketHideout1BattleText4::
+_RocketHideoutB1FRocket3BattleText::
 	text "Alarm!"
 	line "Eindringlinge!"
 	done
 
-_RocketHideout1EndBattleText4::
+_RocketHideoutB1FRocket3EndBattleText::
 	text "Ich"
 	line "konnte ihn nicht"
 	cont "stoppen!!!"
 	prompt
 
-_RocketHideout1AfterBattleTxt4::
+_RocketHideoutB1FRocket3AfterBattleText::
 	text "SILPH SCOPE?"
 	line "Ich weiß nicht,"
 	cont "wovon Du redest!"
 	done
 
-_RocketHideout1BattleText5::
+_RocketHideoutB1FRocket4BattleText::
 	text "Was willst Du"
 	line "überhaupt hier?"
 	done
 
-_RocketHideout1EndBattleText5::
+_RocketHideoutB1FRocket4EndBattleText::
 	text ""
 	line "Das kann nicht"
 	cont "funktionieren!"
 	prompt
 
-_RocketHideout1AfterBattleTxt5::
+_RocketHideoutB1FRocket4AfterBattleText::
 	text "OK, OK, ich packe"
 	line "aus! Benutze den"
 	cont "Aufzug zum BOSS!"
 	done
 
-_RocketHideout1BattleText6::
+_RocketHideoutB1FRocket5BattleText::
 	text "Was hast Du"
 	line "hier verloren?"
 	done
 
-_RocketHideout1AfterBattleTxt6::
+_RocketHideoutB1FRocket5AfterBattleText::
 	text "Ups, die Tür ist"
 	line "aufgegangen!"
 	done

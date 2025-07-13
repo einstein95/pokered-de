@@ -1,4 +1,4 @@
-_Route7Text1::
+_Route7UndergroundPathSignText::
 	text "TUNNELPFAD"
 	line "PRISMANIA CITY -"
 	cont "LAVANDIA"

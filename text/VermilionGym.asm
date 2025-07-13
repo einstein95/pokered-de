@@ -1,4 +1,4 @@
-_LTSurgePreBattleText::
+_VermilionGymLTSurgePreBattleText::
 	text "Hey, Kleiner!"
 	line "Was hast Du hier"
 	cont "verloren?"

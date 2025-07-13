@@ -1,4 +1,4 @@
-_CeladonMart5Text1::
+_CeladonMart5FGentlemanText::
 	text "Nur hier kannst"
 	line "Du leistungs-"
 	cont "fördernde Mittel"
@@ -13,7 +13,7 @@ _CeladonMart5Text1::
 	line "INITIATIVE."
 	done
 
-_CeladonMart5Text2::
+_CeladonMart5FSailorText::
 	text "Ich bin wegen"
 	line "der leistungs-"
 	cont "fördernden Mittel"
@@ -27,6 +27,6 @@ _CeladonMart5Text2::
 	line "ABWEHR!"
 	done
 
-_CeladonMart5Text5::
+_CeladonMart5FCurrentFloorSignText::
 	text "S4: DROGERIE"
 	done

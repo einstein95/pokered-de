@@ -1,4 +1,4 @@
-_ViridianForestText1::
+_ViridianForestYoungster1Text::
 	text "Meine Freunde und"
 	line "ich haben Dich"
 	cont "schon erwartet..."
@@ -7,56 +7,56 @@ _ViridianForestText1::
 	line "wollen kämpfen!!!"
 	done
 
-_ViridianForestBattleText1::
+_ViridianForestYoungster2BattleText::
 	text "Hey! Du hast auch"
 	line "#MON! Los!"
 	cont "Laß uns kämpfen!"
 	done
 
-_ViridianForestEndBattleText1::
+_ViridianForestYoungster2EndBattleText::
 	text "Ah!"
 	line "RAUPY hat es"
 	cont "nicht geschafft!"
 	prompt
 
-_ViridianFrstAfterBattleText1::
+_ViridianForestYoungster2AfterBattleText::
 	text "Psst! Sei leise!"
 	line "Du verjagst"
 	cont "alle Käfer..."
 	done
 
-_ViridianForestBattleText2::
+_ViridianForestYoungster3BattleText::
 	text "Hey! Ein #MON-"
 	line "Trainer stiehlt"
 	cont "sich nicht so"
 	cont "einfach davon!!!"
 	done
 
-_ViridianForestEndBattleText2::
+_ViridianForestYoungster3EndBattleText::
 	text "Oh!"
 	line "Ich habe kein"
 	cont "kampfbereites"
 	cont "#MON mehr!"
 	prompt
 
-_ViridianFrstAfterBattleText2::
+_ViridianForestYoungster3AfterBattleText::
 	text "So ein Mist! Ich"
 	line "muß ein paar"
 	cont "Stärkere fangen!"
 	done
 
-_ViridianForestBattleText3::
+_ViridianForestYoungster4BattleText::
 	text "Hey, warte mal!"
 	line "Warum die Eile?"
 	done
 
-_ViridianForestEndBattleText3::
+_ViridianForestYoungster4EndBattleText::
 	text "Uff!"
 	line "Du bist zu gut!"
 	cont "Ich gebe auf!"
 	prompt
 
-_ViridianFrstAfterBattleText3::
+_ViridianForestYoungster4AfterBattleText::
 	text "Mit ein bißchen"
 	line "Glück findet man"
 	cont "unterwegs Items!"
@@ -66,7 +66,7 @@ _ViridianFrstAfterBattleText3::
 	cont "verloren haben..."
 	done
 
-_ViridianForestText8::
+_ViridianForestYoungster5Text::
 	text "Verdammt!"
 	line "Mir sind die"
 	cont "#BÄLLE"
@@ -80,7 +80,7 @@ _ViridianForestText8::
 	cont "bei Dir haben!"
 	done
 
-_ViridianForestText9::
+_ViridianForestTrainerTips1Text::
 	text "TIPS FÜR TRAINER"
 
 	para "Wenn Du Kämpfe"
@@ -89,7 +89,7 @@ _ViridianForestText9::
 	cont "Gras fern!"
 	done
 
-_ViridianForestText10::
+_ViridianForestUseAntidoteSignText::
 	text "Bei Vergiftungen"
 	line "hat sich das"
 	cont "GEGENGIFT aus dem"
@@ -97,7 +97,7 @@ _ViridianForestText10::
 	cont "bewährt."
 	done
 
-_ViridianForestText11::
+_ViridianForestTrainerTips2Text::
 	text "TIPS FÜR TRAINER"
 
 	para "Du kannst Deinen"
@@ -107,7 +107,7 @@ _ViridianForestText11::
 	cont "lassen!"
 	done
 
-_ViridianForestText12::
+_ViridianForestTrainerTips3Text::
 	text "TIPS FÜR TRAINER"
 
 	para "Es ist verboten,"
@@ -117,7 +117,7 @@ _ViridianForestText12::
 	cont "wilde #MON!"
 	done
 
-_ViridianForestText13::
+_ViridianForestTrainerTips4Text::
 	text "TIPS FÜR TRAINER"
 
 	para "Geschwächte"
@@ -130,7 +130,7 @@ _ViridianForestText13::
 	cont "sie fliehen!"
 	done
 
-_ViridianForestText14::
+_ViridianForestLeavingSignText::
 	text "AUF WIEDERSEHEN"
 	line "IM VERTANIA-WALD."
 

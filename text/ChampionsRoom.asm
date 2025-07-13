@@ -1,4 +1,4 @@
-_GaryChampionIntroText::
+_ChampionsRoomRivalIntroText::
 	text "<RIVAL>: Hallo!"
 
 	para "Auf diesen Moment"
@@ -42,7 +42,7 @@ _GaryChampionIntroText::
 	cont "Trainer der Welt!"
 	done
 
-_GaryDefeatedText::
+_RivalDefeatedText::
 	text "NEIN!"
 	line "Das kann nicht"
 	cont "wahr sein! Meine"
@@ -61,7 +61,7 @@ _GaryDefeatedText::
 	line "fair!"
 	prompt
 
-_GaryVictoryText::
+_RivalVictoryText::
 	text "Haha! Ich"
 	line "habe GEWONNEN!"
 
@@ -81,7 +81,7 @@ _GaryVictoryText::
 	cont "Kämpfer! Hahaha!"
 	prompt
 
-_GaryText_76103::
+_ChampionsRoomRivalAfterBattleText::
 	text "Wieso? Wieso habe"
 	line "ich verloren?"
 
@@ -99,11 +99,11 @@ _GaryText_76103::
 	line "Dir das nicht!"
 	done
 
-_GaryText2::
+_ChampionsRoomOakText::
 	text "EICH: <PLAYER>!"
 	done
 
-_GaryText_76120::
+_ChampionsRoomOakCongratulatesPlayerText::
 	text "EICH: Du hast"
 	line "also gewonnen!"
 	cont "Glückwunsch!"
@@ -115,7 +115,7 @@ _GaryText_76120::
 	line "dazugelernt, seit"
 	cont "Du Dich mit"
 	cont "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 
 	text " auf"
 	cont "den Weg gemacht"
@@ -126,7 +126,7 @@ _GaryText_76120::
 	cont "viel erfahrener!"
 	done
 
-_GaryText_76125::
+_ChampionsRoomOakDisappointedWithRivalText::
 	text "EICH: <RIVAL>!"
 	line "Du hast mich"
 	cont "sehr enttäuscht!"
@@ -155,7 +155,7 @@ _GaryText_76125::
 	cont "werden!"
 	done
 
-_GaryText_7612a::
+_ChampionsRoomOakComeWithMeText::
 	text "EICH: <PLAYER>!"
 
 	para "Du hast"

@@ -10,8 +10,8 @@ LancesRoom_Script:
 
 LanceShowOrHideEntranceBlocks:
 	ld hl, wCurrentMapScriptFlags
-	bit 5, [hl]
-	res 5, [hl]
+	bit BIT_CUR_MAP_LOADED_1, [hl]
+	res BIT_CUR_MAP_LOADED_1, [hl]
 	ret z
 	CheckEvent EVENT_LANCES_ROOM_LOCK_DOOR
 	jr nz, .closeEntrance
@@ -36,21 +36,22 @@ LanceShowOrHideEntranceBlocks:
 	predef_jump ReplaceTileBlock
 
 ResetLanceScript:
-	xor a
+	xor a ; SCRIPT_LANCESROOM_DEFAULT
 	ld [wLancesRoomCurScript], a
 	ret
 
 LancesRoom_ScriptPointers:
-	dw LanceScript0
-	dw DisplayEnemyTrainerTextAndStartBattle
-	dw LanceScript2
-	dw LanceScript3
-	dw LanceScript4
+	def_script_pointers
+	dw_const LancesRoomDefaultScript,               SCRIPT_LANCESROOM_DEFAULT
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_LANCESROOM_LANCE_START_BATTLE
+	dw_const LancesRoomLanceEndBattleScript,        SCRIPT_LANCESROOM_LANCE_END_BATTLE
+	dw_const LancesRoomPlayerIsMovingScript,        SCRIPT_LANCESROOM_PLAYER_IS_MOVING
+	dw_const LancesRoomNoopScript,                  SCRIPT_LANCESROOM_NOOP
 
-LanceScript4:
+LancesRoomNoopScript:
 	ret
 
-LanceScript0:
+LancesRoomDefaultScript:
 	CheckEvent EVENT_BEAT_LANCE
 	ret nz
 	ld hl, LanceTriggerMovementCoords
@@ -61,8 +62,8 @@ LanceScript0:
 	ld a, [wCoordIndex]
 	cp $3  ; Is player standing next to Lance's sprite?
 	jr nc, .notStandingNextToLance
-	ld a, $1
-	ldh [hSpriteIndexOrTextID], a
+	ld a, TEXT_LANCESROOM_LANCE
+	ldh [hTextID], a
 	jp DisplayTextID
 .notStandingNextToLance
 	cp $5  ; Is player standing on the entrance staircase?
@@ -70,7 +71,7 @@ LanceScript0:
 	CheckAndSetEvent EVENT_LANCES_ROOM_LOCK_DOOR
 	ret nz
 	ld hl, wCurrentMapScriptFlags
-	set 5, [hl]
+	set BIT_CUR_MAP_LOADED_1, [hl]
 	ld a, SFX_GO_INSIDE
 	call PlaySound
 	jp LanceShowOrHideEntranceBlocks
@@ -83,18 +84,18 @@ LanceTriggerMovementCoords:
 	dbmapcoord 24, 16
 	db -1 ; end
 
-LanceScript2:
+LancesRoomLanceEndBattleScript:
 	call EndTrainerBattle
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, ResetLanceScript
-	ld a, $1
-	ldh [hSpriteIndexOrTextID], a
+	ld a, TEXT_LANCESROOM_LANCE
+	ldh [hTextID], a
 	jp DisplayTextID
 
 WalkToLance:
 ; Moves the player down the hallway to Lance's room.
-	ld a, $ff
+	ld a, PAD_BUTTONS | PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	ld hl, wSimulatedJoypadStatesEnd
 	ld de, WalkToLance_RLEList
@@ -102,54 +103,55 @@ WalkToLance:
 	dec a
 	ld [wSimulatedJoypadStatesIndex], a
 	call StartSimulatingJoypadStates
-	ld a, $3
+	ld a, SCRIPT_LANCESROOM_PLAYER_IS_MOVING
 	ld [wLancesRoomCurScript], a
 	ld [wCurMapScript], a
 	ret
 
 WalkToLance_RLEList:
-	db D_UP, 12
-	db D_LEFT, 12
-	db D_DOWN, 7
-	db D_LEFT, 6
+	db PAD_UP, 12
+	db PAD_LEFT, 12
+	db PAD_DOWN, 7
+	db PAD_LEFT, 6
 	db -1 ; end
 
-LanceScript3:
+LancesRoomPlayerIsMovingScript:
 	ld a, [wSimulatedJoypadStatesIndex]
 	and a
 	ret nz
 	call Delay3
-	xor a
+	xor a ; SCRIPT_LANCESROOM_DEFAULT
 	ld [wJoyIgnore], a
 	ld [wLancesRoomCurScript], a
 	ld [wCurMapScript], a
 	ret
 
 LancesRoom_TextPointers:
-	dw LanceText1
+	def_text_pointers
+	dw_const LancesRoomLanceText, TEXT_LANCESROOM_LANCE
 
 LancesRoomTrainerHeaders:
 	def_trainers
 LancesRoomTrainerHeader0:
-	trainer EVENT_BEAT_LANCES_ROOM_TRAINER_0, 0, LanceBeforeBattleText, LanceEndBattleText, LanceAfterBattleText
+	trainer EVENT_BEAT_LANCES_ROOM_TRAINER_0, 0, LancesRoomLanceBeforeBattleText, LancesRoomLanceEndBattleText, LancesRoomLanceAfterBattleText
 	db -1 ; end
 
-LanceText1:
+LancesRoomLanceText:
 	text_asm
 	ld hl, LancesRoomTrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
 
-LanceBeforeBattleText:
-	text_far _LanceBeforeBattleText
+LancesRoomLanceBeforeBattleText:
+	text_far _LancesRoomLanceBeforeBattleText
 	text_end
 
-LanceEndBattleText:
-	text_far _LanceEndBattleText
+LancesRoomLanceEndBattleText:
+	text_far _LancesRoomLanceEndBattleText
 	text_end
 
-LanceAfterBattleText:
-	text_far _LanceAfterBattleText
+LancesRoomLanceAfterBattleText:
+	text_far _LancesRoomLanceAfterBattleText
 	text_asm
 	SetEvent EVENT_BEAT_LANCE
 	jp TextScriptEnd

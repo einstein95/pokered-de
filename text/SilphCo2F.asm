@@ -1,4 +1,4 @@
-_SilphCo2Text_59ded::
+SilphCo2FSilphWorkerFPleaseTakeThisText::
 	text "Zu Hilfe! Nein!"
 	line "Bitte nicht!"
 
@@ -9,14 +9,14 @@ _SilphCo2Text_59ded::
 	cont "Nimm das hier!"
 	prompt
 
-_ReceivedTM36Text::
+_SilphCo2FSilphWorkerFReceivedTM36Text::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM36ExplanationText::
+_SilphCo2FSilphWorkerFTM36ExplanationText::
 	text "TM36 ist die"
 	line "FINALE-Attacke!"
 
@@ -27,58 +27,58 @@ _TM36ExplanationText::
 	cont "scheidet aus!!!"
 	done
 
-_TM36NoRoomText::
+_SilphCo2FSilphWorkerFTM36NoRoomText::
 	text "Du kannst nicht"
 	line "mehr tragen!!!"
 	done
 
-_SilphCo2BattleText1::
+_SilphCo2FScientist1BattleText::
 	text "Hilfe! Ich bin"
 	line "ein Mitarbeiter"
 	cont "der SILPH CO.!"
 	done
 
-_SilphCo2EndBattleText1::
+_SilphCo2FScientist1EndBattleText::
 	text "Woher"
 	line "wußtest Du, daß"
 	cont "ich zum TEAM"
 	cont "ROCKET gehöre?"
 	prompt
 
-_SilphCo2AfterBattleText1::
+_SilphCo2FScientist1AfterBattleText::
 	text "Ich bin ein Spion"
 	line "und infiltriere"
 	cont "die SILPH CO.!"
 	done
 
-_SilphCo2BattleText2::
+_SilphCo2FScientist2BattleText::
 	text "Hau ab! Du hast"
 	line "keinen Zutritt!"
 	done
 
-_SilphCo2EndBattleText2::
+_SilphCo2FScientist2EndBattleText::
 	text ""
 	line "Nicht schlecht,"
 	cont "Herr Specht!"
 	prompt
 
-_SilphCo2AfterBattleText2::
+_SilphCo2FScientist2AfterBattleText::
 	text "Aber findest Du"
 	line "auch durch dieses"
 	cont "Labyrinth?"
 	done
 
-_SilphCo2BattleText3::
+_SilphCo2FRocket1BattleText::
 	text "Hey, Du hast hier"
 	line "nichts verloren!"
 	done
 
-_SilphCo2EndBattleText3::
+_SilphCo2FRocket1EndBattleText::
 	text "Das ist"
 	line "hart! Verloren!"
 	prompt
 
-_SilphCo2AfterBattleText3::
+_SilphCo2FRocket1AfterBattleText::
 	text "Die"
 	line "diamantförmigen"
 	cont "Felder sind"
@@ -88,17 +88,17 @@ _SilphCo2AfterBattleText3::
 	line "Transportsystem!"
 	done
 
-_SilphCo2BattleText4::
+_SilphCo2FRocket2BattleText::
 	text "Hey Kleiner! Was"
 	line "machst Du hier?"
 	done
 
-_SilphCo2EndBattleText4::
+_SilphCo2FRocket2EndBattleText::
 	text "Ich bin"
 	line "ein Versager!"
 	prompt
 
-_SilphCo2AfterBattleText4::
+_SilphCo2FRocket2AfterBattleText::
 	text "Die SILPH CO. und"
 	line "das TEAM ROCKET"
 	cont "werden demnächst"

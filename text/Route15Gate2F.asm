@@ -1,4 +1,4 @@
-_Route15GateUpstairsText_4968c::
+_Route15Gate2FOaksAideExpAllText::
 	text "Mit dem EP-TEILER"
 	line "bekommen alle"
 	cont "#MON, die Du"
@@ -18,7 +18,7 @@ _Route15GateUpstairsText_4968c::
 	cont "möchtest."
 	done
 
-_Route15GateUpstairsText_49698::
+_Route15Gate2FBinocularsText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 

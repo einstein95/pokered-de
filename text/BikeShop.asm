@@ -1,4 +1,4 @@
-_BikeShopText_1d810::
+_BikeShopClerkWelcomeText::
 	text "Hallo! Willkommen"
 	line "im FAHRRADLADEN!"
 
@@ -8,7 +8,7 @@ _BikeShopText_1d810::
 	cont "für Dich!"
 	prompt
 
-_BikeShopText_1d815::
+_BikeShopClerkDoYouLikeItText::
 	text "Das ist unser"
 	line "bestes FAHRRAD!"
 	cont "Möchtest Du es"
@@ -21,7 +21,7 @@ _BikeShopCantAffordText::
 	cont "nicht leisten!"
 	prompt
 
-_BikeShopText_1d81f::
+_BikeShopClerkOhThatsAVoucherText::
 	text "Oh, das ist ein..."
 
 	para "...RAD-COUPON!"
@@ -30,7 +30,7 @@ _BikeShopText_1d81f::
 	line "Es gehört Dir!"
 	prompt
 
-_BikeShopText_1d824::
+_BikeShopExchangedVoucherText::
 	text "<PLAYER> tauscht"
 	line "den RAD-COUPON"
 	cont "gegen das"
@@ -42,7 +42,7 @@ _BikeShopComeAgainText::
 	line "mal wieder!"
 	done
 
-_BikeShopText_1d82f::
+_BikeShopClerkHowDoYouLikeYourBicycleText::
 	text "Wie gefällt Dir"
 	line "Dein neues"
 	cont "FAHRRAD?"
@@ -53,13 +53,13 @@ _BikeShopText_1d82f::
 	cont "fahren!"
 	done
 
-_BikeShopText_1d834::
+_BikeShopBagFullText::
 	text "Du kannst es"
 	line "momentan nicht"
 	cont "mitnehmen!"
 	done
 
-_BikeShopText_1d843::
+_BikeShopMiddleAgedWomanText::
 	text "Ich möchte ein"
 	line "HOLLANDRAD"
 	cont "kaufen!"
@@ -69,14 +69,14 @@ _BikeShopText_1d843::
 	cont "Gepäckträger!"
 	done
 
-_BikeShopText_1d85c::
+_BikeShopYoungsterTheseBikesAreExpensiveText::
 	text "Die FAHRRÄDER"
 	line "sind ziemlich"
 	cont "cool, aber"
 	cont "unheimlich teuer!"
 	done
 
-_BikeShopText_1d861::
+_BikeShopYoungsterCoolBikeText::
 	text "Wow! Du hast ein"
 	line "cooles FAHRRAD!"
 	done

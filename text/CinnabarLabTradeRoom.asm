@@ -1,4 +1,4 @@
-_Lab2Text1::
+_CinnabarLabTradeRoomSuperNerdText::
 	text "Ich habe auf dem"
 	line "MONDBERG ein"
 	cont "seltsames Fossil"

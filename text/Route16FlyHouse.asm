@@ -1,4 +1,4 @@
-_Route16HouseText3::
+_Route16FlyHouseBrunetteGirlText::
 	text "Du hast meinen"
 	line "geheimen Unter-"
 	cont "schlupf gefunden!"
@@ -9,12 +9,12 @@ _Route16HouseText3::
 	cont "etwas von mir!"
 	prompt
 
-_ReceivedHM02Text::
+_Route16FlyHouseBrunetteGirlReceivedHM02Text::
 	text "<PLAYER> erhält"
 	line "VM02!@"
 	text_end
 
-_HM02ExplanationText::
+_Route16FlyHouseBrunetteGirlHM02ExplanationText::
 	text "VM02 ist FLIEGEN."
 	line "Damit kannst Du"
 	cont "in jede Stadt"
@@ -24,12 +24,12 @@ _HM02ExplanationText::
 	line "Nutzen sein!"
 	done
 
-_HM02NoRoomText::
+_Route16FlyHouseBrunetteGirlHM02NoRoomText::
 	text "Du hast keinen"
 	line "Platz mehr, um"
 	cont "sie mitzunehmen!"
 	done
 
-_Route16HouseText_1e652::
+_Route16FlyHouseFearowText::
 	text "IBITAK: Ibitak!"
 	done

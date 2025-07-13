@@ -1,4 +1,4 @@
-_SaffronMartText2::
+_SaffronMartSuperNerdText::
 	text "TOP-SCHUTZ hält"
 	line "schwache #MON"
 	cont "länger von Dir"
@@ -6,7 +6,7 @@ _SaffronMartText2::
 	cont "SUPERSCHUTZ!"
 	done
 
-_SaffronMartText3::
+_SaffronMartCooltrainerFText::
 	text "BELEBER ist zwar"
 	line "teuer, aber"
 	cont "besiegte #MON"

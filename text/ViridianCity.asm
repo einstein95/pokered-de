@@ -1,4 +1,4 @@
-_ViridianCityText1::
+_ViridianCityYoungster1Text::
 	text "Diese #BÄLLE"
 	line "an Deinem Gürtel"
 	cont "zeigen mir, daß"
@@ -12,7 +12,7 @@ _ViridianCityText1::
 	cont "kann, nicht wahr?"
 	done
 
-_ViridianCityText_19122::
+_ViridianCityGambler1GymAlwaysClosedText::
 	text "Diese PKMN-ARENA"
 	line "ist stets"
 	cont "geschlossen!"
@@ -23,24 +23,24 @@ _ViridianCityText_19122::
 	cont "sein mag?"
 	done
 
-_ViridianCityText_19127::
+_ViridianCityGambler1GymLeaderReturnedText::
 	text "Der ARENALEITER"
 	line "von VERTANIA CITY"
 	cont "ist zurück!"
 	done
 
-_ViridianCityText_1914d::
+_ViridianCityYoungster2YouWantToKnowAboutText::
 	text "Möchtest Du etwas"
 	line "über die zwei"
 	cont "RAUPEN-#MON"
 	cont "erfahren?"
 	done
 
-_ViridianCityText_19152::
+ViridianCityYoungster2OkThenText::
 	text "OK, alles klar!"
 	done
 
-_ViridianCityText_19157::
+ViridianCityYoungster2CaterpieAndWeedleDescriptionText::
 	text "RAUPY ist nicht"
 	line "giftig, aber"
 	cont "HORNLIU!"
@@ -49,14 +49,14 @@ _ViridianCityText_19157::
 	line "GIFTSTACHEL!"
 	done
 
-_ViridianCityText_19175::
+_ViridianCityGirlHasntHadHisCoffeeYetText::
 	text "Großvater! Sei"
 	line "nicht so gemein!"
 	cont "Er hatte noch"
 	cont "keinen Kaffee!!!"
 	done
 
-_ViridianCityText_1917a::
+_ViridianCityGirlWhenIGoShopText::
 	text "Wenn ich zum"
 	line "Einkaufen nach"
 	cont "MARMORIA CITY"
@@ -66,7 +66,7 @@ _ViridianCityText_1917a::
 	cont "gehen."
 	done
 
-_ViridianCityText_19191::
+_ViridianCityOldManSleepyPrivatePropertyText::
 	text "Du kannst hier"
 	line "nicht durch!"
 
@@ -74,7 +74,7 @@ _ViridianCityText_19191::
 	line "Privatgelände!"
 	done
 
-_ViridianCityText_191ca::
+ViridianCityFisherYouCanHaveThisText::
 	text "Gäääähn! Ich bin"
 	line "wohl eingenickt!"
 
@@ -92,22 +92,22 @@ _ViridianCityText_191ca::
 	cont "haben!"
 	prompt
 
-_ReceivedTM42Text::
+_ViridianCityFisherReceivedTM42Text::
 	text "<PLAYER> erhält"
 	line "TM42!@"
 	text_end
 
-_TM42Explanation::
+_ViridianCityFisherTM42ExplanationText::
 	text "TM42 ist"
 	line "TRAUMFRESSER!"
 	done
 
-_TM42NoRoomText::
+_ViridianCityFisherTM42NoRoomText::
 	text "Du trägst zuviele"
 	line "Items bei Dir!"
 	done
 
-_ViridianCityText_1920a::
+_ViridianCityOldManHadMyCoffeeNowText::
 	text "Ahh, ich habe"
 	line "endlich meinen"
 	cont "Kaffee bekommen!"
@@ -119,7 +119,7 @@ _ViridianCityText_1920a::
 	line "etwa eilig?"
 	done
 
-_ViridianCityText_1920f::
+_ViridianCityOldManKnowHowToCatchPokemonText::
 	text "Aha, Du benutzt"
 	line "einen #DEX!"
 
@@ -137,25 +137,25 @@ _ViridianCityText_1920f::
 	line "erkläre es Dir!"
 	done
 
-_ViridianCityText_19214::
+_ViridianCityOldManTimeIsMoneyText::
 	text "Zeit ist Geld..."
 	line "Dann gehe weiter!"
 	done
 
-_ViridianCityText_19219::
+_ViridianCityOldManYouNeedToWeakenTheTargetText::
 	text "Willst Du ein"
 	line "#MON fangen,"
 	cont "mußt Du es"
 	cont "zuerst schwächen!"
 	done
 
-_ViridianCityText8::
+_ViridianCitySignText::
 	text "VERTANIA CITY"
 	line "Das immergrüne"
 	cont "Paradies!"
 	done
 
-_ViridianCityText9::
+_ViridianCityTrainerTips1Text::
 	text "TIPS FÜR TRAINER"
 
 	para "Fange #MON,"
@@ -168,7 +168,7 @@ _ViridianCityText9::
 	cont "die Kämpfe!"
 	done
 
-_ViridianCityText10::
+_ViridianCityTrainerTips2Text::
 	text "TIPS FÜR TRAINER"
 
 	para "Die Attacken der"
@@ -184,12 +184,12 @@ _ViridianCityText10::
 	cont "CENTER bringen!"
 	done
 
-_ViridianCityText13::
+_ViridianCityGymSignText::
 	text "VERTANIA CITY"
 	line "PKMN-ARENA"
 	done
 
-_ViridianCityText14::
+_ViridianCityGymLockedText::
 	text "Die Türen der"
 	line "ARENA sind"
 	cont "verschlossen..."

@@ -33,7 +33,7 @@ _BrunoAfterBattleText::
 	cont "wartet bereits..."
 	done
 
-_BrunoDontRunAwayText::
+_BrunosRoomBrunoDontRunAwayText::
 	text "EINE STIMME:"
 	line "Lauf nicht davon!"
 	done

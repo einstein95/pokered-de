@@ -1,4 +1,4 @@
-_TM39PreReceiveText::
+_Route12Gate2FBrunetteGirlYouCanHaveThisText::
 	text "Meine #MON"
 	line "wurden im"
 	cont "#MON-TURM zur"
@@ -11,12 +11,12 @@ _TM39PreReceiveText::
 	cont "nicht länger..."
 	prompt
 
-_ReceivedTM39Text::
+_Route12Gate2FBrunetteGirlReceivedTM39Text::
 	text "<PLAYER> erhält"
 	line "TM39!@"
 	text_end
 
-_TM39ExplanationText::
+_Route12Gate2FBrunetteGirlTM39ExplanationText::
 	text "TM39 ist"
 	line "STERNSCHAUER."
 
@@ -28,13 +28,13 @@ _TM39ExplanationText::
 	cont "sein kann!"
 	done
 
-_TM39NoRoomText::
+_Route12Gate2FBrunetteGirlTM39NoRoomText::
 	text "Oh, Du kannst sie"
 	line "im Moment nicht"
 	cont "tragen."
 	done
 
-_Route12GateUpstairsText_495b8::
+_Route12Gate2FLeftBinocularsText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 
@@ -42,7 +42,7 @@ _Route12GateUpstairsText_495b8::
 	line "angelnden Mann!"
 	done
 
-_Route12GateUpstairsText_495c4::
+_Route12Gate2FRightBinocularsText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 

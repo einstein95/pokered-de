@@ -1,4 +1,4 @@
-_CeladonMart2Text3::
+_CeladonMart2FMiddleAgedManText::
 	text "SUPERSCHUTZ hält"
 	line "#MON auf"
 	cont "Distanz..."
@@ -7,14 +7,14 @@ _CeladonMart2Text3::
 	line "normaler SCHUTZ!"
 	done
 
-_CeladonMart2Text4::
+_CeladonMart2FGirlText::
 	text "Vor längeren"
 	line "Ausflügen"
 	cont "solltest Du"
 	cont "BELEBER kaufen."
 	done
 
-_CeladonMart2Text5::
+_CeladonMart2FCurrentFloorSignText::
 	text "Nützliche Items"
 	line "für Trainer!"
 

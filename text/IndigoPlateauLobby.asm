@@ -1,4 +1,4 @@
-_IndigoPlateauLobbyText2::
+_IndigoPlateauLobbyGymGuideText::
 	text "Hey! Warte, Du"
 	line "Champion in spe!"
 
@@ -13,7 +13,7 @@ _IndigoPlateauLobbyText2::
 	cont "vorn beginnen!"
 	done
 
-_IndigoPlateauLobbyText3::
+_IndigoPlateauLobbyCooltrainerFText::
 	text "Ab jetzt triffst"
 	line "Du nacheinander"
 	cont "auf die TOP VIER!"

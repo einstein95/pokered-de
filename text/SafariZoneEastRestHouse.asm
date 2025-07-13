@@ -1,10 +1,10 @@
-_SafariZoneRestHouse3Text1::
+_SafariZoneEastRestHouseScientistText::
 	text "Wie viele hast Du"
 	line "gefangen? Ich bin"
 	cont "total erschöpft!"
 	done
 
-_SafariZoneRestHouse3Text2::
+_SafariZoneEastRestHouseRockerText::
 	text "Ich habe ein"
 	line "CHANEIRA"
 	cont "gefangen!"
@@ -13,7 +13,7 @@ _SafariZoneRestHouse3Text2::
 	line "sich gelohnt!"
 	done
 
-_SafariZoneRestHouse3Text3::
+_SafariZoneEastRestHouseSilphWorkerMText::
 	text "Was für ein Spaß!"
 	line "Aber jetzt bin"
 	cont "ich hundemüde..."

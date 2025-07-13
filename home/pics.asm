@@ -16,7 +16,7 @@ UncompressMonSprite::
 ; $4A ≤ index < $74:       bank $B ("Pics 3")
 ; $74 ≤ index < $99:       bank $C ("Pics 4")
 ; $99 ≤ index:             bank $D ("Pics 5")
-	ld a, [wcf91]
+	ld a, [wCurPartySpecies]
 	ld b, a
 	cp MEW
 	ld a, BANK(MewPicFront)
@@ -93,7 +93,7 @@ LoadUncompressedSpriteData::
 	add a     ; 8*(7*((8-w)/2) + 7-h) ; combined overall offset (in bytes)
 	ldh [hSpriteOffset], a
 	xor a
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	ld hl, sSpriteBuffer0
 	call ZeroSpriteBuffer   ; zero buffer 0
 	ld de, sSpriteBuffer1
@@ -151,7 +151,7 @@ ZeroSpriteBuffer::
 ; de: output address
 InterlaceMergeSpriteBuffers::
 	xor a
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	push de
 	ld hl, sSpriteBuffer2 + (SPRITEBUFFERSIZE - 1) ; destination: end of buffer 2
 	ld de, sSpriteBuffer1 + (SPRITEBUFFERSIZE - 1) ; source 2: end of buffer 1

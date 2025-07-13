@@ -1,4 +1,4 @@
-_FuchsiaHouse1Text1::
+_FuchsiaBillsGrandpasHouseMiddleAgedWomanText::
 	text "Der Wärter der"
 	line "SAFARI-ZONE ist"
 	cont "sehr alt! Aber er"
@@ -9,7 +9,7 @@ _FuchsiaHouse1Text1::
 	line "er ein Gebiß!"
 	done
 
-_FuchsiaHouse1Text2::
+_FuchsiaBillsGrandpasHouseBillsGrandpaText::
 	text "Hast Du schon"
 	line "BILL getroffen?"
 
@@ -22,7 +22,7 @@ _FuchsiaHouse1Text2::
 	cont "gesammelt!"
 	done
 
-_FuchsiaHouse1Text3::
+_FuchsiaBillsGrandpasHouseYoungsterText::
 	text "BILL sammelt auf"
 	line "seinem PC Daten"
 	cont "über #MON!"

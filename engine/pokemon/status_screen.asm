@@ -41,7 +41,7 @@ DrawHP_:
 	call DrawHPBar
 	pop hl
 	ldh a, [hUILayoutFlags]
-	bit 0, a
+	bit BIT_PARTY_MENU_HP_BAR, a
 	jr z, .printFractionBelowBar
 	ld bc, $9 ; right of bar
 	jr .printFraction
@@ -71,16 +71,16 @@ StatusScreen:
 ; mon is in a box or daycare
 	ld a, [wLoadedMonBoxLevel]
 	ld [wLoadedMonLevel], a
-	ld [wCurEnemyLVL], a
+	ld [wCurEnemyLevel], a
 	ld hl, wLoadedMonHPExp - 1
 	ld de, wLoadedMonStats
 	ld b, $1
 	call CalcStats ; Recalculate stats
 .DontRecalculate
-	ld hl, wd72c
-	set 1, [hl]
+	ld hl, wStatusFlags2
+	set BIT_NO_AUDIO_FADE_OUT, [hl]
 	ld a, $33
-	ldh [rNR50], a ; Reduce the volume
+	ldh [rAUDVOL], a ; Reduce the volume
 	call GBPalWhiteOutWithDelay3
 	call ClearScreen
 	call UpdateSprites
@@ -139,11 +139,11 @@ StatusScreen:
 	hlcoord 14, 2
 	call PrintLevel ; Pokémon level
 	ld a, [wMonHIndex]
-	ld [wd11e], a
-	ld [wd0b5], a
+	ld [wPokedexNum], a
+	ld [wCurSpecies], a
 	predef IndexToPokedex
 	hlcoord 3, 7
-	ld de, wd11e
+	ld de, wPokedexNum
 	lb bc, LEADING_ZEROES | 1, 3
 	call PrintNumber ; Pokémon no.
 	hlcoord 11, 10
@@ -170,9 +170,9 @@ StatusScreen:
 	call GBPalNormal
 	hlcoord 1, 0
 	call LoadFlippedFrontSpriteByMonIndex ; draw Pokémon picture
-	ld a, [wcf91]
-	call PlayCry ; play Pokémon cry
-	call WaitForTextScrollButtonPress ; wait for button
+	ld a, [wCurPartySpecies]
+	call PlayCry
+	call WaitForTextScrollButtonPress
 	pop af
 	ldh [hTileAnimations], a
 	ret
@@ -364,7 +364,7 @@ StatusScreen2:
 	ld bc, wPartyMon1PP - wPartyMon1Moves - 1
 	add hl, bc
 	ld a, [hl]
-	and $3f
+	and PP_MASK
 	ld [wStatusScreenCurrentPP], a
 	ld h, d
 	ld l, e
@@ -420,7 +420,7 @@ StatusScreen2:
 	hlcoord 9, 1
 	call StatusScreen_ClearName
 	ld a, [wMonHIndex]
-	ld [wd11e], a
+	ld [wNamedObjectIndex], a
 	call GetMonName
 	hlcoord 9, 1
 	call PlaceString
@@ -430,10 +430,10 @@ StatusScreen2:
 	call WaitForTextScrollButtonPress ; wait for button
 	pop af
 	ldh [hTileAnimations], a
-	ld hl, wd72c
-	res 1, [hl]
+	ld hl, wStatusFlags2
+	res BIT_NO_AUDIO_FADE_OUT, [hl]
 	ld a, $77
-	ldh [rNR50], a
+	ldh [rAUDVOL], a
 	call GBPalWhiteOut
 	jp ClearScreen
 

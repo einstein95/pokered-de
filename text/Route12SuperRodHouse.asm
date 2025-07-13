@@ -1,4 +1,4 @@
-_Route12HouseText_564c0::
+_Route12SuperRodHouseFishingGuruDoYouLikeToFishText::
 	text "Mein Bruder ist"
 	line "der PROFI-ANGLER!"
 
@@ -9,7 +9,7 @@ _Route12HouseText_564c0::
 	line "angeln?"
 	done
 
-_Route12HouseText_564c5::
+_Route12SuperRodHouseFishingGuruReceivedSuperRodText::
 	text "Cool! Du bist mir"
 	line "sympathisch!"
 
@@ -23,7 +23,7 @@ _Route12HouseText_564c5::
 	text "!@"
 	text_end
 
-_Route12HouseText_564ca::
+_Route12SuperRodHouseFishingGuruFishingWayOfLifeText::
 	text_start
 
 	para "Angeln ist nicht"
@@ -35,12 +35,12 @@ _Route12HouseText_564ca::
 	cont "Fang zu landen!"
 	done
 
-_Route12HouseText_564cf::
+_Route12SuperRodHouseFishingGuruThatsDisappointingText::
 	text "Oh! Das ist so"
 	line "enttäuschend..."
 	done
 
-_Route12HouseText_564d4::
+_Route12SuperRodHouseFishingGuruTryFishingText::
 	text "Hallo,"
 	line "<PLAYER>!"
 
@@ -57,7 +57,7 @@ _Route12HouseText_564d4::
 	cont "erlaubt!"
 	done
 
-_Route12HouseText_564d9::
+_Route12SuperRodHouseFishingGuruNoRoomText::
 	text "Oh nein!"
 
 	para "Ich habe ein"

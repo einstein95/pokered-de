@@ -1,15 +1,15 @@
-_RocketHideout3BattleText2::
+_RocketHideoutB3FRocket1BattleText::
 	text "Halte Dich aus"
 	line "TEAM ROCKETS"
 	cont "Angelegenheiten!"
 	done
 
-_RocketHideout3EndBattleText2::
+_RocketHideoutB3FRocket1EndBattleText::
 	text "Uff! Ich"
 	line "bin am Boden!"
 	prompt
 
-_RocketHideout3AfterBattleTxt2::
+_RocketHideoutB3FRocket1AfterBattleText::
 	text "Das SILPH SCOPE?"
 	line "Das Gerät, das"
 	cont "der BOSS geraubt"
@@ -17,7 +17,7 @@ _RocketHideout3AfterBattleTxt2::
 	cont "irgendwo..."
 	done
 
-_RocketHideout3BattleTxt::
+_RocketHideout3BattleText::
 	text "Wir hörten schon,"
 	line "daß Du im"
 	cont "Anmarsch bist!"

@@ -1,4 +1,4 @@
-_LanceBeforeBattleText::
+_LancesRoomLanceBeforeBattleText::
 	text "Ich habe bereits"
 	line "von Dir gehört,"
 	cont "<PLAYER>!"
@@ -32,7 +32,7 @@ _LanceBeforeBattleText::
 	cont "hier, <PLAYER>!"
 	done
 
-_LanceEndBattleText::
+_LancesRoomLanceEndBattleText::
 	text ""
 	line "Es ist vorbei!"
 
@@ -41,7 +41,7 @@ _LanceEndBattleText::
 	cont "#MON-MEISTER!"
 	prompt
 
-_LanceAfterBattleText::
+_LancesRoomLanceAfterBattleText::
 	text "Es ist kaum zu"
 	line "glauben! Meine"
 	cont "Drachen sind an"

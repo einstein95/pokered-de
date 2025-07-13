@@ -1,4 +1,4 @@
-_UGPathRoute7EntranceUnusedText_5d773::
+_UndergroundPathRoute7CopyUnusedGirlText::
 	text "Ich würde gerne"
 	line "nach PRISMANIA"
 	cont "CITY in das große"
@@ -10,14 +10,14 @@ _UGPathRoute7EntranceUnusedText_5d773::
 	cont "Gestalten herum."
 	done
 
-_UGPathRoute7EntranceUnusedText_5d778::
+_UndergroundPathRoute7CopyUnusedTeamRocketHadAHideoutText::
 	text "In PRISMANIA CITY"
 	line "gab es einen"
 	cont "Unterschlupf des"
 	cont "TEAM ROCKET?"
 	done
 
-_UGPathRoute7EntranceUnusedText_5d77d::
+_UndergroundPathRoute7CopyUnusedMiddleAgedManText::
 	text "Möchtest Du in"
 	line "PRISMANIA CITY"
 	cont "einkaufen gehen?"
@@ -27,7 +27,7 @@ _UGPathRoute7EntranceUnusedText_5d77d::
 	cont "Westen nehmen!"
 	done
 
-_UGPathRoute7EntranceUnusedText_5d782::
+_UndergroundPathRoute7CopyUnusedGoesUnderSaffronText::
 	text "Der TUNNELPFAD"
 	line "führt Dich unter"
 	cont "SAFFRONIA CITY"

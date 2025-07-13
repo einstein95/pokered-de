@@ -1,15 +1,15 @@
-_VermilionHouse1Text1::
+_VermilionPidgeyHouseYoungsterText::
 	text "Ich lasse TAUBSI"
 	line "einen Brief nach"
 	cont "SAFFRONIA CITY im"
 	cont "Norden bringen!"
 	done
 
-_VermilionHouse1Text2::
+_VermilionPidgeyHousePidgeyText::
 	text "TAUBSI: Taubsi!@"
 	text_end
 
-_VermilionHouse1Text3::
+_VermilionPidgeyHouseLetterText::
 	text "Liebe NIKKI! Ich"
 	line "hoffe, wir sehen"
 	cont "uns bald wieder!"

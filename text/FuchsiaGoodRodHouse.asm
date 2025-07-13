@@ -1,4 +1,4 @@
-_FuchsiaHouse3Text_561bd::
+_FuchsiaGoodRodHouseFishingGuruText::
 	text "Ich bin der"
 	line "ältere Bruder des"
 	cont "PROFIANGLERS!"
@@ -10,7 +10,7 @@ _FuchsiaHouse3Text_561bd::
 	line "gerne?"
 	done
 
-_FuchsiaHouse3Text_561c2::
+_FuchsiaGoodRodHouseFishingGuruReceivedGoodRodText::
 	text "Klasse! Du bist"
 	line "mir sympathisch!"
 
@@ -23,19 +23,19 @@ _FuchsiaHouse3Text_561c2::
 	text "!@"
 	text_end
 
-_FuchsiaHouse3Text_56212::
+_FuchsiaGoodRodHouseFishingGuruThatsSoDisappointingText::
 	text "Oh!"
 	line "Das ist schade!"
 	done
 
-_FuchsiaHouse3Text_56217::
+_FuchsiaGoodRodHouseFishingGuruHowAreTheFishText::
 	text "Hallo, <PLAYER>!"
 
 	para "Wie beißen die"
 	line "Fische?"
 	done
 
-_FuchsiaHouse3Text_5621c::
+_FuchsiaGoodRodHouseFishingGuruNoRoomText::
 	text "Oh nein!"
 
 	para "Du hast keinen"

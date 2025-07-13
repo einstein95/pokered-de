@@ -1,9 +1,9 @@
-_OakAppearsText::
+_PalletTownOakHeyWaitDontGoOutText::
 	text "EICH: Warte!"
 	line "Geh nicht raus!@"
 	text_end
 
-_OakWalksUpText::
+_PalletTownOakItsUnsafeText::
 	text "PROF. EICH:"
 	line "Draußen ist es"
 	cont "gefährlich! Wilde"
@@ -18,7 +18,7 @@ _OakWalksUpText::
 	line "mir!"
 	done
 
-_PalletTownText2::
+_PalletTownGirlText::
 	text "Auch ich ziehe"
 	line "#MON auf!"
 
@@ -27,7 +27,7 @@ _PalletTownText2::
 	cont "mich beschützen!"
 	done
 
-_PalletTownText3::
+_PalletTownFisherText::
 	text "Die Technik"
 	line "heutzutage ist"
 	cont "unglaublich!"
@@ -40,22 +40,22 @@ _PalletTownText3::
 	cont "abrufen!"
 	done
 
-_PalletTownText4::
+_PalletTownOaksLabSignText::
 	text "PROFESSOR EICH"
 	line "#MON-LABOR"
 	done
 
-_PalletTownText5::
+_PalletTownSignText::
 	text "ALABASTIA"
 	line "Dich erwarten"
 	cont "aufregende"
 	cont "Abenteuer!"
 	done
 
-_PalletTownText6::
+_PalletTownPlayersHouseSignText::
 	text "Haus von <PLAYER>"
 	done
 
-_PalletTownText7::
+_PalletTownRivalsHouseSignText::
 	text "Haus von <RIVAL>"
 	done

@@ -1,4 +1,4 @@
-_CeladonCityText1::
+_CeladonCityLittleGirlText::
 	text "Ich habe SMOGON"
 	line "auf der"
 	cont "ZINNOBERINSEL"
@@ -10,19 +10,19 @@ _CeladonCityText1::
 	cont "Gift aus!"
 	done
 
-_CeladonCityText2::
+_CeladonCityGramps1Text::
 	text "Hehe! Diese"
 	line "ARENA ist voller"
 	cont "Frauen..."
 	done
 
-_CeladonCityText3::
+_CeladonCityGirlText::
 	text "Die SPIELHALLE"
 	line "schadet dem Ruf"
 	cont "unserer Stadt!"
 	done
 
-_CeladonCityText4::
+_CeladonCityGramps2Text::
 	text "Mist! Ich habe"
 	line "alles verspielt!"
 
@@ -33,7 +33,7 @@ _CeladonCityText4::
 	cont "eingetauscht!"
 	done
 
-_TM41PreText::
+_CeladonCityGramps3Text::
 	text "Hallo erstmal!"
 
 	para "Ich kenne Dich"
@@ -46,14 +46,14 @@ _TM41PreText::
 	line "Geschenk!"
 	prompt
 
-_ReceivedTM41Text::
+_CeladonCityGramps3ReceivedTM41Text::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM41ExplanationText::
+_CeladonCityGramps3TM41ExplanationText::
 	text "TM41 ist"
 	line "WEICHEI!"
 
@@ -64,12 +64,12 @@ _TM41ExplanationText::
 	line "heißt CHANEIRA!"
 	done
 
-_TM41NoRoomText::
+_CeladonCityGramps3TM41NoRoomText::
 	text "Oh, Du trägst"
 	line "zu viele Items!"
 	done
 
-_CeladonCityText6::
+_CeladonCityFisherText::
 	text "QUAPPO ist"
 	line "mein bester"
 	cont "Freund!"
@@ -81,24 +81,24 @@ _CeladonCityText6::
 	cont "gab!"
 	done
 
-_CeladonCityText7::
+_CeladonCityPoliwrathText::
 	text "QUAPPO: Quappo!"
 	line "Quappo!@"
 	text_end
 
-_CeladonCityText8::
+_CeladonCityRocket1Text::
 	text "Was starrst Du"
 	line "mich so an?"
 	done
 
-_CeladonCityText9::
+_CeladonCityRocket2Text::
 	text "Halte Dich aus"
 	line "TEAM ROCKETS"
 	cont "Angelegenheiten"
 	cont "heraus!"
 	done
 
-_CeladonCityText10::
+_CeladonCityTrainerTips1Text::
 	text "TIPS FÜR TRAINER"
 
 	para "X-TREFFER erhöht"
@@ -119,14 +119,14 @@ _CeladonCityText10::
 	cont "CITY kaufen!"
 	done
 
-_CeladonCityText11::
+_CeladonCitySignText::
 	text "PRISMANIA CITY"
 	line "Die Stadt der"
 	cont "Regenbogen-"
 	cont "Träume!"
 	done
 
-_CeladonCityText13::
+_CeladonCityGymSignText::
 	text "PRISMANIA CITY"
 	line "PKMN-ARENA"
 	cont "ARENALEITERIN:"
@@ -136,18 +136,18 @@ _CeladonCityText13::
 	line "der Natur!"
 	done
 
-_CeladonCityText14::
+_CeladonCityMansionSignText::
 	text "PRISMANIA-VILLA"
 	done
 
-_CeladonCityText15::
+_CeladonCityDeptStoreSignText::
 	text "Im PRISMANIA CITY"
 	line "EINKAUFSZENTRUM"
 	cont "findest Du alles,"
 	cont "was Du brauchst!"
 	done
 
-_CeladonCityText16::
+_CeladonCityTrainerTips2Text::
 	text "TIPS FÜR TRAINER"
 
 	para "MEGABLOCK schützt"
@@ -163,13 +163,13 @@ _CeladonCityText16::
 	cont "CITY erstehen!"
 	done
 
-_CeladonCityText17::
+_CeladonCityPrizeExchangeSignText::
 	text "Tausche Münzen"
 	line "gegen Preise!"
 	cont "WECHSELSTUBE"
 	done
 
-_CeladonCityText18::
+_CeladonCityGameCornerSignText::
 	text "ROCKET SPIELHALLE"
 	line "Ein Spielplatz"
 	cont "für Erwachsene!"

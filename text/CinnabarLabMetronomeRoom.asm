@@ -1,4 +1,4 @@
-_TM35PreReceiveText::
+_CinnabarLabMetronomeRoomScientist1Text::
 	text "Tak-tak-tak!"
 	line "Ich habe eine"
 	cont "TM konstruiert!"
@@ -8,14 +8,14 @@ _TM35PreReceiveText::
 	cont "Dinge!"
 	prompt
 
-_ReceivedTM35Text::
+_CinnabarLabMetronomeRoomScientist1ReceivedTM35Text::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM35ExplanationText::
+_CinnabarLabMetronomeRoomScientist1TM35ExplanationText::
 	text "Tak-tak-tak!"
 	line "So klingt ein"
 	cont "METRONOM!"
@@ -26,12 +26,12 @@ _TM35ExplanationText::
 	cont "nicht kennt!"
 	done
 
-_TM35NoRoomText::
+_CinnabarLabMetronomeRoomScientist1TM35NoRoomText::
 	text "Dein Rucksack"
 	line "ist zu voll!"
 	done
 
-_Lab3Text2::
+_CinnabarLabMetronomeRoomScientist2Text::
 	text "EVOLI kann sich"
 	line "zu einem von drei"
 	cont "verschiedenen"
@@ -39,7 +39,7 @@ _Lab3Text2::
 	cont "entwickeln."
 	done
 
-_Lab3Text3::
+_CinnabarLabMetronomeRoomPCText::
 	text "Eine E-Mail ist"
 	line "angekommen!"
 
@@ -65,7 +65,7 @@ _Lab3Text3::
 	para "..."
 	done
 
-_Lab3Text5::
+_CinnabarLabMetronomeRoomAmberPipeText::
 	text "Eine Pfeife aus"
 	line "Bernstein!"
 	done

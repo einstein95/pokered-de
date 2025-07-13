@@ -1,4 +1,4 @@
-_PewterMartText2::
+_PewterMartYoungsterText::
 	text "Ein zwielichtiger"
 	line "alter Mann hat"
 	cont "mir dieses"
@@ -10,7 +10,7 @@ _PewterMartText2::
 	cont "¥500 gekostet!"
 	done
 
-_PewterMartText3::
+_PewterMartSuperNerdText::
 	text "Wenn man seine"
 	line "#MON eifrig"
 	cont "trainiert, können"

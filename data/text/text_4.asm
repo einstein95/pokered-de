@@ -5,7 +5,7 @@ _PokemartGreetingText::
 	done
 
 _PokemonFaintedText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "wurde besiegt!"
 	done
@@ -153,7 +153,7 @@ _ForgotAndText::
 	text_ram wLearnMoveMonName
 	text " hat"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	cont "vergessen!"
 

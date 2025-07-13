@@ -1,4 +1,4 @@
-_PewterHouse2Text1::
+_PewterSpeechHouseGamblerText::
 	text "Mit wachsender"
 	line "Erfahrung lernen"
 	cont "#MON neue"
@@ -10,7 +10,7 @@ _PewterHouse2Text1::
 	cont "beibringen!"
 	done
 
-_PewterHouse2Text2::
+_PewterSpeechHouseYoungsterText::
 	text "#MON sind"
 	line "einfacher zu"
 	cont "fangen, wenn sie"

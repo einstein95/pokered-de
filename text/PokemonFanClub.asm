@@ -1,18 +1,18 @@
-PikachuFanText::
+_PokemonFanClubPikachuFanNormalText::
 	text "Hat mein PIKACHU"
 	line "nicht einen"
 	cont "wunderschönen"
 	cont "Schweif?"
 	done
 
-PikachuFanBetterText::
+_PokemonFanClubPikachuFanBetterText::
 	text "Hmpf! Mein"
 	line "PIKACHU ist"
 	cont "viel süßer als"
 	cont "ihr #MON!"
 	done
 
-SeelFanText::
+_PokemonFanClubSeelFanNormalText::
 	text "Ich liebe mein"
 	line "JUROB!"
 
@@ -21,23 +21,23 @@ SeelFanText::
 	cont "Arm nehme!"
 	done
 
-SeelFanBetterText::
+_PokemonFanClubSeelFanBetterText::
 	text "Du meine Güte!"
 
 	para "Mein JUROB ist"
 	line "viel hübscher!"
 	done
 
-FanClubPikachuText::
+_PokemonFanClubPikachuText::
 	text "PIKACHU: Pi!"
 	line "Pi-ka-chu!"
 	done
 
-FanClubSeelText::
+_PokemonFanClubSeelText::
 	text "JUROB: Jurob!"
 	done
 
-FanClubMeetChairText::
+_PokemonFanClubChairmanIntroText::
 	text "Ich bin der"
 	line "Vorsitzende des"
 	cont "#MON-FANCLUBS!"
@@ -60,7 +60,7 @@ FanClubMeetChairText::
 	cont "hören?"
 	done
 
-FanClubChairStoryText::
+_PokemonFanClubChairmanStoryText::
 	text "Sehr schön!"
 	line "Dann höre mir zu!"
 
@@ -91,14 +91,14 @@ FanClubChairStoryText::
 	cont "Geschenk von mir!"
 	prompt
 
-ReceivedBikeVoucherText::
+_PokemonFanClubReceivedBikeVoucherText::
 	text "<PLAYER> erhält"
 	line "einen @"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-ExplainBikeVoucherText::
+_PokemonFanClubExplainBikeVoucherText::
 	text_start
 
 	para "Du erhältst dafür"
@@ -116,14 +116,14 @@ ExplainBikeVoucherText::
 	line "fährst gerne Rad!"
 	done
 
-FanClubNoStoryText::
+_PokemonFanClubNoStoryText::
 	text "Oh. Komm wieder"
 	line "vorbei, wenn ich"
 	cont "Dir etwas"
 	cont "erzählen soll!"
 	done
 
-FanClubChairFinalText::
+_PokemonFanClubChairFinalText::
 	text "Hallo, <PLAYER>!"
 
 	para "Soll ich Dir von"
@@ -133,25 +133,25 @@ FanClubChairFinalText::
 	para "Nein? Schade!"
 	done
 
-FanClubBagFullText::
+_PokemonFanClubBagFullText::
 	text "Du hast keinen"
 	line "Platz für weitere"
 	cont "Items!"
 	done
 
-_FanClubText6::
+_PokemonFanClubReceptionistText::
 	text "Der Vorsitzende"
 	line "redet sehr gerne"
 	cont "über #MON!"
 	done
 
-_FanClubText7::
+_PokemonFanClubSign1Text::
 	text "Hört anderen"
 	line "Trainern"
 	cont "aufmerksam zu!"
 	done
 
-_FanClubText8::
+_PokemonFanClubSign2Text::
 	text "Wenn jemand"
 	line "prahlt, dann"
 	cont "prahlt zurück!"

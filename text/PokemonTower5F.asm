@@ -1,4 +1,4 @@
-_PokemonTower5Text1::
+_PokemonTower5FChanneler1Text::
 	text "Komm her, mein"
 	line "Junge! Ich habe"
 	cont "diese Stelle mit"
@@ -9,68 +9,68 @@ _PokemonTower5Text1::
 	line "hier ausruhen!"
 	done
 
-_PokemonTower5BattleText1::
+_PokemonTower5FChanneler2BattleText::
 	text "Gib... mir..."
 	line "Deine... Seele..."
 	done
 
-_PokemonTower5EndBattleText1::
+_PokemonTower5FChanneler2EndBattleText::
 	text "Puh!"
 	prompt
 
-_PokemonTower5AfterBattleText1::
+_PokemonTower5FChanneler2AfterBattleText::
 	text "Etwas muß von mir"
 	line "Besitz ergriffen"
 	cont "haben!"
 	done
 
-_PokemonTower5BattleText2::
+_PokemonTower5FChanneler3BattleText::
 	text "Es... gibt..."
 	line "kein..."
 	cont "Entkommen..."
 	done
 
-_PokemonTower5EndBattleText2::
+_PokemonTower5FChanneler3EndBattleText::
 	text "Welch"
 	line "ein Alptraum!"
 	prompt
 
-_PokemonTower5AfterBattleText2::
+_PokemonTower5FChanneler3AfterBattleText::
 	text "Ich war verhext!"
 	done
 
-_PokemonTower5BattleText3::
+_PokemonTower5FChanneler4BattleText::
 	text "Zombies!"
 	done
 
-_PokemonTower5EndBattleText3::
+_PokemonTower5FChanneler4EndBattleText::
 	text "Was?"
 	prompt
 
-_PokemonTower5AfterBattleText3::
+_PokemonTower5FChanneler4AfterBattleText::
 	text "So langsam komme"
 	line "ich wieder zu"
 	cont "Sinnen!"
 	done
 
-_PokemonTower5BattleText4::
+_PokemonTower5FChanneler5BattleText::
 	text "Buuh..."
 	line "Buhuhu..."
 	done
 
-_PokemonTower5EndBattleText4::
+_PokemonTower5FChanneler5EndBattleText::
 	text "Das"
 	line "war knapp!"
 	prompt
 
-_PokemonTower5AfterBattleText4::
+_PokemonTower5FChanneler5AfterBattleText::
 	text "Trotz meiner"
 	line "Erfahrung bin"
 	cont "ich dem Bösen"
 	cont "verfallen!"
 	done
 
-_PokemonTower5Text7::
+_PokemonTower5FPurifiedZoneText::
 	text "Du hast einen"
 	line "geschützten"
 	cont "Bereich betreten!"

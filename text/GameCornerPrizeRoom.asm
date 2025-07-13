@@ -1,4 +1,4 @@
-_CeladonPrizeRoomText1::
+_GameCornerPrizeRoomBaldingGuyText::
 	text "Ich hätte gerne"
 	line "einen PORYGON!"
 
@@ -8,7 +8,7 @@ _CeladonPrizeRoomText1::
 	cont "Banditen!"
 	done
 
-_CeladonPrizeRoomText2::
+_GameCornerPrizeRoomGamblerText::
 	text "Ich hatte"
 	line "heute eine"
 	cont "Glückssträhne!"

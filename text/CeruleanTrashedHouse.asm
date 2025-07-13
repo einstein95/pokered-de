@@ -1,4 +1,4 @@
-_CeruleanTrashedText_1d6ab::
+_CeruleanTrashedHouseFishingGuruTheyStoleATMText::
 	text "Dieses gemeine"
 	line "TEAM ROCKET!"
 
@@ -17,7 +17,7 @@ _CeruleanTrashedText_1d6ab::
 	line "sündhaft teuer!"
 	done
 
-_CeruleanTrashedText_1d6b0::
+_CeruleanTrashedHouseFishingGuruWhatsLostIsLostText::
 	text "Was weg ist,"
 	line "ist weg!"
 
@@ -27,7 +27,7 @@ _CeruleanTrashedText_1d6b0::
 	cont "zu graben!"
 	done
 
-_CeruleanHouseTrashedText2::
+_CeruleanTrashedHouseGirlText::
 	text "Das TEAM ROCKET"
 	line "braucht den"
 	cont "SCHAUFLER sicher"
@@ -35,7 +35,7 @@ _CeruleanHouseTrashedText2::
 	cont "Schandtat!"
 	done
 
-_CeruleanHouseTrashedText3::
+_CeruleanTrashedHouseWallHoleText::
 	text "Das TEAM ROCKET"
 	line "hat Spuren"
 	cont "hinterlassen!"

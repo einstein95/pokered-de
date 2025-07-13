@@ -1,4 +1,4 @@
-_SabrinaPreBattleText::
+_SaffronGymSabrinaText::
 	text "Eine Vision hat"
 	line "mir Deine Ankunft"
 	cont "vorausgesagt!"
@@ -22,7 +22,7 @@ _SabrinaPreBattleText::
 	cont "Kräfte!"
 	done
 
-_ReceivedMarshBadgeText::
+_SaffronGymSabrinaReceivedMarshBadgeText::
 	text "Ich bin"
 	line "erschüttert!"
 	cont "Aber verloren ist"
@@ -37,7 +37,7 @@ _ReceivedMarshBadgeText::
 	line "den SUMPFORDEN!@"
 	text_end
 
-_SabrinaPostBattleAdviceText::
+_SaffronGymSabrinaPostBattleAdviceText::
 	text "Theoretisch"
 	line "könnte jeder die"
 	cont "PSYCHOKINESE"
@@ -46,7 +46,7 @@ _SabrinaPostBattleAdviceText::
 	cont "nicht!"
 	done
 
-_KogaMarshBadgeInfoText::
+_SaffronGymSabrinaMarshBadgeInfoText::
 	text "Der SUMPFORDEN"
 	line "läßt #MON bis"
 	cont "Level 70 Deinen"
@@ -67,7 +67,7 @@ _KogaMarshBadgeInfoText::
 	line "diese TM von mir!"
 	done
 
-_ReceivedTM46Text::
+_SaffronGymSabrinaReceivedTM46Text::
 	text "<PLAYER> erhält"
 	line "TM46!@"
 	text_end
@@ -83,12 +83,12 @@ _TM46ExplanationText::
 	cont "zunutze!"
 	done
 
-_TM46NoRoomText::
+_SaffronGymSabrinaTM46NoRoomText::
 	text "Dein Rucksack"
 	line "ist zu voll!"
 	done
 
-_SaffronGymGuidePreBattleText::
+_SaffronGymGuideChampInMakingText::
 	text "Hey! Warte, Du"
 	line "Champion in spe!"
 
@@ -108,7 +108,7 @@ _SaffronGymGuidePreBattleText::
 	cont "einer Chance!"
 	done
 
-_SaffronGymGuidePostBattleText::
+_SaffronGymGuideBeatSabrinaText::
 	text "PSYCHOKINESE?"
 
 	para "Wenn ich sie"
@@ -117,20 +117,20 @@ _SaffronGymGuidePostBattleText::
 	cont "reich werden!"
 	done
 
-_SaffronGymBattleText1::
+_SaffronGymChanneler1BattleText::
 	text "SABRINA ist"
 	line "jünger als ich."
 	cont "Trotzdem habe ich"
 	cont "Respekt vor ihr!"
 	done
 
-_SaffronGymEndBattleText1::
+_SaffronGymChanneler1EndBattleText::
 	text ""
 	line "Ich bin nicht"
 	cont "gut genug!"
 	prompt
 
-_SaffronGymAfterBattleText1::
+_SaffronGymChanneler1AfterBattleText::
 	text "Sind zwei Gegner"
 	line "gleich stark, so"
 	cont "wird der"
@@ -143,25 +143,25 @@ _SaffronGymAfterBattleText1::
 	cont "auf den Sieg!"
 	done
 
-_SaffronGymBattleText2::
+_SaffronGymYoungster1BattleText::
 	text "Machen Dir unsere"
 	line "PSYKRÄFTE Angst?"
 	done
 
-_SaffronGymEndBattleText2::
+_SaffronGymYoungster1EndBattleText::
 	text "Ich"
 	line "glaube es nicht:"
 	cont "Ich hab verloren!"
 	prompt
 
-_SaffronGymAfterBattleText2::
+_SaffronGymYoungster1AfterBattleText::
 	text "PSYCHO-#MON"
 	line "fürchten sich nur"
 	cont "vor Käfern und"
 	cont "Geistern!"
 	done
 
-_SaffronGymBattleText3::
+_SaffronGymChanneler2BattleText::
 	text "#MON"
 	line "passen sich ihrem"
 	cont "Trainer an."
@@ -171,54 +171,54 @@ _SaffronGymBattleText3::
 	cont "sehr zäh sein!"
 	done
 
-_SaffronGymEndBattleText3::
+_SaffronGymChanneler2EndBattleText::
 	text "Ich"
 	line "wußte es!"
 	prompt
 
-_SaffronGymAfterBattleText3::
+_SaffronGymChanneler2AfterBattleText::
 	text "Meine #MON"
 	line "müssen stärkere"
 	cont "Attacken lernen!"
 	done
 
-_SaffronGymBattleText4::
+_SaffronGymYoungster2BattleText::
 	text "Du weißt, daß man"
 	line "mit Stärke allein"
 	cont "nicht weit kommt,"
 	cont "oder?"
 	done
 
-_SaffronGymEndBattleText4::
+_SaffronGymYoungster2EndBattleText::
 	text "Das "
 	line "ist unfassbar!"
 	prompt
 
-_SaffronGymAfterBattleText4::
+_SaffronGymYoungster2AfterBattleText::
 	text "SABRINA hat den"
 	line "KARATE-MEISTER in"
 	cont "der ARENA nebenan"
 	cont "besiegt!"
 	done
 
-_SaffronGymBattleText5::
+_SaffronGymChanneler3BattleText::
 	text "Du gegen mich!"
 	line "Unsere #MON"
 	cont "sollen kämpfen!"
 	done
 
-_SaffronGymEndBattleText5::
+_SaffronGymChanneler3EndBattleText::
 	text ""
 	line "Ich habe nun"
 	cont "doch verloren!"
 	prompt
 
-_SaffronGymAfterBattleText5::
+_SaffronGymChanneler3AfterBattleText::
 	text "Ich ahnte, daß es"
 	line "passieren würde!"
 	done
 
-_SaffronGymBattleText6::
+_SaffronGymYoungster3BattleText::
 	text "Obwohl SABRINA"
 	line "noch jung ist,"
 	cont "ist sie unsere"
@@ -229,13 +229,13 @@ _SaffronGymBattleText6::
 	cont "zu ihr gehen!"
 	done
 
-_SaffronGymEndBattleText6::
+_SaffronGymYoungster3EndBattleText::
 	text "Ich habe"
 	line "die Konzentration"
 	cont "verloren!"
 	prompt
 
-_SaffronGymAfterBattleText6::
+_SaffronGymYoungster3AfterBattleText::
 	text "In SAFFRONIA CITY"
 	line "gab es zwei"
 	cont "PKMN-ARENEN."
@@ -249,7 +249,7 @@ _SaffronGymAfterBattleText6::
 	cont "besiegt haben!"
 	done
 
-_SaffronGymBattleText7::
+_SaffronGymYoungster4BattleText::
 	text "Die #MON in"
 	line "der ARENA von"
 	cont "SAFFRONIA CITY"
@@ -262,11 +262,11 @@ _SaffronGymBattleText7::
 	cont "fordern möchtest!"
 	done
 
-_SaffronGymEndBattleText7::
+_SaffronGymYoungster4EndBattleText::
 	text "Arrrgh!"
 	prompt
 
-_SaffronGymAfterBattleText7::
+_SaffronGymYoungster4AfterBattleText::
 	text "Ich habe Deine"
 	line "Gedanken gelesen!"
 	done

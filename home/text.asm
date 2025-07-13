@@ -63,7 +63,7 @@ PlaceNextChar::
 	jr nz, .NotNext
 	ld bc, 2 * SCREEN_WIDTH
 	ldh a, [hUILayoutFlags]
-	bit 2, a
+	bit BIT_SINGLE_SPACED_LINES, a
 	jr z, .ok
 	ld bc, SCREEN_WIDTH
 .ok
@@ -115,11 +115,15 @@ NullChar::
 	ld b, h
 	ld c, l
 	pop hl
+	; A "<NULL>" character in a printed string
+	; displays an error message with the current value
+	; of hTextID in decimal format.
+	; This is a debugging leftover.
 	ld de, TextIDErrorText
 	dec de
 	ret
 
-TextIDErrorText:: ; "[hSpriteIndexOrTextID] ERROR."
+TextIDErrorText:: ; "[hTextID] ERROR."
 	text_far _TextIDErrorText
 	text_end
 
@@ -274,7 +278,7 @@ _ContTextNoPause::
 
 ; move both rows of text in the normal text box up one row
 ; always called twice in a row
-; first time, copy the two rows of text to the "in between" rows that are usually emtpy
+; first time, copy the two rows of text to the "in between" rows that are usually empty
 ; second time, copy the bottom row of text into the top row of text
 ScrollTextUpOneLine::
 	hlcoord 0, 14 ; top row of text
@@ -311,7 +315,7 @@ ProtectedDelay3::
 TextCommandProcessor::
 	ld a, [wLetterPrintingDelayFlags]
 	push af
-	set 1, a
+	set BIT_TEXT_DELAY, a
 	ld e, a
 	ldh a, [hClearLetterPrintingDelayFlags]
 	xor e
@@ -490,7 +494,7 @@ TextCommand_PAUSE::
 	push bc
 	call Joypad
 	ldh a, [hJoyHeld]
-	and A_BUTTON | B_BUTTON
+	and PAD_A | PAD_B
 	jr nz, .done
 	ld c, 30 ; half a second
 	call DelayFrames
@@ -547,7 +551,7 @@ TextCommandSounds::
 	db TX_SOUND_GET_KEY_ITEM,         SFX_GET_KEY_ITEM
 	db TX_SOUND_DEX_PAGE_ADDED,       SFX_DEX_PAGE_ADDED
 	db TX_SOUND_CRY_NIDORINA,         NIDORINA ; used in OakSpeech
-	db TX_SOUND_CRY_PIDGEOT,          PIDGEOT  ; used in SaffronCityText12
+	db TX_SOUND_CRY_PIDGEOT,          PIDGEOT  ; used in SaffronCityPidgeotText
 	db TX_SOUND_CRY_DEWGONG,          DEWGONG  ; unused
 
 TextCommand_DOTS::
@@ -566,7 +570,7 @@ TextCommand_DOTS::
 	call Joypad
 	pop de
 	ldh a, [hJoyHeld] ; joypad state
-	and A_BUTTON | B_BUTTON
+	and PAD_A | PAD_B
 	jr nz, .next ; if so, skip the delay
 	ld c, 10
 	call DelayFrames
@@ -600,7 +604,7 @@ TextCommand_FAR::
 	ld a, [hli]
 
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 
 	push hl
 	ld l, e
@@ -610,7 +614,7 @@ TextCommand_FAR::
 
 	pop af
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	jp NextTextCommand
 
 TextCommandJumpTable::

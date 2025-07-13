@@ -1,4 +1,4 @@
-_DiglettsCaveRoute2Text1::
+_DiglettsCaveRoute2FishingGuruText::
 	text "Im FELSTUNNEL ist"
 	line "es stockdunkel"
 	cont "und furchtbar"

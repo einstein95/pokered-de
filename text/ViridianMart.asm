@@ -1,14 +1,14 @@
-_ViridianMartText1::
+_ViridianMartClerkSayHiToOakText::
 	text "OK! Grüße PROF."
 	line "EICH von mir!"
 	done
 
-_ViridianMartText4::
+_ViridianMartClerkYouCameFromPalletTownText::
 	text "Hey! Kommst Du"
 	line "aus ALABASTIA?"
 	done
 
-ViridianMartParcelQuestText::
+_ViridianMartClerkParcelQuestText::
 	text "PROF. EICH"
 	line "schickt Dich,"
 	cont "oder?"
@@ -22,13 +22,13 @@ ViridianMartParcelQuestText::
 	line "EICHS PAKET!@"
 	text_end
 
-_ViridianMartText2::
+_ViridianMartYoungsterText::
 	text "Dieser Laden"
 	line "führt viele"
 	cont "GEGENGIFTE."
 	done
 
-_ViridianMartText3::
+_ViridianMartCooltrainerMText::
 	text "Tut mir leid!"
 	line "Alle TRÄNKE sind"
 	cont "ausverkauft!"

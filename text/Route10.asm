@@ -1,54 +1,54 @@
-_Route10BattleText1::
+_Route10SuperNerd1BattleText::
 	text "Bist Du auch ein"
 	line "#MANIAC?"
 	cont "Möchtest Du meine"
 	cont "Sammlung sehen?"
 	done
 
-_Route10EndBattleText1::
+_Route10SuperNerd1EndBattleText::
 	text "Naja,"
 	line "macht nichts!"
 	prompt
 
-_Route10AfterBattleText1::
+_Route10SuperNerd1AfterBattleText::
 	text "Zu Hause habe ich"
 	line "noch mehr seltene"
 	cont "#MON!"
 	done
 
-_Route10BattleText2::
+_Route10Hiker1BattleText::
 	text "Ha-ha-ha-ha!"
 	done
 
-_Route10EndBattleText2::
+_Route10Hiker1EndBattleText::
 	text "Ha-ha!"
 	line "Haha-ha-tschi!"
 	prompt
 
-_Route10AfterBattleText2::
+_Route10Hiker1AfterBattleText::
 	text "Schnief..."
 	line "Diese verdammte"
 	cont "Erkältung!"
 	done
 
-_Route10BattleText3::
+_Route10SuperNerd2BattleText::
 	text "Hey Du, möchtest"
 	line "Du meine #MON"
 	cont "sehen?"
 	done
 
-_Route10EndBattleText3::
+_Route10SuperNerd2EndBattleText::
 	text "Nein!"
 	line "Meine #MON!"
 	prompt
 
-_Route10AfterBattleText3::
+_Route10SuperNerd2AfterBattleText::
 	text "Ich nehme Dir"
 	line "übel, daß Du mich"
 	cont "besiegt hast!"
 	done
 
-_Route10BattleText4::
+_Route10CooltrainerF1BattleText::
 	text "Jedes Mal, wenn"
 	line "ich in einer"
 	cont "PKMN-ARENA"
@@ -57,50 +57,50 @@ _Route10BattleText4::
 	cont "besiegt!"
 	done
 
-_Route10EndBattleText4::
+_Route10CooltrainerF1EndBattleText::
 	text ""
 	line "Nein! Nicht"
 	cont "schon wieder!"
 	prompt
 
-_Route10AfterBattleText4::
+_Route10CooltrainerF1AfterBattleText::
 	text "Ich habe einige"
 	line "#MANIACS"
 	cont "in dieser Gegend"
 	cont "gesehen."
 	done
 
-_Route10BattleText5::
+_Route10Hiker2BattleText::
 	text "Ahh! Die Bergluft"
 	line "ist so wunderbar"
 	cont "erfrischend!"
 	done
 
-_Route10EndBattleText5::
+_Route10Hiker2EndBattleText::
 	text "Ich"
 	line "kann wieder"
 	cont "klar denken!"
 	prompt
 
-_Route10AfterBattleText5::
+_Route10Hiker2AfterBattleText::
 	text "Ich habe von"
 	line "Bergluft die Nase"
 	cont "gestrichen voll!"
 	done
 
-_Route10BattleText6::
+_Route10CooltrainerF2BattleText::
 	text "Ich fühle mich"
 	line "vom vielen"
 	cont "Wandern"
 	cont "erschöpft..."
 	done
 
-_Route10EndBattleText6::
+_Route10CooltrainerF2EndBattleText::
 	text "Ich"
 	line "bin nicht fit!"
 	prompt
 
-_Route10AfterBattleText6::
+_Route10CooltrainerF2AfterBattleText::
 	text "Viele #MON"
 	line "in dieser Gegend"
 	cont "sind grob!"
@@ -111,11 +111,10 @@ _Route10AfterBattleText6::
 	cont "Blumenmuster!"
 	done
 
-_Route10Text9::
-_Route10Text7::
+_Route10RockTunnelSignText::
 	text "FELSTUNNEL"
 	done
 
-_Route10Text10::
+_Route10PowerPlantSignText::
 	text "KRAFTWERK"
 	done

@@ -1,4 +1,4 @@
-_LavenderMartText2::
+_LavenderMartBaldingGuyText::
 	text "Ich suche nach"
 	line "Items, die die"
 	cont "Fähigkeiten"
@@ -16,7 +16,7 @@ _LavenderMartText2::
 	line "sie kaufen kann?"
 	done
 
-_LavenderMartReviveText::
+_LavenderMartCooltrainerMReviveText::
 	text "Kennst Du den"
 	line "BELEBER? Damit"
 	cont "kannst Du bereits"
@@ -25,7 +25,7 @@ _LavenderMartReviveText::
 	cont "geben!"
 	done
 
-_LavenderMartNuggetText::
+_LavenderMartCooltrainerMNuggetText::
 	text "Ich habe in den"
 	line "Bergen einen"
 	cont "NUGGET gefunden."

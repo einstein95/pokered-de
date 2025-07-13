@@ -1,4 +1,4 @@
-_Route12GateText1::
+_Route12Gate1FGuardText::
 	text "Oberhalb der"
 	line "Treppe ist ein"
 	cont "Ausguck!"

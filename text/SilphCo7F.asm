@@ -1,4 +1,4 @@
-_MeetLaprasGuyText::
+_SilphCo7FSilphWorkerM1HaveThisPokemonText::
 	text "Oh! Du bist kein"
 	line "ROCKET! Kommst"
 	cont "Du, um uns zu"
@@ -9,7 +9,7 @@ _MeetLaprasGuyText::
 	cont "als Dankeschön."
 	prompt
 
-_HeresYourLaprasText::
+_SilphCo7FSilphWorkerM1LaprasDescriptionText::
 	text "Es heißt LAPRAS"
 	line "und ist sehr"
 	cont "intelligent."
@@ -30,7 +30,7 @@ _HeresYourLaprasText::
 	cont "Wasser tragen!"
 	done
 
-_LaprasGuyText::
+_SilphCo7FSilphWorkerM1IsOurPresidentOkText::
 	text "TEAM ROCKETS"
 	line "BOSS ging in den"
 	cont "Sitzungsaal! Ob"
@@ -38,12 +38,12 @@ _LaprasGuyText::
 	cont "wohlauf ist?"
 	done
 
-_LaprasGuySavedText::
+_SilphCo7FSilphWorkerM1SavedText::
 	text "Endlich befreit!"
 	line "Ich danke Dir!"
 	done
 
-_SilphCo7Text_51e00::
+_SilphCo7FSilphWorkerM2AfterTheMasterBallText::
 	text "Das TEAM ROCKET"
 	line "ist hinter dem"
 	cont "MEISTERBALL her,"
@@ -52,7 +52,7 @@ _SilphCo7Text_51e00::
 	cont "fangen kann!"
 	done
 
-_CanceledMasterBallText::
+_SilphCo7FSilphWorkerM2CancelledMasterBallText::
 	text "Wir haben das"
 	line "Projekt gestoppt."
 	cont "Der MEISTERBALL"
@@ -60,7 +60,7 @@ _CanceledMasterBallText::
 	cont "Händen? Niemals!"
 	done
 
-_SilphCo7Text_51e23::
+_SilphCo7FSilphWorkerM3ItWouldBeBadText::
 	text "Es wäre fatal,"
 	line "wenn das"
 	cont "TEAM ROCKET"
@@ -70,43 +70,43 @@ _SilphCo7Text_51e23::
 	cont "übernehmen würde!"
 	done
 
-_SilphCo7Text_51e28::
+_SilphCo7FSilphWorkerM3YouChasedOffTeamRocketText::
 	text "Wow! Du bist"
 	line "ganz allein mit"
 	cont "dem TEAM ROCKET"
 	cont "fertig geworden?"
 	done
 
-_SilphCo7Text_51e46::
+_SilphCo7FSilphWorkerM4ItsReallyDangerousHereText::
 	text "Hier ist es sehr"
 	line "gefährlich! Du"
 	cont "wirst mich nicht"
 	cont "retten können!"
 	done
 
-_SilphCo7Text_51e4b::
+_SilphCo7FSilphWorkerM4SafeAtLastText::
 	text "Endlich gerettet!"
 	line "Ich danke Dir!"
 	done
 
-_SilphCo7BattleText1::
+_SilphCo7FRocket1BattleText::
 	text "Du bist"
 	line "ganz schön mutig!"
 	done
 
-_SilphCo7EndBattleText1::
+_SilphCo7FRocket1EndBattleText::
 	text ""
 	line "Licht aus!"
 	prompt
 
-_SilphCo7AfterBattleText1::
+_SilphCo7FRocket1AfterBattleText::
 	text "Wenn Du nur so"
 	line "durch die Gegend"
 	cont "läufst, findest"
 	cont "Du den BOSS nie!"
 	done
 
-_SilphCo7BattleText2::
+_SilphCo7FScientistBattleText::
 	text "Haha!"
 
 	para "Du dachtest wohl,"
@@ -114,61 +114,61 @@ _SilphCo7BattleText2::
 	cont "die SILPH CO.?"
 	done
 
-_SilphCo7EndBattleText2::
+_SilphCo7FScientistEndBattleText::
 	text ""
 	line "Feierabend! Ich"
 	cont "geh nach Hause!"
 	prompt
 
-_SilphCo7AfterBattleText2::
+_SilphCo7FScientistAfterBattleText::
 	text "Kaum trocken"
 	line "hinter den Ohren,"
 	cont "aber schon ein"
 	cont "begabter Trainer!"
 	done
 
-_SilphCo7BattleText3::
+_SilphCo7FRocket2BattleText::
 	text "Ich bin einer der"
 	line "vier berüchtigten"
 	cont "ROCKET-BRÜDER!"
 	done
 
-_SilphCo7EndBattleText3::
+_SilphCo7FRocket2EndBattleText::
 	text "Tut mir"
 	line "leid, Brüder..."
 	prompt
 
-_SilphCo7AfterBattleText3::
+_SilphCo7FRocket2AfterBattleText::
 	text "Warte nur, meine"
 	line "Brüder werden"
 	cont "mich rächen!!!"
 	done
 
-_SilphCo7BattleText4::
+_SilphCo7FRocket3BattleText::
 	text "Ein Kind im"
 	line "Gebäude? Das"
 	cont "mußt Du sein!"
 	done
 
-_SilphCo7EndBattleText4::
+_SilphCo7FRocket3EndBattleText::
 	text "Na toll!"
 	line "Ich hab verloren!"
 	prompt
 
-_SilphCo7AfterBattleText4::
+_SilphCo7FRocket3AfterBattleText::
 	text "Geh nach Hause,"
 	line "bevor mein BOSS"
 	cont "Dich in den Boden"
 	cont "stampft!"
 	done
 
-_SilphCo7Text_51ebe::
+_SilphCo7FRivalText::
 	text "<RIVAL>: Was hat"
 	line "Dich aufgehalten,"
 	cont "<PLAYER>?"
 	done
 
-_SilphCo7Text_51ec3::
+_SilphCo7FRivalWaitedHereText::
 	text "<RIVAL>: Hahaha!"
 	line "Ich wußte, Du"
 	cont "würdest hier"
@@ -187,7 +187,7 @@ _SilphCo7Text_51ec3::
 	cont "geworden bist!"
 	done
 
-_SilphCo7Text_51ec8::
+_SilphCo7FRivalDefeatedText::
 	text "Mann!"
 	line "Du bist so"
 	cont "gut, daß Du gegen"
@@ -195,7 +195,7 @@ _SilphCo7Text_51ec8::
 	cont "antreten kannst!"
 	prompt
 
-_SilphCo7Text_51ecd::
+_SilphCo7FRivalVictoryText::
 	text "<RIVAL>: Was soll"
 	line "ich dazu sagen?"
 
@@ -205,7 +205,7 @@ _SilphCo7Text_51ecd::
 	cont "trainieren!"
 	prompt
 
-_SilphCo7Text_51ed2::
+_SilphCo7FRivalGoodLuckToYouText::
 	text "Also, <PLAYER>!"
 
 	para "Ich ziehe dann"

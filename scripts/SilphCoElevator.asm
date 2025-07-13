@@ -1,28 +1,28 @@
 SilphCoElevator_Script:
 	ld hl, wCurrentMapScriptFlags
-	bit 5, [hl]
-	res 5, [hl]
+	bit BIT_CUR_MAP_LOADED_1, [hl]
+	res BIT_CUR_MAP_LOADED_1, [hl]
 	push hl
-	call nz, SilphCoElevatorScript_457dc
+	call nz, SilphCoElevatorStoreWarpEntriesScript
 	pop hl
-	bit 7, [hl]
-	res 7, [hl]
-	call nz, SilphCoElevatorScript_45827
+	bit BIT_CUR_MAP_USED_ELEVATOR, [hl]
+	res BIT_CUR_MAP_USED_ELEVATOR, [hl]
+	call nz, SilphCoElevatorShakeScript
 	xor a
 	ld [wAutoTextBoxDrawingControl], a
 	inc a
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	ret
 
-SilphCoElevatorScript_457dc:
+SilphCoElevatorStoreWarpEntriesScript:
 	ld hl, wWarpEntries
 	ld a, [wWarpedFromWhichWarp]
 	ld b, a
 	ld a, [wWarpedFromWhichMap]
 	ld c, a
-	call SilphCoElevatorScript_457ea
-
-SilphCoElevatorScript_457ea:
+	call .StoreWarpEntry
+	; fallthrough
+.StoreWarpEntry:
 	inc hl
 	inc hl
 	ld a, b
@@ -31,12 +31,12 @@ SilphCoElevatorScript_457ea:
 	ld [hli], a
 	ret
 
-SilphCoElevatorScript_457f1:
+SilphCoElevatorCopyWarpMapsScript:
 	ld hl, SilphCoElevatorFloors
 	call LoadItemList
 	ld hl, SilphCoElevatorWarpMaps
 	ld de, wElevatorWarpMaps
-	ld bc, SilphCoElevatorWarpMapsEnd - SilphCoElevatorWarpMaps
+	ld bc, SilphCoElevatorWarpMaps.End - SilphCoElevatorWarpMaps
 	call CopyData
 	ret
 
@@ -69,19 +69,20 @@ SilphCoElevatorWarpMaps:
 	db 2, SILPH_CO_9F
 	db 2, SILPH_CO_10F
 	db 1, SILPH_CO_11F
-SilphCoElevatorWarpMapsEnd:
+.End:
 
-SilphCoElevatorScript_45827:
+SilphCoElevatorShakeScript:
 	call Delay3
 	farcall ShakeElevator
 	ret
 
 SilphCoElevator_TextPointers:
-	dw SilphCoElevatorText1
+	def_text_pointers
+	dw_const SilphCoElevatorElevatorText, TEXT_SILPHCOELEVATOR_ELEVATOR
 
-SilphCoElevatorText1:
+SilphCoElevatorElevatorText:
 	text_asm
-	call SilphCoElevatorScript_457f1
+	call SilphCoElevatorCopyWarpMapsScript
 	ld hl, SilphCoElevatorWarpMaps
 	predef DisplayElevatorFloorMenu
 	jp TextScriptEnd

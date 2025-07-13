@@ -1,4 +1,4 @@
-_SaffronPokecenterText2::
+_SaffronPokecenterBeautyText::
 	text "Der Zeitpunkt"
 	line "der Entwicklung"
 	cont "ist von #MON"
@@ -6,7 +6,7 @@ _SaffronPokecenterText2::
 	cont "unterschiedlich."
 	done
 
-_SaffronPokecenterText3::
+_SaffronPokecenterGentlemanText::
 	text "Die SILPH CO. ist"
 	line "sehr bekannt."
 	cont "Deshalb wurde das"

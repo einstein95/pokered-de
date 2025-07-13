@@ -1,4 +1,4 @@
-_SaffronGateText_1dfe7::
+_SaffronGateGuardGeeImThirstyText::
 	text "Ich schiebe hier"
 	line "Wache."
 	cont "Ohhh... Ich bin"
@@ -10,7 +10,7 @@ _SaffronGateText_1dfe7::
 	line "ist gesperrt!"
 	done
 
-_SaffronGateText_8aaa9::
+_SaffronGateGuardImParchedText::
 	text "Ich bin dem"
 	line "Verdursten"
 	cont "nahe..."
@@ -19,7 +19,7 @@ _SaffronGateText_8aaa9::
 	cont "Vielen Dank!@"
 	text_end
 
-_SaffronGateText_1dff1::
+_SaffronGateGuardYouCanGoOnThroughText::
 	text_start
 
 	para "Gluck, gluck!"
@@ -34,7 +34,7 @@ _SaffronGateText_1dff1::
 	cont "etwas abgeben!"
 	done
 
-_SaffronGateText_1dff6::
+_SaffronGateGuardThanksForTheDrinkText::
 	text "Hallo! Danke für"
 	line "die Erfrischung!"
 	done

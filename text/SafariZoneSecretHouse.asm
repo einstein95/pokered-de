@@ -1,4 +1,4 @@
-_SecretHouseText_4a350::
+_SafariZoneSecretHouseFishingGuruYouHaveWonText::
 	text "Ah! Endlich!"
 
 	para "Du bist der"
@@ -15,14 +15,14 @@ _SecretHouseText_4a350::
 	line "hast gewonnen!"
 	prompt
 
-_ReceivedHM03Text::
+_SafariZoneSecretHouseFishingGuruReceivedHM03Text::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_HM03ExplanationText::
+_SafariZoneSecretHouseFishingGuruHM03ExplanationText::
 	text "VM03 ist SURFER!"
 
 	para "Lernt ein #MON"
@@ -42,7 +42,7 @@ _HM03ExplanationText::
 	cont "Glückspilz!"
 	done
 
-_HM03NoRoomText::
+_SafariZoneSecretHouseFishingGuruHM03NoRoomText::
 	text "Oh! Du kannst"
 	line "keine weiteren"
 	cont "Items tragen!"

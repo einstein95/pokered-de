@@ -1,4 +1,4 @@
-_MistyPreBattleText::
+_CeruleanGymMistyPreBattleText::
 	text "Du mußt neu sein,"
 	line "ich habe Dich"
 	cont "noch nie gesehen!"
@@ -22,7 +22,7 @@ _MistyPreBattleText::
 	cont "#MON!"
 	done
 
-_TM11ExplanationText::
+_CeruleanGymMistyTM11ExplanationText::
 	text "TM11 ist der"
 	line "BLUBBSTRAHL!"
 
@@ -31,7 +31,7 @@ _TM11ExplanationText::
 	cont "Attacke erlernen!"
 	done
 
-_MistyCascadeBadgeInfoText::
+_CeruleanGymMistyCascadeBadgeInfoText::
 	text "Der QUELLORDEN"
 	line "läßt alle #MON"
 	cont "bis Level 30"
@@ -58,18 +58,18 @@ _MistyCascadeBadgeInfoText::
 	cont "Lieblings-TM!"
 	done
 
-_ReceivedTM11Text::
+_CeruleanGymMistyReceivedTM11Text::
 	text "<PLAYER> erhält"
 	line "TM11!@"
 	text_end
 
-_TM11NoRoomText::
+_CeruleanGymMistyTM11NoRoomText::
 	text "Du hast momentan"
 	line "keinen Platz für"
 	cont "mein Geschenk!"
 	done
 
-_ReceivedCascadeBadgeText::
+_CeruleanGymMistyReceivedCascadeBadgeText::
 	text "Wow! Du"
 	line "bist sehr gut!"
 
@@ -124,7 +124,7 @@ _CeruleanGymAfterBattleText2::
 	cont "zu besiegen!"
 	done
 
-_CeruleanGymGuidePreBattleText::
+_CeruleanGymGymGuideChampInMakingText::
 	text "Hey! Warte, Du"
 	line "Champion in spe!"
 
@@ -147,7 +147,7 @@ _CeruleanGymGuidePreBattleText::
 	cont "erweisen!"
 	done
 
-_CeruleanGymGuidePostBattleText::
+_CeruleanGymGymGuideBeatMistyText::
 	text "Du hast MISTY"
 	line "besiegt! Habe ich"
 	cont "es nicht gesagt?"

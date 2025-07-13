@@ -1,4 +1,4 @@
-_Route1ViridianMartSampleText::
+_Route1Youngster1MartSampleText::
 	text "Hi! Ich arbeite"
 	line "in einem"
 	cont "PKMN-SUPERMARKT."
@@ -15,27 +15,27 @@ _Route1ViridianMartSampleText::
 	cont "Hier, bitte!"
 	prompt
 
-_Route1Text_1cae8::
+_Route1Youngster1GotPotionText::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_Route1Text_1caee::
+_Route1Youngster1AlsoGotPokeballsText::
 	text "Willst Du #MON"
 	line "fangen? Wir haben"
 	cont "auch #BÄLLE"
 	cont "im Sortiment!"
 	done
 
-_Route1Text_1caf3::
+_Route1Youngster1NoRoomText::
 	text "Du kannst keine"
 	line "weiteren Items"
 	cont "mehr tragen!"
 	done
 
-_Route1Text2::
+_Route1Youngster2Text::
 	text "Siehst Du die"
 	line "Stufen hier?"
 
@@ -49,7 +49,7 @@ _Route1Text2::
 	cont "ALABASTIA zurück."
 	done
 
-_Route1Text3::
+_Route1SignText::
 	text "ROUTE 1"
 	line "ALABASTIA -"
 	cont "VERTANIA CITY"

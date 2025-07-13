@@ -1,4 +1,4 @@
-_LoreleiBeforeBattleText::
+_LoreleisRoomLoreleiBeforeBattleText::
 	text "Willkommen"
 	line "in der PKMN-LIGA!"
 
@@ -24,13 +24,13 @@ _LoreleiBeforeBattleText::
 	line "Bist Du bereit?"
 	done
 
-_LoreleiEndBattleText::
+_LoreleisRoomLoreleiEndBattleText::
 	text "Wie"
 	line "kannst Du es"
 	cont "wagen?"
 	prompt
 
-_LoreleiAfterBattleText::
+_LoreleisRoomLoreleiAfterBattleText::
 	text "Du bist besser,"
 	line "als ich dachte!"
 	cont "Geh ruhig weiter!"
@@ -42,7 +42,7 @@ _LoreleiAfterBattleText::
 	cont "erwarten..."
 	done
 
-_LoreleiDontRunAwayText::
+_LoreleisRoomLoreleiDontRunAwayText::
 	text "EINE STIMME:"
 	line "Lauf nicht davon!"
 	done

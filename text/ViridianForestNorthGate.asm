@@ -1,4 +1,4 @@
-_ViridianForestExitText1::
+_ViridianForestNorthGateSuperNerdText::
 	text "Viele #MON"
 	line "leben in Höhlen"
 	cont "und Wäldern."
@@ -9,7 +9,7 @@ _ViridianForestExitText1::
 	cont "zu finden!"
 	done
 
-_ViridianForestExitText2::
+_ViridianForestNorthGateGrampsText::
 	text "Achte auf Büsche"
 	line "am Wegesrand."
 

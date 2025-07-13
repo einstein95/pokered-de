@@ -1,4 +1,4 @@
-_BillsHouseText_1e865::
+_BillsHouseBillImNotAPokemonText::
 	text "Hallo! Ich"
 	line "bin ein #MON!"
 	cont "Spaß beiseite, "
@@ -23,7 +23,7 @@ _BillsHouseText_1e865::
 	line "Hilfst Du mir?"
 	done
 
-_BillsHouseText_1e86a::
+_BillsHouseBillUseSeparationSystemText::
 	text "Ich gehe in den"
 	line "TELEPORTER, und"
 	cont "Du startest von"
@@ -32,7 +32,7 @@ _BillsHouseText_1e86a::
 	cont "PROGRAMM."
 	done
 
-_BillsHouseText_1e86f::
+_BillsHouseBillNoYouGottaHelpText::
 	text "Nein? Komm schon,"
 	line "ich stecke in"
 	cont "wirklich ernsten"
@@ -43,7 +43,7 @@ _BillsHouseText_1e86f::
 	cont "OK? Alles klar!"
 	prompt
 
-_BillThankYouText::
+_BillsHouseBillThankYouText::
 	text "BILL: Klasse!"
 	line "Danke, Kumpel!"
 	cont "Du hast bei mir"
@@ -74,7 +74,7 @@ _SSTicketNoRoomText::
 	cont "mit Dir herum!"
 	done
 
-_BillsHouseText_1e8cb::
+_BillsHouseBillWhyDontYouGoInsteadOfMeText::
 	text "In ORANIA CITY"
 	line "ankert ein großes"
 	cont "Kreuzfahrtschiff,"
@@ -91,7 +91,7 @@ _BillsHouseText_1e8cb::
 	cont "hinzugehen?"
 	done
 
-_BillsHouseText_1e8da::
+_BillsHouseBillCheckOutMyRarePokemonText::
 	text "BILL: Schau Dir"
 	line "doch einfach auf"
 	cont "dem PC ein paar"

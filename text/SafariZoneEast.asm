@@ -1,8 +1,8 @@
-_SafariZoneEastText5::
+_SafariZoneEastRestHouseSignText::
 	text "RASTHAUS"
 	done
 
-_SafariZoneEastText6::
+_SafariZoneEastTrainerTipsText::
 	text "TIPS FÜR TRAINER"
 
 	para "Die verbleibende"
@@ -11,7 +11,7 @@ _SafariZoneEastText6::
 	cont "läufst!"
 	done
 
-_SafariZoneEastText7::
+_SafariZoneEastSignText::
 	text "ZENTRUM"
 	line "NORDEN: AREAL 2"
 	done

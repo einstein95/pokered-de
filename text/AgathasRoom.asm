@@ -45,7 +45,7 @@ _AgathaAfterBattleText::
 	cont "fort, mein Junge!"
 	done
 
-_AgathaDontRunAwayText::
+_AgathasRoomAgathaDontRunAwayText::
 	text "EINE STIMME:"
 	line "Lauf nicht davon!"
 	done

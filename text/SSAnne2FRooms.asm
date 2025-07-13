@@ -1,4 +1,4 @@
-_SSAnne9Text_61bf2::
+_SSAnne2FRoomsGentleman3Text::
 	text "Auf all meinen"
 	line "Reisen habe ich"
 	cont "nie ein solch"
@@ -9,21 +9,21 @@ _SSAnne9Text_61bf2::
 	line "so aus..."
 	prompt
 
-_SSAnne9Text_61c01::
+_SSAnne2FRoomsGentleman4Text::
 	text "Ich habe schon"
 	line "Leute auf #MON"
 	cont "übers Wasser"
 	cont "gleiten sehen!"
 	done
 
-_SSAnne9Text_61c10::
+_SSAnne2FRoomsGrampsText::
 	text "#MON können"
 	line "Büsche mit dem"
 	cont "ZERSCHNEIDER"
 	cont "kleinhacken."
 	done
 
-_SSAnne9Text_61c1f::
+_SSAnne2FRoomsGentleman5Text::
 	text "Hast Du die"
 	line "SAFARI-ZONE in"
 	cont "FUCHSANIA CITY"
@@ -33,55 +33,55 @@ _SSAnne9Text_61c1f::
 	line "seltene #MON!"
 	done
 
-_SSAnne9Text_61c2e::
+_SSAnne2FRoomsLittleBoyText::
 	text "Mein Papa war mit"
 	line "mir in der"
 	cont "SAFARI-ZONE! Es"
 	cont "war aufregend!"
 	done
 
-_SSAnne9Text_61c3d::
+_SSAnne2FRoomsBrunetteGirlText::
 	text "Der KAPITÄN war"
 	line "kreidebleich! Er"
 	cont "sah schlecht aus!"
 	done
 
-_SSAnne9Text_61c4c::
+_SSAnne2FRoomsBeautyText::
 	text "Viele Leute werden"
 	line "leicht seekrank!"
 	done
 
-_SSAnne9BattleText1::
+_SSAnne2FRoomsGentleman1BattleText::
 	text "Im Wettstreit mit"
 	line "der Jugend bleib"
 	cont "ich jung!"
 	done
 
-_SSAnne9EndBattleText1::
+_SSAnne2FRoomsGentleman1EndBattleText::
 	text "Ahhh!"
 	line "Da fühlt man sich"
 	cont "gleich jünger!"
 	prompt
 
-_SSAnne9AfterBattleText1::
+_SSAnne2FRoomsGentleman1AfterBattleText::
 	text "Vor 15 Jahren"
 	line "hätte ich mit"
 	cont "links gewonnen..."
 	done
 
-_SSAnne9BattleText2::
+_SSAnne2FRoomsFisherBattleText::
 	text "Schau Dir an, was"
 	line "ich an Land"
 	cont "gezogen habe!"
 	done
 
-_SSAnne9EndBattleText2::
+_SSAnne2FRoomsFisherEndBattleText::
 	text "OK!"
 	line "Das war's für"
 	cont "mich! Tschüss!!!"
 	prompt
 
-_SSAnne9AfterBattleText2::
+_SSAnne2FRoomsFisherAfterBattleText::
 	text "Eine Party?"
 
 	para "Die dürfte längst"
@@ -89,36 +89,36 @@ _SSAnne9AfterBattleText2::
 	cont "bist spät dran!"
 	done
 
-_SSAnne9BattleText3::
+_SSAnne2FRoomsGentleman2BattleText::
 	text "Was magst Du"
 	line "lieber? Starke"
 	cont "oder seltene"
 	cont "#MON?"
 	done
 
-_SSAnne9EndBattleText3::
+_SSAnne2FRoomsGentleman2EndBattleText::
 	text "Ich"
 	line "ziehe meinen"
 	cont "Hut vor Dir! Wow!"
 	prompt
 
-_SSAnne9AfterBattleText3::
+_SSAnne2FRoomsGentleman2AfterBattleText::
 	text "Ich mag #MON,"
 	line "die stark und"
 	cont "selten sind!"
 	done
 
-_SSAnne9BattleText4::
+_SSAnne2FRoomsCooltrainerFBattleText::
 	text "Wo warst Du, als"
 	line "die Party lief?"
 	done
 
-_SSAnne9EndBattleText4::
+_SSAnne2FRoomsCooltrainerFEndBattleText::
 	text "Mach mal"
 	line "langsam!!!"
 	prompt
 
-_SSAnne9AfterBattleText4::
+_SSAnne2FRoomsCooltrainerFAfterBattleText::
 	text "Ich bewundere die"
 	line "Stärke Deiner"
 	cont "#MON!"
