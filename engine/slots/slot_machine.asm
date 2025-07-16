@@ -1,8 +1,9 @@
 PromptUserToPlaySlots:
 	call SaveScreenTilesToBuffer2
-	ld a, BANK(DisplayTextIDInit) ; TRUE
-	ld [wAutoTextBoxDrawingControl], a
-	ld b, a
+	ld a, BANK(DisplayTextIDInit)
+	ASSERT BANK(DisplayTextIDInit) == 1 << BIT_NO_AUTO_TEXT_BOX
+	ld [wAutoTextBoxDrawingControl], a ; 1 << BIT_NO_AUTO_TEXT_BOX
+	ld b, a ; BANK(DisplayTextIDInit)
 	ld hl, DisplayTextIDInit
 	call Bankswitch
 	ld hl, PlaySlotMachineText
@@ -26,16 +27,16 @@ PromptUserToPlaySlots:
 	call GBPalNormal
 	ld a, $e4
 	ldh [rOBP0], a
-	ld hl, wd730
-	set 6, [hl]
+	ld hl, wStatusFlags5
+	set BIT_NO_TEXT_DELAY, [hl]
 	xor a
 	ld [wSlotMachineAllowMatchesCounter], a
 	ld hl, wStoppingWhichSlotMachineWheel
 	ld bc, $14
 	call FillMemory
 	call MainSlotMachineLoop
-	ld hl, wd730
-	res 6, [hl]
+	ld hl, wStatusFlags5
+	res BIT_NO_TEXT_DELAY, [hl]
 	xor a
 	ld [wSlotMachineAllowMatchesCounter], a
 	call GBPalWhiteOutWithDelay3
@@ -67,7 +68,7 @@ MainSlotMachineLoop:
 	call PrintText
 	call SaveScreenTilesToBuffer1
 .loop
-	ld a, A_BUTTON | B_BUTTON
+	ld a, PAD_A | PAD_B
 	ld [wMenuWatchedKeys], a
 	ld a, 2
 	ld [wMaxMenuItem], a
@@ -87,7 +88,7 @@ MainSlotMachineLoop:
 	ld de, CoinMultiplierSlotMachineText
 	call PlaceString
 	call HandleMenuInput
-	and B_BUTTON
+	and PAD_B
 	jp nz, LoadScreenTilesFromBuffer1
 	ld a, [wCurrentMenuItem]
 	ld b, a
@@ -173,7 +174,7 @@ OneMoreGoSlotMachineText:
 
 SlotMachine_SetFlags:
 	ld hl, wSlotMachineFlags
-	bit 7, [hl]
+	bit BIT_SLOTS_CAN_WIN_WITH_7_OR_BAR, [hl]
 	ret nz
 	ld a, [wSlotMachineAllowMatchesCounter]
 	and a
@@ -191,14 +192,14 @@ SlotMachine_SetFlags:
 	ld [hl], 0
 	ret
 .allowMatches
-	set 6, [hl]
+	set BIT_SLOTS_CAN_WIN, [hl]
 	ret
 .setAllowMatchesCounter
 	ld a, 60
 	ld [wSlotMachineAllowMatchesCounter], a
 	ret
 .allowSevenAndBarMatches
-	set 7, [hl]
+	set BIT_SLOTS_CAN_WIN_WITH_7_OR_BAR, [hl]
 	ret
 
 SlotMachine_SpinWheels:
@@ -289,7 +290,7 @@ SlotMachine_StopWheel1Early:
 	call SlotMachine_GetWheel1Tiles
 	ld hl, wSlotMachineWheel1BottomTile
 	ld a, [wSlotMachineFlags]
-	and $80
+	and 1 << BIT_SLOTS_CAN_WIN_WITH_7_OR_BAR
 	jr nz, .sevenAndBarMode
 ; Stop early if the middle symbol is not a cherry.
 	inc hl
@@ -297,8 +298,8 @@ SlotMachine_StopWheel1Early:
 	cp HIGH(SLOTSCHERRY)
 	jr nz, .stopWheel
 	ret
-; It looks like this was intended to make the wheel stop when a 7 symbol was
-; visible, but it has a bug and so the wheel stops randomly.
+; Bug: This looks intended to make the wheel stop when a
+; 7 symbol was visible, but instead the wheel stops randomly.
 .sevenAndBarMode
 	ld c, $3
 .loop
@@ -317,7 +318,7 @@ SlotMachine_StopWheel1Early:
 SlotMachine_StopWheel2Early:
 	call SlotMachine_GetWheel2Tiles
 	ld a, [wSlotMachineFlags]
-	and $80
+	and 1 << BIT_SLOTS_CAN_WIN_WITH_7_OR_BAR
 	jr nz, .sevenAndBarMode
 ; Stop early if any symbols are lined up in the first two wheels.
 	call SlotMachine_FindWheel1Wheel2Matches
@@ -401,7 +402,7 @@ SlotMachine_CheckForMatches:
 	call SlotMachine_CheckForMatch
 	jr z, .foundMatch
 	ld a, [wSlotMachineFlags]
-	and $c0
+	and (1 << BIT_SLOTS_CAN_WIN) | (1 << BIT_SLOTS_CAN_WIN_WITH_7_OR_BAR)
 	jr z, .noMatch
 	ld hl, wSlotMachineRerollCounter
 	dec [hl]
@@ -421,9 +422,9 @@ SlotMachine_CheckForMatches:
 	jp SlotMachine_CheckForMatches
 .foundMatch
 	ld a, [wSlotMachineFlags]
-	and $c0
+	and (1 << BIT_SLOTS_CAN_WIN) | (1 << BIT_SLOTS_CAN_WIN_WITH_7_OR_BAR)
 	jr z, .rollWheel3DownByOneSymbol ; roll wheel if player isn't allowed to win
-	and $80
+	and 1 << BIT_SLOTS_CAN_WIN_WITH_7_OR_BAR
 	jr nz, .acceptMatch
 ; if 7/bar matches aren't enabled and the match was a 7/bar symbol, roll wheel
 	ld a, [hl]
@@ -599,7 +600,7 @@ SlotReward300Func:
 	call PlaySound
 	call Random
 	cp $80
-	ld a, $0
+	ld a, 0
 	jr c, .skip
 	ld [wSlotMachineFlags], a
 .skip
@@ -644,7 +645,7 @@ SlotMachine_SubtractBetFromPlayerCoins:
 SlotMachine_PrintCreditCoins:
 	hlcoord 5, 1
 	ld de, wPlayerCoins
-	ld c, $2
+	ld c, 2
 	jp PrintBCDNumber
 
 SlotMachine_PrintPayoutCoins:
@@ -654,7 +655,7 @@ SlotMachine_PrintPayoutCoins:
 	jp PrintNumber
 
 SlotMachine_PayCoinsToPlayer:
-	ld a, $1
+	ld a, TRUE
 	ld [wMuteAudioAndPauseMusic], a
 	call WaitForSoundToFinish
 
@@ -826,7 +827,7 @@ SlotMachine_HandleInputWhileWheelsSpin:
 	call DelayFrame
 	call JoypadLowSensitivity
 	ldh a, [hJoy5]
-	and A_BUTTON
+	and PAD_A
 	ret z
 	ld hl, wStoppingWhichSlotMachineWheel
 	ld a, [hl]

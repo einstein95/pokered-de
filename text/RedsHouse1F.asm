@@ -1,4 +1,4 @@
-_MomWakeUpText::
+_RedsHouse1FMomWakeUpText::
 	text "MUTTER: Richtig."
 	line "Irgendwann gehen"
 	cont "alle Jungen fort,"
@@ -10,14 +10,14 @@ _MomWakeUpText::
 	cont "Dir gefragt."
 	done
 
-_MomHealText1::
+_RedsHouse1FMomYouShouldRestText::
 	text "MUTTER: <PLAYER>!"
 	line "Du solltest eine"
 	cont "kurze Pause"
 	cont "einlegen."
 	prompt
 
-_MomHealText2::
+_RedsHouse1FMomLookingGreatText::
 	text "MUTTER: Sehr gut!"
 	line "Du und Deine"
 	cont "#MON sehen"
@@ -25,7 +25,7 @@ _MomHealText2::
 	cont "Achte auf Dich!"
 	done
 
-_StandByMeText::
+_RedsHouse1FTVStandByMeMovieText::
 	text "Im Fernsehen"
 	line "läuft ein Film."
 	cont "Vier Jungen"
@@ -39,7 +39,7 @@ _StandByMeText::
 	cont "auf den Weg!"
 	done
 
-_TVWrongSideText::
+_RedsHouse1FTVWrongSideText::
 	text "Ups,"
 	line "falsche Richtung!"
 	done

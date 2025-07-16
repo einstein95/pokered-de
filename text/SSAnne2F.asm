@@ -1,4 +1,4 @@
-_SSAnne2Text1::
+_SSAnne2FWaiterText::
 	text "Dieses luxuriöse"
 	line "Traumschiff fährt"
 	cont "exklusiv für"
@@ -10,7 +10,7 @@ _SSAnne2Text1::
 	cont "geladene Trainer!"
 	done
 
-_SSAnneRivalBeforeBattleText::
+_SSAnne2FRivalText::
 	text "<RIVAL>: Sieh an!"
 	line "<PLAYER>!"
 
@@ -39,7 +39,7 @@ _SSAnneRivalBeforeBattleText::
 	cont "Gras!"
 	done
 
-_SSAnneRivalDefeatedText::
+_SSAnne2FRivalDefeatedText::
 	text "Mist!"
 
 	para "Naja, wenigstens"
@@ -47,7 +47,7 @@ _SSAnneRivalDefeatedText::
 	cont "Deine #MON!"
 	prompt
 
-_SSAnneRivalWonText::
+_SSAnne2FRivalVictoryText::
 	text "<PLAYER>! Bist Du"
 	line "etwa seekrank?"
 
@@ -56,7 +56,7 @@ _SSAnneRivalWonText::
 	cont "Kumpel!"
 	prompt
 
-_SSAnneRivalCaptainText::
+_SSAnne2FRivalCutMasterText::
 	text "<RIVAL>: Es soll"
 	line "angeblich ein"
 	cont "großer Meister im"

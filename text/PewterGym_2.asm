@@ -1,4 +1,4 @@
-_BrockPostBattleAdviceText::
+_PewterGymBrockPostBattleAdviceText::
 	text "Es gibt die"
 	line "verschiedensten"
 	cont "Trainer auf der"
@@ -16,12 +16,12 @@ _BrockPostBattleAdviceText::
 	cont "Können!"
 	done
 
-_BeforeReceivedTM34Text::
+_PewterGymBrockWaitTakeThisText::
 	text "Warte! Nimm das"
 	line "hier mit!"
 	done
 
-_ReceivedTM34Text::
+_PewterGymReceivedTM34Text::
 	text "<PLAYER> erhält"
 	line "TM34!@"
 	text_end
@@ -54,13 +54,13 @@ _TM34ExplanationText::
 	cont "doppelter Kraft!"
 	done
 
-_TM34NoRoomText::
+_PewterGymTM34NoRoomText::
 	text "Du hast momentan"
 	line "keinen Platz für"
 	cont "weitere Items!"
 	done
 
-_ReceivedBoulderBadgeText::
+_PewterGymBrockReceivedBoulderBadgeText::
 	text "Ich habe"
 	line "Dich falsch"
 	cont "eingeschätzt!"
@@ -74,7 +74,7 @@ _ReceivedBoulderBadgeText::
 	line "den FELSORDEN!@"
 	text_end
 
-_BrockBoulerBadgeInfoText::
+_PewterGymBrockBoulderBadgeInfoText::
 	text_start
 
 	para "Das ist ein"
@@ -92,7 +92,7 @@ _BrockBoulerBadgeInfoText::
 	cont "einsetzen!"
 	prompt
 
-_PewterGymBattleText1::
+_PewterGymCooltrainerMBattleText::
 	text "Bleib stehen wo"
 	line "Du bist, Kleiner!"
 
@@ -102,7 +102,7 @@ _PewterGymBattleText1::
 	cont "antreten kannst!"
 	done
 
-_PewterGymEndBattleText1::
+_PewterGymCooltrainerMEndBattleText::
 	text "Mist!"
 
 	para "Lichtjahre messen"
@@ -110,7 +110,7 @@ _PewterGymEndBattleText1::
 	cont "nicht die Zeit!"
 	prompt
 
-_PewterGymAfterBattleText1::
+_PewterGymCooltrainerMAfterBattleText::
 	text "Du bist ganz gut,"
 	line "aber nicht so"
 	cont "gut wie ROCKO!"
@@ -151,7 +151,7 @@ _PewterGymGuideAdviceText::
 	cont "leichter werden!"
 	done
 
-_PewterGymText_5c524::
+_PewterGymGuideFreeServiceText::
 	text "Der Tip ist"
 	line "kostenlos! Laß"
 	cont "uns anfangen!"

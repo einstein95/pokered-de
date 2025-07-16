@@ -1,8 +1,8 @@
-_SafariZoneNorthText3::
+_SafariZoneNorthRestHouseSignText::
 	text "RASTHAUS"
 	done
 
-_SafariZoneNorthText4::
+_SafariZoneNorthTrainerTips1Text::
 	text "TIPS FÜR TRAINER"
 
 	para "Bis zum GEHEIMEN"
@@ -10,11 +10,11 @@ _SafariZoneNorthText4::
 	cont "mehr weit weg!"
 	done
 
-_SafariZoneNorthText5::
+_SafariZoneNorthSignText::
 	text "AREAL 2"
 	done
 
-_SafariZoneNorthText6::
+_SafariZoneNorthTrainerTips2Text::
 	text "TIPS FÜR TRAINER"
 
 	para "#MON"
@@ -26,7 +26,7 @@ _SafariZoneNorthText6::
 	cont "scheuche sie auf!"
 	done
 
-_SafariZoneNorthText7::
+_SafariZoneNorthTrainerTips3Text::
 	text "TIPS FÜR TRAINER"
 
 	para "Finde das"

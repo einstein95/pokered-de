@@ -1,55 +1,55 @@
-_VictoryRoad3BattleText2::
+_VictoryRoad3FCooltrainerM1BattleText::
 	text "Man erzählt von"
 	line "einem Wunderkind!"
 	done
 
-_VictoryRoad3EndBattleText2::
+_VictoryRoad3FCooltrainerM1EndBattleText::
 	text "Du bist"
 	line "das Wunderkind!"
 	prompt
 
-_VictoryRoad3AfterBattleText2::
+_VictoryRoad3FCooltrainerM1AfterBattleText::
 	text "Hast Du wirklich"
 	line "GIOVANNI vom"
 	cont "TEAM ROCKET"
 	cont "besiegt?"
 	done
 
-_VictoryRoad3BattleText3::
+_VictoryRoad3FCooltrainerF1BattleText::
 	text "Gleich siehst Du,"
 	line "wie gut Du bist!"
 	done
 
-_VictoryRoad3EndBattleText3::
+_VictoryRoad3FCooltrainerF1EndBattleText::
 	text "Das"
 	line "darf doch nicht"
 	cont "wahr sein! Grrr!"
 	prompt
 
-_VictoryRoad3AfterBattleText3::
+_VictoryRoad3FCooltrainerF1AfterBattleText::
 	text "Du hast mich in"
 	line "die Schranken"
 	cont "gewiesen!"
 	done
 
-_VictoryRoad3BattleText4::
+_VictoryRoad3FCooltrainerM2BattleText::
 	text "Nur Auserwählte"
 	line "dürfen passieren!"
 	done
 
-_VictoryRoad3EndBattleText4::
+_VictoryRoad3FCooltrainerM2EndBattleText::
 	text "Ich"
 	line "fasse es nicht!"
 	prompt
 
-_VictoryRoad3AfterBattleText4::
+_VictoryRoad3FCooltrainerM2AfterBattleText::
 	text "Die Trainer hier"
 	line "sind auf dem Weg"
 	cont "zur PKMN-Liga!"
 	cont "Sei vorsichtig!"
 	done
 
-_VictoryRoad3BattleText5::
+_VictoryRoad3FCooltrainerF2BattleText::
 	text "Trainer sind"
 	line "geborene Kämpfer,"
 	cont "immer auf der"
@@ -57,13 +57,13 @@ _VictoryRoad3BattleText5::
 	cont "starken Gegnern!"
 	done
 
-_VictoryRoad3EndBattleText5::
+_VictoryRoad3FCooltrainerF2EndBattleText::
 	text "Cool!"
 	line "Du bist wirklich"
 	cont "stark!"
 	prompt
 
-_VictoryRoad3AfterBattleText5::
+_VictoryRoad3FCooltrainerF2AfterBattleText::
 	text "Je härter die"
 	line "Kämpfe sind,"
 	cont "desto stärker"

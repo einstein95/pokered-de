@@ -15,7 +15,7 @@ ENDM
 
 ; used in data/pokemon/base_stats/*.asm
 MACRO tmhm
-; initialize bytes to 0
+	; initialize bytes to 0
 	FOR n, (NUM_TM_HM + 7) / 8
 		DEF _tm{d:n} = 0
 	ENDR
@@ -54,6 +54,17 @@ MACRO dn ; nybbles
 		db ((\1) << 4) | (\2)
 		SHIFT 2
 	ENDR
+ENDM
+
+MACRO dc ; "crumbs"
+	REPT _NARG / 4
+		db ((\1) << 6) | ((\2) << 4) | ((\3) << 2) | (\4)
+		SHIFT 4
+	ENDR
+ENDM
+
+MACRO bigdw ; big-endian word
+	db HIGH(\1), LOW(\1)
 ENDM
 
 MACRO dba ; dbw bank, address

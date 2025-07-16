@@ -1,4 +1,4 @@
-_GiovanniPreBattleText::
+_ViridianGymGiovanniPreBattleText::
 	text "Haha! Willkommen"
 	line "in meinem"
 	cont "Geheimversteck!"
@@ -21,7 +21,7 @@ _GiovanniPreBattleText::
 	cont "Revanche!"
 	done
 
-_ReceivedEarthBadgeText::
+_ViridianGymGiovanniReceivedEarthBadgeText::
 	text "Ha!"
 	line "Der Kampf war"
 	cont "hart, aber fair!"
@@ -32,7 +32,7 @@ _ReceivedEarthBadgeText::
 	cont "Anerkennung!@"
 	text_end
 
-_GiovanniPostBattleAdviceText::
+_ViridianGymGiovanniPostBattleAdviceText::
 	text "Ich habe meinen"
 	line "Meister gefunden!"
 	cont "Meine Taten waren"
@@ -51,7 +51,7 @@ _GiovanniPostBattleAdviceText::
 	cont "Lebe wohl!@"
 	text_end
 
-_GiovanniEarthBadgeInfoText::
+_ViridianGymGiovanniEarthBadgeInfoText::
 	text "Als Träger des"
 	line "ERDORDENS  werden"
 	cont "Dir alle #MON"
@@ -74,12 +74,12 @@ _GiovanniEarthBadgeInfoText::
 	cont "Abenteuer!"
 	done
 
-_ReceivedTM27Text::
+_ViridianGymGiovanniReceivedTM27Text::
 	text "<PLAYER> erhält"
 	line "TM27!@"
 	text_end
 
-_TM27ExplanationText::
+_ViridianGymGiovanniTM27ExplanationText::
 	text_start
 
 	para "TM27 ist"
@@ -96,141 +96,141 @@ _TM27ExplanationText::
 	cont "ARENALEITER war."
 	done
 
-_TM27NoRoomText::
+_ViridianGymGiovanniTM27NoRoomText::
 	text "Du kannst sie"
 	line "momentan nicht"
 	cont "tragen!"
 	done
 
-_ViridianGymBattleText1::
+_ViridianGymCooltrainerM1BattleText::
 	text "Hehe! So langsam"
 	line "geht Dir die Luft"
 	cont "aus!"
 	done
 
-_ViridianGymEndBattleText1::
+_ViridianGymCooltrainerM1EndBattleText::
 	text "Mir"
 	line "gehen die"
 	cont "#MON aus!!!"
 	prompt
 
-_ViridianGymAfterBattleText1::
+_ViridianGymCooltrainerM1AfterBattleText::
 	text "Du mußt stark"
 	line "sein, um unserem"
 	cont "ARENALEITER"
 	cont "entgegenzutreten!"
 	done
 
-_ViridianGymBattleText2::
+_ViridianGymHiker1BattleText::
 	text "Kiai! Mit diesem"
 	line "Kampfschrei"
 	cont "mobilisiere ich"
 	cont "meine Kräfte!"
 	done
 
-_ViridianGymEndBattleText2::
+_ViridianGymHiker1EndBattleText::
 	text ""
 	line "Meister, verzeih"
 	cont "mir!"
 	prompt
 
-_ViridianGymAfterBattleText2::
+_ViridianGymHiker1AfterBattleText::
 	text "Ich bin Deiner"
 	line "Gnade unwürdig!"
 	done
 
-_ViridianGymBattleText3::
+_ViridianGymRocker1BattleText::
 	text "Ich bilde mit"
 	line "meinen #MON"
 	cont "eine Einheit"
 	cont "wie Yin und Yang!"
 	done
 
-_ViridianGymEndBattleText3::
+_ViridianGymRocker1EndBattleText::
 	text ""
 	line "Deine #MON"
 	cont "harmonieren gut"
 	cont "mit Dir!"
 	prompt
 
-_ViridianGymAfterBattleText3::
+_ViridianGymRocker1AfterBattleText::
 	text "Kennst Du die"
 	line "Identität unseres"
 	cont "ARENALEITERS?"
 	done
 
-_ViridianGymBattleText4::
+_ViridianGymHiker2BattleText::
 	text "Karate ist die"
 	line "Königsdisziplin"
 	cont "des Kampfsports!"
 	done
 
-_ViridianGymEndBattleText4::
+_ViridianGymHiker2EndBattleText::
 	text "Au!"
 	prompt
 
-_ViridianGymAfterBattleText4::
+_ViridianGymHiker2AfterBattleText::
 	text "Ach, wären meine"
 	line "#MON doch auch"
 	cont "so starke"
 	cont "Karateka wie ich!"
 	done
 
-_ViridianGymBattleText5::
+_ViridianGymCooltrainerM2BattleText::
 	text "Der Stil zeichnet"
 	line "einen großen"
 	cont "Kämpfer aus!"
 	done
 
-_ViridianGymEndBattleText5::
+_ViridianGymCooltrainerM2EndBattleText::
 	text ""
 	line "Ich habe den"
 	cont "Halt verloren!"
 	prompt
 
-_ViridianGymAfterBattleText5::
+_ViridianGymCooltrainerM2AfterBattleText::
 	text "Der Meister wird"
 	line "mich schelten!"
 	done
 
-_ViridianGymBattleText6::
+_ViridianGymHiker3BattleText::
 	text "Ich bin der"
 	line "KARATE-KÖNIG!"
 	cont "Ich besiegle"
 	cont "Dein Schicksal!"
 	done
 
-_ViridianGymEndBattleText6::
+_ViridianGymHiker3EndBattleText::
 	text "Ahh!"
 	prompt
 
-_ViridianGymAfterBattleText6::
+_ViridianGymHiker3AfterBattleText::
 	text "Du willst in die"
 	line "PKMN-LIGA? Du?"
 	cont "Werde bloß nicht"
 	cont "größenwahnsinnig!"
 	done
 
-_ViridianGymBattleText7::
+_ViridianGymRocker2BattleText::
 	text "Allein mein"
 	line "Anblick läßt"
 	cont "Deine #MON"
 	cont "schaudern!"
 	done
 
-_ViridianGymEndBattleText7::
+_ViridianGymRocker2EndBattleText::
 	text ""
 	line "Sie kringeln sich"
 	cont "vor Lachen! NEIN!"
 	prompt
 
-_ViridianGymAfterBattleText7::
+_ViridianGymRocker2AfterBattleText::
 	text "Warte nur!"
 	line "Dafür wirst Du"
 	cont "noch büßen!"
 	done
 
-_ViridianGymBattleText8::
+_ViridianGymCooltrainerM3BattleText::
 	text "Die ARENAHALLE"
 	line "von VERTANIA CITY"
 	cont "war lange Zeit"
@@ -239,12 +239,12 @@ _ViridianGymBattleText8::
 	cont "MEISTER zurück!"
 	done
 
-_ViridianGymEndBattleText8::
+_ViridianGymCooltrainerM3EndBattleText::
 	text "Ich"
 	line "wurde besiegt?"
 	prompt
 
-_ViridianGymAfterBattleText8::
+_ViridianGymCooltrainerM3AfterBattleText::
 	text "Du kannst nur in"
 	line "die PKMN-LIGA,"
 	cont "wenn Du unseren"

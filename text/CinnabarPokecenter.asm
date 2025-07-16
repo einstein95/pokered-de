@@ -1,4 +1,4 @@
-_CinnabarPokecenterText2::
+_CinnabarPokecenterCooltrainerFText::
 	text "Man kann die"
 	line "Entwicklung eines"
 	cont "#MON stoppen."
@@ -9,7 +9,7 @@ _CinnabarPokecenterText2::
 	cont "wie es ist."
 	done
 
-_CinnabarPokecenterText3::
+_CinnabarPokecenterGentlemanText::
 	text "Tausche #MON"
 	line "mit Freunden!"
 

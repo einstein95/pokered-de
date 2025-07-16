@@ -21,14 +21,14 @@ MainMenu:
 	ld [hli], a
 	ld [hl], a
 	ld [wDefaultMap], a
-	ld hl, wd72e
-	res 6, [hl]
+	ld hl, wStatusFlags4
+	res BIT_LINK_CONNECTED, [hl]
 	call ClearScreen
 	call RunDefaultPaletteCommand
 	call LoadTextBoxTilePatterns
 	call LoadFontTilePatterns
-	ld hl, wd730
-	set 6, [hl]
+	ld hl, wStatusFlags5
+	set BIT_NO_TEXT_DELAY, [hl]
 	ld a, [wSaveFileStatus]
 	cp 1
 	jr z, .noSaveFile
@@ -50,8 +50,8 @@ MainMenu:
 	ld de, NewGameText
 	call PlaceString
 .next2
-	ld hl, wd730
-	res 6, [hl]
+	ld hl, wStatusFlags5
+	res BIT_NO_TEXT_DELAY, [hl]
 	call UpdateSprites
 	xor a
 	ld [wCurrentMenuItem], a
@@ -61,12 +61,12 @@ MainMenu:
 	ld [wTopMenuItemX], a
 	inc a
 	ld [wTopMenuItemY], a
-	ld a, A_BUTTON | B_BUTTON | START
+	ld a, PAD_A | PAD_B | PAD_START
 	ld [wMenuWatchedKeys], a
 	ld a, [wSaveFileStatus]
 	ld [wMaxMenuItem], a
 	call HandleMenuInput
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	jp nz, DisplayTitleScreen ; if so, go back to the title screen
 	ld c, 20
 	call DelayFrames
@@ -85,13 +85,13 @@ MainMenu:
 	cp 1
 	jp z, StartNewGame
 	call DisplayOptionMenu
-	ld a, 1
+	ld a, TRUE
 	ld [wOptionsInitialized], a
 	jp .mainMenuLoop
 .choseContinue
 	call DisplayContinueGameInfo
 	ld hl, wCurrentMapScriptFlags
-	set 5, [hl]
+	set BIT_CUR_MAP_LOADED_1, [hl]
 .inputLoop
 	xor a
 	ldh [hJoyPressed], a
@@ -99,10 +99,10 @@ MainMenu:
 	ldh [hJoyHeld], a
 	call Joypad
 	ldh a, [hJoyHeld]
-	bit 0, a
+	bit B_PAD_A, a
 	jr nz, .pressedA
-	bit 1, a
-	jp nz, .mainMenuLoop ; pressed B
+	bit B_PAD_B, a
+	jp nz, .mainMenuLoop
 	jr .inputLoop
 .pressedA
 	call GBPalWhiteOutWithDelay3
@@ -114,18 +114,18 @@ MainMenu:
 	ld a, [wNumHoFTeams]
 	and a
 	jp z, SpecialEnterMap
-	ld a, [wCurMap] ; map ID
+	ld a, [wCurMap]
 	cp HALL_OF_FAME
 	jp nz, SpecialEnterMap
 	xor a
 	ld [wDestinationMap], a
-	ld hl, wd732
-	set 2, [hl] ; fly warp or dungeon warp
-	call SpecialWarpIn
+	ld hl, wStatusFlags6
+	set BIT_FLY_OR_DUNGEON_WARP, [hl]
+	call PrepareForSpecialWarp
 	jp SpecialEnterMap
 
 InitOptions:
-	ld a, TEXT_DELAY_FAST
+	ld a, 1 << BIT_FAST_TEXT_DELAY
 	ld [wLetterPrintingDelayFlags], a
 	ld a, TEXT_DELAY_MEDIUM
 	ld [wOptions], a
@@ -134,8 +134,8 @@ InitOptions:
 LinkMenu:
 	xor a
 	ld [wLetterPrintingDelayFlags], a
-	ld hl, wd72e
-	set 6, [hl]
+	ld hl, wStatusFlags4
+	set BIT_LINK_CONNECTED, [hl]
 	ld hl, LinkMenuEmptyText
 	call PrintText
 	call SaveScreenTilesToBuffer1
@@ -150,26 +150,31 @@ LinkMenu:
 	ld de, CableClubOptionsText
 	call PlaceString
 	xor a
-	ld [wUnusedCD37], a
-	ld [wd72d], a
+	ld [wUnusedLinkMenuByte], a
+	ld [wCableClubDestinationMap], a
 	ld hl, wTopMenuItemY
-	ld a, $7
+	ld a, 7
 	ld [hli], a
+	ASSERT wTopMenuItemY + 1 == wTopMenuItemX
 	ld a, $5
 	ld [hli], a
+	ASSERT wTopMenuItemX + 1 == wCurrentMenuItem
 	xor a
 	ld [hli], a
 	inc hl
-	ld a, $2
+	ASSERT wCurrentMenuItem + 2 == wMaxMenuItem
+	ld a, 2
 	ld [hli], a
+	ASSERT wMaxMenuItem + 1 == wMenuWatchedKeys
+	ASSERT 2 + 1 == PAD_A | PAD_B
 	inc a
-	; ld a, A_BUTTON | B_BUTTON
-	ld [hli], a ; wMenuWatchedKeys
+	ld [hli], a
+	ASSERT wMenuWatchedKeys + 1 == wLastMenuItem
 	xor a
 	ld [hl], a
 .waitForInputLoop
 	call HandleMenuInput
-	and A_BUTTON | B_BUTTON
+	and PAD_A | PAD_B
 	add a
 	add a
 	ld b, a
@@ -219,14 +224,14 @@ LinkMenu:
 	jr nz, .skipStartingTransfer
 	call DelayFrame
 	call DelayFrame
-	ld a, START_TRANSFER_INTERNAL_CLOCK
+	ld a, SC_START | SC_INTERNAL
 	ldh [rSC], a
 .skipStartingTransfer
 	ld b, " "
 	ld c, " "
 	ld d, "▷"
 	ld a, [wLinkMenuSelectionSendBuffer]
-	and (B_BUTTON << 2) ; was B button pressed?
+	and PAD_B << 2 ; was B button pressed?
 	jr nz, .updateCursorPosition
 ; A button was pressed
 	ld a, [wCurrentMenuItem]
@@ -249,7 +254,7 @@ LinkMenu:
 	call DelayFrames
 	call LoadScreenTilesFromBuffer1
 	ld a, [wLinkMenuSelectionSendBuffer]
-	and (B_BUTTON << 2) ; was B button pressed?
+	and PAD_B << 2 ; was B button pressed?
 	jr nz, .choseCancel ; cancel if B pressed
 	ld a, [wCurrentMenuItem]
 	cp $2
@@ -262,16 +267,16 @@ LinkMenu:
 	jr nz, .next
 	ld a, TRADE_CENTER
 .next
-	ld [wd72d], a
+	ld [wCableClubDestinationMap], a
 	ld hl, PleaseWaitText
 	call PrintText
 	ld c, 50
 	call DelayFrames
-	ld hl, wd732
-	res 1, [hl]
+	ld hl, wStatusFlags6
+	res BIT_DEBUG_MODE, [hl]
 	ld a, [wDefaultMap]
 	ld [wDestinationMap], a
-	call SpecialWarpIn
+	call PrepareForSpecialWarp
 	ld c, 20
 	call DelayFrames
 	xor a
@@ -290,8 +295,8 @@ LinkMenu:
 	ld hl, LinkCanceledText
 	vc_hook Wireless_net_end
 	call PrintText
-	ld hl, wd72e
-	res 6, [hl]
+	ld hl, wStatusFlags4
+	res BIT_LINK_CONNECTED, [hl]
 	ret
 
 WhereWouldYouLikeText:
@@ -307,8 +312,12 @@ LinkCanceledText:
 	text_end
 
 StartNewGame:
-	ld hl, wd732
-	res 1, [hl]
+	ld hl, wStatusFlags6
+	; Ensure debug mode is not used when starting a regular new game.
+	; Debug mode persists in saved games for both debug and non-debug builds, and is
+	; only reset here by the main menu.
+	res BIT_DEBUG_MODE, [hl]
+	; fallthrough
 StartNewGameDebug:
 	call OakSpeech
 	ld c, 20
@@ -320,9 +329,9 @@ SpecialEnterMap::
 	ldh [hJoyPressed], a
 	ldh [hJoyHeld], a
 	ldh [hJoy5], a
-	ld [wd72d], a
-	ld hl, wd732
-	set 0, [hl] ; count play time
+	ld [wCableClubDestinationMap], a
+	ld hl, wStatusFlags6
+	set BIT_GAME_TIMER_COUNTING, [hl]
 	call ResetPlayerSpriteData
 	ld c, 20
 	call DelayFrames
@@ -459,7 +468,8 @@ DisplayOptionMenu:
 	xor a
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	inc a
+	ASSERT BIT_FAST_TEXT_DELAY == 0
+	inc a ; 1 << BIT_FAST_TEXT_DELAY
 	ld [wLetterPrintingDelayFlags], a
 	ld [wOptionsCancelCursorX], a
 	ld a, 3 ; text speed cursor Y coordinate
@@ -477,13 +487,13 @@ DisplayOptionMenu:
 	call JoypadLowSensitivity
 	ldh a, [hJoy5]
 	ld b, a
-	and A_BUTTON | B_BUTTON | START | D_RIGHT | D_LEFT | D_UP | D_DOWN ; any key besides select pressed?
+	and ~PAD_SELECT ; any key besides select pressed?
 	jr z, .getJoypadStateLoop
-	bit BIT_B_BUTTON, b
+	bit B_PAD_B, b
 	jr nz, .exitMenu
-	bit BIT_START, b
+	bit B_PAD_START, b
 	jr nz, .exitMenu
-	bit BIT_A_BUTTON, b
+	bit B_PAD_A, b
 	jr z, .checkDirectionKeys
 	ld a, [wTopMenuItemY]
 	cp 16 ; is the cursor on Cancel?
@@ -498,9 +508,9 @@ DisplayOptionMenu:
 	jp .loop
 .checkDirectionKeys
 	ld a, [wTopMenuItemY]
-	bit BIT_D_DOWN, b
+	bit B_PAD_DOWN, b
 	jr nz, .downPressed
-	bit BIT_D_UP, b
+	bit B_PAD_UP, b
 	jr nz, .upPressed
 	cp 8 ; cursor in Battle Animation section?
 	jr z, .cursorInBattleAnimation
@@ -509,7 +519,7 @@ DisplayOptionMenu:
 	cp 16 ; cursor on Cancel?
 	jr z, .loop
 .cursorInTextSpeed
-	bit BIT_D_LEFT, b
+	bit B_PAD_LEFT, b
 	jp nz, .pressedLeftInTextSpeed
 	jp .pressedRightInTextSpeed
 .downPressed
@@ -550,12 +560,12 @@ DisplayOptionMenu:
 	jp .loop
 .cursorInBattleAnimation
 	ld a, [wOptionsBattleAnimCursorX] ; battle animation cursor X coordinate
-	xor $0b ; toggle between 1 and 10
+	xor 1 ^ 10 ; toggle between 1 and 10
 	ld [wOptionsBattleAnimCursorX], a
 	jp .eraseOldMenuCursor
 .cursorInBattleStyle
 	ld a, [wOptionsBattleStyleCursorX] ; battle style cursor X coordinate
-	xor $0b ; toggle between 1 and 10
+	xor 1 ^ 10 ; toggle between 1 and 10
 	ld [wOptionsBattleStyleCursorX], a
 	jp .eraseOldMenuCursor
 .pressedLeftInTextSpeed
@@ -616,19 +626,19 @@ SetOptionsFromCursorPositions:
 	dec a
 	jr z, .battleAnimationOn
 .battleAnimationOff
-	set 7, d
+	set BIT_BATTLE_ANIMATION, d
 	jr .checkBattleStyle
 .battleAnimationOn
-	res 7, d
+	res BIT_BATTLE_ANIMATION, d
 .checkBattleStyle
 	ld a, [wOptionsBattleStyleCursorX] ; battle style cursor X coordinate
 	dec a
 	jr z, .battleStyleShift
 .battleStyleSet
-	set 6, d
+	set BIT_BATTLE_SHIFT, d
 	jr .storeOptions
 .battleStyleShift
-	res 6, d
+	res BIT_BATTLE_SHIFT, d
 .storeOptions
 	ld a, d
 	ld [wOptions], a
@@ -689,11 +699,11 @@ CheckForPlayerNameInSRAM:
 ; Check if the player name data in SRAM has a string terminator character
 ; (indicating that a name may have been saved there) and return whether it does
 ; in carry.
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamBank], a
+	ld [rBMODE], a
+	ld [rRAMB], a
 	ld b, NAME_LENGTH
 	ld hl, sPlayerName
 .loop
@@ -704,13 +714,13 @@ CheckForPlayerNameInSRAM:
 	jr nz, .loop
 ; not found
 	xor a
-	ld [MBC1SRamEnable], a
-	ld [MBC1SRamBankingMode], a
+	ld [rRAMG], a
+	ld [rBMODE], a
 	and a
 	ret
 .found
 	xor a
-	ld [MBC1SRamEnable], a
-	ld [MBC1SRamBankingMode], a
+	ld [rRAMG], a
+	ld [rBMODE], a
 	scf
 	ret

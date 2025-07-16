@@ -4,17 +4,17 @@ IsPlayerCharacterBeingControlledByGame::
 	ld a, [wNPCMovementScriptPointerTableNum]
 	and a
 	ret nz
-	ld a, [wd736]
-	bit 1, a ; currently stepping down from door bit
+	ld a, [wMovementFlags]
+	bit BIT_EXITING_DOOR, a
 	ret nz
-	ld a, [wd730]
-	and $80
+	ld a, [wStatusFlags5]
+	and 1 << BIT_SCRIPTED_MOVEMENT_STATE
 	ret
 
 RunNPCMovementScript::
-	ld hl, wd736
-	bit 0, [hl]
-	res 0, [hl]
+	ld hl, wMovementFlags
+	bit BIT_STANDING_ON_DOOR, [hl]
+	res BIT_STANDING_ON_DOOR, [hl]
 	jr nz, .playerStepOutFromDoor
 	ld a, [wNPCMovementScriptPointerTableNum]
 	and a
@@ -32,12 +32,12 @@ RunNPCMovementScript::
 	push af
 	ld a, [wNPCMovementScriptBank]
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	ld a, [wNPCMovementScriptFunctionNum]
 	call CallFunctionInTable
 	pop af
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	ret
 
 .NPCMovementScriptPointerTables
@@ -50,15 +50,17 @@ RunNPCMovementScript::
 EndNPCMovementScript::
 	farjp _EndNPCMovementScript
 
-DebugPressedOrHeldB::
+DebugPressedOrHeldB:: ; dummy except in _DEBUG
+; This is used to skip Trainer battles, the
+; Safari Game step counter, and some NPC scripts.
 IF DEF(_DEBUG)
-	ld a, [wd732]
-	bit 1, a
+	ld a, [wStatusFlags6]
+	bit BIT_DEBUG_MODE, a
 	ret z
 	ldh a, [hJoyHeld]
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	ret nz
 	ldh a, [hJoyPressed]
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 ENDC
 	ret

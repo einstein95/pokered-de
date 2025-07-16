@@ -1,4 +1,4 @@
-_CeruleanHouse2Text_74e77::
+_CeruleanBadgeHouseMiddleAgedManText::
 	text "Nur sehr begabte"
 	line "Trainer tragen"
 	cont "#MON-ORDEN."
@@ -12,7 +12,7 @@ _CeruleanHouse2Text_74e77::
 	line "geheimnisumwoben!"
 	prompt
 
-_CeruleanHouse2Text_74e7c::
+_CeruleanBadgeHouseMiddleAgedManWhichBadgeText::
 	text "Also dann..."
 
 	para "Über welchen der"
@@ -21,13 +21,13 @@ _CeruleanHouse2Text_74e7c::
 	cont "erzählen?"
 	done
 
-_CeruleanHouse2Text_74e81::
+_CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText::
 	text "Besuche mich,"
 	line "wann immer Du"
 	cont "möchtest."
 	done
 
-_CeruleanHouse2Text_74e96::
+_CeruleanBadgeHouseBoulderBadgeText::
 	text "Die ANGRIFFE"
 	line "Deiner #MON"
 	cont "werden ein wenig"
@@ -38,7 +38,7 @@ _CeruleanHouse2Text_74e96::
 	cont "BLITZ einsetzen."
 	prompt
 
-_CeruleanHouse2Text_74e9b::
+_CeruleanBadgeHouseCascadeBadgeText::
 	text "#MON bis"
 	line "Level 30 folgen"
 	cont "Deinen Befehlen!"
@@ -53,7 +53,7 @@ _CeruleanHouse2Text_74e9b::
 	cont "Kämpfen nutzen!"
 	prompt
 
-_CeruleanHouse2Text_74ea0::
+_CeruleanBadgeHouseThunderBadgeText::
 	text "Die"
 	line "INITIATIVE Deiner"
 	cont "#MON nimmt zu."
@@ -65,7 +65,7 @@ _CeruleanHouse2Text_74ea0::
 	cont "einzusetzen."
 	prompt
 
-_CeruleanHouse2Text_74ea5::
+_CeruleanBadgeHouseRainbowBadgeText::
 	text "#MON bis"
 	line "Level 50 folgen"
 	cont "Deinen Befehlen."
@@ -80,7 +80,7 @@ _CeruleanHouse2Text_74ea5::
 	cont "einsetzen."
 	prompt
 
-_CeruleanHouse2Text_74eaa::
+_CeruleanBadgeHouseSoulBadgeText::
 	text "Die VERTEIDIGUNG"
 	line "Deiner #MON"
 	cont "wird verbessert."
@@ -91,7 +91,7 @@ _CeruleanHouse2Text_74eaa::
 	cont "verwenden."
 	prompt
 
-_CeruleanHouse2Text_74eaf::
+_CeruleanBadgeHouseMarshBadgeText::
 	text "#MON bis"
 	line "Level 70 folgen"
 	cont "Deinen Befehlen."
@@ -101,14 +101,14 @@ _CeruleanHouse2Text_74eaf::
 	cont "Dir jedoch nicht!"
 	prompt
 
-_CeruleanHouse2Text_74eb4::
+_CeruleanBadgeHouseVolcanoBadgeText::
 	text "Die SPEZIAL-"
 	line "FÄHIGKEITEN"
 	cont "Deiner #MON"
 	cont "werden erhöht."
 	prompt
 
-_CeruleanHouse2Text_74eb9::
+_CeruleanBadgeHouseEarthBadgeText::
 	text "Jegliches #MON"
 	line "gehorcht Dir!"
 	prompt

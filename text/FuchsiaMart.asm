@@ -1,4 +1,4 @@
-_FuchsiaMartText2::
+_FuchsiaMartMiddleAgedManText::
 	text "Du hast einen"
 	line "Wimpel aus der"
 	cont "SAFARI-ZONE?"
@@ -8,7 +8,7 @@ _FuchsiaMartText2::
 	cont "Kalender?"
 	done
 
-_FuchsiaMartText3::
+_FuchsiaMartCooltrainerFText::
 	text "Hast Du schon"
 	line "einmal X-TEMPO"
 	cont "ausprobiert?"

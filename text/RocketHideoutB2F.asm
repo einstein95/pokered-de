@@ -1,16 +1,16 @@
-_RocketHideout2BattleText2::
+_RocketHideoutB2FRocketBattleText::
 	text "Der BOSS sagt,"
 	line "das SILPH SCOPE"
 	cont "macht Geister"
 	cont "sichtbar!"
 	done
 
-_RocketHideout2EndBattleText2::
+_RocketHideoutB2FRocketEndBattleText::
 	text "STOP!"
 	line "Ich ergebe mich!"
 	prompt
 
-_RocketHideout2AfterBattleTxt2::
+_RocketHideoutB2FRocketAfterBattleText::
 	text "Das TEAM ROCKET-"
 	line "Hauptquartier hat"
 	cont "4 Untergeschosse."

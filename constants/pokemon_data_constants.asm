@@ -23,7 +23,7 @@ DEF BASE_TMHM        rb (NUM_TM_HM + 7) / 8
                      rb_skip
 DEF BASE_DATA_SIZE EQU _RS
 
-; party_struct members (see macros/wram.asm)
+; party_struct members (see macros/ram.asm)
 rsreset
 DEF MON_SPECIES    rb
 DEF MON_HP         rw
@@ -79,12 +79,9 @@ DEF HOF_TEAM_CAPACITY EQU 50
 
 ; Evolution types
 	const_def 1
-	const EV_LEVEL ; 1
-	const EV_ITEM  ; 2
-	const EV_TRADE ; 3
-
-DEF MAX_EVOLUTIONS EQU 3
-DEF EVOLUTION_SIZE EQU 4
+	const EVOLVE_LEVEL ; 1
+	const EVOLVE_ITEM  ; 2
+	const EVOLVE_TRADE ; 3
 
 
 ; wMonHGrowthRate values
@@ -101,3 +98,7 @@ DEF NUM_GROWTH_RATES EQU const_value
 ; wild data (see data/wild/maps/*.asm)
 DEF NUM_WILDMONS EQU 10
 DEF WILDDATA_LENGTH EQU 1 + NUM_WILDMONS * 2
+
+; PP in box_struct (see macros/ram.asm)
+DEF PP_UP_MASK EQU %11000000 ; number of PP Up used
+DEF PP_MASK    EQU %00111111 ; currently remaining PP

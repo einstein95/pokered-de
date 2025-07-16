@@ -1,10 +1,10 @@
-_LavenderPokecenterText2::
+_LavenderPokecenterGentlemanText::
 	text "Das TEAM ROCKET"
 	line "würde für Gold"
 	cont "alles tun!"
 	done
 
-_LavenderPokecenterText3::
+_LavenderPokecenterLittleGirlText::
 	text "Ich sah, wie die"
 	line "Mutter eines"
 	cont "jungen TRAGOSSO"

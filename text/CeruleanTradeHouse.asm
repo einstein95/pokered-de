@@ -1,4 +1,4 @@
-_CeruleanHouse1Text1::
+_CeruleanTradeHouseGrannyText::
 	text "Mein Mann tauscht"
 	line "für sein Leben"
 	cont "gern #MON."

@@ -1,4 +1,4 @@
-_FuchsiaCityText1::
+_FuchsiaCityYoungster1Text::
 	text "Hast Du schon das"
 	line "SAFARI-SPIEL"
 	cont "gespielt? Manche"
@@ -6,7 +6,7 @@ _FuchsiaCityText1::
 	cont "nur dabei fangen!"
 	done
 
-_FuchsiaCityText2::
+_FuchsiaCityGamblerText::
 	text "Vor dem Eingang"
 	line "zur SAFARI-ZONE"
 	cont "befindet sich ein"
@@ -18,45 +18,45 @@ _FuchsiaCityText2::
 	cont "fangen."
 	done
 
-_FuchsiaCityText3::
+_FuchsiaCityErikText::
 	text "ERIK: Wo ist"
 	line "SARA? Ich wollte"
 	cont "mich hier mit"
 	cont "ihr treffen!"
 	done
 
-_FuchsiaCityText4::
+_FuchsiaCityYoungster2Text::
 	text "Dieser Ball dort"
 	line "ist tatsächlich"
 	cont "ein #MON?!"
 	done
 
-_FuchsiaCityText5::
+_FuchsiaCityPokemonText::
 	text "!"
 	done
 
-_FuchsiaCityText11::
+_FuchsiaCitySignText::
 	text "FUCHSANIA CITY"
 	line "Die Stadt der"
 	cont "rosaroten Träume"
 	done
 
-_FuchsiaCityText13::
+_FuchsiaCitySafariGameSignText::
 	text "SAFARI-SPIEL"
 	line "#MON-FANGEN!"
 	done
 
-_FuchsiaCityText16::
+_FuchsiaCityWardensHomeSignText::
 	text "SAFARI-ZONE"
 	line "HAUS DES WÄRTERS"
 	done
 
-_FuchsiaCityText17::
+_FuchsiaCitySafariZoneSignText::
 	text "#MON-PARADIES"
 	line "SAFARI-ZONE"
 	done
 
-_FuchsiaCityText18::
+_FuchsiaCityGymSignText::
 	text "FUCHSANIA CITY"
 	line "PKMN-ARENA"
 	cont "ARENALEITER: KOGA"
@@ -65,7 +65,7 @@ _FuchsiaCityText18::
 	line "Ninja-Meister!"
 	done
 
-_FuchsiaCityChanseyText::
+_FuchsiaCityChanseySignText::
 	text "Name: CHANEIRA"
 
 	para "Dieses #MON zu"
@@ -73,7 +73,7 @@ _FuchsiaCityChanseyText::
 	cont "Glückssache!"
 	prompt
 
-_FuchsiaCityVoltorbText::
+_FuchsiaCityVoltorbSignText::
 	text "Name: VOLTOBAL"
 
 	para "Dieses #MON"
@@ -81,7 +81,7 @@ _FuchsiaCityVoltorbText::
 	cont "#BALL."
 	prompt
 
-_FuchsiaCityKangaskhanText::
+_FuchsiaCityKangaskhanSignText::
 	text "Name: KANGAMA"
 
 	para "Ein #MON, das"
@@ -90,7 +90,7 @@ _FuchsiaCityKangaskhanText::
 	cont "am Bauch trägt."
 	prompt
 
-_FuchsiaCitySlowpokeText::
+_FuchsiaCitySlowpokeSignText::
 	text "Name: FLEGMON"
 
 	para "Ein freundliches,"
@@ -98,14 +98,14 @@ _FuchsiaCitySlowpokeText::
 	cont "#MON."
 	prompt
 
-_FuchsiaCityLaprasText::
+_FuchsiaCityLaprasSignText::
 	text "Name: LAPRAS"
 
 	para "Der König"
 	line "der Meere!"
 	prompt
 
-_FuchsiaCityOmanyteText::
+_FuchsiaCityFossilSignOmanyteText::
 	text "Name: AMONITAS"
 
 	para "Ein #MON,"
@@ -114,7 +114,7 @@ _FuchsiaCityOmanyteText::
 	cont "erschaffen wurde."
 	prompt
 
-_FuchsiaCityKabutoText::
+_FuchsiaCityFossilSignKabutoText::
 	text "Name: KABUTO"
 
 	para "Ein #MON,"
@@ -123,6 +123,6 @@ _FuchsiaCityKabutoText::
 	cont "erschaffen wurde."
 	prompt
 
-_FuchsiaCityText_19b2a::
+_FuchsiaCityFossilSignUndeterminedText::
 	text "..."
 	done

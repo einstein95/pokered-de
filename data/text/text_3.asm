@@ -42,7 +42,7 @@ _EvolvedText::
 _IntoText::
 	text_start
 	line "zu @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 	done
 
@@ -183,7 +183,7 @@ _BecameConfusedText::
 _MimicLearnedMoveText::
 	text "<USER> hat"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	cont "gelernt!"
 	prompt
@@ -191,7 +191,7 @@ _MimicLearnedMoveText::
 _MoveWasDisabledText::
 	text "<TARGET>s"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	cont "wird blockiert!"
 	prompt
@@ -296,7 +296,7 @@ _TransformedText::
 	text "<USER>"
 	line "verwandelt sich"
 	cont "in  @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 	prompt
 
@@ -327,10 +327,10 @@ _DreamWasEatenText::
 	line "Traum gefressen!"
 	prompt
 
-_TradeCenterText1::
+_TradeCenterOpponentText::
 	text "!"
 	done
 
-_ColosseumText1::
+_ColosseumOpponentText::
 	text "!"
 	done

@@ -1,4 +1,4 @@
-_VermilionMartText2::
+_VermilionMartCooltrainerMText::
 	text "Es gibt böse"
 	line "Menschen, die"
 	cont "#MON für"
@@ -18,7 +18,7 @@ _VermilionMartText2::
 	cont "ihnen ausgesetzt."
 	done
 
-_VermilionMartText3::
+_VermilionMartCooltrainerFText::
 	text "#MON können"
 	line "gut oder böse"
 	cont "sein. Das hängt"

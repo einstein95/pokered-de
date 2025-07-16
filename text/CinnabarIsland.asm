@@ -1,9 +1,9 @@
-_CinnabarIslandText8::
+_CinnabarIslandDoorIsLockedText::
 	text "Die Tür ist"
 	line "verschlossen..."
 	done
 
-_CinnabarIslandText1::
+_CinnabarIslandGirlText::
 	text "PYRO, der"
 	line "ARENALEITER der"
 	cont "ZINNOBERINSEL,"
@@ -12,7 +12,7 @@ _CinnabarIslandText1::
 	cont "hier seit Jahren."
 	done
 
-_CinnabarIslandText2::
+_CinnabarIslandGamblerText::
 	text "Forscher"
 	line "experimentieren"
 	cont "in dem"
@@ -20,18 +20,18 @@ _CinnabarIslandText2::
 	cont "Gebäude."
 	done
 
-_CinnabarIslandText3::
+_CinnabarIslandSignText::
 	text "ZINNOBERINSEL"
 	line "Die Stadt"
 	cont "brennender"
 	cont "Leidenschaft!"
 	done
 
-_CinnabarIslandText6::
+_CinnabarIslandPokemonLabSignText::
 	text "#MON LABOR"
 	done
 
-_CinnabarIslandText7::
+_CinnabarIslandGymSignText::
 	text "ZINNOBERINSEL"
 	line "PKMN-ARENA"
 	cont "ARENALEITER: PYRO"

@@ -1,11 +1,11 @@
-_Route16GateText_49777::
+_Route16Gate1FGuardNoPedestriansAllowedText::
 	text "Das Betreten des"
 	line "RADWEGES ist"
 	cont "Fußgängern"
 	cont "untersagt!"
 	done
 
-_Route16GateText_4977c::
+_Route16Gate1FGuardCyclingRoadExplanationText::
 	text "Der RADWEG ist"
 	line "eine abschüssige"
 	cont "Küstenstraße mit"
@@ -13,12 +13,12 @@ _Route16GateText_4977c::
 	cont "Streckenverlauf!"
 	done
 
-_Route16GateText_49781::
+_Route16Gate1FGuardWaitUpText::
 	text "Entschuldigung!"
 	line "Warte auf mich!"
 	done
 
-_Route16GateText2::
+_Route16Gate1FGamblerText::
 	text "Wie bist Du nur"
 	line "hereingekommen?"
 	cont "Solide Leistung!"

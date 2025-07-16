@@ -1,15 +1,15 @@
-_ArticunoBattleText::
+_SeafoamIslandsB4FArticunoBattleText::
 	text "Jauul!@"
 	text_end
 
-_SeafoamIslands5Text4::
+_SeafoamIslandsB4FBouldersSignText::
 	text "Felsen könnten"
 	line "die Strömung"
 	cont "vielleicht"
 	cont "umlenken!"
 	done
 
-_SeafoamIslands5Text5::
+_SeafoamIslandsB4FDangerSignText::
 	text "VORSICHT!"
 	line "GEFÄHRLICHE"
 	cont "STRÖMUNG!"

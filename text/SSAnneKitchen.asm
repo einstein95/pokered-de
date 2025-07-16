@@ -1,4 +1,4 @@
-_SSAnne6Text1::
+_SSAnneKitchenCook1Text::
 	text "Aus dem Weg, Du"
 	line "Leichtmatrose!"
 
@@ -6,19 +6,19 @@ _SSAnne6Text1::
 	line "beschäftigt!"
 	done
 
-_SSAnne6Text2::
+_SSAnneKitchenCook2Text::
 	text "Ich habe einen"
 	line "seltsamen Ball im"
 	cont "Müll gesehen..."
 	done
 
-_SSAnne6Text3::
+_SSAnneKitchenCook3Text::
 	text "Es gibt zuviel zu"
 	line "tun, nie kann ich"
 	cont "mich ausruhen!"
 	done
 
-_SSAnne6Text4::
+_SSAnneKitchenCook4Text::
 	text "Was hab ich nur"
 	line "verbrochen?"
 
@@ -27,7 +27,7 @@ _SSAnne6Text4::
 	cont "schälen..."
 	done
 
-_SSAnne6Text5::
+_SSAnneKitchenCook5Text::
 	text "Hast Du schon von"
 	line "RELAXO gehört?"
 
@@ -36,7 +36,7 @@ _SSAnne6Text5::
 	cont "Tag!"
 	done
 
-_SSAnne6Text6::
+_SSAnneKitchenCook6Text::
 	text "Schnief... "
 	line "...Schnief..."
 
@@ -45,14 +45,14 @@ _SSAnne6Text6::
 	cont "schälen..."
 	done
 
-_SSAnne6Text_61807::
+_SSAnneKitchenCook7MainCourseIsText::
 	text "Ich bin der Chef"
 	line "de cuisine! "
 
 	para "Der Hauptgang ist"
 	prompt
 
-_SSAnne6Text_6180c::
+SSAnneKitchenCook7SalmonDuSaladText::
 	text "Lachs-Filet!"
 
 	para "Eine kulinarische"
@@ -60,7 +60,7 @@ _SSAnne6Text_6180c::
 	cont "sondergleichen!"
 	done
 
-_SSAnne6Text_61811::
+SSAnneKitchenCook7EelsAuBarbecueText::
 	text "Currywurst!"
 
 	para "Wie kommt eine"
@@ -68,7 +68,7 @@ _SSAnne6Text_61811::
 	cont "auf meine Karte?"
 	done
 
-_SSAnne6Text_61816::
+SSAnneKitchenCook7PrimeBeefSteakText::
 	text "Muschel-Ragout!"
 
 	para "Die Gäste werden"

@@ -1,4 +1,4 @@
-_FightingDojoText_5ce8e::
+_FightingDojoKarateMasterText::
 	text "Willkommen!"
 
 	para "Ich bin der"
@@ -14,13 +14,13 @@ _FightingDojoText_5ce8e::
 	para "Los geh",$B3,"'s!"
 	done
 
-_FightingDojoText_5ce93::
+_FightingDojoKarateMasterDefeatedText::
 	text ""
 	line "Arrgh! Ich wurde"
 	cont "geschlagen!"
 	prompt
 
-_FightingDojoText_5ce98::
+_FightingDojoKarateMasterIWillGiveYouAPokemonText::
 	text "Ich bin Deiner"
 	line "Gnade unwürdig!"
 
@@ -39,7 +39,7 @@ _FightingDojoText_5ce98::
 	line "beiden aus!"
 	done
 
-_FightingDojoText_5ce9d::
+_FightingDojoKarateMasterStayAndTrainWithUsText::
 	text "Hai!"
 
 	para "Bleibe doch hier"
@@ -47,17 +47,17 @@ _FightingDojoText_5ce9d::
 	cont "Karate mit uns!"
 	done
 
-_FightingDojoBattleText1::
+_FightingDojoBlackbelt1BattleText::
 	text "Stop! Ziehe Deine"
 	line "Schuhe aus!"
 	done
 
-_FightingDojoEndBattleText1::
+_FightingDojoBlackbelt1EndBattleText::
 	text ""
 	line "Ich gebe auf!"
 	prompt
 
-_FightingDojoAfterBattleText1::
+_FightingDojoBlackbelt1AfterBattleText::
 	text "Warte nur, bis Du"
 	line "unseren Meister"
 	cont "triffst!"
@@ -67,24 +67,24 @@ _FightingDojoAfterBattleText1::
 	cont "kleiner Fisch!"
 	done
 
-_FightingDojoBattleText2::
+_FightingDojoBlackbelt2BattleText::
 	text "Du sollst sehr"
 	line "gut sein!"
 	cont "Beweise es mir!"
 	done
 
-_FightingDojoEndBattleText2::
+_FightingDojoBlackbelt2EndBattleText::
 	text ""
 	line "Schiedsrichter!"
 	cont "1 Punkt!"
 	prompt
 
-_FightingDojoAfterBattleText2::
+_FightingDojoBlackbelt2AfterBattleText::
 	text "Unser Meister ist"
 	line "ein echter Profi!"
 	done
 
-_FightingDojoBattleText3::
+_FightingDojoBlackbelt3BattleText::
 	text "Keine"
 	line "Herausforderung "
 	cont "ist mir zu hart!"
@@ -94,20 +94,20 @@ _FightingDojoBattleText3::
 	cont "Händen!"
 	done
 
-_FightingDojoEndBattleText3::
+_FightingDojoBlackbelt3EndBattleText::
 	text ""
 	line "Autsch! Ich habe"
 	cont "eine Prellung!"
 	prompt
 
-_FightingDojoAfterBattleText3::
+_FightingDojoBlackbelt3AfterBattleText::
 	text "Die einzige"
 	line "Sache, vor der"
 	cont "wir uns fürchten,"
 	cont "ist PSYCHOKINESE!"
 	done
 
-_FightingDojoBattleText4::
+_FightingDojoBlackbelt4BattleText::
 	text "Haii-ia!"
 
 	para "Unbefugten ist"
@@ -116,33 +116,33 @@ _FightingDojoBattleText4::
 	cont "DOJO verboten!"
 	done
 
-_FightingDojoEndBattleText4::
+_FightingDojoBlackbelt4EndBattleText::
 	text "Uff!"
 	line "Ich gebe auf!"
 	prompt
 
-_FightingDojoAfterBattleText4::
+_FightingDojoBlackbelt4AfterBattleText::
 	text "Die allerbesten"
 	line "Kämpfer des"
 	cont "Landes trainieren"
 	cont "hier!"
 	done
 
-_WantHitmonleeText::
+_FightingDojoHitmonleePokeBallText::
 	text "Möchtest Du"
 	line "KICKLEE, "
 	cont "das trittstarke"
 	cont "#MON?"
 	done
 
-_WantHitmonchanText::
+_FightingDojoHitmonchanPokeBallText::
 	text "Möchtest Du"
 	line "NOCKCHAN,"
 	cont "den Meister des"
 	cont "Boxkampfs?"
 	done
 
-_OtherHitmonText::
+_FightingDojoBetterNotGetGreedyText::
 	text "Er sagte EIN"
 	line "#MON..."
 	done

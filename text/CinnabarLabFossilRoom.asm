@@ -1,4 +1,4 @@
-_Lab4Text_75dc6::
+_CinnabarLabFossilRoomScientist1Text::
 	text "Hallo!"
 
 	para "Ich leite hier"
@@ -12,11 +12,11 @@ _Lab4Text_75dc6::
 	line "Fossil für mich?"
 	prompt
 
-_Lab4Text_75dcb::
+_CinnabarLabFossilRoomScientist1NoFossilsText::
 	text "Nein? Zu schade!"
 	done
 
-_Lab4Text_75dd0::
+_CinnabarLabFossilRoomScientist1GoForAWalkText::
 	text "Es wird einige"
 	line "Zeit dauern!"
 
@@ -25,7 +25,7 @@ _Lab4Text_75dd0::
 	cont "vorbei!"
 	done
 
-_Lab4Text_75dd5::
+_CinnabarLabFossilRoomScientist1FossilIsBackToLifeText::
 	text "Wo warst Du?"
 
 	para "Wir haben"
@@ -39,10 +39,10 @@ _Lab4Text_75dd5::
 	cont "vermutet habe!"
 	prompt
 
-_Lab4Text_610ae::
+_CinnabarLabFossilRoomScientist1SeesFossilText::
 	text "Oh! Das ist ein"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 
 	para "Es ist ein Fossil"
@@ -60,18 +60,18 @@ _Lab4Text_610ae::
 	cont "wiederbeleben!"
 	done
 
-_Lab4Text_610b3::
+_CinnabarLabFossilRoomScientist1TakesFossilText::
 	text "Gib es schnell"
 	line "her, damit ich"
 	cont "fortfahren kann!"
 
 	para "<PLAYER> übergibt"
 	line "das @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 	prompt
 
-_Lab4Text_610b8::
+_CinnabarLabFossilRoomScientist1GoForAWalkText2::
 	text "Es wird einige"
 	line "Zeit dauern!"
 
@@ -80,7 +80,7 @@ _Lab4Text_610b8::
 	cont "vorbei!"
 	done
 
-_Lab4Text_610bd::
+_CinnabarLabFossilRoomScientist1ComeAgainText::
 	text "Du bist jederzeit"
 	line "willkommen!"
 	done

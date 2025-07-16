@@ -1,4 +1,4 @@
-_FuchsiaMeetingRoomText1::
+_FuchsiaMeetingRoomSafariZoneWorker1::
 	text "Der WÄRTER trägt"
 	line "den Spitznamen"
 	cont "FLEGMON."
@@ -7,7 +7,7 @@ _FuchsiaMeetingRoomText1::
 	line "ähneln sich sehr!"
 	done
 
-_FuchsiaMeetingRoomText2::
+_FuchsiaMeetingRoomSafariZoneWorker2::
 	text "FLEGMON weiß"
 	line "eine Menge über"
 	cont "#MON!"
@@ -18,7 +18,7 @@ _FuchsiaMeetingRoomText2::
 	cont "URZEIT-#MON!"
 	done
 
-_FuchsiaMeetingRoomText3::
+_FuchsiaMeetingRoomSafariZoneWorker3::
 	text "FLEGMON war hier,"
 	line "aber ich habe ihn"
 	cont "nicht verstehen"

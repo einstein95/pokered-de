@@ -1,37 +1,37 @@
-_SilphCo6Text_1a24a::
+_SilphCo6FSilphWorkerM1TookOverTheBuildingText::
 	text "Das TEAM ROCKET"
 	line "hat die Kontrolle"
 	cont "über das Gebäude"
 	cont "übernommen!"
 	done
 
-_SilphCo6Text_1a24f::
+_SilphCo6FSilphWorkerM1BackToWorkText::
 	text "OK, die Arbeit"
 	line "ruft! Los geh",$b3,"'s!"
 	done
 
-_SilphCo6Text_1a261::
+_SilphCo6FSilphWorkerMHelpMePleaseText::
 	text "Oje, ojemine!"
 	line "Bitte hilf mir!"
 	done
 
-_SilphCo6Text_1a266::
+_SilphCo6FSilphWorkerMWeGotEngagedText::
 	text "Wir sind"
 	line "verlobt!"
 	done
 
-_SilphCo6Text_1a278::
+_SilphCo6FSilphWorkerF1SuchACowardText::
 	text "Schau ihn Dir an,"
 	line "den Feigling!"
 	done
 
-_SilphCo6Text_1a27d::
+_SilphCo6FSilphWorkerF1HaveToMarryHimText::
 	text "Ich glaube, ich"
 	line "werde ihn aus"
 	cont "Mitleid heiraten!"
 	done
 
-_SilphCo6Text_1a28f::
+_SilphCo6FSilphWorkerF2TeamRocketConquerWorldText::
 	text "Das TEAM ROCKET"
 	line "benutzt die"
 	cont "#MON bei dem"
@@ -39,14 +39,14 @@ _SilphCo6Text_1a28f::
 	cont "zu erobern!"
 	done
 
-_SilphCo6Text_1a294::
+_SilphCo6FSilphWorkerF2TeamRocketRanText::
 	text "Du hast das"
 	line "TEAM ROCKET"
 	cont "in die Flucht"
 	cont "geschlagen!"
 	done
 
-_SilphCo6Text_1a2a6::
+_SilphCo6FSilphWorkerM3TargetedSilphText::
 	text "Sie müssen es"
 	line "wegen unserer"
 	cont "#MON-Produkte"
@@ -54,7 +54,7 @@ _SilphCo6Text_1a2a6::
 	cont "abgesehen haben!"
 	done
 
-_SilphCo6Text_1a2ab::
+_SilphCo6FSilphWorkerM3WorkForSilphText::
 	text "Wir würden uns"
 	line "sehr freuen, wenn"
 	cont "Du später einmal"
@@ -62,24 +62,24 @@ _SilphCo6Text_1a2ab::
 	cont "arbeiten würdest!"
 	done
 
-_SilphCo6BattleText2::
+_SilphCo6FRocket1BattleText::
 	text "Ich bin einer der"
 	line "vier berüchtigten"
 	cont "ROCKET-BRÜDER!"
 	done
 
-_SilphCo6EndBattleText2::
+_SilphCo6FRocket1EndBattleText::
 	text "Nein!"
 	line "Ich bin raus!"
 	prompt
 
-_SilphCo6AfterBattleText2::
+_SilphCo6FRocket1AfterBattleText::
 	text "Egal! Meine"
 	line "Brüder werden"
 	cont "mich rächen!"
 	done
 
-_SilphCo6BattleText3::
+_SilphCo6FScientistBattleText::
 	text "Dieser verdammte"
 	line "PRÄSIDENT!"
 
@@ -89,29 +89,29 @@ _SilphCo6BattleText3::
 	cont "schicken?"
 	done
 
-_SilphCo6EndBattleText3::
+_SilphCo6FScientistEndBattleText::
 	text "Mist!"
 	prompt
 
-_SilphCo6AfterBattleText3::
+_SilphCo6FScientistAfterBattleText::
 	text "TIKSI? Das"
 	line "liegt tief im"
 	cont "Niemandsland!"
 	done
 
-_SilphCo6BattleText4::
+_SilphCo6FRocket2BattleText::
 	text "Du wagst es,"
 	line "Dich dem"
 	cont "TEAM ROCKET zu"
 	cont "widersetzen?"
 	done
 
-_SilphCo6EndBattleText4::
+_SilphCo6FRocket2EndBattleText::
 	text "Du"
 	line "elender Verräter!"
 	prompt
 
-_SilphCo6AfterBattleText4::
+_SilphCo6FRocket2AfterBattleText::
 	text "Wenn Du ehrlich"
 	line "und rechtschaffen"
 	cont "bist, bekämpfst"

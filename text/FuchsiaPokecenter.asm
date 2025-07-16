@@ -1,4 +1,4 @@
-_FuchsiaPokecenterText1::
+_FuchsiaPokecenterRockerText::
 	text "Man kann nicht"
 	line "mit nur einem"
 	cont "starken #MON"
@@ -11,7 +11,7 @@ _FuchsiaPokecenterText1::
 	cont "Level haben."
 	done
 
-_FuchsiaPokecenterText3::
+_FuchsiaPokecenterCooltrainerFText::
 	text "Westlich von"
 	line "VERTANIA CITY"
 	cont "liegt ein Pfad."

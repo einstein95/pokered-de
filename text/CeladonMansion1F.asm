@@ -1,8 +1,8 @@
-_CeladonMansion1Text1::
+_CeladonMansion1FMeowthText::
 	text "MAUZI: Miau!@"
 	text_end
 
-_CeladonMansion1Text2::
+_CeladonMansion1FGrannyText::
 	text "Meine treuen"
 	line "#MON leisten"
 	cont "mir Gesellschaft."
@@ -12,15 +12,15 @@ _CeladonMansion1Text2::
 	cont "nach Hause!"
 	done
 
-_CeladonMansion1Text3::
+_CeladonMansion1FClefairyText::
 	text "PIEPI: Pi pippi!@"
 	text_end
 
-_CeladonMansion1Text4::
+_CeladonMansion1FNidoranFText::
 	text "NIDORAN: Nidoran!@"
 	text_end
 
-_CeladonMansion1Text5::
+_CeladonMansion1FManagersSuiteSignText::
 	text "PRISMANIA-VILLA"
 	line "Manager Suite"
 	done

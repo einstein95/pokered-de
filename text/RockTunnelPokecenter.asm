@@ -1,4 +1,4 @@
-_RockTunnelPokecenterText2::
+_RockTunnelPokecenterGentlemanText::
 	text "Ihr Element macht"
 	line "manche #MON"
 	cont "anderen gegenüber"
@@ -6,7 +6,7 @@ _RockTunnelPokecenterText2::
 	cont "schwächer!"
 	done
 
-_RockTunnelPokecenterText3::
+_RockTunnelPokecenterFisherText::
 	text "Ich habe für"
 	line "ein nutzloses"
 	cont "NUGGET 5000¥"

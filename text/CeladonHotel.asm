@@ -1,4 +1,4 @@
-_CeladonHotelText1::
+_CeladonHotelGrannyText::
 	text "In diesem Hotel"
 	line "sind keine"
 	cont "#MON erlaubt!"
@@ -6,7 +6,7 @@ _CeladonHotelText1::
 	para "Tut mir leid."
 	done
 
-_CeladonHotelText2::
+_CeladonHotelBeautyText::
 	text "Ich mache hier"
 	line "mit meinem Bruder"
 	cont "und meinem Freund"
@@ -16,7 +16,7 @@ _CeladonHotelText2::
 	line "ist wunderschön!"
 	done
 
-_CeladonHotelText3::
+_CeladonHotelSuperNerdText::
 	text "Warum nur mußte"
 	line "sie ihren Bruder"
 	cont "mitnehmen?"

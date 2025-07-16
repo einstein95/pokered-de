@@ -1,16 +1,16 @@
-_Mansion2BattleText1::
+_PokemonMansion2FSuperNerdBattleText::
 	text "Ich finde keinen"
 	line "Weg nach draußen!"
 	cont "Der reinste"
 	cont "Irrgarten!"
 	done
 
-_Mansion2EndBattleText1::
+_PokemonMansion2FSuperNerdEndBattleText::
 	text "Oh nein!"
 	line "Meine Beute!"
 	prompt
 
-_Mansion2AfterBattleText1::
+_PokemonMansion2FSuperNerdAfterBattleText::
 	text "Die Türen kannst"
 	line "Du mittels"
 	cont "Schalter"
@@ -18,7 +18,7 @@ _Mansion2AfterBattleText1::
 	cont "öffnen!"
 	done
 
-_Mansion2Text3::
+_PokemonMansion2FDiary1Text::
 	text "TAGEBUCH:"
 	line "5. JULI"
 	cont "Der Dschungel"
@@ -30,7 +30,7 @@ _Mansion2Text3::
 	cont "#MON gefunden."
 	done
 
-_Mansion2Text4::
+_PokemonMansion2FDiary2Text::
 	text "TAGEBUCH: "
 	line "10. JULI"
 
@@ -39,18 +39,18 @@ _Mansion2Text4::
 	cont "#MON MEW."
 	done
 
-_Mansion2Text_520c2::
+_PokemonMansion2FSwitchText::
 	text "Ein versteckter"
 	line "Schalter!"
 
 	para "Schalter drücken?"
 	done
 
-_Mansion2Text_520c7::
+_PokemonMansion2FSwitchPressedText::
 	text "Wer würde es"
 	line "nicht tun?"
 	prompt
 
-_Mansion2Text_520cc::
+_PokemonMansion2FSwitchNotPressedText::
 	text "Lieber nicht!"
 	done

@@ -1,4 +1,4 @@
-_CeladonMansion5Text1::
+_CeladonMansionRoofHouseHikerText::
 	text "Ich kenne jedes"
 	line "Detail der"
 	cont "#MON-WELT"

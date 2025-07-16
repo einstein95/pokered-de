@@ -1,9 +1,9 @@
-_SSAnne8Text8::
+_SSAnne1FRoomsWigglytuffText::
 	text "KNUDDELUFF: "
 	line "Knuddel! Knuddel!@"
 	text_end
 
-_SSAnne8BattleText1::
+_SSAnne1FRoomsGentleman1BattleText::
 	text "Ich mache immer"
 	line "allein Urlaub!"
 
@@ -11,46 +11,46 @@ _SSAnne8BattleText1::
 	line "begleiten mich!"
 	done
 
-_SSAnne8EndBattleText1::
+_SSAnne1FRoomsGentleman1EndBattleText::
 	text "Oh"
 	line "weh, verloren!"
 	prompt
 
-_SSAnne8AfterBattleText1::
+_SSAnne1FRoomsGentleman1AfterBattleText::
 	text "Sei immer nett zu"
 	line "Deinen #MON!"
 	done
 
-_SSAnne8BattleText2::
+_SSAnne1FRoomsGentleman2BattleText::
 	text "Du Rotznase! Was"
 	line "fällt Dir ein?"
 	done
 
-_SSAnne8EndBattleText2::
+_SSAnne1FRoomsGentleman2EndBattleText::
 	text "Mist!"
 	line "Du bist ganz"
 	cont "schön gut!"
 	prompt
 
-_SSAnne8AfterBattleText2::
+_SSAnne1FRoomsGentleman2AfterBattleText::
 	text "Ich will meine"
 	line "Ruhe haben!"
 
 	para "Verschwinde!"
 	done
 
-_SSAnne8BattleText3::
+_SSAnne1FRoomsYoungsterBattleText::
 	text "Ich bin total in"
 	line "#MON vernarrt!"
 	cont "Du auch?"
 	done
 
-_SSAnne8EndBattleText3::
+_SSAnne1FRoomsYoungsterEndBattleText::
 	text "Wow! Du"
 	line "bist cool!"
 	prompt
 
-_SSAnne8AfterBattleText3::
+_SSAnne1FRoomsYoungsterAfterBattleText::
 	text "Laß uns Freunde"
 	line "werden, OK?"
 
@@ -58,14 +58,14 @@ _SSAnne8AfterBattleText3::
 	line "#MON tauschen!"
 	done
 
-_SSAnne8BattleText4::
+_SSAnne1FRoomsCooltrainerFBattleText::
 	text "Auf meinen Reisen"
 	line "um die Welt habe"
 	cont "ich unzählige"
 	cont "#MON gefangen!"
 	done
 
-_SSAnne8EndBattleText4::
+_SSAnne1FRoomsCooltrainerFEndBattleText::
 	text "Nein!"
 	line "Ich habe die"
 	cont "ganze Welt für"
@@ -73,7 +73,7 @@ _SSAnne8EndBattleText4::
 	cont "bereist!"
 	prompt
 
-_SSAnne8AfterBattleText4::
+_SSAnne1FRoomsCooltrainerFAfterBattleText::
 	text "So behandelt man"
 	line "keine #MON"
 	cont "von Weltklasse!"
@@ -84,29 +84,29 @@ _SSAnne8AfterBattleText4::
 	cont "meine #MON!!!"
 	done
 
-_SSAnne8Text5::
+_SSAnne1FRoomsGirl1Text::
 	text "Steward, ich"
 	line "hätte gern ein"
 	cont "Stückchen Torte!"
 	done
 
-_SSAnne8Text6::
+_SSAnne1FRoomsMiddleAgedManText::
 	text "Ach, so eine"
 	line "Kreuzfahrt ist"
 	cont "wundervoll!"
 	done
 
-_SSAnne8Text7::
+_SSAnne1FRoomsLittleGirlText::
 	text "Ich reise immer"
 	line "mit KNUDDELUFF!"
 	done
 
-_SSAnne8Text9::
+_SSAnne1FRoomsGirl2Text::
 	text "Wir machen eine"
 	line "große Weltreise!"
 	done
 
-_SSAnne8Text11::
+_SSAnne1FRoomsGentleman3Text::
 	text "Pst! Ich bin"
 	line "ein Geheimagent!"
 

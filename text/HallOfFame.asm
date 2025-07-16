@@ -1,4 +1,4 @@
-_HallofFameRoomText1::
+_HallOfFameOakText::
 	text "EICH: Herzlichen"
 	line "Glückwunsch,"
 	cont "<PLAYER>!"

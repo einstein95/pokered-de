@@ -1,17 +1,17 @@
-_RocketHideout4Text_4557a::
+_RocketHideoutB4FGiovanniImpressedYouGotHereText::
 	text "Ich bin schwer"
 	line "beeindruckt. Du"
 	cont "bist tatsächlich"
 	cont "weit gekommen!"
 	done
 
-_RocketHideout4Text_4557f::
+_RocketHideoutB4FGiovanniWhatCannotBeText::
 	text "NEIN!"
 	line "Ich habe kläglich"
 	cont "versagt!"
 	prompt
 
-_RocketHideout4Text_45584::
+_RocketHideoutB4FGiovanniHopeWeMeetAgainText::
 	text "Offensichtlich"
 	line "trainierst Du"
 	cont "Deine #MON"
@@ -30,52 +30,52 @@ _RocketHideout4Text_45584::
 	line "uns wiedersehen!"
 	done
 
-_RocketHideout4BattleText2::
+_RocketHideoutB4FRocket1BattleText::
 	text "Du warst es, der"
 	line "unsere Pläne am"
 	cont "MONDBERG zunichte"
 	cont "gemacht hat!"
 	done
 
-_RocketHideout4EndBattleText2::
+_RocketHideoutB4FRocket1EndBattleText::
 	text "Dieser"
 	line "Junge ist einfach"
 	cont "unschlagbar!!!"
 	prompt
 
-_RocketHide4AfterBattleText2::
+_RocketHideoutB4FRocket1AfterBattleText::
 	text "Willst Du das"
 	line "TEAM ROCKET"
 	cont "zugrunde richten?"
 	done
 
-_RocketHideout4BattleText3::
+_RocketHideoutB4FRocket2BattleText::
 	text "Spürst Du nicht"
 	line "die Schönheit"
 	cont "der dunklen Seite"
 	cont "der Macht?"
 	done
 
-_RocketHideout4EndBattleText3::
+_RocketHideoutB4FRocket2EndBattleText::
 	text "Autsch!"
 	prompt
 
-_RocketHide4AfterBattleText3::
+_RocketHideoutB4FRocket2AfterBattleText::
 	text "Gnade, BOSS! Ich"
 	line "habe versagt..."
 	done
 
-_RocketHideout4BattleText4::
+_RocketHideoutB4FRocket3BattleText::
 	text "Ich werde Dir"
 	line "den LIFTÖFFNER"
 	cont "niemals geben!"
 	done
 
-_RocketHideout4EndBattleText4::
+_RocketHideoutB4FRocket3EndBattleText::
 	text "Oh nein!"
 	prompt
 
-_RocketHideout4Text_455ec::
+_RocketHideoutB4FRocket3AfterBattleText::
 	text "Mist! Ich habe"
 	line "den LIFTÖFFNER"
 	cont "verloren!"

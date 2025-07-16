@@ -1,3 +1,12 @@
+; TradeTextPointers1-3 indexes
+	const_def
+	const TRADETEXT_WANNA_TRADE ; 0
+	const TRADETEXT_NO_TRADE    ; 1
+	const TRADETEXT_WRONG_MON   ; 2
+	const TRADETEXT_THANKS      ; 3
+	const TRADETEXT_AFTER_TRADE ; 4
+DEF NUM_TRADE_TEXTS EQU const_value
+
 DoInGameTradeDialogue:
 ; trigger the trade offer/action specified by wWhichTrade
 	call SaveScreenTilesToBuffer2
@@ -42,14 +51,15 @@ DoInGameTradeDialogue:
 	predef FlagActionPredef
 	ld a, c
 	and a
-	ld a, $4
+	ld a, TRADETEXT_AFTER_TRADE
 	ld [wInGameTradeTextPointerTableIndex], a
 	jr nz, .printText
 ; if the trade hasn't been done yet
+	ASSERT TRADETEXT_WANNA_TRADE == 0
 	xor a
 	ld [wInGameTradeTextPointerTableIndex], a
 	call .printText
-	ld a, $1
+	ld a, TRADETEXT_NO_TRADE
 	ld [wInGameTradeTextPointerTableIndex], a
 	call YesNoChoice
 	ld a, [wCurrentMenuItem]
@@ -77,9 +87,9 @@ DoInGameTradeDialogue:
 ; copies name of species a to hl
 InGameTrade_GetMonName:
 	push de
-	ld [wd11e], a
+	ld [wNamedObjectIndex], a
 	call GetMonName
-	ld hl, wcd6d
+	ld hl, wNameBuffer
 	pop de
 	ld bc, NAME_LENGTH
 	jp CopyData
@@ -95,20 +105,20 @@ InGameTrade_DoTrade:
 	push af
 	call InGameTrade_RestoreScreen
 	pop af
-	ld a, $1
+	ld a, TRADETEXT_NO_TRADE
 	jp c, .tradeFailed ; jump if the player didn't select a pokemon
 	ld a, [wInGameTradeGiveMonSpecies]
 	ld b, a
-	ld a, [wcf91]
+	ld a, [wCurPartySpecies]
 	cp b
-	ld a, $2
+	ld a, TRADETEXT_WRONG_MON
 	jr nz, .tradeFailed ; jump if the selected mon's species is not the required one
 	ld a, [wWhichPokemon]
 	ld hl, wPartyMon1Level
 	ld bc, wPartyMon2 - wPartyMon1
 	call AddNTimes
 	ld a, [hl]
-	ld [wCurEnemyLVL], a
+	ld [wCurEnemyLevel], a
 	ld hl, wCompletedInGameTradeFlags
 	ld a, [wWhichTrade]
 	ld c, a
@@ -118,17 +128,17 @@ InGameTrade_DoTrade:
 	call PrintText
 	ld a, [wWhichPokemon]
 	push af
-	ld a, [wCurEnemyLVL]
+	ld a, [wCurEnemyLevel]
 	push af
 	call LoadHpBarAndStatusTilePatterns
 	call InGameTrade_PrepareTradeData
 	predef InternalClockTradeAnim
 	pop af
-	ld [wCurEnemyLVL], a
+	ld [wCurEnemyLevel], a
 	pop af
 	ld [wWhichPokemon], a
 	ld a, [wInGameTradeReceiveMonSpecies]
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	xor a
 	ld [wMonDataLocation], a ; not used
 	ld [wRemoveMonFromBox], a
@@ -137,12 +147,12 @@ InGameTrade_DoTrade:
 	ld [wMonDataLocation], a
 	call AddPartyMon
 	call InGameTrade_CopyDataToReceivedMon
-	callfar EvolveTradeMon
+	callfar InGameTrade_CheckForTradeEvo
 	call ClearScreen
 	call InGameTrade_RestoreScreen
 	farcall RedrawMapView
 	and a
-	ld a, $3
+	ld a, TRADETEXT_THANKS
 	jr .tradeSucceeded
 .tradeFailed
 	scf
@@ -234,30 +244,38 @@ InGameTrade_TrainerString:
 
 InGameTradeTextPointers:
 ; entries correspond to TRADE_DIALOGSET_* constants
+	table_width 2
 	dw TradeTextPointers1
 	dw TradeTextPointers2
 	dw TradeTextPointers3
+	assert_table_length NUM_TRADE_DIALOGSETS
 
 TradeTextPointers1:
+	table_width 2
 	dw WannaTrade1Text
 	dw NoTrade1Text
 	dw WrongMon1Text
 	dw Thanks1Text
 	dw AfterTrade1Text
+	assert_table_length NUM_TRADE_TEXTS
 
 TradeTextPointers2:
+	table_width 2
 	dw WannaTrade2Text
 	dw NoTrade2Text
 	dw WrongMon2Text
 	dw Thanks2Text
 	dw AfterTrade2Text
+	assert_table_length NUM_TRADE_TEXTS
 
 TradeTextPointers3:
+	table_width 2
 	dw WannaTrade3Text
 	dw NoTrade3Text
 	dw WrongMon3Text
 	dw Thanks3Text
 	dw AfterTrade3Text
+	assert_table_length NUM_TRADE_TEXTS
 
 ConnectCableText:
 	text_far _ConnectCableText

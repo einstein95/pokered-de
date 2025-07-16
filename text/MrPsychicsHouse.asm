@@ -1,4 +1,4 @@
-_TM29PreReceiveText::
+_MrPsychicsHouseMrPsychicYouWantedThisText::
 	text "Warte! Sag"
 	line "kein Wort!"
 
@@ -6,14 +6,14 @@ _TM29PreReceiveText::
 	line "hier, oder?"
 	prompt
 
-_ReceivedTM29Text::
+_MrPsychicsHouseMrPsychicReceivedTM29Text::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_TM29ExplanationText::
+_MrPsychicsHouseMrPsychicTM29ExplanationText::
 	text "TM29 ist"
 	line "PSYCHOKINESE!"
 
@@ -23,7 +23,7 @@ _TM29ExplanationText::
 	cont "Gegners."
 	done
 
-_TM29NoRoomText::
+_MrPsychicsHouseMrPsychicTM29NoRoomText::
 	text "Hey, Du kannst"
 	line "keine Items mehr"
 	cont "tragen!"

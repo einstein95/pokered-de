@@ -1,4 +1,4 @@
-_SafariZoneRestHouse4Text1::
+_SafariZoneNorthRestHouseScientistText::
 	text "Alle Items,"
 	line "die Du findest,"
 	cont "gehören Dir!"
@@ -10,7 +10,7 @@ _SafariZoneRestHouse4Text1::
 	cont "möchtest!"
 	done
 
-_SafariZoneRestHouse4Text2::
+_SafariZoneNorthRestHouseSafariZoneWorkerText::
 	text "Gehe in die"
 	line "SAFARI-ZONE!"
 
@@ -19,7 +19,7 @@ _SafariZoneRestHouse4Text2::
 	cont "gewinnen!"
 	done
 
-_SafariZoneRestHouse4Text3::
+_SafariZoneNorthRestHouseGentlemanText::
 	text "Mein EVOLI hat"
 	line "sich zu FLAMARA"
 	cont "entwickelt!"

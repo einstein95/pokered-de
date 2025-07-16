@@ -1,10 +1,10 @@
-_CeladonMart4Text2::
+_CeladonMart4FSuperNerdText::
 	text "Ich kaufe meiner"
 	line "Freundin eine"
 	cont "#PUPPE!"
 	done
 
-_CeladonMart4Text3::
+_CeladonMart4FYoungsterText::
 	text "Ich habe einen"
 	line "Tip bekommen!"
 
@@ -16,7 +16,7 @@ _CeladonMart4Text3::
 	cont "ablenkst!"
 	done
 
-_CeladonMart4Text4::
+_CeladonMart4FCurrentFloorSignText::
 	text "Bereite anderen"
 	line "mit Geschenken"
 	cont "eine Freude!"

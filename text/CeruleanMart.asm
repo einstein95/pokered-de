@@ -1,4 +1,4 @@
-_CeruleanMartText2::
+_CeruleanMartCooltrainerMText::
 	text "Benutze einen"
 	line "SCHUTZ, um Käfer"
 	cont "und schwächere"
@@ -13,7 +13,7 @@ _CeruleanMartText2::
 	cont "setzen!"
 	done
 
-_CeruleanMartText3::
+_CeruleanMartCooltrainerFText::
 	text "Besitzt Du"
 	line "SONDERBONBONS?"
 

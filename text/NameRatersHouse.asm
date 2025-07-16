@@ -1,4 +1,4 @@
-_NameRaterText_1dab3::
+_NameRatersHouseNameRaterWantMeToRateText::
 	text "Hallo! Ich bin"
 	line "der offizielle"
 	cont "NAMEN-BEWERTER!"
@@ -8,17 +8,17 @@ _NameRaterText_1dab3::
 	cont "#MON bewerten?"
 	done
 
-_NameRaterText_1dab8::
+_NameRatersHouseNameRaterWhichPokemonText::
 	text "Von welchem"
 	line "#MON soll ich"
 	cont "den Spitznamen"
 	cont "beurteilen?"
 	prompt
 
-_NameRaterText_1dabd::
+_NameRatersHouseNameRaterGiveItANiceNameText::
 	text "Der Spitzname ist"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text ", oder?"
 	cont "Ein schöner Name!"
 
@@ -30,12 +30,12 @@ _NameRaterText_1dabd::
 	para "Was möchtest Du?"
 	done
 
-_NameRaterText_1dac2::
+_NameRatersHouseNameRaterWhatShouldWeNameItText::
 	text "Gut! Wie soll der"
 	line "neue Name lauten?"
 	prompt
 
-_NameRaterText_1dac7::
+_NameRatersHouseNameRaterPokemonHasBeenRenamedText::
 	text "OK! Der neue Name"
 	line "dieses #MON"
 	cont "ist @"
@@ -47,19 +47,19 @@ _NameRaterText_1dac7::
 	cont "als zuvor!"
 	done
 
-_NameRaterText_1dacc::
+_NameRatersHouseNameRaterComeAnyTimeYouLikeText::
 	text "Komm vorbei, wann"
 	line "immer Du magst!"
 	done
 
-_NameRaterText_1dad1::
-	text_ram wcd6d
+_NameRatersHouseNameRaterATrulyImpeccableNameText::
+	text_ram wNameBuffer
 	text "!"
 	line "Ein wirklich"
 	cont "tadelloser Name!"
 
 	para "Kümmere Dich gut"
 	line "um @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!"
 	done

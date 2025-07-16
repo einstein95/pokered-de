@@ -1,6 +1,5 @@
 LoadSAV:
-;(if carry -> write
-;"the file data is destroyed")
+; if carry, write "the file data is destroyed"
 	call ClearScreen
 	call LoadFontTilePatterns
 	call LoadTextBoxTilePatterns
@@ -13,15 +12,15 @@ LoadSAV:
 	ld a, $2 ; good checksum
 	jr .goodsum
 .badsum
-	ld hl, wd730
+	ld hl, wStatusFlags5
 	push hl
-	set 6, [hl]
+	set BIT_NO_TEXT_DELAY, [hl]
 	ld hl, FileDataDestroyedText
 	call PrintText
 	ld c, 100
 	call DelayFrames
 	pop hl
-	res 6, [hl]
+	res BIT_NO_TEXT_DELAY, [hl]
 	ld a, $1 ; bad checksum
 .goodsum
 	ld [wSaveFileStatus], a
@@ -32,11 +31,11 @@ FileDataDestroyedText:
 	text_end
 
 LoadSAV0:
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamBank], a
+	ld [rBMODE], a
+	ld [rRAMB], a
 ; This vc_hook does not have to be in any particular location.
 ; It is defined here because it refers to the same labels as the two lines below.
 	vc_hook Unknown_save_limit
@@ -67,7 +66,7 @@ LoadSAV0:
 	ld bc, wMainDataEnd - wMainDataStart
 	call CopyData
 	ld hl, wCurMapTileset
-	set 7, [hl]
+	set BIT_NO_PREVIOUS_MAP, [hl]
 	ld hl, sSpriteData
 	ld de, wSpriteDataStart
 	ld bc, wSpriteDataEnd - wSpriteDataStart
@@ -82,11 +81,11 @@ LoadSAV0:
 	jp SAVGoodChecksum
 
 LoadSAV1:
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamBank], a
+	ld [rBMODE], a
+	ld [rRAMB], a
 	ld hl, sGameData
 	ld bc, sGameDataEnd - sGameData
 	call SAVCheckSum
@@ -102,11 +101,11 @@ LoadSAV1:
 	jp SAVGoodChecksum
 
 LoadSAV2:
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamBank], a
+	ld [rBMODE], a
+	ld [rRAMB], a
 	ld hl, sGameData
 	ld bc, sGameDataEnd - sGameData
 	call SAVCheckSum
@@ -130,8 +129,8 @@ SAVBadCheckSum:
 
 SAVGoodChecksum:
 	ld a, $0
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	ret
 
 LoadSAVIgnoreBadCheckSum:
@@ -199,11 +198,11 @@ OlderFileWillBeErasedText:
 	text_end
 
 SaveSAVtoSRAM0:
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamBank], a
+	ld [rBMODE], a
+	ld [rRAMB], a
 	ld hl, wPlayerName
 	ld de, sPlayerName
 	ld bc, NAME_LENGTH
@@ -227,17 +226,17 @@ SaveSAVtoSRAM0:
 	call SAVCheckSum
 	ld [sMainDataCheckSum], a
 	xor a
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	ret
 
 SaveSAVtoSRAM1:
 ; stored pokémon
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamBank], a
+	ld [rBMODE], a
+	ld [rRAMB], a
 	ld hl, wBoxDataStart
 	ld de, sCurBoxData
 	ld bc, wBoxDataEnd - wBoxDataStart
@@ -247,16 +246,16 @@ SaveSAVtoSRAM1:
 	call SAVCheckSum
 	ld [sMainDataCheckSum], a
 	xor a
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	ret
 
 SaveSAVtoSRAM2:
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamBank], a
+	ld [rBMODE], a
+	ld [rRAMB], a
 	ld hl, wPartyDataStart
 	ld de, sPartyData
 	ld bc, wPartyDataEnd - wPartyDataStart
@@ -270,8 +269,8 @@ SaveSAVtoSRAM2:
 	call SAVCheckSum
 	ld [sMainDataCheckSum], a
 	xor a
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	ret
 
 SaveSAVtoSRAM::
@@ -350,16 +349,16 @@ ChangeBox::
 	and a
 	ret nz ; return if No was chosen
 	ld hl, wCurrentBoxNum
-	bit 7, [hl] ; is it the first time player is changing the box?
+	bit BIT_HAS_CHANGED_BOXES, [hl] ; is it the first time player is changing the box?
 	call z, EmptyAllSRAMBoxes ; if so, empty all boxes in SRAM
 	call DisplayChangeBoxMenu
 	call UpdateSprites
 	ld hl, hUILayoutFlags
-	set 1, [hl]
+	set BIT_DOUBLE_SPACED_MENU, [hl]
 	call HandleMenuInput
 	ld hl, hUILayoutFlags
-	res 1, [hl]
-	bit BIT_B_BUTTON, a
+	res BIT_DOUBLE_SPACED_MENU, [hl]
+	bit B_PAD_B, a
 	ret nz
 	call GetBoxSRAMLocation
 	ld e, l
@@ -367,12 +366,12 @@ ChangeBox::
 	ld hl, wBoxDataStart
 	call CopyBoxToOrFromSRAM ; copy old box from WRAM to SRAM
 	ld a, [wCurrentMenuItem]
-	set 7, a
+	set BIT_HAS_CHANGED_BOXES, a
 	ld [wCurrentBoxNum], a
 	call GetBoxSRAMLocation
 	ld de, wBoxDataStart
 	call CopyBoxToOrFromSRAM ; copy new box from SRAM to WRAM
-	ld hl, wMapTextPtr
+	ld hl, wCurMapTextPtr
 	ld de, wChangeBoxSavedMapTextPointer
 	ld a, [hli]
 	ld [de], a
@@ -395,12 +394,12 @@ WhenYouChangeBoxText:
 CopyBoxToOrFromSRAM:
 ; copy an entire box from hl to de with b as the SRAM bank
 	push hl
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
+	ld [rBMODE], a
 	ld a, b
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	ld bc, wBoxDataEnd - wBoxDataStart
 	call CopyData
 	pop hl
@@ -417,14 +416,14 @@ CopyBoxToOrFromSRAM:
 	ld [sBank2AllBoxesChecksum], a ; sBank3AllBoxesChecksum
 	call CalcIndividualBoxCheckSums
 	xor a
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	ret
 
 DisplayChangeBoxMenu:
 	xor a
 	ldh [hAutoBGTransferEnabled], a
-	ld a, A_BUTTON | B_BUTTON
+	ld a, PAD_A | PAD_B
 	ld [wMenuWatchedKeys], a
 	ld a, 11
 	ld [wMaxMenuItem], a
@@ -449,12 +448,12 @@ DisplayChangeBoxMenu:
 	ld c, 7
 	call TextBoxBorder
 	ld hl, hUILayoutFlags
-	set 2, [hl]
+	set BIT_SINGLE_SPACED_LINES, [hl]
 	ld de, BoxNames
 	hlcoord 13, 1
 	call PlaceString
 	ld hl, hUILayoutFlags
-	res 2, [hl]
+	res BIT_SINGLE_SPACED_LINES, [hl]
 	ld a, [wCurrentBoxNum]
 	and $7f
 	cp 9
@@ -516,19 +515,19 @@ BoxNoText:
 EmptyAllSRAMBoxes:
 ; marks all boxes in SRAM as empty (initialisation for the first time the
 ; player changes the box)
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
+	ld [rBMODE], a
 	ld a, 2
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	call EmptySRAMBoxesInBank
 	ld a, 3
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	call EmptySRAMBoxesInBank
 	xor a
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	ret
 
 EmptySRAMBoxesInBank:
@@ -562,19 +561,19 @@ EmptySRAMBox:
 GetMonCountsForAllBoxes:
 	ld hl, wBoxMonCounts
 	push hl
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
+	ld [rBMODE], a
 	ld a, $2
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	call GetMonCountsForBoxesInBank
 	ld a, $3
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	call GetMonCountsForBoxesInBank
 	xor a
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	pop hl
 
 ; copy the count for the current box from WRAM
@@ -608,10 +607,10 @@ SAVCheckRandomID:
 ; and the two random numbers generated at game beginning
 ; (which are stored at wPlayerID)s
 	ld a, $0a
-	ld [MBC1SRamEnable], a
+	ld [rRAMG], a
 	ld a, $01
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamBank], a
+	ld [rBMODE], a
+	ld [rRAMB], a
 	ld a, [sPlayerName]
 	and a
 	jr z, .next
@@ -633,8 +632,8 @@ SAVCheckRandomID:
 	cp h
 .next
 	ld a, $00
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	ret
 
 SaveHallOfFameTeams:
@@ -673,23 +672,23 @@ LoadHallOfFameTeams:
 	; fallthrough
 
 HallOfFame_Copy:
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
+	ld [rBMODE], a
 	xor a
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	call CopyData
 	xor a
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	ret
 
 ClearSAV:
-	ld a, SRAM_ENABLE
-	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+	ld [rRAMG], a
 	ld a, $1
-	ld [MBC1SRamBankingMode], a
+	ld [rBMODE], a
 	xor a
 	call PadSRAM_FF
 	ld a, $1
@@ -699,13 +698,13 @@ ClearSAV:
 	ld a, $3
 	call PadSRAM_FF
 	xor a
-	ld [MBC1SRamBankingMode], a
-	ld [MBC1SRamEnable], a
+	ld [rBMODE], a
+	ld [rRAMG], a
 	ret
 
 PadSRAM_FF:
-	ld [MBC1SRamBank], a
-	ld hl, SRAM_Begin
-	ld bc, SRAM_End - SRAM_Begin
+	ld [rRAMB], a
+	ld hl, STARTOF(SRAM)
+	ld bc, SIZEOF(SRAM)
 	ld a, $ff
 	jp FillMemory

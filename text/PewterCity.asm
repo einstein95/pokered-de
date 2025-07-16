@@ -1,4 +1,4 @@
-_PewterCityText1::
+_PewterCityCooltrainerFText::
 	text "Gerüchten zufolge"
 	line "sollen die PIEPIS"
 	cont "vom Mond stammen!"
@@ -10,7 +10,7 @@ _PewterCityText1::
 	cont "aufgetaucht!"
 	done
 
-_PewterCityText2::
+_PewterCityCooltrainerMText::
 	text "Hier gibt es nur"
 	line "wenige ernsthafte"
 	cont "#MON-Trainer!"
@@ -22,25 +22,25 @@ _PewterCityText2::
 	cont "Geschäft!"
 	done
 
-_PewterCityText_193f1::
+_PewterCitySuperNerd1DidYouCheckOutMuseumText::
 	text "Warst Du schon"
 	line "im MUSEUM?"
 	done
 
-_PewterCityText_193f6::
+_PewterCitySuperNerd1WerentThoseFossilsAmazingText::
 	text "Waren die"
 	line "Fossilien vom"
 	cont "MONDBERG nicht"
 	cont "einmalig?"
 	done
 
-_PewterCityText_193fb::
+_PewterCitySuperNerd1YouHaveToGoText::
 	text "Wirklich nicht?"
 	line "Es ist aber einen"
 	cont "Besuch wert!"
 	done
 
-_PewterCityText13::
+_PewterCitySuperNerd1ItsRightHereText::
 	text "Es ist gleich da"
 	line "drüben! Man muß"
 	cont "zwar Eintritt"
@@ -48,18 +48,18 @@ _PewterCityText13::
 	cont "das ist es wert!"
 	done
 
-_PewterCityText_19427::
+_PewterCitySuperNerd2DoYouKnowWhatImDoingText::
 	text "Pst! Weißt Du,"
 	line "was ich hier"
 	cont "mache?"
 	done
 
-_PewterCityText_1942c::
+_PewterCitySuperNerd2ThatsRightText::
 	text "Stimmt! Es ist"
 	line "harte Arbeit!"
 	done
 
-_PewterCityText_19431::
+_PewterCitySuperNerd2ImSprayingRepelText::
 	text "Ich versprühe"
 	line "SCHUTZ,  um"
 	cont "#MON von"
@@ -67,7 +67,7 @@ _PewterCityText_19431::
 	cont "fernzuhalten!"
 	done
 
-_PewterCityText_1945d::
+_PewterCityYoungsterYoureATrainerFollowMeText::
 	text "Du bist Trainer?"
 	line "ROCKO ist ständig"
 	cont "auf der Suche"
@@ -76,14 +76,14 @@ _PewterCityText_1945d::
 	cont "Folge mir!"
 	done
 
-_PewterCityText14::
+_PewterCityYoungsterGoTakeOnBrockText::
 	text "Wenn Du genug"
 	line "Mumm hast, dann"
 	cont "versuche Dich an"
 	cont "ROCKO!"
 	done
 
-_PewterCityText6::
+_PewterCityTrainerTipsText::
 	text "TIPS FÜR TRAINER"
 
 	para "Unabhängig von"
@@ -96,7 +96,7 @@ _PewterCityText6::
 	cont "EP! "
 	done
 
-_PewterCityText7::
+_PewterCityPoliceNoticeSignText::
 	text "ACHTUNG!"
 
 	para "Diebe haben"
@@ -111,13 +111,13 @@ _PewterCityText7::
 	cont "MARMORIA CITY!"
 	done
 
-_PewterCityText10::
+_PewterCityMuseumSignText::
 	text "MARMORIA CITY"
 	line "WISSENSCHAFTS-"
 	cont "MUSEUM"
 	done
 
-_PewterCityText11::
+_PewterCityGymSignText::
 	text "MARMORIA CITY"
 	line "PKMN-ARENA"
 	cont "ARENALEITER:"
@@ -127,7 +127,7 @@ _PewterCityText11::
 	line "#MON-Trainer!"
 	done
 
-_PewterCityText12::
+_PewterCitySignText::
 	text "MARMORIA CITY"
 	line "Die steingraue"
 	cont "Stadt!"

@@ -38,14 +38,14 @@ _Route22RivalAfterBattleText1::
 	cont "setzen!"
 	done
 
-_Route22RivalDefeatedText1::
+_Route22Rival1DefeatedText::
 	text "Oh nein!"
 	line "Soviel Glück wie"
 	cont "Du kann man"
 	cont "nicht haben!"
 	prompt
 
-_Route22Text_511bc::
+_Route22Rival1VictoryText::
 	text "<RIVAL>: Was?"
 	line "Warum ich zwei"
 	cont "#MON besitze?"
@@ -97,14 +97,14 @@ _Route22RivalAfterBattleText2::
 	cont "bewußt! Bis dann!"
 	done
 
-_Route22RivalDefeatedText2::
+_Route22Rival2DefeatedText::
 	text "Was!?"
 
 	para "Ich war zu"
 	line "unvorsichtig!"
 	prompt
 
-_Route22Text_511d0::
+_Route22Rival2VictoryText::
 	text "<RIVAL>: Hahaha!"
 	line "<PLAYER>! War das"
 	cont "etwa alles? Du"
@@ -117,7 +117,7 @@ _Route22Text_511d0::
 	cont "Du Verlierer!"
 	prompt
 
-_Route22FrontGateText::
+_Route22PokemonLeagueSignText::
 	text "PKMN-LIGA"
 	line "Haupteingang"
 	done

@@ -1,5 +1,7 @@
 DEF NOT_VISITED EQU $fe
 
+DEF BIRD_BASE_TILE EQU $04
+
 DisplayTownMap:
 	call LoadTownMap
 	ld hl, wUpdateSpritesEnabled
@@ -12,15 +14,15 @@ DisplayTownMap:
 	ld a, [wCurMap]
 	push af
 	ld b, $0
-	call DrawPlayerOrBirdSprite ; player sprite
+	call DrawPlayerOrBirdSprite
 	hlcoord 1, 0
-	ld de, wcd6d
+	ld de, wNameBuffer
 	call PlaceString
-	ld hl, wShadowOAM
-	ld de, wTileMapBackup
-	ld bc, $10
+	ld hl, wShadowOAMSprite00
+	ld de, wShadowOAMBackupSprite00
+	ld bc, 4 * 4
 	call CopyData
-	ld hl, vSprites tile $04
+	ld hl, vSprites tile BIRD_BASE_TILE
 	ld de, TownMapCursor
 	lb bc, BANK(TownMapCursor), (TownMapCursorEnd - TownMapCursor) / $8
 	call CopyVideoDataDouble
@@ -50,32 +52,32 @@ DisplayTownMap:
 	ld hl, wShadowOAMSprite04
 	call WriteTownMapSpriteOAM ; town map cursor sprite
 	pop hl
-	ld de, wcd6d
+	ld de, wNameBuffer
 .copyMapName
 	ld a, [hli]
 	ld [de], a
 	inc de
-	cp $50
+	cp "@"
 	jr nz, .copyMapName
 	hlcoord 1, 0
-	ld de, wcd6d
+	ld de, wNameBuffer
 	call PlaceString
 	ld hl, wShadowOAMSprite04
-	ld de, wTileMapBackup + 16
-	ld bc, $10
+	ld de, wShadowOAMBackupSprite04
+	ld bc, 4 * 4
 	call CopyData
 .inputLoop
 	call TownMapSpriteBlinkingAnimation
 	call JoypadLowSensitivity
 	ldh a, [hJoy5]
 	ld b, a
-	and A_BUTTON | B_BUTTON | D_UP | D_DOWN
+	and PAD_A | PAD_B | PAD_UP | PAD_DOWN
 	jr z, .inputLoop
 	ld a, SFX_TINK
 	call PlaySound
-	bit 6, b
+	bit B_PAD_UP, b
 	jr nz, .pressedUp
-	bit 7, b
+	bit B_PAD_DOWN, b
 	jr nz, .pressedDown
 	xor a
 	ld [wTownMapSpriteBlinkingEnabled], a
@@ -142,7 +144,7 @@ LoadTownMap_Fly::
 	call LoadPlayerSpriteGraphics
 	call LoadFontTilePatterns
 	ld de, BirdSprite
-	ld hl, vSprites tile $04
+	ld hl, vSprites tile BIRD_BASE_TILE
 	lb bc, BANK(BirdSprite), 12
 	call CopyVideoData
 	ld de, TownMapUpArrow
@@ -173,10 +175,10 @@ LoadTownMap_Fly::
 	call ClearScreenArea
 	pop hl
 	ld a, [hl]
-	ld b, $4
-	call DrawPlayerOrBirdSprite ; draw bird sprite
+	ld b, BIRD_BASE_TILE
+	call DrawPlayerOrBirdSprite
 	hlcoord 3, 0
-	ld de, wcd6d
+	ld de, wNameBuffer
 	call PlaceString
 	ld c, 15
 	call DelayFrames
@@ -192,15 +194,15 @@ LoadTownMap_Fly::
 	ldh a, [hJoy5]
 	ld b, a
 	pop hl
-	and A_BUTTON | B_BUTTON | D_UP | D_DOWN
+	and PAD_A | PAD_B | PAD_UP | PAD_DOWN
 	jr z, .inputLoop
-	bit 0, b
+	bit B_PAD_A, b
 	jr nz, .pressedA
 	ld a, SFX_TINK
 	call PlaySound
-	bit 6, b
+	bit B_PAD_UP, b
 	jr nz, .pressedUp
-	bit 7, b
+	bit B_PAD_DOWN, b
 	jr nz, .pressedDown
 	jr .pressedB
 .pressedA
@@ -208,10 +210,11 @@ LoadTownMap_Fly::
 	call PlaySound
 	ld a, [hl]
 	ld [wDestinationMap], a
-	ld hl, wd732
-	set 3, [hl]
+	ld hl, wStatusFlags6
+	set BIT_FLY_WARP, [hl]
+	ASSERT wStatusFlags6 + 1 == wStatusFlags7
 	inc hl
-	set 7, [hl]
+	set BIT_USED_FLY, [hl]
 .pressedB
 	xor a
 	ld [wTownMapSpriteBlinkingEnabled], a
@@ -355,7 +358,7 @@ DrawPlayerOrBirdSprite:
 	call TownMapCoordsToOAMCoords
 	call WritePlayerOrBirdSpriteOAM
 	pop hl
-	ld de, wcd6d
+	ld de, wNameBuffer
 .loop
 	ld a, [hli]
 	ld [de], a
@@ -363,8 +366,8 @@ DrawPlayerOrBirdSprite:
 	cp "@"
 	jr nz, .loop
 	ld hl, wShadowOAM
-	ld de, wTileMapBackup
-	ld bc, $a0
+	ld de, wShadowOAMBackup
+	ld bc, OAM_COUNT * 4
 	jp CopyData
 
 DisplayWildLocations:
@@ -411,8 +414,8 @@ DisplayWildLocations:
 	call DrawPlayerOrBirdSprite
 .done
 	ld hl, wShadowOAM
-	ld de, wTileMapBackup
-	ld bc, $a0
+	ld de, wShadowOAMBackup
+	ld bc, OAM_COUNT * 4
 	jp CopyData
 
 AreaUnknownText:
@@ -508,7 +511,7 @@ WriteSymmetricMonPartySpriteOAM:
 	ld [hli], a ; tile
 	ld a, [wSymmetricSpriteOAMAttributes]
 	ld [hli], a ; attributes
-	xor (1 << OAM_X_FLIP)
+	xor OAM_XFLIP
 	ld [wSymmetricSpriteOAMAttributes], a
 	inc d
 	ld a, 8
@@ -599,15 +602,15 @@ TownMapSpriteBlinkingAnimation::
 	cp 50
 	jr nz, .done
 ; show sprites when the counter reaches 50
-	ld hl, wTileMapBackup
+	ld hl, wShadowOAMBackup
 	ld de, wShadowOAM
-	ld bc, $90
+	ld bc, (OAM_COUNT - 4) * 4
 	call CopyData
 	xor a
 	jr .done
 .hideSprites
 	ld hl, wShadowOAM
-	ld b, $24
+	ld b, OAM_COUNT - 4
 	ld de, $4
 .hideSpritesLoop
 	ld [hl], $a0

@@ -1,4 +1,4 @@
-_Route18GateUpstairsText_49993::
+_Route18Gate2FLeftBinocularsText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 
@@ -6,7 +6,7 @@ _Route18GateUpstairsText_49993::
 	line "ALABASTIA!"
 	done
 
-_Route18GateUpstairsText_4999f::
+_Route18Gate2FRightBinocularsText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 

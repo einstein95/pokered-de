@@ -1,8 +1,8 @@
-_SafariZoneWestText5::
+_SafariZoneWestRestHouseSignText::
 	text "RASTHAUS"
 	done
 
-_SafariZoneWestText6::
+_SafariZoneWestFindWardensTeethSignText::
 	text "BELOHNUNG!"
 
 	para "Wer die GOLDZÄHNE"
@@ -16,7 +16,7 @@ _SafariZoneWestText6::
 	cont "Parkwächter!"
 	done
 
-_SafariZoneWestText7::
+_SafariZoneWestTrainerTipsText::
 	text "TIPS FÜR TRAINER"
 
 	para "Erforsche die"
@@ -26,7 +26,7 @@ _SafariZoneWestText7::
 	line "VERSTECKTE HAUS!"
 	done
 
-_SafariZoneWestText8::
+_SafariZoneWestSignText::
 	text "AREAL 3"
 	line "OSTEN: ZENTRUM"
 	done

@@ -1,4 +1,4 @@
-_Route22GateText_1e704::
+_Route22GateGuardNoBoulderbadgeText::
 	text "Hier dürfen nur"
 	line "erfahrene Trainer"
 	cont "passieren!"
@@ -8,7 +8,7 @@ _Route22GateText_1e704::
 	cont "noch nicht!@"
 	text_end
 
-_Route22GateText_1e715::
+_Route22GateGuardICantLetYouPassText::
 	text_start
 
 	para "Befehl ist"
@@ -17,7 +17,7 @@ _Route22GateText_1e715::
 	cont "durchlassen!"
 	done
 
-_Route22GateText_1e71a::
+_Route22GateGuardGoRightAheadText::
 	text "Oh! Du trägst"
 	line "den FELSORDEN!"
 	cont "Dann darfst Du"

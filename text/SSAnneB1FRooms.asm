@@ -1,73 +1,73 @@
-_SSAnne10Text8::
+_SSAnneB1FRoomsMachokeText::
 	text "MACHOLLO: Macho!"
 	line "Machollo!@"
 	text_end
 
-_SSAnne10BattleText1::
+_SSAnneB1FRoomsSailor1BattleText::
 	text "Du weißt, wir"
 	line "Seeleute lieben"
 	cont "es zu kämpfen!"
 	done
 
-_SSAnne10EndBattleText1::
+_SSAnneB1FRoomsSailor1EndBattleText::
 	text "JA! Was"
 	line "für ein Kampf!!!"
 	prompt
 
-_SSAnne10AfterBattleText1::
+_SSAnneB1FRoomsSailor1AfterBattleText::
 	text "Willst Du Seemann"
 	line "werden, Kleiner?"
 	done
 
-_SSAnne10BattleText2::
+_SSAnneB1FRoomsSailor2BattleText::
 	text "Mein Ruf als"
 	line "Seebär steht auf"
 	cont "dem Spiel!!!"
 	done
 
-_SSAnne10EndBattleText2::
+_SSAnneB1FRoomsSailor2EndBattleText::
 	text ""
 	line "Kiel unter! Das"
 	cont "war's für mich!"
 	prompt
 
-_SSAnne10AfterBattleText2::
+_SSAnneB1FRoomsSailor2AfterBattleText::
 	text "Hast Du schon den"
 	line "PROFI-ANGLER in"
 	cont "ORANIA CITY"
 	cont "besucht?"
 	done
 
-_SSAnne10BattleText3::
+_SSAnneB1FRoomsSailor3BattleText::
 	text "Auch Seeleute"
 	line "besitzen #MON!"
 	done
 
-_SSAnne10EndBattleText3::
+_SSAnneB1FRoomsSailor3EndBattleText::
 	text "Das war"
 	line "eine reife"
 	cont "Leistung!"
 	prompt
 
-_SSAnne10AfterBattleText3::
+_SSAnneB1FRoomsSailor3AfterBattleText::
 	text "Seeleute fangen"
 	line "ihre #MON auf"
 	cont "hoher See!"
 	done
 
-_SSAnne10BattleText4::
+_SSAnneB1FRoomsSailor4BattleText::
 	text "Ich war früher"
 	line "genau so"
 	cont "aufgedreht wie"
 	cont "Du!@"
 	text_end
 
-_SSAnne10EndBattleText4::
+_SSAnneB1FRoomsSailor4EndBattleText::
 	text "Oh nein!"
 	line "Verloren!"
 	prompt
 
-_SSAnne10AfterBattleText4::
+_SSAnneB1FRoomsSailor4AfterBattleText::
 	text "Wasser-#MON"
 	line "leben unter"
 	cont "Wasser! Du"
@@ -76,26 +76,26 @@ _SSAnne10AfterBattleText4::
 	line "ANGEL!"
 	done
 
-_SSAnne10BattleText5::
+_SSAnneB1FRoomsSailor5BattleText::
 	text "Der Verlierer"
 	line "wird kielgeholt!"
 	cont "Los geh",$b3,"'s!"
 	done
 
-_SSAnne10EndBattleText5::
+_SSAnneB1FRoomsSailor5EndBattleText::
 	text "Argh!"
 	line "Von einem"
 	cont "Kind besiegt..."
 	prompt
 
-_SSAnne10AfterBattleText5::
+_SSAnneB1FRoomsSailor5AfterBattleText::
 	text "Manchmal treiben"
 	line "Quallen an das"
 	cont "Schiff. Der Koch"
 	cont "fängt sie dann..."
 	done
 
-_SSAnne10BattleText6::
+_SSAnneB1FRoomsFisherBattleText::
 	text "Warte doch mal!"
 	line "Laß uns plaudern!"
 
@@ -103,20 +103,20 @@ _SSAnne10BattleText6::
 	line "Wasser-#MON!"
 	done
 
-_SSAnne10EndBattleText6::
+_SSAnneB1FRoomsFisherEndBattleText::
 	text "Mist!"
 	line "Der ist mir"
 	cont "entwischt!"
 	prompt
 
-_SSAnne10AfterBattleText6::
+_SSAnneB1FRoomsFisherAfterBattleText::
 	text "Ich hätte Dich"
 	line "fast zum"
 	cont "Assistenten"
 	cont "gemacht!"
 	done
 
-_SSAnne10Text7::
+_SSAnneB1FRoomsSuperNerdText::
 	text "Mein #MON,"
 	line "MACHOLLO ist"
 	cont "superstark!!!"

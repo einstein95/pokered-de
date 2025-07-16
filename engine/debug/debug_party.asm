@@ -1,26 +1,22 @@
-; This function is a debugging feature to give the player Tsunekazu Ishihara's
-; favorite Pokemon. This is indicated by the overpowered Exeggutor, which
-; Ishihara (president of Creatures Inc.) said was his favorite Pokemon in an ABC
-; interview on February 8, 2000.
-; "Exeggutor is my favorite. That's because I was always using this character
-; while I was debugging the program."
-; http://www.ign.com/articles/2000/02/09/abc-news-pokamon-chat-transcript
-
-SetIshiharaTeam:
-	ld de, IshiharaTeam
+SetDebugNewGameParty: ; unreferenced except in _DEBUG
+	ld de, DebugNewGameParty
 .loop
 	ld a, [de]
 	cp -1
 	ret z
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	inc de
 	ld a, [de]
-	ld [wCurEnemyLVL], a
+	ld [wCurEnemyLevel], a
 	inc de
 	call AddPartyMon
 	jr .loop
 
-IshiharaTeam:
+DebugNewGameParty: ; unreferenced except in _DEBUG
+	; Exeggutor is the only debug party member shared with Red, Green, and Japanese Blue.
+	; "Tsunekazu Ishihara: Exeggutor is my favorite. That's because I was
+	; always using this character while I was debugging the program."
+	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
 	db EXEGGUTOR, 90
 IF DEF(_DEBUG)
 	db MEW, 5
@@ -35,13 +31,13 @@ IF DEF(_DEBUG)
 ENDC
 	db -1 ; end
 
-DebugStart:
+PrepareNewGameDebug: ; dummy except in _DEBUG
 IF DEF(_DEBUG)
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
 
 	; Fly anywhere.
-	dec a ; $ff
+	dec a ; $ff (all bits)
 	ld [wTownVisitedFlag], a
 	ld [wTownVisitedFlag + 1], a
 
@@ -49,7 +45,7 @@ IF DEF(_DEBUG)
 	ld a, ~(1 << BIT_EARTHBADGE)
 	ld [wObtainedBadges], a
 
-	call SetIshiharaTeam
+	call SetDebugNewGameParty
 
 	; Exeggutor gets four HM moves.
 	ld hl, wPartyMon1Moves
@@ -96,12 +92,12 @@ IF DEF(_DEBUG)
 
 	; Get some debug items.
 	ld hl, wNumBagItems
-	ld de, DebugItemsList
+	ld de, DebugNewGameItemsList
 .items_loop
 	ld a, [de]
 	cp -1
 	jr z, .items_end
-	ld [wcf91], a
+	ld [wCurItem], a
 	inc de
 	ld a, [de]
 	inc de
@@ -120,9 +116,10 @@ IF DEF(_DEBUG)
 	; Rival chose Squirtle,
 	; Player chose Charmander.
 	ld hl, wRivalStarter
+	ASSERT wRivalStarter + 2 == wPlayerStarter
 	ld a, STARTER2
 	ld [hli], a
-	inc hl ; hl = wPlayerStarter
+	inc hl
 	ld a, STARTER1
 	ld [hl], a
 
@@ -138,7 +135,7 @@ DebugSetPokedexEntries:
 	ld [hl], %01111111
 	ret
 
-DebugItemsList:
+DebugNewGameItemsList:
 	db BICYCLE, 1
 	db FULL_RESTORE, 99
 	db FULL_HEAL, 99
@@ -152,7 +149,7 @@ DebugItemsList:
 	db LIFT_KEY, 1
 	db -1 ; end
 
-DebugUnusedList:
+DebugUnusedList: ; unreferenced
 	db -1 ; end
 ELSE
 	ret

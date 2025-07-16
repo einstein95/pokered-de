@@ -1,14 +1,14 @@
-_LavenderTownText_4413c::
+_LavenderTownLittleGirlDoYouBelieveInGhostsText::
 	text "Glaubst Du an"
 	line "GEISTER?"
 	done
 
-_LavenderTownText_44141::
+_LavenderTownLittleGirlSoThereAreBelieversText::
 	text "Echt? Hätte ich"
 	line "nicht gedacht!"
 	done
 
-_LavenderTownText_44146::
+_LavenderTownLittleGirlHaHaGuessNotText::
 	text "Hahaha, natürlich"
 	line "nicht!"
 
@@ -19,7 +19,7 @@ _LavenderTownText_44146::
 	cont "nicht echt!"
 	done
 
-_LavenderTownText2::
+_LavenderTownCooltrainerMText::
 	text "Diese Stadt ist"
 	line "als Ruhestätte"
 	cont "für #MON"
@@ -30,7 +30,7 @@ _LavenderTownText2::
 	cont "gehalten."
 	done
 
-_LavenderTownText3::
+_LavenderTownSuperNerdText::
 	text "GEISTER spuken"
 	line "im #MON-TURM."
 
@@ -42,13 +42,13 @@ _LavenderTownText3::
 	cont "Gewissen hat!"
 	done
 
-_LavenderTownText4::
+_LavenderTownSignText::
 	text "LAVANDIA"
 	line "Die edle,"
 	cont "violette Stadt!"
 	done
 
-_LavenderTownText5::
+_LavenderTownSilphScopeSignText::
 	text "SILPH SCOPE!"
 
 	para "Macht das"
@@ -58,12 +58,12 @@ _LavenderTownText5::
 	para "SILPH CO."
 	done
 
-_LavenderTownText8::
+_LavenderTownPokemonHouseSignText::
 	text "LAVANDIA"
 	line "#MON-HAUS"
 	done
 
-_LavenderTownText9::
+_LavenderTownPokemonTowerSignText::
 	text "Mögen die Seelen"
 	line "der #MON im"
 	cont "#MON-TURM"

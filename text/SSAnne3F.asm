@@ -1,4 +1,4 @@
-_SSAnne3Text1::
+_SSAnne3FSailorText::
 	text "Der KAPITÄN ist"
 	line "ein Meister des"
 	cont "Schwertkampfes!"

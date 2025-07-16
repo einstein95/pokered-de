@@ -8,12 +8,13 @@ RocketHideoutB2F_Script:
 	ret
 
 RocketHideoutB2F_ScriptPointers:
-	dw RocketHideout2Script0
-	dw DisplayEnemyTrainerTextAndStartBattle
-	dw EndTrainerBattle
-	dw RocketHideout2Script3
+	def_script_pointers
+	dw_const RocketHideoutB2FDefaultScript,         SCRIPT_ROCKETHIDEOUTB2F_DEFAULT
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_ROCKETHIDEOUTB2F_START_BATTLE
+	dw_const EndTrainerBattle,                      SCRIPT_ROCKETHIDEOUTB2F_END_BATTLE
+	dw_const RocketHideoutB2FPlayerSpinningScript,  SCRIPT_ROCKETHIDEOUTB2F_PLAYER_SPINNING
 
-RocketHideout2Script0:
+RocketHideoutB2FDefaultScript:
 	ld a, [wYCoord]
 	ld b, a
 	ld a, [wXCoord]
@@ -22,14 +23,14 @@ RocketHideout2Script0:
 	call DecodeArrowMovementRLE
 	cp $ff
 	jp z, CheckFightingMapTrainers
-	ld hl, wd736
-	set 7, [hl]
+	ld hl, wMovementFlags
+	set BIT_SPINNING, [hl]
 	call StartSimulatingJoypadStates
 	ld a, SFX_ARROW_TILES
 	call PlaySound
-	ld a, $ff
+	ld a, PAD_BUTTONS | PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	ld a, $3
+	ld a, SCRIPT_ROCKETHIDEOUTB2F_PLAYER_SPINNING
 	ld [wCurMapScript], a
 	ret
 
@@ -82,220 +83,221 @@ RocketHideout2ArrowTilePlayerMovement:
 ;format: direction, count
 ;each list is read starting from the $FF and working backwards
 RocketHideout2ArrowMovement1:
-	db D_LEFT, 2
+	db PAD_LEFT, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement2:
-	db D_RIGHT, 4
+	db PAD_RIGHT, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement3:
-	db D_UP, 4
-	db D_RIGHT, 4
+	db PAD_UP, 4
+	db PAD_RIGHT, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement4:
-	db D_UP, 4
-	db D_RIGHT, 4
-	db D_UP, 1
+	db PAD_UP, 4
+	db PAD_RIGHT, 4
+	db PAD_UP, 1
 	db -1 ; end
 
 RocketHideout2ArrowMovement5:
-	db D_LEFT, 2
-	db D_UP, 3
+	db PAD_LEFT, 2
+	db PAD_UP, 3
 	db -1 ; end
 
 RocketHideout2ArrowMovement6:
-	db D_DOWN, 2
-	db D_RIGHT, 4
+	db PAD_DOWN, 2
+	db PAD_RIGHT, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement7:
-	db D_UP, 2
+	db PAD_UP, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement8:
-	db D_UP, 4
+	db PAD_UP, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement9:
-	db D_LEFT, 6
+	db PAD_LEFT, 6
 	db -1 ; end
 
 RocketHideout2ArrowMovement10:
-	db D_UP, 1
+	db PAD_UP, 1
 	db -1 ; end
 
 RocketHideout2ArrowMovement11:
-	db D_LEFT, 6
-	db D_UP, 4
+	db PAD_LEFT, 6
+	db PAD_UP, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement12:
-	db D_DOWN, 2
+	db PAD_DOWN, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement13:
-	db D_LEFT, 8
+	db PAD_LEFT, 8
 	db -1 ; end
 
 RocketHideout2ArrowMovement14:
-	db D_LEFT, 8
-	db D_UP, 1
+	db PAD_LEFT, 8
+	db PAD_UP, 1
 	db -1 ; end
 
 RocketHideout2ArrowMovement15:
-	db D_LEFT, 8
-	db D_UP, 6
+	db PAD_LEFT, 8
+	db PAD_UP, 6
 	db -1 ; end
 
 RocketHideout2ArrowMovement16:
-	db D_UP, 2
-	db D_RIGHT, 4
+	db PAD_UP, 2
+	db PAD_RIGHT, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement17:
-	db D_UP, 2
-	db D_RIGHT, 4
-	db D_UP, 2
+	db PAD_UP, 2
+	db PAD_RIGHT, 4
+	db PAD_UP, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement18:
-	db D_DOWN, 2
-	db D_RIGHT, 4
-	db D_DOWN, 2
+	db PAD_DOWN, 2
+	db PAD_RIGHT, 4
+	db PAD_DOWN, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement19:
-	db D_DOWN, 2
-	db D_RIGHT, 4
+	db PAD_DOWN, 2
+	db PAD_RIGHT, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement20:
-	db D_LEFT, 10
+	db PAD_LEFT, 10
 	db -1 ; end
 
 RocketHideout2ArrowMovement21:
-	db D_LEFT, 10
-	db D_UP, 2
+	db PAD_LEFT, 10
+	db PAD_UP, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement22:
-	db D_LEFT, 10
-	db D_UP, 4
+	db PAD_LEFT, 10
+	db PAD_UP, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement23:
-	db D_UP, 2
-	db D_RIGHT, 2
+	db PAD_UP, 2
+	db PAD_RIGHT, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement24:
-	db D_RIGHT, 1
-	db D_DOWN, 2
+	db PAD_RIGHT, 1
+	db PAD_DOWN, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement25:
-	db D_RIGHT, 1
+	db PAD_RIGHT, 1
 	db -1 ; end
 
 RocketHideout2ArrowMovement26:
-	db D_DOWN, 2
-	db D_RIGHT, 2
+	db PAD_DOWN, 2
+	db PAD_RIGHT, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement27:
-	db D_DOWN, 2
-	db D_LEFT, 2
+	db PAD_DOWN, 2
+	db PAD_LEFT, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement28:
-	db D_UP, 2
-	db D_RIGHT, 4
-	db D_UP, 2
-	db D_LEFT, 3
+	db PAD_UP, 2
+	db PAD_RIGHT, 4
+	db PAD_UP, 2
+	db PAD_LEFT, 3
 	db -1 ; end
 
 RocketHideout2ArrowMovement29:
-	db D_DOWN, 2
-	db D_LEFT, 4
+	db PAD_DOWN, 2
+	db PAD_LEFT, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement30:
-	db D_LEFT, 6
-	db D_UP, 4
-	db D_LEFT, 5
+	db PAD_LEFT, 6
+	db PAD_UP, 4
+	db PAD_LEFT, 5
 	db -1 ; end
 
 RocketHideout2ArrowMovement31:
-	db D_UP, 2
+	db PAD_UP, 2
 	db -1 ; end
 
 RocketHideout2ArrowMovement32:
-	db D_UP, 1
+	db PAD_UP, 1
 	db -1 ; end
 
 RocketHideout2ArrowMovement33:
-	db D_UP, 3
+	db PAD_UP, 3
 	db -1 ; end
 
 RocketHideout2ArrowMovement34:
-	db D_UP, 5
+	db PAD_UP, 5
 	db -1 ; end
 
 RocketHideout2ArrowMovement35:
-	db D_RIGHT, 1
-	db D_DOWN, 2
-	db D_LEFT, 4
+	db PAD_RIGHT, 1
+	db PAD_DOWN, 2
+	db PAD_LEFT, 4
 	db -1 ; end
 
 RocketHideout2ArrowMovement36:
-	db D_LEFT, 10
-	db D_UP, 2
-	db D_LEFT, 5
+	db PAD_LEFT, 10
+	db PAD_UP, 2
+	db PAD_LEFT, 5
 	db -1 ; end
 
-RocketHideout2Script3:
+RocketHideoutB2FPlayerSpinningScript:
 	ld a, [wSimulatedJoypadStatesIndex]
 	and a
 	jr nz, LoadSpinnerArrowTiles
 	xor a
 	ld [wJoyIgnore], a
-	ld hl, wd736
-	res 7, [hl]
-	ld a, $0
+	ld hl, wMovementFlags
+	res BIT_SPINNING, [hl]
+	ld a, SCRIPT_ROCKETHIDEOUTB2F_DEFAULT
 	ld [wCurMapScript], a
 	ret
 
 INCLUDE "engine/overworld/spinners.asm"
 
 RocketHideoutB2F_TextPointers:
-	dw RocketHideout2Text1
-	dw PickUpItemText
-	dw PickUpItemText
-	dw PickUpItemText
-	dw PickUpItemText
+	def_text_pointers
+	dw_const RocketHideoutB2FRocketText, TEXT_ROCKETHIDEOUTB2F_ROCKET
+	dw_const PickUpItemText,             TEXT_ROCKETHIDEOUTB2F_MOON_STONE
+	dw_const PickUpItemText,             TEXT_ROCKETHIDEOUTB2F_NUGGET
+	dw_const PickUpItemText,             TEXT_ROCKETHIDEOUTB2F_TM_HORN_DRILL
+	dw_const PickUpItemText,             TEXT_ROCKETHIDEOUTB2F_SUPER_POTION
 
 RocketHideout2TrainerHeaders:
 	def_trainers
 RocketHideout2TrainerHeader0:
-	trainer EVENT_BEAT_ROCKET_HIDEOUT_2_TRAINER_0, 4, RocketHideout2BattleText2, RocketHideout2EndBattleText2, RocketHideout2AfterBattleTxt2
+	trainer EVENT_BEAT_ROCKET_HIDEOUT_2_TRAINER_0, 4, RocketHideoutB2FRocketBattleText, RocketHideoutB2FRocketEndBattleText, RocketHideoutB2FRocketAfterBattleText
 	db -1 ; end
 
-RocketHideout2Text1:
+RocketHideoutB2FRocketText:
 	text_asm
 	ld hl, RocketHideout2TrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
 
-RocketHideout2BattleText2:
-	text_far _RocketHideout2BattleText2
+RocketHideoutB2FRocketBattleText:
+	text_far _RocketHideoutB2FRocketBattleText
 	text_end
 
-RocketHideout2EndBattleText2:
-	text_far _RocketHideout2EndBattleText2
+RocketHideoutB2FRocketEndBattleText:
+	text_far _RocketHideoutB2FRocketEndBattleText
 	text_end
 
-RocketHideout2AfterBattleTxt2:
-	text_far _RocketHideout2AfterBattleTxt2
+RocketHideoutB2FRocketAfterBattleText:
+	text_far _RocketHideoutB2FRocketAfterBattleText
 	text_end

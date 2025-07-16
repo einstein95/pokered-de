@@ -11,7 +11,7 @@ _AIBattleUseItemText::
 	text_ram wTrainerName
 	text_start
 	line "gibt @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	cont "@"
 	text_ram wEnemyMonNick
@@ -38,7 +38,7 @@ _TradeSendsText::
 	text_ram wLinkEnemyTrainerName
 	text "s"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "."
 	done
 
@@ -50,7 +50,7 @@ _TradeWavesFarewellText::
 
 _TradeTransferredText::
 	text "sein @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "übertragen wird."
 	done
@@ -58,7 +58,7 @@ _TradeTransferredText::
 _TradeTakeCareText::
 	text "Kümmere Dich gut"
 	line "um @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "."
 	done
 
@@ -66,7 +66,7 @@ _TradeWillTradeText::
 	text_ram wLinkEnemyTrainerName
 	text " möchte"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text " gegen"
 	done
 
@@ -826,7 +826,7 @@ _VermilionGymTrashFailText::
 _FoundHiddenItemText::
 	text "<PLAYER> findet"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "!@"
 	text_end
 
@@ -1162,7 +1162,7 @@ _CantMoveText::
 _MoveIsDisabledText::
 	text "<USER>s"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text " ist"
 	cont "blockiert!"
 	prompt
@@ -1301,7 +1301,7 @@ _HitXTimesText::
 	prompt
 
 _GainedText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text " erhält"
 	line "@"
 	text_end
@@ -1322,11 +1322,11 @@ _ExpPointsText::
 	prompt
 
 _GrewLevelText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "erreicht"
 	cont "Level @"
-	text_decimal wCurEnemyLVL, 1, 3
+	text_decimal wCurEnemyLevel, 1, 3
 	text "!@"
 	text_end
 
@@ -1482,7 +1482,7 @@ _PartyMenuSwapMonText::
 	done
 
 _PotionText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text " erhält"
 	line "@"
 	text_decimal wHPBarHPDifference, 2, 3
@@ -1500,41 +1500,41 @@ _ParlyzHealText::
 	done
 
 _BurnHealText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "wurde geheilt!"
 	done
 
 _IceHealText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "wurde aufgetaut!"
 	done
 
 _AwakeningText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "ist aufgewacht!"
 	done
 
 _FullHealText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text " wurde"
 	line "komplett geheilt!"
 	done
 
 _ReviveText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "ist wieder fit!"
 	done
 
 _RareCandyText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "erreicht"
 	cont "Level  @"
-	text_decimal wCurEnemyLVL, 1, 3
+	text_decimal wCurEnemyLevel, 1, 3
 	text "!@"
 	text_end
 
@@ -1593,7 +1593,7 @@ _DepositHowManyText::
 	done
 
 _ItemWasStoredText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "wurde gelagert."
 	prompt
@@ -1621,7 +1621,7 @@ _WithdrawHowManyText::
 	done
 
 _WithdrewItemText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "mitgenommen."
 	prompt
@@ -1770,7 +1770,7 @@ _HereYouGoText::
 _SoYouWantPrizeText::
 	text "Du möchtest also"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 
 	text_start
 	cont "haben?"
@@ -1896,7 +1896,7 @@ _OakSpeechText3::
 _DoYouWantToNicknameText::
 	text "Möchtest Du"
 	line "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 
 	text " einen"
 	cont "Spitznamen geben?"
@@ -1917,13 +1917,13 @@ _WillBeTradedText::
 	text_ram wNameOfPlayerMonToBeTraded
 	text " soll"
 	line "gegen @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	cont "getauscht werden."
 	done
 
 _TextIDErrorText::
-	text_decimal hSpriteIndexOrTextID, 1, 2
+	text_decimal hTextID, 1, 2
 	text " FEHLER"
 	done
 

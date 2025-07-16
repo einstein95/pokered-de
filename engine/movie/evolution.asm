@@ -2,13 +2,13 @@ EvolveMon:
 	push hl
 	push de
 	push bc
-	ld a, [wcf91]
+	ld a, [wCurPartySpecies]
 	push af
-	ld a, [wd0b5]
+	ld a, [wCurSpecies]
 	push af
 	xor a
 	ld [wLowHealthAlarm], a
-	ld [wChannelSoundIDs + Ch5], a
+	ld [wChannelSoundIDs + CHAN5], a
 	dec a ; SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
@@ -25,16 +25,16 @@ EvolveMon:
 	ld c, 0
 	call EvolutionSetWholeScreenPalette
 	ld a, [wEvoNewSpecies]
-	ld [wcf91], a
-	ld [wd0b5], a
+	ld [wCurPartySpecies], a
+	ld [wCurSpecies], a
 	call Evolution_LoadPic
 	ld de, vFrontPic
 	ld hl, vBackPic
 	ld bc, 7 * 7
 	call CopyVideoData
 	ld a, [wEvoOldSpecies]
-	ld [wcf91], a
-	ld [wd0b5], a
+	ld [wCurPartySpecies], a
+	ld [wCurSpecies], a
 	call Evolution_LoadPic
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
@@ -75,9 +75,9 @@ EvolveMon:
 	ld c, 0
 	call EvolutionSetWholeScreenPalette
 	pop af
-	ld [wd0b5], a
+	ld [wCurSpecies], a
 	pop af
-	ld [wcf91], a
+	ld [wCurPartySpecies], a
 	pop bc
 	pop de
 	pop hl
@@ -145,7 +145,7 @@ Evolution_CheckForCancel:
 	call JoypadLowSensitivity
 	ldh a, [hJoy5]
 	pop bc
-	and B_BUTTON
+	and PAD_B
 	jr nz, .pressedB
 .notAllowedToCancel
 	dec c

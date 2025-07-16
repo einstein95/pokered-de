@@ -1,4 +1,4 @@
-_KogaBeforeBattleText::
+_FuchsiaGymKogaBeforeBattleText::
 	text "KOGA: Hahaha!"
 
 	para "Ein Kind fordert"
@@ -18,7 +18,7 @@ _KogaBeforeBattleText::
 	cont "Du verzweifeln!"
 	done
 
-_ReceivedSoulBadgeText::
+_FuchsiaGymKogaReceivedSoulBadgeText::
 	text "Na sowas!"
 	line "Du bist ein"
 	cont "würdiger Kämpfer!"

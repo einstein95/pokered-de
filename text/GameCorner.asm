@@ -1,4 +1,4 @@
-_CeladonGameCornerText1::
+_GameCornerBeauty1Text::
 	text "Willkommen!"
 
 	para "Hinter der Tür"
@@ -7,7 +7,7 @@ _CeladonGameCornerText1::
 	cont "Preise tauschen."
 	done
 
-_CeladonGameCornerText_48d22::
+_GameCornerClerk1DoYouNeedSomeGameCoinsText::
 	text "Willkommen"
 	line "in der ROCKET"
 	cont "SPIELHALLE!"
@@ -20,33 +20,33 @@ _CeladonGameCornerText_48d22::
 	cont "Münzen. OK?"
 	done
 
-_CeladonGameCornerText_48d27::
+_GameCornerClerk1ThanksHereAre50CoinsText::
 	text "Danke! Hier sind"
 	line "Deine 50 Münzen!"
 	done
 
-_CeladonGameCornerText_48d2c::
+_GameCornerClerk1PleaseComePlaySometimeText::
 	text "Nein? Dann komm"
 	line "vorbei, wenn Du"
 	cont "spielen möchtest!"
 	done
 
-_CeladonGameCornerText_48d31::
+_GameCornerClerk1CantAffordTheCoinsText::
 	text "Du hast nicht"
 	line "genug Geld!"
 	done
 
-_CeladonGameCornerText_48d36::
+_GameCornerClerk1CoinCaseIsFullText::
 	text "Dein MÜNZKORB"
 	line "ist voll!"
 	done
 
-_CeladonGameCornerText_48d3b::
+_GameCornerClerk1DontHaveCoinCaseText::
 	text "Du benötigst"
 	line "einen MÜNZKORB!"
 	done
 
-_CeladonGameCornerText3::
+_GameCornerMiddleAgedMan1Text::
 	text "Pst! Höre mir zu!"
 
 	para "Man sagt, diese"
@@ -54,39 +54,39 @@ _CeladonGameCornerText3::
 	cont "dem TEAM ROCKET!"
 	done
 
-_CeladonGameCornerText4::
+_GameCornerBeauty2Text::
 	text "Ich glaube, jeder"
 	line "Spielautomat hat"
 	cont "eine andere"
 	cont "Gewinnchance!"
 	done
 
-_CeladonGameCornerText_48d9c::
+_GameCornerFishingGuruWantToPlayText::
 	text "Möchtest Du auch"
 	line "spielen, Junge?"
 	prompt
 
-_Received10CoinsText::
+_GameCornerFishingGuruReceived10CoinsText::
 	text "<PLAYER> erhält"
 	line "10 Münzen!@"
 	text_end
 
-_CeladonGameCornerText_48da7::
+_GameCornerFishingGuruDontNeedMyCoinsText::
 	text "Du brauchst meine"
 	line "Münzen nicht!"
 	done
 
-_CeladonGameCornerText_48dac::
+_GameCornerFishingGuruWinsComeAndGoText::
 	text "Mal gewinnt man,"
 	line "mal verliert man!"
 	done
 
-_CeladonGameCornerText6::
+_GameCornerMiddleAgedWomanText::
 	text "Herrlich!"
 	line "Das macht Spaß!"
 	done
 
-_CeladonGameCornerText_48dca::
+_GameCornerGymGuideChampInMakingText::
 	text "Hey!"
 
 	para "Du hast"
@@ -106,7 +106,7 @@ _CeladonGameCornerText_48dca::
 	cont "unterschätzen!"
 	done
 
-_CeladonGameCornerText_48dcf::
+_GameCornerGymGuideTheyOfferRarePokemonText::
 	text "Man kann die"
 	line "Münzen gegen"
 	cont "seltene #MON"
@@ -117,77 +117,77 @@ _CeladonGameCornerText_48dcf::
 	cont "Spiel!"
 	done
 
-_CeladonGameCornerText8::
+_GameCornerGamblerText::
 	text "Glücksspiele sind"
 	line "unheimlich!"
 	cont "Man wird schnell"
 	cont "davon abhängig!"
 	done
 
-_CeladonGameCornerText_48e26::
+_GameCornerClerk2WantSomeCoinsText::
 	text "Wie geh",$B3,"'s?"
 	line "Brauchst Du ein"
 	cont "paar Münzen?"
 	prompt
 
-_Received20CoinsText::
+_GameCornerClerk2Received20CoinsText::
 	text "<PLAYER> erhält"
 	line "20 Münzen!@"
 	text_end
 
-_CeladonGameCornerText_48e31::
+_GameCornerClerk2YouHaveLotsOfCoinsText::
 	text "Hey, Du besitzt"
 	line "genug Münzen!"
 	done
 
-_CeladonGameCornerText_48e36::
+_GameCornerClerk2INeedMoreCoinsText::
 	text "Mist! Ich habe"
 	line "noch immer nicht"
 	cont "genug Münzen für"
 	cont "das #MON!"
 	done
 
-_CeladonGameCornerText_48e88::
+_GameCornerGentlemanThrowingMeOffText::
 	text "Hey! Willst Du"
 	line "mich ablenken?"
 	cont "Hier, nimm ein"
 	cont "paar Münzen!"
 	prompt
 
-_CeladonGameCornerText_48e8d::
+_GameCornerGentlemanReceived20CoinsText::
 	text "<PLAYER> erhält"
 	line "20 Münzen!@"
 	text_end
 
-_CeladonGameCornerText_48e93::
+_GameCornerGentlemanYouGotYourOwnCoinsText::
 	text "Du hast Deine"
 	line "eigenen Münzen!"
 	done
 
-_CeladonGameCornerText_48e98::
+_GameCornerGentlemanCloselyWatchTheReelsText::
 	text "Du mußt die"
 	line "Walzen genau im"
 	cont "Auge behalten!"
 	done
 
-_CeladonGameCornerText_48ece::
+_GameCornerRocketImGuardingThisPosterText::
 	text "Verschwinde von"
 	line "dem Poster, oder"
 	cont "ich muß..."
 	done
 
-_CeladonGameCornerText_48ed3::
+_GameCornerRocketBattleEndText::
 	text "Mist!"
 	prompt
 
-_CeladonGameCornerText_48ed8::
+_GameCornerRocketAfterBattleText::
 	text "Ich muß dem BOSS"
 	line "sagen, daß unser"
 	cont "Versteck entdeckt"
 	cont "werden könnte!"
 	done
 
-_CeladonGameCornerText_48f09::
+_GameCornerPosterSwitchBehindPosterText::
 	text "Seltsam!"
 
 	para "Hinter dem Poster"
@@ -195,7 +195,7 @@ _CeladonGameCornerText_48f09::
 	cont "Mal sehen...@"
 	text_end
 
-_CeladonGameCornerText_48f19::
+_GameCornerOopsForgotCoinCaseText::
 	text "Ups! Ich habe"
 	line "den MÜNZKORB "
 	cont "vergessen!"

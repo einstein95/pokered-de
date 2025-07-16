@@ -1,4 +1,4 @@
-_Route14BattleText1::
+_Route14CooltrainerM1BattleText::
 	text "Damit #MON"
 	line "starke Attacken"
 	cont "erlernen, muß man"
@@ -6,12 +6,12 @@ _Route14BattleText1::
 	done
 
 
-_Route14EndBattleText1::
+_Route14CooltrainerM1EndBattleText::
 	text "Ich"
 	line "war zu schlecht!"
 	prompt
 
-_Route14AfterBattleText1::
+_Route14CooltrainerM1AfterBattleText::
 	text "Eine durch eine"
 	line "VM erlernte"
 	cont "Attacke können"
@@ -19,26 +19,26 @@ _Route14AfterBattleText1::
 	cont "wieder vergessen!"
 	done
 
-_Route14BattleText2::
+_Route14CooltrainerM2BattleText::
 	text "Meine VOGEL-"
 	line "#MON sind"
 	cont "gut auf Kämpfe"
 	cont "vorbereitet!"
 	done
 
-_Route14EndBattleText2::
+_Route14CooltrainerM2EndBattleText::
 	text ""
 	line "Sie waren nicht"
 	cont "stark genug..."
 	prompt
 
-_Route14AfterBattleText2::
+_Route14CooltrainerM2AfterBattleText::
 	text "Sie müssen"
 	line "stärkere Attacken"
 	cont "lernen!"
 	done
 
-_Route14BattleText3::
+_Route14CooltrainerM3BattleText::
 	text "In PRISMANIA CITY"
 	line "kann man TM"
 	cont "kaufen."
@@ -47,12 +47,12 @@ _Route14BattleText3::
 	cont "wenige Personen."
 	done
 
-_Route14EndBattleText3::
+_Route14CooltrainerM3EndBattleText::
 	text "Ohh!"
 	line "So ein Mist!"
 	prompt
 
-_Route14AfterBattleText3::
+_Route14CooltrainerM3AfterBattleText::
 	text "Bringe #MON"
 	line "ihrem Element"
 	cont "entsprechende"
@@ -61,109 +61,109 @@ _Route14AfterBattleText3::
 	cont "auszunutzen!"
 	done
 
-_Route14BattleText4::
+_Route14CooltrainerM4BattleText::
 	text "Hast Du einem"
 	line "VOGEL-#MON"
 	cont "schon das FLIEGEN"
 	cont "beigebracht?"
 	done
 
-_Route14EndBattleText4::
+_Route14CooltrainerM4EndBattleText::
 	text ""
 	line "War das eine"
 	cont "Bruchlandung!"
 	prompt
 
-_Route14AfterBattleText4::
+_Route14CooltrainerM4AfterBattleText::
 	text "Meine"
 	line "Leidenschaft sind"
 	cont "VOGEL-#MON!"
 	done
 
-_Route14BattleText5::
+_Route14CooltrainerM5BattleText::
 	text "Hast Du schon von"
 	line "den legendären"
 	cont "#MON gehört?"
 	done
 
-_Route14EndBattleText5::
+_Route14CooltrainerM5EndBattleText::
 	text "Warum"
 	line "hab ich verloren?"
 	prompt
 
-_Route14AfterBattleText5::
+_Route14CooltrainerM5AfterBattleText::
 	text "Die 3 legendären"
 	line "#MON sind"
 	cont "große Raubvögel."
 	done
 
-_Route14BattleText6::
+_Route14CooltrainerM6BattleText::
 	text "Ich will nicht"
 	line "unbedingt, aber"
 	cont "laß uns dennoch"
 	cont "kämpfen!"
 	done
 
-_Route14EndBattleText6::
+_Route14CooltrainerM6EndBattleText::
 	text "Ich"
 	line "wußte, ich würde"
 	cont "verlieren!"
 	prompt
 
-_Route14AfterBattleText6::
+_Route14CooltrainerM6AfterBattleText::
 	text "Längerfristig ist"
 	line "es egal, ob man"
 	cont "gewinnt oder"
 	cont "verliert!"
 	done
 
-_Route14BattleText7::
+_Route14Biker1BattleText::
 	text "Los, los! Laß uns"
 	line "kämpfen. Auf in"
 	cont "den Kampf! Los!"
 	done
 
-_Route14EndBattleText7::
+_Route14Biker1EndBattleText::
 	text "Arrg!"
 	line "Hau bloß ab!"
 	prompt
 
-_Route14AfterBattleText7::
+_Route14Biker1AfterBattleText::
 	text "Was, was, was?"
 	line "Was willst Du?"
 	done
 
-_Route14BattleText8::
+_Route14Biker2BattleText::
 	text "Sehr gut! Ich"
 	line "brauche einen"
 	cont "Zeitvertreib!"
 	done
 
-_Route14EndBattleText8::
+_Route14Biker2EndBattleText::
 	text "Du hast"
 	line "mich besiegt?"
 	cont "Oh Mann!"
 	prompt
 
-_Route14AfterBattleText8::
+_Route14Biker2AfterBattleText::
 	text "Es ist ganz schön"
 	line "mühselig, #MON"
 	cont "zu trainieren!"
 	done
 
-_Route14BattleText9::
+_Route14Biker3BattleText::
 	text "Wir kommen öfter"
 	line "her, weil es hier"
 	cont "so unglaublich"
 	cont "viel Platz gibt!"
 	done
 
-_Route14EndBattleText9::
+_Route14Biker3EndBattleText::
 	text "Kurz"
 	line "und schmerzlos!"
 	prompt
 
-_Route14AfterBattleText9::
+_Route14Biker3AfterBattleText::
 	text "Cool! Deine"
 	line "#MON sind"
 	cont "wirklich stark!"
@@ -173,24 +173,24 @@ _Route14AfterBattleText9::
 	cont "es begriffen!"
 	done
 
-_Route14BattleText10::
+_Route14Biker4BattleText::
 	text "Ein #MON-"
 	line "KAMPF? Cool!"
 	cont "Leg los, Kumpel!"
 	done
 
-_Route14EndBattleText10::
+_Route14Biker4EndBattleText::
 	text "Voll"
 	line "erwischt!"
 	prompt
 
-_Route14AfterBattleText10::
+_Route14Biker4AfterBattleText::
 	text "Du gegen mich!"
 	line "Du weißt, wer"
 	cont "gewinnt!"
 	done
 
-_Route14Text11::
+_Route14SignText::
 	text "ROUTE 14, WESTEN:"
 	line "FUCHSANIA CITY"
 	done

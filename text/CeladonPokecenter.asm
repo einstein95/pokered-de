@@ -1,4 +1,4 @@
-_CeladonPokecenterText2::
+_CeladonPokecenterGentlemanText::
 	text "Die #FLÖTE"
 	line "weckt #MON mit"
 	cont "einem Geräusch,"
@@ -6,7 +6,7 @@ _CeladonPokecenterText2::
 	cont "hören können!"
 	done
 
-_CeladonPokecenterText3::
+_CeladonPokecenterBeautyText::
 	text "Ich bin von"
 	line "FUCHSANIA CITY"
 	cont "aus auf dem"

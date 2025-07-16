@@ -1,4 +1,4 @@
-_Lab1Text1::
+_CinnabarLabFishingGuruText::
 	text "Wir erforschen"
 	line "hier #MON."
 
@@ -7,24 +7,24 @@ _Lab1Text1::
 	cont "seltene #MON."
 	done
 
-_Lab1Text2::
+_CinnabarLabPhotoText::
 	text "Der Gründer des"
 	line "LABORATORIUMS,"
 	cont "DR. FUJI!"
 	done
 
-_Lab1Text3::
+_CinnabarLabMeetingRoomSignText::
 	text "#MON-LABOR"
 	line "Konferenzraum"
 	done
 
-_Lab1Text4::
+_CinnabarLabRAndDSignText::
 	text "#MON-LABOR"
 	line "Forschung und"
 	cont "Entwicklung"
 	done
 
-_Lab1Text5::
+_CinnabarLabTestingRoomSignText::
 	text "#MON-LABOR"
 	line "Versuchsabteilung"
 	done

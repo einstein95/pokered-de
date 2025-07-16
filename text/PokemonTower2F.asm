@@ -1,4 +1,4 @@
-_PokemonTower2Text_6062d::
+_PokemonTower2FRivalWhatBringsYouHereText::
 	text "<RIVAL>: Hallo,"
 	line "<PLAYER>! Was"
 	cont "machst Du hier?"
@@ -11,7 +11,7 @@ _PokemonTower2Text_6062d::
 	cont "anders aussehen!"
 	done
 
-_PokemonTower2Text_60632::
+_PokemonTower2FRivalDefeatedText::
 	text "Was?"
 	line "Du bist eine"
 	cont "harte Nuß!"
@@ -21,7 +21,7 @@ _PokemonTower2Text_60632::
 	cont "angegangen!"
 	prompt
 
-_PokemonTower2Text_60637::
+_PokemonTower2FRivalVictoryText::
 	text "<RIVAL>: Deine"
 	line "#MON sind"
 	cont "nicht in Form!"
@@ -30,7 +30,7 @@ _PokemonTower2Text_60637::
 	line "bißchen härter!"
 	prompt
 
-_PokemonTower2Text_6063c::
+_PokemonTower2FRivalHowsYourDexText::
 	text "Wie macht sich"
 	line "Dein #DEX,"
 	cont "Kumpel? Ich habe"
@@ -52,7 +52,7 @@ _PokemonTower2Text_6063c::
 	para "Dann bis später!"
 	done
 
-_PokemonTower2Text2::
+_PokemonTower2FChannelerText::
 	text "Selbst wir können"
 	line "die eigenwilligen"
 	cont "GEISTER nicht"

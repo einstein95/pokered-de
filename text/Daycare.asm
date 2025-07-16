@@ -1,4 +1,4 @@
-_DayCareIntroText::
+_DaycareGentlemanIntroText::
 	text "Ich leite diese"
 	line "PENSION. Soll"
 	cont "ich eines Deiner"
@@ -6,27 +6,27 @@ _DayCareIntroText::
 	cont "großziehen?"
 	done
 
-_DayCareWhichMonText::
+_DaycareGentlemanWhichMonText::
 	text "Welches #MON"
 	line "soll hierbleiben?"
 	prompt
 
-_DayCareWillLookAfterMonText::
+_DaycareGentlemanWillLookAfterMonText::
 	text "OK, ich kümmere"
 	line "mich eine Weile"
 	cont "um @"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text "."
 	prompt
 
-_DayCareComeSeeMeInAWhileText::
+_DaycareGentlemanComeSeeMeInAWhileText::
 	text "Komm später"
 	line "wieder vorbei, um"
 	cont "es abzuholen."
 	done
 
-_DayCareMonHasGrownText::
-	text_ram wcd6d
+_DaycareGentlemanMonHasGrownText::
+	text_ram wNameBuffer
 	text_start
 	line "hat sich toll "
 	cont "entwickelt!"
@@ -40,7 +40,7 @@ _DayCareMonHasGrownText::
 	line "gemacht, oder?"
 	prompt
 
-_DayCareOweMoneyText::
+_DaycareGentlemanOweMoneyText::
 	text "Bevor Du Dein"
 	line "#MON wieder"
 	cont "mitnimmst, "
@@ -50,7 +50,7 @@ _DayCareOweMoneyText::
 	text " von Dir!"
 	done
 
-_DayCareGotMonBackText::
+_DaycareGentlemanGotMonBackText::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wDayCareMonName
@@ -58,11 +58,11 @@ _DayCareGotMonBackText::
 	cont "zurück!"
 	done
 
-_DayCareMonNeedsMoreTimeText::
+_DaycareGentlemanMonNeedsMoreTimeText::
 	text "Du bist schon"
 	line "wieder zurück?"
 	cont "@"
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text " sollte"
 	cont "noch ein bißchen"
 	cont "bei mir bleiben."

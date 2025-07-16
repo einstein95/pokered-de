@@ -1,4 +1,4 @@
-_SilphCoPresidentText::
+_SilphCo11FSilphPresidentText::
 	text "PRÄSIDENT: Ich"
 	line "danke Dir für"
 	cont "die Rettung der"
@@ -23,14 +23,14 @@ _SilphCoPresidentText::
 	cont "etwas für Dich!"
 	prompt
 
-_ReceivedSilphCoMasterBallText::
+_SilphCo11FSilphPresidentReceivedMasterBallText::
 	text "<PLAYER> erhält"
 	line "einen @"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_SilphCo10Text_6231c::
+_SilphCo11FSilphPresidentMasterBallDescriptionText::
 	text "PRÄSIDENT: Man"
 	line "kann das nirgends"
 	cont "kaufen!"
@@ -51,12 +51,12 @@ _SilphCo10Text_6231c::
 	cont "einsetzt!"
 	done
 
-_SilphCoMasterBallNoRoomText::
+_SilphCo11FSilphPresidentNoRoomText::
 	text "Du hast keinen"
 	line "Platz mehr!"
 	done
 
-_SilphCo11Text2::
+_SilphCo11FBeautyText::
 	text "SEKRETÄRIN: Wir"
 	line "danken Dir für"
 	cont "Deinen Heldenmut!"
@@ -65,7 +65,7 @@ _SilphCo11Text2::
 	line "gerettet! Danke!"
 	done
 
-_SilphCo11Text3::
+_SilphCo11FGiovanniText::
 	text "Ah, <PLAYER>!"
 	line "So trifft man"
 	cont "sich wieder!"
@@ -86,12 +86,12 @@ _SilphCo11Text3::
 	cont "Schmerzen kennen!"
 	done
 
-_SilphCo10Text_62330::
+_SilphCo10FGiovanniILostAgainText::
 	text "Arrgh!"
 	line "Wieder verloren!"
 	prompt
 
-_SilphCo10Text_62335::
+_SilphCo11FGiovanniYouRuinedOurPlansText::
 	text "Verdammter Mist!"
 	line "Du hast unsere"
 	cont "Übernahme der"
@@ -113,40 +113,40 @@ _SilphCo10Text_62335::
 	cont "wird kommen!"
 	done
 
-_SilphCo11BattleText1::
+_SilphCo11FRocket1BattleText::
 	text "Halt! Keinen"
 	line "Schritt weiter!"
 	done
 
-_SilphCo11EndBattleText1::
+_SilphCo11FRocket1EndBattleText::
 	text "Bitte!"
 	line "Verschone mich..."
 	prompt
 
-_SilphCo11AfterBattleText1::
+_SilphCo11FRocket1AfterBattleText::
 	text "Du willst also"
 	line "zum BOSS?"
 	done
 
-_SilphCo11BattleText2::
+_SilphCo11FRocket2BattleText::
 	text "Stop! Hast Du"
 	line "einen Termin"
 	cont "beim BOSS?"
 	done
 
-_SilphCo11EndBattleText2::
+_SilphCo11FRocket2EndBattleText::
 	text "OK! Ich"
 	line "lasse Dich durch!"
 	prompt
 
-_SilphCo11AfterBattleText2::
+_SilphCo11FRocket2AfterBattleText::
 	text "Die #MON von"
 	line "unserem BOSS"
 	cont "werden Dich"
 	cont "fertig machen! "
 	done
 
-_SilphCo10Text_6237b::
+_SilphCo10FPorygonText::
 	text "Auf dem Monitor"
 	line "sind #MON"
 	cont "zu sehen!"

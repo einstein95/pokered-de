@@ -1,4 +1,4 @@
-_CeladonHouseText1::
+_CeladonChiefHouseChiefText::
 	text "Haha! Mit den"
 	line "Spielautomaten"
 	cont "verdienen wir uns"
@@ -6,7 +6,7 @@ _CeladonHouseText1::
 	cont "Nase!"
 	done
 
-_CeladonHouseText2::
+_CeladonChiefHouseRocketText::
 	text "BOSS!"
 
 	para "Wir haben gerade"
@@ -14,7 +14,7 @@ _CeladonHouseText2::
 	cont "Preise versandt!"
 	done
 
-_CeladonHouseText3::
+_CeladonChiefHouseSailorText::
 	text "Schenke dem"
 	line "Poster in der"
 	cont "SPIELHALLE keine"

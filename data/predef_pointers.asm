@@ -61,7 +61,7 @@ PredefPointers::
 	add_predef BattleTransition
 	add_predef CopyTileIDsFromList
 	add_predef PlayIntro
-	add_predef GetMoveSoundB
+	add_predef GetIntroMoveSound
 	add_predef FlashScreen
 	add_predef GetTileAndCoordsInFrontOfPlayer
 	add_predef StatusScreen
@@ -101,7 +101,7 @@ PredefPointers::
 	add_predef EnterMapAnim, $1E ; wrong bank
 	add_predef GetTileTwoStepsInFrontOfPlayer
 	add_predef CheckForCollisionWhenPushingBoulder
-	add_predef PrintStrengthTxt
+	add_predef PrintStrengthText
 	add_predef PickUpItem
 	add_predef PrintMoveType
 	add_predef LoadMovePPs

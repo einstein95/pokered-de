@@ -1,27 +1,27 @@
-_SilphCo10Text_5a1d3::
+_SilphCo10FSilphWorkerFImScaredText::
 	text "Hilfe!"
 	line "Ich habe Angst!"
 	done
 
-_SilphCo10Text_5a1d8::
+_SilphCo10FSilphWorkerFQuietAboutMyCryingText::
 	text "Verrate bitte"
 	line "niemandem, daß"
 	cont "ich geweint habe!"
 	done
 
-_SilphCo10BattleText1::
+_SilphCo10FRocketBattleText::
 	text "Willkommen im"
 	line "9. Stock! Es ist"
 	cont "nett, daß Du mal"
 	cont "vorbeischaust!"
 	done
 
-_SilphCo10EndBattleText1::
+_SilphCo10FRocketEndBattleText::
 	text "Ich bin"
 	line "geschockt!"
 	prompt
 
-_SilphCo10AfterBattleText1::
+_SilphCo10FRocketAfterBattleText::
 	text "Netter Versuch!"
 	line "Der Sitzungssaal"
 	cont "befindet sich"
@@ -29,18 +29,18 @@ _SilphCo10AfterBattleText1::
 	cont "Stockwerk höher!"
 	done
 
-_SilphCo10BattleText2::
+_SilphCo10FScientistBattleText::
 	text "Genug von Deinen"
 	line "dummen Spielchen!"
 	done
 
-_SilphCo10EndBattleText2::
+_SilphCo10FScientistEndBattleText::
 	text "Meine"
 	line "Reserven sind"
 	cont "erschöpft!"
 	prompt
 
-_SilphCo10AfterBattleText2::
+_SilphCo10FScientistAfterBattleText::
 	text "Freut es Dich,"
 	line "mich besiegt zu"
 	cont "haben? Mann, hau"

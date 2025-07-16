@@ -1,4 +1,4 @@
-_SafariZoneRestHouse2Text1::
+_SafariZoneWestRestHouseScientistText::
 	text "Wenn Du STEINE"
 	line "auf #MON"
 	cont "wirfst, fliehen"
@@ -8,7 +8,7 @@ _SafariZoneRestHouse2Text1::
 	cont "fangen!"
 	done
 
-_SafariZoneRestHouse2Text2::
+_SafariZoneWestRestHouseCooltrainerMText::
 	text "Wenn Du ihnen"
 	line "KÖDER zuwirfst,"
 	cont "sind die #MON"
@@ -16,7 +16,7 @@ _SafariZoneRestHouse2Text2::
 	cont "fangen!"
 	done
 
-_SafariZoneRestHouse2Text3::
+_SafariZoneWestRestHouseSilphWorkerFText::
 	text "Ich habe lange"
 	line "gesucht, aber"
 	cont "keine neuen"

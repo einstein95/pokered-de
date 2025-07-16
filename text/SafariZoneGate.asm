@@ -1,9 +1,9 @@
-_SafariZoneEntranceText1::
+_SafariZoneGateSafariZoneWorker1Text::
 	text "Willkommen in"
 	line "der SAFARI-ZONE!"
 	done
 
-SafariZoneEntranceText_9e6e4::
+_SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText::
 	text "Für nur ¥500"
 	line "darfst Du im Park"
 	cont "so viele #MON"
@@ -14,7 +14,7 @@ SafariZoneEntranceText_9e6e4::
 	line "die Jagd gehen?@"
 	text_end
 
-SafariZoneEntranceText_9e747::
+_SafariZoneGateSafariZoneWorker1ThatllBe500PleaseText::
 	text "Das kostet"
 	line "¥500!"
 
@@ -26,7 +26,7 @@ SafariZoneEntranceText_9e747::
 	line "30 SAFARI-BÄLLE!@"
 	text_end
 
-_SafariZoneEntranceText_75360::
+_SafariZoneGateSafariZoneWorker1CallYouOnThePAText::
 	text_start
 
 	para "Wir rufen Dich"
@@ -39,45 +39,45 @@ _SafariZoneEntranceText_75360::
 	cont "erschöpft ist!"
 	done
 
-_SafariZoneEntranceText_75365::
+_SafariZoneGateSafariZoneWorker1PleaseComeAgainText::
 	text "OK! Besuche"
 	line "uns bald wieder!"
 	done
 
-_SafariZoneEntranceText_7536a::
+_SafariZoneGateSafariZoneWorker1NotEnoughMoneyText::
 	text "Ups! Du hast"
 	line "nicht genug Geld!"
 	done
 
-SafariZoneEntranceText_9e814::
+_SafariZoneGateSafariZoneWorker1LeavingEarlyText::
 	text "Hast Du keine"
 	line "Lust mehr?@"
 	text_end
 
-_SafariZoneEntranceText_753bb::
+_SafariZoneGateSafariZoneWorker1ReturnSafariBallsText::
 	text "Gib bitte die"
 	line "restlichen"
 	cont "SAFARI-BÄLLE"
 	cont "zurück."
 	done
 
-_SafariZoneEntranceText_753c0::
+_SafariZoneGateSafariZoneWorker1GoodLuckText::
 	text "Viel Glück!"
 	done
 
-_SafariZoneEntranceText_753c5::
+_SafariZoneGateSafariZoneWorker1GoodHaulComeAgainText::
 	text "War die Jagd"
 	line "erfolgreich?"
 	cont "Besuche uns bald"
 	cont "wieder!"
 	done
 
-_SafariZoneEntranceText_753e6::
+_SafariZoneGateSafariZoneWorker2FirstTimeHereText::
 	text "Hi! Bist Du zum"
 	line "ersten Mal  hier?"
 	done
 
-_SafariZoneEntranceText_753eb::
+_SafariZoneGateSafariZoneWorker2SafariZoneExplanationText::
 	text "Die SAFARI-ZONE"
 	line "besteht aus vier"
 	cont "Abschnitten."
@@ -106,7 +106,7 @@ _SafariZoneEntranceText_753eb::
 	cont "anwählen!"
 	done
 
-_SafariZoneEntranceText_753f0::
+_SafariZoneGateSafariZoneWorker2YoureARegularHereText::
 	text "Hey, Du bist ein"
 	line "Stammkunde!"
 	done

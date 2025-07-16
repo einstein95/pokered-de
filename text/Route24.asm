@@ -1,11 +1,11 @@
-_Route24Text_51510::
+_Route24CooltrainerM1YouBeatOurContestText::
 	text "Herzlichen"
 	line "Glückwunsch!"
 	cont "Du hast alle fünf"
 	cont "Trainer besiegt!@"
 	text_end
 
-_Route24Text_51515::
+_Route24CooltrainerM1YouJustEarnedAPrizeText::
 	text_start
 
 	para "Du hast einen"
@@ -13,20 +13,20 @@ _Route24Text_51515::
 	cont "gewonnen!"
 	prompt
 
-_Route24Text_5151a::
+_Route24CooltrainerM1ReceivedNuggetText::
 	text "<PLAYER> erhält"
 	line "einen @"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_Route24Text_51521::
+_Route24CooltrainerM1NoRoomText::
 	text "Du hast keinen"
 	line "Platz für weitere"
 	cont "Items!"
 	done
 
-_Route24Text_51526::
+_Route24CooltrainerM1JoinTeamRocketText::
 	text "Möchtest Du auch"
 	line "Mitglied des"
 	cont "TEAM ROCKET"
@@ -60,12 +60,12 @@ _Route24Text_51526::
 	cont "ablehnen!"
 	done
 
-_Route24Text_5152b::
+_Route24CooltrainerM1DefeatedText::
 	text "Arrgh!"
 	line "Du bist gut!"
 	prompt
 
-_Route24Text_51530::
+_Route24CooltrainerM1YouCouldBecomeATopLeaderText::
 	text "Bei Deinem Können"
 	line "würdest Du im"
 	cont "TEAM ROCKET"
@@ -73,7 +73,7 @@ _Route24Text_51530::
 	cont "Hand vom Boss!"
 	done
 
-_Route24BattleText1::
+_Route24CooltrainerM2BattleText::
 	text "Ich habe Deine"
 	line "Vorstellung aus"
 	cont "dem Gras heraus"

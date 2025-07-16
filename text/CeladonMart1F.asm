@@ -1,4 +1,4 @@
-_CeladonMart1Text1::
+_CeladonMart1FReceptionistText::
 	text "Willkommen im"
 	line "EINKAUFSZENTRUM"
 	cont "von PRISMANIA"
@@ -9,7 +9,7 @@ _CeladonMart1Text1::
 	cont "eine Übersicht."
 	done
 
-_CeladonMart1Text2::
+_CeladonMart1FDirectorySignText::
 	text "EG: KUNDEN-"
 	line "INFORMATION"
 
@@ -27,7 +27,7 @@ _CeladonMart1Text2::
 	line "AUTOMATEN"
 	done
 
-_CeladonMart1Text3::
+_CeladonMart1FCurrentFloorSignText::
 	text "EG: KUNDEN-"
 	line "INFORMATION"
 	done

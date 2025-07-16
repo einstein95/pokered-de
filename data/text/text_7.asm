@@ -28,7 +28,7 @@ _GotOffBicycleText2::
 	prompt
 
 _ThrewAwayItemText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text_start
 	line "weggeworfen!"
 	prompt
@@ -49,7 +49,7 @@ _TooImportantToTossText::
 	prompt
 
 _AlreadyKnowsText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text " kennt"
 	line "@"
 	text_ram wStringBuffer
@@ -208,7 +208,7 @@ _NothingToCutText::
 	prompt
 
 _UsedCutText::
-	text_ram wcd6d
+	text_ram wNameBuffer
 	text " setzt"
 	line "den ZERSCHNEIDER"
 	cont "ein!"

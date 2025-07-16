@@ -1,16 +1,16 @@
-_ProgrammerText::
+_CeladonMansion3FProgrammerText::
 	text "Ich? Ich bin der"
 	line "Programmierer!"
 	done
 
-_GraphicArtistText::
+_CeladonMansion3FGraphicArtistText::
 	text "Ich bin der"
 	line "Grafiker!"
 	cont "Ich habe dies"
 	cont "alles gezeichnet!"
 	done
 
-_WriterText::
+_CeladonMansion3FWriterText::
 	text "Die Geschichte"
 	line "stammt von mir!"
 	cont "Ist ERIKA nicht"
@@ -24,7 +24,7 @@ _WriterText::
 	cont "SABRINA!"
 	done
 
-_GameDesignerText::
+_CeladonMansion3FGameDesignerText::
 	text "Gefällt Dir das"
 	line "Spiel?"
 
@@ -42,7 +42,7 @@ _GameDesignerText::
 	cont "ist!"
 	done
 
-_CompletedDexText::
+_CeladonMansion3FGameDesignerCompletedDexText::
 	text "Wow! Fantastisch!"
 	line "Dein #DEX"
 	cont "ist vollständig!"
@@ -50,27 +50,27 @@ _CompletedDexText::
 	cont "Glückwunsch!@"
 	text_end
 
-_CeladonMansion3Text5::
+_CeladonMansion3FGameProgramPCText::
 	text "Der Programmcode!"
 	line "Davon sollte man"
 	cont "besser die Finger"
 	cont "lassen!"
 	done
 
-_CeladonMansion3Text6::
+_CeladonMansion3FPlayingGamePCText::
 	text "Dort spielt"
 	line "jemand, anstatt"
 	cont "zu arbeiten!"
 	done
 
-_CeladonMansion3Text7::
+_CeladonMansion3FGameScriptPCText::
 	text "Das Drehbuch!"
 	line "Ich schaue mir"
 	cont "das Ende besser"
 	cont "nicht an!"
 	done
 
-_CeladonMansion3Text8::
+_CeladonMansion3FDevRoomSignText::
 	text "GAME FREAK"
 	line "Entwicklungs-"
 	cont "Abteilung"

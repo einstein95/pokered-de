@@ -29,6 +29,12 @@ MACRO object_event
 	ELSE
 		db \6
 	ENDC
+	; items and trainers don't use a typical text id
+	IF _NARG > 6
+		REDEF _OBJECT_EVENT_{d:{_NUM_OBJECT_EVENTS}}_TEXT_ID EQUS "0"
+	ELSE
+		REDEF _OBJECT_EVENT_{d:{_NUM_OBJECT_EVENTS}}_TEXT_ID EQUS "\6"
+	ENDC
 	DEF {_NUM_OBJECT_EVENTS} += 1
 ENDM
 
@@ -60,12 +66,28 @@ ENDM
 ;\3 sign id
 MACRO bg_event
 	db \2, \1, \3
+	REDEF _BG_EVENT_{d:{_NUM_BG_EVENTS}}_TEXT_ID EQUS "\3"
 	DEF {_NUM_BG_EVENTS} += 1
 ENDM
 
 ;\1 source map
 MACRO def_warps_to
-	FOR n, _NUM_WARP_EVENTS
+	ASSERT {_NUM_WARP_EVENTS} <= MAX_WARP_EVENTS, \
+		"Too many warp_events (above {d:MAX_WARP_EVENTS})!"
+	ASSERT {_NUM_BG_EVENTS} <= MAX_BG_EVENTS, \
+		"Too many bg_events (above {d:MAX_BG_EVENTS})!"
+	ASSERT {_NUM_OBJECT_EVENTS} <= MAX_OBJECT_EVENTS, \
+		"Too many object_events (above {d:MAX_OBJECT_EVENTS})!"
+	; text ID values are significant (see DisplayTextID in home/text_scripts.asm)
+	FOR n, {_NUM_BG_EVENTS}
+		ASSERT {_BG_EVENT_{d:n}_TEXT_ID} > {_NUM_OBJECT_EVENTS}, \
+			"A bg_event has text ID {_BG_EVENT_{d:n}_TEXT_ID} expected for an object_event ({d:{_NUM_OBJECT_EVENTS}} or below)"
+	ENDR
+	FOR n, {_NUM_OBJECT_EVENTS}
+		ASSERT {_OBJECT_EVENT_{d:n}_TEXT_ID} <= {_NUM_OBJECT_EVENTS}, \
+			"An object_event has text ID {_OBJECT_EVENT_{d:n}_TEXT_ID} expected for a bg_event (above {d:{_NUM_OBJECT_EVENTS}})"
+	ENDR
+	FOR n, {_NUM_WARP_EVENTS}
 		warp_to _WARP_{d:n}_X, _WARP_{d:n}_Y, \1_WIDTH
 	ENDR
 ENDM
@@ -90,8 +112,8 @@ ENDM
 ;\1 event flag
 ;\2 view range
 ;\3 TextBeforeBattle
-;\4 TextAfterBattle
-;\5 TextEndBattle
+;\4 TextEndBattle
+;\5 TextAfterBattle
 MACRO trainer
 	DEF _ev_bit = \1 % 8
 	DEF _cur_bit = CURRENT_TRAINER_BIT % 8
@@ -207,4 +229,16 @@ MACRO connection
 	db \3_WIDTH
 	db _y, _x
 	dw wOverworldMap + _win
+ENDM
+
+MACRO def_script_pointers
+	const_def
+ENDM
+
+MACRO def_text_pointers
+	const_def 1
+ENDM
+
+MACRO object_const_def
+	const_def 1
 ENDM

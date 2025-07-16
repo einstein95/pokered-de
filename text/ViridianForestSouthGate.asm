@@ -1,4 +1,4 @@
-_ViridianForestEntranceText1::
+_ViridianForestSouthGateGirlText::
 	text "Du gehst in den"
 	line "VERTANIA-WALD?"
 	cont "Sei auf der Hut,"
@@ -6,7 +6,7 @@ _ViridianForestEntranceText1::
 	cont "sich leicht!"
 	done
 
-_ViridianForestEntranceText2::
+_ViridianForestSouthGateLittleGirlText::
 	text "Hast Du schon"
 	line "ein RATTFRATZ"
 	cont "gefangen? Es ist"

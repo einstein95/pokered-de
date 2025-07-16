@@ -1,15 +1,15 @@
-_Route16GateUpstairsText_49820::
+_Route16Gate2FLittleBoyText::
 	text "Ich mache mit"
 	line "meiner Freundin"
 	cont "einen Ausflug!"
 	done
 
-_Route16GateUpstairsText_4982f::
+_Route16Gate2FLittleGirlText::
 	text "Wir werden mit"
 	line "dem Rad fahren!"
 	done
 
-_Route16GateUpstairsText_4983b::
+_Route16Gate2FLeftBinocularsText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 
@@ -19,7 +19,7 @@ _Route16GateUpstairsText_4983b::
 	cont "CITY!"
 	done
 
-_Route16GateUpstairsText_49847::
+_Route16Gate2FRightBinocularsText::
 	text "Du schaust durch"
 	line "das Fernrohr."
 

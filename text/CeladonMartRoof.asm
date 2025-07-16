@@ -1,10 +1,10 @@
-_CeladonMartRoofText_484ee::
+_CeladonMartRoofLittleGirlGiveHerWhichDrinkText::
 	text "Welches Getränk"
 	line "möchtest Du ihr"
 	cont "geben?"
 	done
 
-_CeladonMartRoofText_484f3::
+_CeladonMartRoofLittleGirlYayFreshWaterText::
 	text "Ja!"
 
 	para "TAFELWASSER!"
@@ -15,14 +15,14 @@ _CeladonMartRoofText_484f3::
 	line "Geschenk!@"
 	text_end
 
-_CeladonMartRoofText_484f9::
+_CeladonMartRoofLittleGirlReceivedTM13Text::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_CeladonMartRoofText_484fe::
+_CeladonMartRoofLittleGirlTM13ExplanationText::
 	text_start
 
 	para "@"
@@ -35,7 +35,7 @@ _CeladonMartRoofText_484fe::
 	cont "einfrieren!@"
 	text_end
 
-_CeladonMartRoofText_48504::
+_CeladonMartRoofLittleGirlYaySodaPopText::
 	text "Cool!"
 
 	para "SPRUDEL!"
@@ -46,14 +46,14 @@ _CeladonMartRoofText_48504::
 	line "Geschenk!@"
 	text_end
 
-_CeladonMartRoofText_4850a::
+_CeladonMartRoofLittleGirlReceivedTM48Text::
 	text "<PLAYER> erhält"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
-_CeladonMartRoofText_4850f::
+_CeladonMartRoofLittleGirlTM48ExplanationText::
 	text_start
 
 	para "@"
@@ -66,7 +66,7 @@ _CeladonMartRoofText_4850f::
 	cont "Angst einjagen!@"
 	text_end
 
-_CeladonMartRoofText_48515::
+_CeladonMartRoofLittleGirlYayLemonadeText::
 	text "Cool!"
 
 	para "LIMONADE!"
@@ -77,31 +77,31 @@ _CeladonMartRoofText_48515::
 	line "Geschenk!@"
 	text_end
 
-_ReceivedTM49Text::
+_CeladonMartRoofLittleGirlReceivedTM49Text::
 	text "<PLAYER> erhält"
 	line "TM49!@"
 	text_end
 
-_CeladonMartRoofText_48520::
+_CeladonMartRoofLittleGirlTM49ExplanationText::
 	text_start
 
 	para "TM49 ist"
 	line "TRIPLETTE!@"
 	text_end
 
-_CeladonMartRoofText_48526::
+_CeladonMartRoofLittleGirlNoRoomText::
 	text "Du hast keinen"
 	line "Platz dafür!@"
 	text_end
 
-_CeladonMartRoofText_4852c::
+_CeladonMartRoofLittleGirlImNotThirstyText::
 	text "Das ist nett"
 	line "gemeint, aber ich"
 	cont "habe keinen"
 	cont "Durst!@"
 	text_end
 
-_CeladonMartRoofText1::
+_CeladonMartRoofSuperNerdText::
 	text "Ob Du es glaubst"
 	line "oder nicht: Meine"
 	cont "Schwester ist"
@@ -113,13 +113,13 @@ _CeladonMartRoofText1::
 	cont "verrückt!"
 	done
 
-_CeladonMartRoofText_48598::
+_CeladonMartRoofLittleGirlImThirstyText::
 	text "Ich bin durstig!"
 	line "Ein Königreich"
 	cont "für ein Getränk!"
 	done
 
-_CeladonMartRoofText4::
+_CeladonMartRoofLittleGirlGiveHerADrinkText::
 	text "Ich bin durstig!"
 	line "Ich möchte etwas"
 	cont "trinken!"
@@ -130,7 +130,7 @@ _CeladonMartRoofText4::
 	done
 
 
-_CeladonMartRoofText6::
+_CeladonMartRoofCurrentFloorSignText::
 	text "DACHGARTEN:"
 	line "AUTOMATEN"
 	done

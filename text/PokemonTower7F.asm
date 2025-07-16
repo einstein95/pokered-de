@@ -1,4 +1,4 @@
-_TowerRescueFujiText::
+_PokemonTower7FMrFujiRescueText::
 	text "MR. FUJI: Was? Du"
 	line "kommst, um mich"
 	cont "zu retten?"
@@ -28,23 +28,23 @@ _TowerRescueFujiText::
 	cont "Turms."
 	done
 
-_PokemonTower7BattleText1::
+_PokemonTower7FRocket1BattleText::
 	text "Was willst Du?"
 	line "Warum bist Du"
 	cont "hier?"
 	done
 
-_PokemonTower7EndBattleText1::
+_PokemonTower7FRocket1EndBattleText::
 	text ""
 	line "Ich geb auf!"
 	prompt
 
-_PokemonTower7AfterBattleText1::
+_PokemonTower7FRocket1AfterBattleText::
 	text "Das werde ich Dir"
 	line "nie verzeihen!"
 	done
 
-_PokemonTower7BattleText2::
+_PokemonTower7FRocket2BattleText::
 	text "Da war so ein"
 	line "alter Knacker,"
 	cont "der behauptet"
@@ -55,12 +55,12 @@ _PokemonTower7BattleText2::
 	line "Meinung hören?"
 	done
 
-_PokemonTower7EndBattleText2::
+_PokemonTower7FRocket2EndBattleText::
 	text "Bitte!"
 	line "Laß mich in Ruhe!"
 	prompt
 
-_PokemonTower7AfterBattleText2::
+_PokemonTower7FRocket2AfterBattleText::
 	text "#MON sind nur"
 	line "zum Geldverdienen"
 	cont "gut!"
@@ -70,20 +70,20 @@ _PokemonTower7AfterBattleText2::
 	cont "Angelegenheiten!"
 	done
 
-_PokemonTower7BattleText3::
+_PokemonTower7FRocket3BattleText::
 	text "Du wirst"
 	line "niemanden retten,"
 	cont "Kleiner!"
 	done
 
-_PokemonTower7EndBattleText3::
+_PokemonTower7FRocket3EndBattleText::
 	text "Leg"
 	line "Dich nicht mit"
 	cont "dem TEAM ROCKET"
 	cont "an!"
 	prompt
 
-_PokemonTower7AfterBattleText3::
+_PokemonTower7FRocket3AfterBattleText::
 	text "Du wirst nicht"
 	line "ungestraft"
 	cont "davonkommen!"

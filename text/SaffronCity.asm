@@ -1,38 +1,38 @@
-_SaffronCityText1::
+_SaffronCityRocket1Text::
 	text "Was willst Du"
 	line "noch? Hau ab!"
 	done
 
-_SaffronCityText2::
+_SaffronCityRocket2Text::
 	text "Der BOSS hat"
 	line "versprochen, daß"
 	cont "wir diese Stadt"
 	cont "einnehmen werden."
 	done
 
-_SaffronCityText3::
+_SaffronCityRocket3Text::
 	text "Mann, geh aus"
 	line "dem Weg!"
 	done
 
-_SaffronCityText4::
+_SaffronCityRocket4Text::
 	text "SAFFRONIA CITY"
 	line "gehört dem TEAM"
 	cont "ROCKET!"
 	done
 
-_SaffronCityText5::
+_SaffronCityRocket5Text::
 	text "Ich fühle mich"
 	line "wunderbar, wenn"
 	cont "ich böse bin!"
 	done
 
-_SaffronCityText6::
+_SaffronCityRocket6Text::
 	text "Au! Paß auf, wo"
 	line "Du läufst!"
 	done
 
-_SaffronCityText7::
+_SaffronCityRocket7Text::
 	text "Wenn wir erst die"
 	line "SILPH CO. unter"
 	cont "Kontrolle haben,"
@@ -41,13 +41,13 @@ _SaffronCityText7::
 	cont "#MON handeln!"
 	done
 
-_SaffronCityText8::
+_SaffronCityScientistText::
 	text "Du hast das TEAM"
 	line "ROCKET besiegt?"
 	cont "Unglaublich!!!"
 	done
 
-_SaffronCityText9::
+_SaffronCitySilphWorkerMText::
 	text "Hurra! Das TEAM"
 	line "ROCKET ist fort!"
 	cont "Jetzt fühlt man"
@@ -56,14 +56,14 @@ _SaffronCityText9::
 	cont "sicher!"
 	done
 
-_SaffronCityText10::
+_SaffronCitySilphWorkerFText::
 	text "Nun kommen auch"
 	line "wieder Touristen"
 	cont "nach SAFFRONIA"
 	cont "CITY!"
 	done
 
-_SaffronCityText11::
+_SaffronCityGentlemanText::
 	text "Ich flog mit"
 	line "meinem TAUBOSS"
 	cont "hierher, nachdem"
@@ -78,11 +78,11 @@ _SaffronCityText11::
 	cont "verpaßt!"
 	done
 
-_SaffronCityText12::
+_SaffronCityPidgeotText::
 	text "TAUBOSS: Tauboss!@"
 	text_end
 
-_SaffronCityText13::
+_SaffronCityRockerText::
 	text "Der BOSS des"
 	line "TEAM ROCKET ist"
 	cont "aus dem Gebäude"
@@ -90,7 +90,7 @@ _SaffronCityText13::
 	cont "geflohen!"
 	done
 
-_SaffronCityText14::
+_SaffronCityRocket8Text::
 	text "Ich bin der"
 	line "Wächter."
 
@@ -99,7 +99,7 @@ _SaffronCityText14::
 	cont "nicht herein!"
 	done
 
-_SaffronCityText15::
+_SaffronCityRocket9Text::
 	text "..."
 	line "Schnarch..."
 
@@ -107,17 +107,17 @@ _SaffronCityText15::
 	line "ein Nickerchen!"
 	done
 
-_SaffronCityText16::
+_SaffronCitySignText::
 	text "SAFFRONIA CITY"
 	line "Die goldglänzende"
 	cont "Handelsstadt!"
 	done
 
-_SaffronCityText17::
+_SaffronCityFightingDojoSignText::
 	text "KAMPF-DOJO"
 	done
 
-_SaffronCityText18::
+_SaffronCityGymSignText::
 	text "SAFFRONIA CITY"
 	line "PKMN-ARENA"
 	cont "ARENALEITERIN: "
@@ -127,7 +127,7 @@ _SaffronCityText18::
 	line "PSYCHO-#MON!"
 	done
 
-_SaffronCityText20::
+_SaffronCityTrainerTips1Text::
 	text "TIPS FÜR TRAINER"
 
 	para "HYPERHEILER"
@@ -139,7 +139,7 @@ _SaffronCityText20::
 	cont "sehr praktisch."
 	done
 
-_SaffronCityText21::
+_SaffronCityTrainerTips2Text::
 	text "TIPS FÜR TRAINER"
 
 	para "Der SUPERBALL"
@@ -152,16 +152,16 @@ _SaffronCityText21::
 	cont "sind!"
 	done
 
-_SaffronCityText22::
+_SaffronCitySilphCoSignText::
 	text "SILPH CO."
 	line "BÜROGEBÄUDE"
 	done
 
-_SaffronCityText24::
+_SaffronCityMrPsychicsHouseSignText::
 	text "PSYCHOLOGEN-HAUS"
 	done
 
-_SaffronCityText25::
+_SaffronCitySilphCoLatestProductSignText::
 	text "Das neueste"
 	line "Produkt der"
 	cont "SILPH CO.!"

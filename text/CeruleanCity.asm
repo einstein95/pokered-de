@@ -1,4 +1,4 @@
-_CeruleanCityText_19668::
+_CeruleanCityRivalPreBattleText::
 	text "<RIVAL>: Hi,"
 	line "<PLAYER>!"
 
@@ -17,20 +17,20 @@ _CeruleanCityText_19668::
 	cont "<PLAYER>!"
 	done
 
-_CeruleanCityText_1966d::
+_CeruleanCityRivalDefeatedText::
 	text "Hey, "
 	line "schon gut! Du"
 	cont "hast gewonnen!"
 	prompt
 
-_CeruleanCityText_19672::
+_CeruleanCityRivalVictoryText::
 	text "Ha!"
 	line "Meiner Genialität"
 	cont "kannst Du nichts"
 	cont "entgegensetzen!"
 	prompt
 
-_CeruleanCityText_19677::
+_CeruleanCityRivalIWentToBillsText::
 	text "<RIVAL>: Soll"
 	line "ich Dir was"
 	cont "verraten?"
@@ -64,7 +64,7 @@ _CeruleanCityText_19677::
 	line "Mach's mal gut!"
 	done
 
-_CeruleanCityText_196d9::
+_CeruleanCityRocketText::
 	text "He! Bleib"
 	line "draußen! Du hast"
 	cont "hier nichts zu"
@@ -78,19 +78,19 @@ _CeruleanCityText_196d9::
 	cont "etwa nicht?"
 	done
 
-_ReceivedTM28Text::
+_CeruleanCityRocketReceivedTM28Text::
 	text "<PLAYER> erhält"
 	line "TM28!@"
 	text_end
 
-_ReceivedTM28Text2::
+_CeruleanCityRocketIBetterGetMovingText::
 	text_start
 
 	para "Ich gehe wohl"
 	line "besser! Tschüß!@"
 	text_end
 
-_TM28NoRoomText::
+_CeruleanCityRocketTM28NoRoomText::
 	text "Mache Platz für"
 	line "dieses coole"
 	cont "Item!"
@@ -101,19 +101,19 @@ _TM28NoRoomText::
 	cont "habe!"
 	done
 
-_CeruleanCityText_196ee::
+_CeruleanCityRocketIGiveUpText::
 	text "Ist gut!"
 	line "Ich gebe auf!"
 	cont "Ich verschwinde!"
 	prompt
 
-_CeruleanCityText_196f3::
+_CeruleanCityRocketIllReturnTheTMText::
 	text "OK! Ich gebe die"
 	line "gestohlene TM"
 	cont "zurück!"
 	prompt
 
-_CeruleanCityText3::
+_CeruleanCityCooltrainerMText::
 	text "Du bist auch ein"
 	line "Trainer? Zu"
 	cont "sammeln und zu"
@@ -121,7 +121,7 @@ _CeruleanCityText3::
 	cont "immer so leicht!"
 	done
 
-_CeruleanCityText4::
+_CeruleanCitySuperNerd1Text::
 	text "Der Busch vor dem"
 	line "Laden steht im"
 	cont "Weg!"
@@ -131,14 +131,14 @@ _CeruleanCityText4::
 	cont "Weg!?"
 	done
 
-_CeruleanCityText5::
+_CeruleanCitySuperNerd2Text::
 	text "Du erstellst eine"
 	line "Enzyklopädie der"
 	cont "#MON? Das"
 	cont "klingt lustig!"
 	done
 
-_CeruleanCityText6::
+_CeruleanCityGuardText::
 	text "Die Leute hier"
 	line "wurden beraubt."
 
@@ -153,20 +153,20 @@ _CeruleanCityText6::
 	cont "machtlos!"
 	done
 
-_CeruleanCityText_19730::
+_CeruleanCityCooltrainerF1SlowbroUseSonicboomText::
 	text "OK! LAHMUS!"
 	line "Setze ULTRASCHALL"
 	cont "ein! Los, mach"
 	cont "schon, LAHMUS!"
 	done
 
-_CeruleanCityText_19735::
+_CeruleanCityCooltrainerF1SlowbroPunchText::
 	text "LAHMUS, schlage"
 	line "zu! Oh nein!"
 	cont "Wieder nicht..."
 	done
 
-_CeruleanCityText_1973a::
+_CeruleanCityCooltrainerF1SlowbroWithdrawText::
 	text "LAHMUS, ZURÜCK!"
 	line "Nein, nicht!!!"
 
@@ -181,27 +181,27 @@ _CeruleanCityText_1973a::
 	cont "Trainer ab!"
 	done
 
-_CeruleanCityText_1976f::
+_CeruleanCitySlowbroTookASnoozeText::
 	text "LAHMUS macht"
 	line "ein Nickerchen..."
 	done
 
-_CeruleanCityText_19774::
+_CeruleanCitySlowbroIsLoafingAroundText::
 	text "LAHMUS bummelt"
 	line "herum..."
 	done
 
-_CeruleanCityText_19779::
+_CeruleanCitySlowbroTurnedAwayText::
 	text "LAHMUS wendet"
 	line "sich ab..."
 	done
 
-_CeruleanCityText_1977e::
+_CeruleanCitySlowbroIgnoredOrdersText::
 	text "LAHMUS ignoriert"
 	line "die Befehle..."
 	done
 
-_CeruleanCityText9::
+_CeruleanCityCooltrainerF2Text::
 	text "Ich hätte gern"
 	line "ein rotes"
 	cont "FAHRRAD!"
@@ -213,7 +213,7 @@ _CeruleanCityText9::
 	cont "wird!"
 	done
 
-_CeruleanCityText10::
+_CeruleanCitySuperNerd3Text::
 	text "Die AZURIA"
 	line "HÖHLE! Dort leben"
 	cont "extrem starke"
@@ -224,14 +224,14 @@ _CeruleanCityText10::
 	cont "Zutritt erlaubt!"
 	done
 
-_CeruleanCityText12::
+_CeruleanCitySignText::
 	text "AZURIA CITY"
 	line "Eine mysteriöse"
 	cont "blaue Aura"
 	cont "umgibt die Stadt!"
 	done
 
-_CeruleanCityText13::
+_CeruleanCityTrainerTipsText::
 	text "TIPS FÜR TRAINER"
 
 	para "Drückt man den"
@@ -242,7 +242,7 @@ _CeruleanCityText13::
 	cont "abgebrochen!"
 	done
 
-_CeruleanCityText16::
+_CeruleanCityBikeShopSign::
 	text "FAHRRADLADEN"
 	line "Fahre leicht und"
 	cont "schnell mit dem"
@@ -250,7 +250,7 @@ _CeruleanCityText16::
 	cont "und Gras!"
 	done
 
-_CeruleanCityText17::
+_CeruleanCityGymSign::
 	text "AZURIA CITY"
 	line "PKMN-ARENA"
 	cont "ARENALEITERIN: "

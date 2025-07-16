@@ -1,4 +1,4 @@
-_UndergroundPathEntRoute7Text1::
+_UndergroundPathRoute7MiddleAgedManText::
 	text "Ein verschlafenes"
 	line "#MON ist in"
 	cont "PRISMANIA CITY"

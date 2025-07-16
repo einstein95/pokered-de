@@ -1,11 +1,11 @@
-_Museum2FText1::
+_Museum2FYoungsterText::
 	text "MONDSTEIN?"
 
 	para "Was ist daran"
 	line "so einzigartig?"
 	done
 
-_Museum2FText2::
+_Museum2FGrampsText::
 	text "Der"
 	line "20. Juli 1969!"
 
@@ -19,14 +19,14 @@ _Museum2FText2::
 	cont "gekauft!"
 	done
 
-_Museum2FText3::
+_Museum2FScientistText::
 	text "Momentan haben"
 	line "wir eine"
 	cont "Raumfahrt-"
 	cont "Ausstellung."
 	done
 
-_Museum2FText4::
+_Museum2FBrunetteGirlText::
 	text "Ich hätte gerne"
 	line "ein PIKACHU!"
 	cont "Es ist so"
@@ -36,18 +36,18 @@ _Museum2FText4::
 	line "mir eines fangen!"
 	done
 
-_Museum2FText5::
+_Museum2FHikerText::
 	text "Ja, ein PIKACHU!"
 	line "Ich verspreche,"
 	cont "ich fange eins!"
 	done
 
-_Museum2FText6::
+_Museum2FSpaceShuttleSignText::
 	text "SPACE SHUTTLE"
 	line "COLUMBIA"
 	done
 
-_Museum2FText7::
+_Museum2FMoonStoneSignText::
 	text "Auf dem MONDBERG"
 	line "gefundenes"
 	cont "Meteoritengestein"
