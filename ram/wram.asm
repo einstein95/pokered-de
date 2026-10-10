@@ -570,16 +570,16 @@ wEnemyMonSpeedMod:: db
 wEnemyMonSpecialMod:: db
 wEnemyMonAccuracyMod:: db
 wEnemyMonEvasionMod:: db
+	ds 2
 wEnemyMonStatModsEnd::
 
-	ds 1
 NEXTU
 	ds 30
 wEngagedTrainerClass:: db
 wEngagedTrainerSet:: db
 ENDU
 
-	ds 2
+	ds 1
 
 wNPCMovementDirections2Index::
 wUnusedLinkMenuByte::
@@ -1076,7 +1076,7 @@ wPartyMenuBlkPacket:: ds $30
 NEXTU
 	ds 29
 ; storage buffer for various strings
-wStringBuffer:: ds 19
+wStringBuffer:: ds NAME_BUFFER_LENGTH
 
 NEXTU
 	ds 29
@@ -1084,8 +1084,6 @@ NEXTU
 wExpAmountGained:: dw
 wGainBoostedExp:: db
 ENDU
-
-	ds 1
 
 wGymCityName:: ds GYM_CITY_LENGTH
 
@@ -2146,7 +2144,6 @@ wSecondLockTrashCanIndex:: db
 
 wEventFlags:: flag_array NUM_EVENTS
 
-wSafariZoneEntranceCurScript::
 
 UNION
 wGrassRate:: db
