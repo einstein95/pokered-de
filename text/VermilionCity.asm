@@ -79,6 +79,7 @@ _VermilionCityMachopText::
 
 _VermilionCityMachopStompingTheLandFlatText::
 	text_start
+
 	para "Ein MASCHOCK"
 	line "ebnet das Land!"
 	done

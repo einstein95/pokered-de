@@ -926,7 +926,7 @@ Audio3_ApplyWavePatternAndFrequency:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	ld hl, _AUD3WAVERAM
+	ld hl, AUD3WAVERAM
 	ld b, AUD3WAVE_SIZE - 1
 	ld a, $0 ; stop hardware channel 3
 	ldh [rAUD3ENA], a
@@ -1336,7 +1336,7 @@ Audio3_PlaySound::
 	cp MAX_SFX_ID_3
 	jp z, .playSfx
 	jp c, .playSfx
-	cp $fe
+	cp MAX_SONG_ID_3
 	jr z, .playMusic
 	jp nc, .playSfx
 

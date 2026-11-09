@@ -36,6 +36,7 @@ _FuchsiaGymKogaReceivedTM06Text::
 
 _FuchsiaGymKogaTM06ExplanationText::
 	text_start
+
 	para "TM06 ist TOXIN!"
 
 	para "Es ist eine mehr"
