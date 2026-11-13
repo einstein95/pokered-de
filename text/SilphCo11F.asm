@@ -86,7 +86,7 @@ _SilphCo11FGiovanniText::
 	cont "Schmerzen kennen!"
 	done
 
-_SilphCo10FGiovanniILostAgainText::
+_SilphCo11FGiovanniILostAgainText::
 	text "Arrgh!"
 	line "Wieder verloren!"
 	prompt
@@ -146,7 +146,7 @@ _SilphCo11FRocket2AfterBattleText::
 	cont "fertig machen! "
 	done
 
-_SilphCo10FPorygonText::
+_SilphCo11FPorygonText::
 	text "Auf dem Monitor"
 	line "sind #MON"
 	cont "zu sehen!"
